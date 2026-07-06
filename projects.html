@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Selected UX research, product thinking, learning design and digital delivery projects by James Spiller."
+    />
+    <meta name="theme-color" content="#1d1d1d" />
+    <title>Projects | James Spiller</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;900&amp;family=Archivo+Black&amp;family=Lato:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=16" />
+  </head>
+  <body data-page="projects">
+    <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16" /></symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12" /></symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+      </symbol>
+      <symbol id="icon-contrast" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M12 18a6 6 0 0 0 0-12v12z" />
+      </symbol>
+      <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7" />
+      </symbol>
+    </svg>
+
+    <header class="site-header projects-header">
+      <div class="site-shell header-inner">
+        <a class="logo-mark" href="index.html" aria-label="James Spiller home">js</a>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a class="active" href="#top" aria-current="page">Projects</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="index.html#cv">CV</a>
+          <button class="icon-button" type="button" data-action="theme" aria-label="Toggle light and dark theme" title="Toggle theme">
+            <svg aria-hidden="true"><use href="#icon-sun"></use></svg>
+          </button>
+          <button class="icon-button" type="button" data-action="contrast" aria-label="Toggle high contrast" title="Toggle contrast">
+            <svg aria-hidden="true"><use href="#icon-contrast"></use></svg>
+          </button>
+        </nav>
+        <button class="menu-button" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation">
+          <svg class="menu-open-icon" aria-hidden="true"><use href="#icon-menu"></use></svg>
+          <svg class="menu-close-icon" aria-hidden="true"><use href="#icon-close"></use></svg>
+        </button>
+      </div>
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+        <a href="index.html">Home</a>
+        <a href="#top">Projects</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#cv">CV</a>
+        <div class="mobile-accessibility">
+          <button class="icon-button" type="button" data-action="theme" aria-label="Toggle light and dark theme">
+            <svg aria-hidden="true"><use href="#icon-sun"></use></svg><span>Theme</span>
+          </button>
+          <button class="icon-button" type="button" data-action="contrast" aria-label="Toggle high contrast">
+            <svg aria-hidden="true"><use href="#icon-contrast"></use></svg><span>Contrast</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top" class="projects-page">
+      <section class="projects-page-hero" aria-labelledby="projects-page-title">
+        <img class="projects-hero-art" src="assets/images/hero-artwork.webp" alt="" aria-hidden="true" />
+        <div class="site-shell">
+          <h1 id="projects-page-title">Projects</h1>
+          <p>Selected projects showing UX research, product thinking, learning design and real-world delivery.</p>
+        </div>
+      </section>
+
+      <section class="site-shell project-grid projects-index" id="selected-projects" aria-label="Selected projects">
+        <article class="project-item project-card-interactive" id="habithero-project">
+          <div class="project-card-normal">
+            <div class="project-image-link">
+              <img src="assets/images/project-habithero.webp" alt="Three HabitHero mobile app screens showing habit progress and goal tracking" />
+            </div>
+            <h2>HabitHero: redesigning progress tracking for healthier habits</h2>
+          </div>
+          <div class="project-card-hover">
+            <h2 aria-hidden="true">HabitHero: redesigning progress tracking for healthier habits</h2>
+            <p aria-hidden="true">
+              Progress-tracking experience for a wellness rewards app to help life insurance
+              customers build healthy habits.
+            </p>
+            <a class="button-link" href="#habithero-project">
+              View project
+              <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+            </a>
+          </div>
+        </article>
+        <article class="project-item project-card-interactive" id="ai-educator-project">
+          <div class="project-card-normal">
+            <div class="project-image-link">
+              <img src="assets/images/project-ai-educator.webp" alt="AI Educator CPD learning experience displayed on a laptop" />
+            </div>
+            <h2>AI Educator CPD: practical digital learning experience for teachers</h2>
+          </div>
+          <div class="project-card-hover">
+            <h2 aria-hidden="true">AI Educator CPD: practical digital learning experience for teachers</h2>
+            <p aria-hidden="true">
+              Bespoke interactive learning experience helping teachers use AI practically, safely
+              and critically in education.
+            </p>
+            <a class="button-link" href="#ai-educator-project">
+              View project
+              <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+            </a>
+          </div>
+        </article>
+        <article class="project-item project-card-interactive" id="online-safety-project">
+          <div class="project-card-normal">
+            <div class="project-image-link">
+              <img src="assets/images/project-online-safety.webp" alt="Online safety micro-learning activity displayed on a tablet" />
+            </div>
+            <h2>Talking About Online Life: micro-learning for online safety CPD</h2>
+          </div>
+          <div class="project-card-hover">
+            <h2 aria-hidden="true">Talking About Online Life: micro-learning for online safety CPD</h2>
+            <p aria-hidden="true">
+              Micro-learning experience helping primary school staff approach online safety
+              conversations with confidence.
+            </p>
+            <a class="button-link" href="#online-safety-project">
+              View project
+              <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+            </a>
+          </div>
+        </article>
+        <article class="project-item project-card-interactive" id="salient-bio-project">
+          <div class="project-card-normal">
+            <div class="project-image-link">
+              <img src="assets/images/project-salient-bio.webp" alt="Salient Bio testing website displayed on a laptop and mobile phone" />
+            </div>
+            <h2>Salient Bio: Making microbiome testing easier to understand</h2>
+          </div>
+          <div class="project-card-hover">
+            <h2 aria-hidden="true">Salient Bio: Making microbiome testing easier to understand</h2>
+            <p aria-hidden="true">
+              Educational hub helping patients and clinicians find, understand and act on complex
+              microbiome testing information.
+            </p>
+            <a class="button-link" href="#salient-bio-project">
+              View project
+              <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <section class="progress-section" aria-labelledby="progress-title">
+        <div class="site-shell progress-heading">
+          <h2 id="progress-title">Projects in progress</h2>
+          <p>Experiments and work in progress.</p>
+        </div>
+        <div class="site-shell progress-grid">
+          <article class="progress-item progress-card-interactive" id="spellquest-project" tabindex="0">
+            <div class="progress-card-normal">
+              <p class="eyebrow">In progress &middot; Educational app</p>
+              <div class="progress-media"><img src="assets/images/progress-spellquest.webp" alt="Early SpellQuest educational app interface concepts" /></div>
+              <h3>SpellQuest App</h3>
+            </div>
+            <div class="progress-card-hover">
+              <h3 aria-hidden="true">SpellQuest App</h3>
+              <p class="progress-description" aria-hidden="true">
+                A spelling practice app concept exploring child-centred learning, motivation and
+                accessible interaction design.
+              </p>
+              <a class="button-link" href="#spellquest-project">
+                View project details
+                <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+              </a>
+            </div>
+          </article>
+          <article class="progress-item progress-card-interactive" id="dovetail-project" tabindex="0">
+            <div class="progress-card-normal">
+              <p class="eyebrow">In progress &middot; UX project</p>
+              <div class="progress-media"><img src="assets/images/progress-dovetail.webp" alt="Dovetail Music Foundation website branding" /></div>
+              <h3>Dovetail Orchestra Website</h3>
+            </div>
+            <div class="progress-card-hover">
+              <h3 aria-hidden="true">Dovetail Orchestra Website</h3>
+              <p class="progress-description" aria-hidden="true">
+                Website discovery and IA for a charity music project supporting asylum seekers,
+                volunteers and donors.
+              </p>
+              <a class="button-link" href="#dovetail-project">
+                View project details
+                <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+              </a>
+            </div>
+          </article>
+          <article class="progress-item progress-card-interactive" id="habithero-components-project" tabindex="0">
+            <div class="progress-card-normal">
+              <p class="eyebrow">In progress &middot; Design system</p>
+              <div class="progress-media"><img src="assets/images/progress-design-system.webp" alt="HabitHero colour and component system work" /></div>
+              <h3>HabitHero Component System</h3>
+            </div>
+            <div class="progress-card-hover">
+              <h3 aria-hidden="true">HabitHero Component System</h3>
+              <p class="progress-description" aria-hidden="true">
+                A reusable component system extending the HabitHero case study into scaleable
+                interface patterns.
+              </p>
+              <a class="button-link" href="#habithero-components-project">
+                View project details
+                <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+              </a>
+            </div>
+          </article>
+          <article class="progress-item progress-card-interactive lawyer-project" id="lawyer-portfolio-project" tabindex="0">
+            <div class="progress-card-normal">
+              <p class="eyebrow">In progress &middot; Website UX</p>
+              <div class="progress-media"><img src="assets/images/progress-lawyer-portfolio.webp" alt="Colour palette exploration for a lawyer portfolio" /></div>
+              <h3>Lawyer portfolio</h3>
+            </div>
+            <div class="progress-card-hover">
+              <h3 aria-hidden="true">Lawyer portfolio</h3>
+              <p class="progress-description" aria-hidden="true">
+                Portfolio project for a legal professional in Washington D.C focused on trust,
+                clarity and service navigation.
+              </p>
+              <a class="button-link" href="#lawyer-portfolio-project">
+                View project details
+                <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-shell"><p>&copy; <span id="year"></span> James Spiller</p></div>
+    </footer>
+    <script src="scripts.js?v=2"></script>
+  </body>
+</html>
