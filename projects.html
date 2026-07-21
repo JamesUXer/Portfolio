@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;900&amp;family=Archivo+Black&amp;family=Lato:wght@400;700&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20" />
+    <link rel="stylesheet" href="styles.css?v=54" />
   </head>
   <body data-page="projects">
     <svg class="icon-sprite" aria-hidden="true">
@@ -42,10 +42,10 @@
           <a class="active" href="#top" aria-current="page">Projects</a>
           <a href="index.html#contact">Contact</a>
           <a href="index.html#cv">CV</a>
-          <button class="icon-button" type="button" data-action="theme" aria-label="Toggle light and dark theme" title="Toggle theme">
+          <button class="icon-button" type="button" data-action="theme" aria-controls="brightness-panel" aria-expanded="false" aria-label="Open brightness settings" title="Brightness settings">
             <svg aria-hidden="true"><use href="#icon-sun"></use></svg>
           </button>
-          <button class="icon-button" type="button" data-action="contrast" aria-label="Toggle high contrast" title="Toggle contrast">
+          <button class="icon-button" type="button" data-action="contrast" aria-controls="contrast-panel" aria-expanded="false" aria-label="Open contrast settings" title="Contrast settings">
             <svg aria-hidden="true"><use href="#icon-contrast"></use></svg>
           </button>
         </nav>
@@ -60,14 +60,24 @@
         <a href="index.html#contact">Contact</a>
         <a href="index.html#cv">CV</a>
         <div class="mobile-accessibility">
-          <button class="icon-button" type="button" data-action="theme" aria-label="Toggle light and dark theme">
-            <svg aria-hidden="true"><use href="#icon-sun"></use></svg><span>Theme</span>
+          <button class="icon-button" type="button" data-action="theme" aria-controls="brightness-panel" aria-expanded="false" aria-label="Open brightness settings">
+            <svg aria-hidden="true"><use href="#icon-sun"></use></svg><span>Brightness</span>
           </button>
-          <button class="icon-button" type="button" data-action="contrast" aria-label="Toggle high contrast">
+          <button class="icon-button" type="button" data-action="contrast" aria-controls="contrast-panel" aria-expanded="false" aria-label="Open contrast settings">
             <svg aria-hidden="true"><use href="#icon-contrast"></use></svg><span>Contrast</span>
           </button>
         </div>
       </nav>
+      <div class="accessibility-panel" id="brightness-panel" role="dialog" aria-label="Brightness settings" hidden>
+        <div class="accessibility-setting-row">
+          <span class="accessibility-panel-title" id="dark-mode-label">Dark mode</span>
+          <label class="accessibility-switch"><input type="checkbox" data-setting="dark-mode" aria-labelledby="dark-mode-label" /><span aria-hidden="true"></span></label>
+        </div>
+        <label class="accessibility-slider"><span class="accessibility-panel-title">Lightness</span><input class="accessibility-range" type="range" min="0" max="100" step="1" value="0" data-setting="lightness" /></label>
+      </div>
+      <div class="accessibility-panel accessibility-panel-contrast" id="contrast-panel" role="dialog" aria-labelledby="contrast-label" hidden>
+        <label class="accessibility-slider"><span class="accessibility-panel-title" id="contrast-label">Contrast</span><input class="accessibility-range" type="range" min="0" max="100" step="1" value="0" data-setting="contrast" /></label>
+      </div>
     </header>
 
     <main id="top" class="projects-page">
@@ -82,10 +92,10 @@
       <section class="site-shell project-grid projects-index" id="selected-projects" aria-label="Selected projects">
         <article class="project-item project-card-interactive" id="habithero-project">
           <div class="project-card-normal">
-            <div class="project-image-link">
+            <a class="project-image-link" href="habit-hero.html" aria-label="View the HabitHero project">
               <img src="assets/images/project-habithero.webp" alt="Three HabitHero mobile app screens showing habit progress and goal tracking" />
-            </div>
-            <h2>HabitHero: redesigning progress tracking for healthier habits</h2>
+            </a>
+            <h2><a href="habit-hero.html">HabitHero: redesigning progress tracking for healthier habits</a></h2>
           </div>
           <div class="project-card-hover">
             <h2 aria-hidden="true">HabitHero: redesigning progress tracking for healthier habits</h2>
@@ -93,7 +103,7 @@
               Progress-tracking experience for a wellness rewards app to help life insurance
               customers build healthy habits.
             </p>
-            <a class="button-link" href="#habithero-project">
+            <a class="button-link" href="habit-hero.html">
               View project
               <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
             </a>
@@ -243,6 +253,6 @@
     <footer class="site-footer">
       <div class="site-shell"><p>&copy; <span id="year"></span> James Spiller</p></div>
     </footer>
-    <script src="scripts.js?v=2"></script>
+    <script src="scripts.js?v=8"></script>
   </body>
 </html>

@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;900&amp;family=Archivo+Black&amp;family=Lato:wght@400;700&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20" />
+    <link rel="stylesheet" href="styles.css?v=54" />
   </head>
   <body data-page="home">
     <svg class="icon-sprite" aria-hidden="true">
@@ -50,10 +50,10 @@
           <a href="projects.html">Projects</a>
           <a href="#contact">Contact</a>
           <a href="#cv">CV</a>
-          <button class="icon-button" type="button" data-action="theme" aria-label="Toggle light and dark theme" title="Toggle theme">
+          <button class="icon-button" type="button" data-action="theme" aria-controls="brightness-panel" aria-expanded="false" aria-label="Open brightness settings" title="Brightness settings">
             <svg aria-hidden="true"><use href="#icon-sun"></use></svg>
           </button>
-          <button class="icon-button" type="button" data-action="contrast" aria-label="Toggle high contrast" title="Toggle contrast">
+          <button class="icon-button" type="button" data-action="contrast" aria-controls="contrast-panel" aria-expanded="false" aria-label="Open contrast settings" title="Contrast settings">
             <svg aria-hidden="true"><use href="#icon-contrast"></use></svg>
           </button>
         </nav>
@@ -70,16 +70,37 @@
         <a href="#contact">Contact</a>
         <a href="#cv">CV</a>
         <div class="mobile-accessibility">
-          <button class="icon-button" type="button" data-action="theme" aria-label="Toggle light and dark theme">
+          <button class="icon-button" type="button" data-action="theme" aria-controls="brightness-panel" aria-expanded="false" aria-label="Open brightness settings">
             <svg aria-hidden="true"><use href="#icon-sun"></use></svg>
-            <span>Theme</span>
+            <span>Brightness</span>
           </button>
-          <button class="icon-button" type="button" data-action="contrast" aria-label="Toggle high contrast">
+          <button class="icon-button" type="button" data-action="contrast" aria-controls="contrast-panel" aria-expanded="false" aria-label="Open contrast settings">
             <svg aria-hidden="true"><use href="#icon-contrast"></use></svg>
             <span>Contrast</span>
           </button>
         </div>
       </nav>
+
+      <div class="accessibility-panel" id="brightness-panel" role="dialog" aria-label="Brightness settings" hidden>
+        <div class="accessibility-setting-row">
+          <span class="accessibility-panel-title" id="dark-mode-label">Dark mode</span>
+          <label class="accessibility-switch">
+            <input type="checkbox" data-setting="dark-mode" aria-labelledby="dark-mode-label" />
+            <span aria-hidden="true"></span>
+          </label>
+        </div>
+        <label class="accessibility-slider">
+          <span class="accessibility-panel-title">Lightness</span>
+          <input class="accessibility-range" type="range" min="0" max="100" step="1" value="0" data-setting="lightness" />
+        </label>
+      </div>
+
+      <div class="accessibility-panel accessibility-panel-contrast" id="contrast-panel" role="dialog" aria-labelledby="contrast-label" hidden>
+        <label class="accessibility-slider">
+          <span class="accessibility-panel-title" id="contrast-label">Contrast</span>
+          <input class="accessibility-range" type="range" min="0" max="100" step="1" value="0" data-setting="contrast" />
+        </label>
+      </div>
     </header>
 
     <main id="top">
@@ -87,13 +108,6 @@
         <div class="site-shell hero-main">
           <img class="hero-artwork" src="assets/images/hero-artwork.webp" alt="" aria-hidden="true" />
           <h1 id="hero-title">james <span>spiller</span></h1>
-        </div>
-
-        <div class="site-shell skill-row" aria-label="Key skills">
-          <span>UX research &amp; testing</span>
-          <span>Learning design</span>
-          <span>UX design</span>
-          <span>AI enabled prototyping</span>
         </div>
 
         <div class="site-shell hero-intro">
@@ -119,11 +133,11 @@
         <div class="site-shell project-grid">
           <article class="project-item project-card-interactive" id="habithero">
             <div class="project-card-normal">
-              <a class="project-image-link" href="projects.html#habithero-project" aria-label="View the HabitHero project">
+              <a class="project-image-link" href="habit-hero.html" aria-label="View the HabitHero project">
                 <img src="assets/images/project-habithero.webp" alt="Three HabitHero mobile app screens showing habit progress and goal tracking" />
               </a>
-              <h3>HabitHero: redesigning progress tracking for healthier habits</h3>
-              <a class="button-link project-cta" href="projects.html#habithero-project">
+              <h3><a href="habit-hero.html">HabitHero: redesigning progress tracking for healthier habits</a></h3>
+              <a class="button-link project-cta" href="habit-hero.html">
                 View project
                 <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
               </a>
@@ -134,7 +148,7 @@
                 Progress-tracking experience for a wellness rewards app to help life insurance
                 customers build healthy habits.
               </p>
-              <a class="button-link" href="projects.html#habithero-project">
+              <a class="button-link" href="habit-hero.html">
                 View project
                 <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
               </a>
@@ -221,13 +235,14 @@
           <div class="detail-row">
             <p>I design systems and digital experiences that make complex information easier to understand, use and act on.</p>
             <div class="contact-actions" aria-label="Contact links">
-              <a class="button-link pending-link" href="#" aria-disabled="true">Email me</a>
-              <a class="brand-link pending-link" href="#" aria-disabled="true" aria-label="LinkedIn profile" title="LinkedIn">
+              <button class="button-link" type="button" data-copy-email>Copy email address</button>
+              <a class="brand-link" href="https://www.linkedin.com/in/james-spiller-uxdesign" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)" title="LinkedIn">
                 <span aria-hidden="true">in</span>
               </a>
-              <a class="brand-link pending-link github-mark" href="#" aria-disabled="true" aria-label="GitHub profile" title="GitHub">
-                <span aria-hidden="true">GH</span>
+              <a class="brand-link github-mark" href="https://github.com/jamesUXer/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in a new tab)" title="GitHub">
+                <img src="assets/images/github-mark.webp" width="44" height="44" alt="" />
               </a>
+              <span class="visually-hidden" role="status" aria-live="polite" data-copy-email-status></span>
             </div>
           </div>
         </div>
@@ -241,7 +256,13 @@
               My background combines education, digital strategy, inclusive technology and UX design.
               I am available for freelance, contract and project-based work.
             </p>
-            <a class="button-link pending-link" href="#" aria-disabled="true">
+            <a
+              class="button-link"
+              href="assets/documents/james-spiller-cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open James Spiller CV PDF in a new tab"
+            >
               Download CV
               <svg aria-hidden="true"><use href="#icon-download"></use></svg>
             </a>
@@ -256,6 +277,6 @@
       </div>
     </footer>
 
-    <script src="scripts.js?v=2"></script>
+    <script src="scripts.js?v=8"></script>
   </body>
 </html>

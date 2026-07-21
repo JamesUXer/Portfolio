@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="HabitHero case study: redesigning fitness progress tracking for real-life routines." />
+    <meta name="theme-color" content="#1d1d1d" />
+    <title>HabitHero case study | James Spiller</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;900&amp;family=Archivo+Black&amp;family=Lato:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=54" />
+  </head>
+  <body data-page="projects">
+    <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16" /></symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12" /></symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" /></symbol>
+      <symbol id="icon-contrast" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M12 18a6 6 0 0 0 0-12v12z" /></symbol>
+      <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></symbol>
+    </svg>
+
+    <header class="site-header projects-header">
+      <div class="site-shell header-inner">
+        <a class="logo-mark" href="index.html" aria-label="James Spiller home">js</a>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a class="active" href="projects.html" aria-current="page">Projects</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="index.html#cv">CV</a>
+          <button class="icon-button" type="button" data-action="theme" aria-controls="brightness-panel" aria-expanded="false" aria-label="Open brightness settings" title="Brightness settings"><svg aria-hidden="true"><use href="#icon-sun"></use></svg></button>
+          <button class="icon-button" type="button" data-action="contrast" aria-controls="contrast-panel" aria-expanded="false" aria-label="Open contrast settings" title="Contrast settings"><svg aria-hidden="true"><use href="#icon-contrast"></use></svg></button>
+        </nav>
+        <button class="menu-button" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation"><svg class="menu-open-icon" aria-hidden="true"><use href="#icon-menu"></use></svg><svg class="menu-close-icon" aria-hidden="true"><use href="#icon-close"></use></svg></button>
+      </div>
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+        <a href="index.html">Home</a><a href="projects.html" aria-current="page">Projects</a><a href="index.html#contact">Contact</a><a href="index.html#cv">CV</a>
+        <div class="mobile-accessibility">
+          <button class="icon-button" type="button" data-action="theme" aria-controls="brightness-panel" aria-expanded="false" aria-label="Open brightness settings"><svg aria-hidden="true"><use href="#icon-sun"></use></svg><span>Brightness</span></button>
+          <button class="icon-button" type="button" data-action="contrast" aria-controls="contrast-panel" aria-expanded="false" aria-label="Open contrast settings"><svg aria-hidden="true"><use href="#icon-contrast"></use></svg><span>Contrast</span></button>
+        </div>
+      </nav>
+      <div class="accessibility-panel" id="brightness-panel" role="dialog" aria-label="Brightness settings" hidden>
+        <div class="accessibility-setting-row">
+          <span class="accessibility-panel-title" id="dark-mode-label">Dark mode</span>
+          <label class="accessibility-switch"><input type="checkbox" data-setting="dark-mode" aria-labelledby="dark-mode-label" /><span aria-hidden="true"></span></label>
+        </div>
+        <label class="accessibility-slider"><span class="accessibility-panel-title">Lightness</span><input class="accessibility-range" type="range" min="0" max="100" step="1" value="0" data-setting="lightness" /></label>
+      </div>
+      <div class="accessibility-panel accessibility-panel-contrast" id="contrast-panel" role="dialog" aria-labelledby="contrast-label" hidden>
+        <label class="accessibility-slider"><span class="accessibility-panel-title" id="contrast-label">Contrast</span><input class="accessibility-range" type="range" min="0" max="100" step="1" value="0" data-setting="contrast" /></label>
+      </div>
+    </header>
+
+    <main id="top" class="case-study-page">
+      <article>
+        <header class="case-study-hero site-shell">
+          <a class="case-study-back" href="projects.html">&larr; Back to projects</a>
+          <h1>HabitHero: redesigning fitness progress tracking for real-life routines</h1>
+          <ul class="case-study-tags" aria-label="Project disciplines">
+            <li>User research</li><li>Behaviour change design</li><li>Usability testing</li><li>Prototyping</li>
+          </ul>
+          <figure class="case-study-media case-study-hero-media">
+            <img src="assets/images/habit-hero-hero.webp" width="1320" height="640" alt="Three HabitHero screens showing daily progress explanation, status and personalised goal selection" />
+          </figure>
+          <div class="case-study-prose case-study-intro">
+            <p>HabitHero is a rewards-based fitness app built around personalised activity goals.</p>
+            <p>I planned and conducted the research, synthesised the findings, redesigned the information architecture and progress experience, produced the prototype and ran usability testing with seven participants.</p>
+            <p>I redesigned the progress experience - from onboarding and goal setting to daily guidance, weekly review and recalibration - to help time-poor users understand what to do next and recover more easily when routines change.</p>
+          </div>
+          <dl class="case-study-meta">
+            <div><dt>Role</dt><dd>UX/Product Designer</dd></div>
+            <div><dt>Timeline</dt><dd>Oct 2025–Apr 2026</dd></div>
+            <div><dt>Scope</dt><dd>End-to-end individual project</dd></div>
+          </dl>
+        </header>
+
+        <section class="case-study-section site-shell" aria-labelledby="challenge-title">
+          <div class="case-study-prose">
+            <h2 id="challenge-title">The challenge</h2>
+            <p>The existing experience didn’t support successful habit-formation: the app made users work too hard interpreting progress. Users disengaged before habits formed. For PrimeCare, this led to weak retention and lower monthly active users. Discovery research found that time-poor users were managing too many metrics, were unsure when they had done enough, and could experience missed goals as pressure rather than useful feedback.</p>
+          </div>
+          <figure class="case-study-media case-study-challenge-media">
+            <a class="case-study-expandable" href="assets/images/habit-hero-challenge-large.webp?v=2" aria-label="Open the original HabitHero screens at full size">
+              <img src="assets/images/habit-hero-challenge.webp?v=2" width="600" height="400" loading="lazy" alt="Three screens from the original HabitHero experience showing goal selection, activity details and the daily plan" />
+            </a>
+            <figcaption class="case-study-challenge-issues">
+              <ol>
+                <li><h3>Issue #1: Goal choice without guidance or context</h3><p>Users select an outcome before seeing how it becomes a realistic personal target.</p></li>
+                <li><h3>Issue #2: Progress complexity</h3><p>Users must compare several metrics to decide whether they are on track.</p></li>
+                <li><h3>Issue #3: Activity data lacks purpose</h3><p>Progress is recorded but doesn’t clarify completion or the next action.</p></li>
+              </ol>
+            </figcaption>
+          </figure>
+          <p class="case-study-prose">The opportunity was to make early tracking feel clear, meaningful, and supportive - so more people returned and stuck to their goals building successful habits and lifetime value.</p>
+        </section>
+
+        <section class="case-study-section site-shell research-section" aria-labelledby="research-title">
+          <div class="case-study-prose">
+            <h2 id="research-title">User research → design priorities</h2>
+            <p>I interviewed 7 people about how they used fitness apps. The findings focused the redesign on reducing decision burden, making completion motivating and supporting users when routines were disrupted.</p>
+          </div>
+          <div class="research-grid">
+            <article class="research-card">
+              <h3>Goal setting creates decision pressure</h3>
+              <div class="research-quote"><blockquote>“It needs to be realistic because... we’re human beings, we’re not machines.”</blockquote><p>Eleni, 34</p></div>
+              <div class="research-priority"><h4>Design priority</h4><p>Recommend a realistic starting goal, explain how it was created and let users adjust it.</p></div>
+            </article>
+            <article class="research-card">
+              <h3>Progress needs a clear sense of “done”</h3>
+              <div class="research-quote"><blockquote>“You need to know immediately: I have done it now - and then you can relax.”</blockquote><p>Gareth, 43</p></div>
+              <div class="research-priority"><h4>Design priority</h4><p>Show a clear daily status, a completion moment and one useful next action.</p></div>
+            </article>
+            <article class="research-card">
+              <h3>Motivation is fragile when routines change</h3>
+              <div class="research-quote"><blockquote>“It’s another thing to get stressed about.”</blockquote><p>Ashley, 36</p></div>
+              <div class="research-priority"><h4>Design priority</h4><p>Let users adjust, pause or recalibrate their goals and easily return after disruption.</p></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="case-study-section case-study-loop-section site-shell" aria-labelledby="loop-title">
+          <div class="case-study-prose"><h2 id="loop-title">Designing a clearer progress loop</h2></div>
+          <figure class="case-study-media case-study-loop-media">
+            <a class="case-study-expandable" href="assets/images/habit-hero-loop-large.webp" aria-label="Open the adaptive progress experience loop at full size"><img src="assets/images/habit-hero-loop.webp?v=2" width="598" height="520" loading="lazy" alt="Circular adaptive progress experience connecting personalised goal setup, clear daily status, actionable guidance, daily completion, weekly review and goal recalibration" /></a>
+            <figcaption>I translated the three design priorities into a connected experience spanning goal setup, daily guidance, completion, weekly review and recalibration. Each stage was designed to address the most important user problems: cognitive overload and confusion as users tried to build a successful habit.</figcaption>
+          </figure>
+        </section>
+
+        <section class="case-study-section site-shell decision-section" aria-labelledby="decision-one-title">
+          <div class="case-study-prose">
+            <h2 id="decision-one-title">Design decision #1: Build confidence before commitment</h2>
+            <p>Goal setting needed to balance guidance with user control. I explored three different ways of helping users establish a realistic target.</p>
+          </div>
+          <div class="decision-options">
+            <article>
+              <p class="decision-label">Option #1</p>
+              <h3>User goal</h3>
+              <p>High control<br />High decision burden</p>
+              <img class="decision-option-image" src="assets/images/habit-hero-option-user-chooses.webp" width="223" height="400" loading="lazy" alt="Low-fidelity mobile wireframe for manually choosing a goal, with user options and a vertical stepper" />
+            </article>
+            <article>
+              <p class="decision-label">Option #2</p>
+              <h3>Assigned goal</h3>
+              <p>Low effort<br />Limited user control</p>
+              <img class="decision-option-image" src="assets/images/habit-hero-option-app-assigns.webp" width="223" height="400" loading="lazy" alt="Low-fidelity mobile wireframe showing an automatically assigned goal, its explanation and controls to accept or manually change it" />
+            </article>
+            <article class="decision-selected">
+              <p class="decision-label">Selected</p>
+              <h3>Recommended goal</h3>
+              <p>Guidance + control<br />Selected direction</p>
+              <img class="decision-option-image" src="assets/images/habit-hero-option-app-recommends.webp" width="223" height="400" loading="lazy" alt="Low-fidelity mobile wireframe showing a recommended goal with an explanation, adjustment controls and an option to accept it" />
+            </article>
+          </div>
+          <div class="case-study-prose"><h3>Balancing automation with user freedom</h3><p>In mid-fidelity, I chose to proceed with a balance of user control and smart recommendations. The app delivers a personalised recommended goal that users could understand, accept and <em>adjust</em> (while retaining optional manual goal as an option). Balancing frictionless onboarding with meaningful goal setting, I developed an onboarding flow with progressive disclosure and user freedom as central features.</p></div>
+          <figure class="case-study-media">
+            <a class="case-study-expandable" href="assets/images/habit-hero-decision-flow-clean-large.webp" aria-label="Open the onboarding flow at full size"><img src="assets/images/habit-hero-decision-flow-clean.webp" width="1320" height="1080" loading="lazy" alt="Onboarding flow from personalised goal loading and confirmation through goal explanation, habit guidance, rewards and optional manual adjustment" /></a>
+          </figure>
+          <p class="case-study-prose case-study-setup-outcome">The aim was to reduce the effort required during setup while creating a context where users felt agency and ownership of their personal fitness goals: a crucial step in successful habit formation.</p>
+          <aside class="finding-callout"><strong>6 of 7 participants were confident about the goal recalibration process,</strong> saying that changes felt coherent and achievable.</aside>
+        </section>
+
+        <section class="case-study-section site-shell decision-section" aria-labelledby="decision-two-title">
+          <div class="case-study-prose"><h2 id="decision-two-title">Design decision #2: Make progress immediately understandable</h2><p>Increasing cognitive load during fragile moments of habit formation led to reduced satisfaction and efficiency. The Home screen needed to update users in seconds and guide them to their next step forward.</p></div>
+          <div class="case-study-split">
+            <figure class="case-study-media"><a class="case-study-expandable" href="assets/images/habit-hero-decision-two-lowfi-large.webp" aria-label="Open the home-screen structure explorations at full size"><img src="assets/images/habit-hero-decision-two-lowfi.webp" width="672" height="672" loading="lazy" alt="Low-fidelity Home screen options exploring the hierarchy and layout of daily status, progress, weekly streaks, goal meaning and reward status" /></a></figure>
+            <p>I explored a wide range of home-screen structures before selecting a direction. By varying the order, scale and grouping of status, progress, streaks and rewards, I could evaluate which hierarchy - of status, progress, streaks and rewards - made daily progress easiest to understand and act on.</p>
+          </div>
+          <div class="case-study-split case-study-split-reverse case-study-status-guidance">
+            <div><h3>Prioritising status and guidance</h3><p>The selected design, therefore:</p><ul><li>made the user’s current position immediately visible;</li><li>included tooltips for users who needed greater explanation of their progress status;</li><li>kept metrics, weekly progress and rewards secondary - but accessible;</li><li>created space for contextual guidance on the user’s next step.</li></ul></div>
+            <figure class="case-study-media case-study-phone-media"><a class="case-study-expandable" href="assets/images/habit-hero-status-guidance-large.webp" aria-label="Open the selected progress-status screen at full size"><img src="assets/images/habit-hero-status-guidance.webp" width="157" height="400" loading="lazy" alt="Mid-fidelity HabitHero Home screen prioritising current status, today’s progress and focus, weekly activity and rewards" /></a></figure>
+          </div>
+          <aside class="finding-callout"><strong>5 of 7 participants struggled to understand how HabitHero calculated their daily status.</strong></aside>
+          <div class="case-study-split">
+            <div><h3>Users also needed the system logic to be visible and adjustable.</h3><p>Testing showed that visual hierarchy alone did not make progress fully understandable as users were able to view their status but didn’t <em>understand</em> it.</p><p>I, therefore, added:</p><ul><li>clearer explanation of the day model</li><li>controls for how progress and notifications</li><li>an added splash screen during setup.</li></ul></div>
+            <figure class="case-study-media"><a class="case-study-expandable" href="assets/images/habit-hero-system-logic-large.webp" aria-label="Open the system-logic screens at full size"><img src="assets/images/habit-hero-system-logic.webp" width="653" height="400" loading="lazy" alt="High-fidelity HabitHero settings, daily-progress explanation and Home screens showing adjustable controls and visible system logic" /></a></figure>
+          </div>
+        </section>
+
+        <section class="case-study-section site-shell decision-section" aria-labelledby="decision-three-title">
+          <div class="case-study-prose"><h2 id="decision-three-title">Design decision #3: Design for recovery, not perfection</h2><p>Research showed that motivation could weaken quickly when goals were missed. Using user flows to empathise with all user states, I explored how prompts, completion states and weekly feedback could recognise partial progress, provide manageable next actions and make restarting feel normal.</p></div>
+          <figure class="case-study-media case-study-diagram"><a class="case-study-expandable" href="assets/images/habit-hero-daily-flow-v2-large.webp" aria-label="Open the daily progress flow at full size"><span class="case-study-diagram-canvas"><img src="assets/images/habit-hero-daily-flow-v2.webp" width="1320" height="306" loading="lazy" alt="Detailed daily progress user flow showing status calculation, notification re-engagement and multiple routes for completing, delaying or recovering a goal" /><span class="finding-marker finding-marker-1" aria-hidden="true">1</span><span class="finding-marker finding-marker-2" aria-hidden="true">2</span><span class="finding-marker finding-marker-3" aria-hidden="true">3</span></span></a><figcaption>Daily progress tracking responds to current state, re-engages users and provides more than one route back to progress. Open the diagram to inspect it at full size.</figcaption></figure>
+          <ol class="decision-grid">
+            <li><h3>App response depends on the user’s current state</h3><p>The system converts step count and time-of-day into a clear daily status (calculating status by % of steps taken vs. % of active hours remaining) helping goals feel achievable and meaningful.</p></li>
+            <li><h3>Notifications re-engage users with daily progress updates</h3><p>The cycle can begin when the user opens the app or when the system evaluates progress and sends a notification helping users who are off track to act early to complete their daily goals.</p></li>
+            <li><h3>Multiple routes support recovery</h3><p>The system does not depend on a single successful response. Users can act now, delay, return later, review progress or change the goal, creating multiple routes back into the experience and towards success.</p></li>
+          </ol>
+          <figure class="case-study-media case-study-diagram"><a class="case-study-expandable" href="assets/images/habit-hero-weekly-flow-v2-large.webp" aria-label="Open the weekly progress flow at full size"><span class="case-study-diagram-canvas"><img src="assets/images/habit-hero-weekly-flow-v2.webp" width="1320" height="438" loading="lazy" alt="Detailed weekly progress user flow showing personalised goal recalibration, automatic and manual goal updates, progress review and return to daily tracking" /><span class="finding-marker finding-marker-4" aria-hidden="true">4</span><span class="finding-marker finding-marker-5" aria-hidden="true">5</span><span class="finding-marker finding-marker-6" aria-hidden="true">6</span></span></a><figcaption>Weekly progress tracking makes recalibration transparent and reinforces progress before the next cycle. Open the diagram to inspect it at full size.</figcaption></figure>
+          <ol class="decision-grid" start="4">
+            <li><h3>Weekly progress triggers personalised goal recalibration</h3><p>A new goal is suggested after weekly review based on last 7-days’ steps. The aim is to maintain challenge while avoiding goals that feel too easy or discouraging, supporting retention by keeping goals realistic and motivating.</p></li>
+            <li><h3>Automatic updates remain transparent</h3><p>The user sees the proposed goal and the reasoning behind it before deciding whether to accept the change. Moreover, users retain the ability to manually create a goal rather than being forced to accept an automated recommendation.</p></li>
+            <li><h3>Weekly closure reinforces progress</h3><p>Weekly closure helps users make sense of their effort, explains the outcome and creates a clear transition into the following week.</p></li>
+          </ol>
+          <aside class="finding-callout"><strong>7 of 7 participants found notifications and recovery prompts useful.</strong></aside>
+          <div class="case-study-split">
+            <div><h3>Testing validated the recovery concept</h3><p>Testing validated the recovery concept also showed that recovery needed more user control and clearer closure. 4/7 participants wanted greater control over notification behaviour, while 6/7 struggled to understand the weekly success rule.</p><p>This led me to:</p><ul><li>refine UX copy</li><li>build out the notification system to enable greater flexibility</li><li>simplify historical progress view.</li></ul></div>
+            <figure class="case-study-media"><a class="case-study-expandable" href="assets/images/habit-hero-recovery.webp" aria-label="Open the notification and recovery screens at full size"><img src="assets/images/habit-hero-recovery.webp" width="692" height="440" loading="lazy" alt="Notification setup, recovery prompt and weekly progress screens" /></a></figure>
+          </div>
+        </section>
+
+        <section class="case-study-section site-shell" aria-labelledby="final-title">
+          <div class="case-study-prose"><h2 id="final-title">Final experience</h2><p>The final prototype connected goal setup, daily status, recovery prompts, weekly review and recalibration into one progress loop. Each screen was designed to reduce interpretation, explain system decisions and give users a clear next step.</p></div>
+          <figure class="case-study-media"><a class="case-study-expandable" href="assets/images/habit-hero-final.webp" aria-label="Open the final HabitHero screens at full size"><img src="assets/images/habit-hero-final.webp" width="1231" height="775" loading="lazy" alt="Five final HabitHero screens showing goal loading, daily progress, recovery guidance, weekly progress and recalibration" /></a><figcaption>The final experience connects goal setup, daily guidance, recovery and review.</figcaption></figure>
+          <div class="case-study-prose"><p>The project helped me move from designing individual screens to designing a habit formation system. The most important shift was recognising that fitness tracking is not only about showing progress; it is also about how the product responds when progress is uneven. The strongest parts of the final design came from treating missed goals, changing routines and user control as central product problems rather than edge cases.</p><h3>Next steps?</h3><p>Before development, the adaptive-goal logic would need validation with product and health specialists. Notification timing, frequency and tone would also require testing to ensure that prompts remain useful rather than intrusive or demotivating.</p><p>The next phase would be a beta study examining whether users:</p><ul><li>return to the app after missing several days;</li><li>continue to view adaptive goals as supportive;</li><li>understand their long-term progress.</li></ul></div>
+        </section>
+
+        <nav class="case-study-project-nav site-shell" aria-label="Project navigation">
+          <a class="button-link" href="projects.html">&larr; All projects</a>
+          <a class="button-link" href="projects.html#ai-educator-project">Next project <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
+        </nav>
+      </article>
+    </main>
+
+    <dialog class="case-study-lightbox" aria-label="Expanded case-study image">
+      <button class="case-study-lightbox-close" type="button" aria-label="Close expanded image">
+        <svg aria-hidden="true"><use href="#icon-close"></use></svg>
+      </button>
+      <img class="case-study-lightbox-image" src="" alt="" />
+    </dialog>
+
+    <footer class="site-footer"><div class="site-shell"><p>&copy; <span id="year"></span> James Spiller</p></div></footer>
+    <script src="scripts.js?v=8"></script>
+  </body>
+</html>
