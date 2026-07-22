@@ -207,6 +207,8 @@ if (imageDialog && imageDialogImage && typeof imageDialog.showModal === "functio
       event.preventDefault();
       imageDialogImage.src = link.href;
       imageDialogImage.alt = previewImage?.alt || "Expanded case-study image";
+      imageDialog.classList.toggle("case-study-lightbox-fit-height", link.dataset.lightboxFit === "height");
+      imageDialog.classList.toggle("case-study-lightbox-fit-flow-height", link.dataset.lightboxFit === "flow-height");
       imageDialog.showModal();
       document.body.classList.add("lightbox-open");
     });
@@ -224,6 +226,8 @@ if (imageDialog && imageDialogImage && typeof imageDialog.showModal === "functio
 
   imageDialog.addEventListener("close", () => {
     document.body.classList.remove("lightbox-open");
+    imageDialog.classList.remove("case-study-lightbox-fit-height");
+    imageDialog.classList.remove("case-study-lightbox-fit-flow-height");
     imageDialogImage.removeAttribute("src");
     imageDialogImage.alt = "";
   });
