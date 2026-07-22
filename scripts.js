@@ -11,29 +11,80 @@ const accessibilityPanels = [...document.querySelectorAll(".accessibility-panel"
 const accessibilityTriggers = [...document.querySelectorAll('[data-action="theme"], [data-action="contrast"]')];
 let activeAccessibilityTrigger = null;
 
+const displayPalettes = {
+  dark: {
+    "--bg": { base: "#1d1d1d", contrast: "#000000" },
+    "--text": { base: "#f7f7f5", contrast: "#ffffff" },
+    "--soft-text": { base: "#d0d0cd", contrast: "#ffffff" },
+    "--muted-text": { base: "#9c9c99", contrast: "#ffffff" },
+    "--panel": { base: "#ffffff", contrast: "#ffffff" },
+    "--panel-text": { base: "#1d1d1d", contrast: "#000000" },
+    "--line": { base: "#4d4d4a", contrast: "#ffffff" },
+    "--accent": { base: "#f0c8f6", contrast: "#ff9fff" },
+    "--focus": { base: "#f49cff", contrast: "#ffff00" },
+    "--salient-teal": { base: "#71d1c8", contrast: "#a9fff6" },
+    "--salient-orange": { base: "#f2ad3d", contrast: "#ffd166" },
+    "--salient-surface": { base: "#12383a", contrast: "#000000" },
+    "--salient-on-accent": { base: "#071c20", contrast: "#000000" },
+  },
+  light: {
+    "--bg": { base: "#f5f5f1", contrast: "#ffffff" },
+    "--text": { base: "#1d1d1d", contrast: "#000000" },
+    "--soft-text": { base: "#30302f", contrast: "#000000" },
+    "--muted-text": { base: "#5f5f5c", contrast: "#000000" },
+    "--panel": { base: "#ffffff", contrast: "#ffffff" },
+    "--panel-text": { base: "#1d1d1d", contrast: "#000000" },
+    "--line": { base: "#b9b9b4", contrast: "#000000" },
+    "--accent": { base: "#8e3f9c", contrast: "#5e006c" },
+    "--focus": { base: "#861e99", contrast: "#43004d" },
+    "--salient-teal": { base: "#006b76", contrast: "#004650" },
+    "--salient-orange": { base: "#a85600", contrast: "#713200" },
+    "--salient-surface": { base: "#e7f3f1", contrast: "#ffffff" },
+    "--salient-on-accent": { base: "#ffffff", contrast: "#ffffff" },
+  },
+};
+
 function clampSetting(value) {
   return Math.min(100, Math.max(0, Number.isFinite(value) ? value : 0));
+}
+
+function hexToRgb(hex) {
+  const value = hex.replace("#", "");
+  return [0, 2, 4].map((offset) => Number.parseInt(value.slice(offset, offset + 2), 16));
+}
+
+function mixColor(from, to, amount) {
+  const start = hexToRgb(from);
+  const end = hexToRgb(to);
+  const channels = start.map((channel, index) => Math.round(channel + (end[index] - channel) * amount));
+  return `#${channels.map((channel) => channel.toString(16).padStart(2, "0")).join("")}`;
 }
 
 function setTheme(isDark, persist = true) {
   root.dataset.theme = isDark ? "dark" : "light";
   if (darkModeControl) darkModeControl.checked = isDark;
   if (persist) localStorage.setItem("portfolio-theme", isDark ? "dark" : "light");
+  updateDisplaySettings(false);
 }
 
 function updateDisplaySettings(persist = true) {
   const lightness = clampSetting(Number(lightnessControl?.value || 0));
   const contrast = clampSetting(Number(contrastControl?.value || 0));
 
-  root.style.setProperty("--display-brightness", String(1 + lightness * 0.004));
-  root.style.setProperty("--display-contrast", String(1 + contrast * 0.0065));
-  root.classList.toggle("display-adjusted", lightness > 0 || contrast > 0);
+  const palette = displayPalettes[root.dataset.theme === "light" ? "light" : "dark"];
+  const contrastAmount = contrast / 100;
+  const lightnessAmount = (lightness / 100) * 0.3;
 
-  if (contrast === 100) root.dataset.contrast = "high";
-  else delete root.dataset.contrast;
+  Object.entries(palette).forEach(([property, colors]) => {
+    const contrastedColor = mixColor(colors.base, colors.contrast, contrastAmount);
+    const adjustedColor = mixColor(contrastedColor, "#ffffff", lightnessAmount);
+    root.style.setProperty(property, adjustedColor);
+  });
+
+  document.querySelector('meta[name="theme-color"]')?.setAttribute("content", root.style.getPropertyValue("--bg"));
 
   lightnessControl?.setAttribute("aria-valuetext", lightness === 0 ? "Normal" : `${lightness}% brighter`);
-  contrastControl?.setAttribute("aria-valuetext", contrast === 0 ? "Normal" : `${contrast}% enhanced`);
+  contrastControl?.setAttribute("aria-valuetext", contrast === 0 ? "Normal" : `${contrast}% higher contrast`);
 
   if (persist) {
     localStorage.setItem("portfolio-lightness", String(lightness));
@@ -47,7 +98,6 @@ const initialContrast = savedContrast === "high" ? 100 : clampSetting(Number(sav
 if (lightnessControl) lightnessControl.value = String(initialLightness);
 if (contrastControl) contrastControl.value = String(initialContrast);
 setTheme(savedTheme !== "light", false);
-updateDisplaySettings(false);
 
 function setPanelTriggerState(panelId, expanded) {
   accessibilityTriggers
@@ -132,6 +182,29 @@ document.addEventListener("click", (event) => {
 
 document.querySelectorAll(".pending-link").forEach((link) => {
   link.addEventListener("click", (event) => event.preventDefault());
+});
+
+document.querySelectorAll(".project-card-interactive[data-project-href]").forEach((card) => {
+  card.addEventListener("click", (event) => {
+    const clickedElement = event.target instanceof Element ? event.target : null;
+    const clickedInteractiveElement = clickedElement?.closest(
+      "a, button, input, textarea, select, label"
+    );
+
+    if (
+      event.defaultPrevented ||
+      clickedInteractiveElement ||
+      event.button !== 0 ||
+      event.metaKey ||
+      event.ctrlKey ||
+      event.shiftKey ||
+      event.altKey
+    ) {
+      return;
+    }
+
+    window.location.assign(card.dataset.projectHref);
+  });
 });
 
 const copyEmailButton = document.querySelector("[data-copy-email]");

@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;900&amp;family=Archivo+Black&amp;family=Lato:wght@400;700&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=87" />
+    <link rel="stylesheet" href="styles.css?v=110" />
   </head>
   <body id="top" data-page="home">
     <svg class="icon-sprite" aria-hidden="true">
@@ -107,7 +107,7 @@
     <main>
       <section class="home-hero" aria-labelledby="hero-title">
         <div class="site-shell hero-main">
-          <img class="hero-artwork" src="assets/images/hero-artwork.webp" alt="" aria-hidden="true" />
+          <span class="hero-artwork" aria-hidden="true"></span>
           <h1 id="hero-title"><a href="#top">james <span>spiller</span></a></h1>
         </div>
 
@@ -132,7 +132,7 @@
         </div>
 
         <div class="site-shell project-grid">
-          <article class="project-item project-card-interactive" id="habithero">
+          <article class="project-item project-card-interactive" id="habithero" data-project-href="habit-hero.html">
             <div class="project-card-normal">
               <a class="project-image-link" href="habit-hero.html" aria-label="View the HabitHero project">
                 <img src="assets/images/project-habithero.webp" alt="Three HabitHero mobile app screens showing habit progress and goal tracking" />
@@ -156,13 +156,37 @@
             </div>
           </article>
 
-          <article class="project-item project-card-interactive" id="ai-educator">
+          <article class="project-item project-card-interactive" id="salient-bio" data-project-href="salient-bio.html">
             <div class="project-card-normal">
-              <a class="project-image-link" href="projects.html#ai-educator-project" aria-label="View the AI Educator CPD project">
+              <a class="project-image-link" href="salient-bio.html" aria-label="View the Salient Bio case study">
+                <img src="assets/images/project-salient-bio.webp" alt="Salient Bio testing website displayed on a laptop and mobile phone" />
+              </a>
+              <h3>Designing a biotechnology information hub for patients and clinicians</h3>
+              <a class="button-link project-cta" href="salient-bio.html">
+                View project
+                <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+              </a>
+            </div>
+            <div class="project-card-hover">
+              <h3 aria-hidden="true">Designing a biotechnology information hub for patients and clinicians</h3>
+              <p aria-hidden="true">
+                Educational hub helping patients and clinicians find, understand and act on complex
+                microbiome testing information.
+              </p>
+              <a class="button-link" href="salient-bio.html">
+                View project
+                <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-item project-card-interactive" id="ai-educator" data-project-href="ai-educator.html">
+            <div class="project-card-normal">
+              <a class="project-image-link" href="ai-educator.html" aria-label="View the AI Educator CPD case study">
                 <img src="assets/images/project-ai-educator.webp" alt="AI Educator CPD learning experience displayed on a laptop" />
               </a>
               <h3>AI Educator CPD: practical digital learning experience for teachers</h3>
-              <a class="button-link project-cta" href="projects.html#ai-educator-project">
+              <a class="button-link project-cta" href="ai-educator.html">
                 View project
                 <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
               </a>
@@ -173,20 +197,20 @@
                 Bespoke interactive learning experience helping teachers use AI practically, safely
                 and critically in education.
               </p>
-              <a class="button-link" href="projects.html#ai-educator-project">
+              <a class="button-link" href="ai-educator.html">
                 View project
                 <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
               </a>
             </div>
           </article>
 
-          <article class="project-item project-card-interactive" id="online-safety">
+          <article class="project-item project-card-interactive" id="online-safety" data-project-href="talking-about-online-life.html">
             <div class="project-card-normal">
-              <a class="project-image-link" href="projects.html#online-safety-project" aria-label="View the Talking About Online Life project">
+              <a class="project-image-link" href="talking-about-online-life.html" aria-label="View the Talking About Online Life case study">
                 <img src="assets/images/project-online-safety.webp" alt="Online safety micro-learning activity displayed on a tablet" />
               </a>
               <h3>Talking About Online Life: micro-learning for online safety CPD</h3>
-              <a class="button-link project-cta" href="projects.html#online-safety-project">
+              <a class="button-link project-cta" href="talking-about-online-life.html">
                 View project
                 <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
               </a>
@@ -197,36 +221,13 @@
                 Micro-learning experience helping primary school staff approach online safety
                 conversations with confidence.
               </p>
-              <a class="button-link" href="projects.html#online-safety-project">
+              <a class="button-link" href="talking-about-online-life.html">
                 View project
                 <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
               </a>
             </div>
           </article>
 
-          <article class="project-item project-card-interactive" id="salient-bio">
-            <div class="project-card-normal">
-              <a class="project-image-link" href="projects.html#salient-bio-project" aria-label="View the Salient Bio project">
-                <img src="assets/images/project-salient-bio.webp" alt="Salient Bio testing website displayed on a laptop and mobile phone" />
-              </a>
-              <h3>Salient Bio: Making microbiome testing easier to understand</h3>
-              <a class="button-link project-cta" href="projects.html#salient-bio-project">
-                View project
-                <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
-              </a>
-            </div>
-            <div class="project-card-hover">
-              <h3 aria-hidden="true">Salient Bio: Making microbiome testing easier to understand</h3>
-              <p aria-hidden="true">
-                Educational hub helping patients and clinicians find, understand and act on complex
-                microbiome testing information.
-              </p>
-              <a class="button-link" href="projects.html#salient-bio-project">
-                View project
-                <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
-              </a>
-            </div>
-          </article>
         </div>
       </section>
 
@@ -280,6 +281,6 @@
       </div>
     </footer>
 
-    <script src="scripts.js?v=10"></script>
+    <script src="scripts.js?v=13"></script>
   </body>
 </html>

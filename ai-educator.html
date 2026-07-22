@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="AI Educator CPD case study: designing practical professional learning for responsible classroom use of generative AI." />
+    <meta name="theme-color" content="#1d1d1d" />
+    <title>AI Educator CPD case study | James Spiller</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;900&amp;family=Archivo+Black&amp;family=Lato:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=110" />
+  </head>
+  <body class="ai-educator-case-study" data-page="projects">
+    <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16" /></symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12" /></symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" /></symbol>
+      <symbol id="icon-contrast" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M12 18a6 6 0 0 0 0-12v12z" /></symbol>
+      <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></symbol>
+    </svg>
+
+    <header class="site-header projects-header">
+      <div class="site-shell header-inner">
+        <a class="logo-mark" href="index.html" aria-label="James Spiller home">js</a>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a class="active" href="projects.html" aria-current="page">Projects</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="index.html#cv">CV</a>
+          <button class="icon-button" type="button" data-action="theme" aria-controls="brightness-panel" aria-expanded="false" aria-label="Open brightness settings" title="Brightness settings"><svg aria-hidden="true"><use href="#icon-sun"></use></svg></button>
+          <button class="icon-button" type="button" data-action="contrast" aria-controls="contrast-panel" aria-expanded="false" aria-label="Open contrast settings" title="Contrast settings"><svg aria-hidden="true"><use href="#icon-contrast"></use></svg></button>
+        </nav>
+        <button class="menu-button" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation"><svg class="menu-open-icon" aria-hidden="true"><use href="#icon-menu"></use></svg><svg class="menu-close-icon" aria-hidden="true"><use href="#icon-close"></use></svg></button>
+      </div>
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+        <a href="index.html">Home</a><a href="projects.html" aria-current="page">Projects</a><a href="index.html#contact">Contact</a><a href="index.html#cv">CV</a>
+        <div class="mobile-accessibility">
+          <button class="icon-button" type="button" data-action="theme" aria-controls="brightness-panel" aria-expanded="false" aria-label="Open brightness settings"><svg aria-hidden="true"><use href="#icon-sun"></use></svg><span>Brightness</span></button>
+          <button class="icon-button" type="button" data-action="contrast" aria-controls="contrast-panel" aria-expanded="false" aria-label="Open contrast settings"><svg aria-hidden="true"><use href="#icon-contrast"></use></svg><span>Contrast</span></button>
+        </div>
+      </nav>
+      <div class="accessibility-panel" id="brightness-panel" role="dialog" aria-label="Brightness settings" hidden>
+        <div class="accessibility-setting-row">
+          <span class="accessibility-panel-title" id="dark-mode-label">Dark mode</span>
+          <label class="accessibility-switch"><input type="checkbox" data-setting="dark-mode" aria-labelledby="dark-mode-label" /><span aria-hidden="true"></span></label>
+        </div>
+        <label class="accessibility-slider"><span class="accessibility-panel-title">Lightness</span><input class="accessibility-range" type="range" min="0" max="100" step="1" value="0" data-setting="lightness" /></label>
+      </div>
+      <div class="accessibility-panel accessibility-panel-contrast" id="contrast-panel" role="dialog" aria-labelledby="contrast-label" hidden>
+        <label class="accessibility-slider"><span class="accessibility-panel-title" id="contrast-label">Contrast</span><input class="accessibility-range" type="range" min="0" max="100" step="1" value="0" data-setting="contrast" /></label>
+      </div>
+    </header>
+
+    <main id="top" class="case-study-page">
+      <article>
+        <header class="case-study-hero site-shell">
+          <a class="case-study-back" href="projects.html">&larr; Back to projects</a>
+          <h1>AI Educator CPD</h1>
+          <p class="ai-educator-subheading">Designing practical professional learning to help primary teachers use generative AI critically, safely and confidently.</p>
+          <ul class="case-study-tags" aria-label="Project disciplines">
+            <li>Learning design</li><li>UX design</li><li>Accessibility</li><li>Front-end development</li><li>Responsible AI</li>
+          </ul>
+          <figure class="case-study-media case-study-hero-media ai-educator-hero-media">
+            <a class="case-study-expandable" href="assets/images/ai-educator-hero.webp" data-lightbox-fit="flow-height" aria-label="Open the AI Educator learning experience at full size">
+              <img src="assets/images/ai-educator-hero.webp" width="1280" height="646" alt="AI Educator module showing a ten-section learning journey, progress indicator and an explanation of generative AI" />
+            </a>
+          </figure>
+          <div class="case-study-prose case-study-intro">
+            <p>Generative AI created a difficult professional-development problem: primary teachers needed a useful starting point, but the subject was changing quickly and carried real risks around pupil data, inaccurate outputs and uncritical adoption.</p>
+            <p>I designed and built a self-directed digital CPD module that moves from basic orientation to realistic school scenarios, risk checks and a small plan for responsible experimentation.</p>
+            <p>The result is a working, responsive learning product. Its effectiveness with teachers still needs evaluation.</p>
+          </div>
+          <dl class="case-study-meta">
+            <div><dt>Role</dt><dd>Learning designer, UX designer &amp; front-end developer</dd></div>
+            <div><dt>Audience</dt><dd>Primary teachers and school staff</dd></div>
+            <div><dt>Format</dt><dd>Self-directed interactive CPD</dd></div>
+          </dl>
+        </header>
+
+        <section class="case-study-section site-shell" aria-labelledby="challenge-title">
+          <div class="case-study-prose">
+            <h2 id="challenge-title">The challenge</h2>
+            <p>The challenge was not a shortage of AI information. Teachers were already encountering an excess of tools, claims and warnings. The more useful question was: what does a teacher need to understand and decide before using an AI-generated output in a real school context?</p>
+            <p>The experience needed to make AI understandable without oversimplifying it, connect abstract risks to familiar tasks and keep the teacher’s professional responsibility visible at every stage.</p>
+            <p>It also had to work as short, independent CPD without requiring a facilitator, user account or specialist learning platform, while avoiding the suggestion that AI was inherently beneficial or safe.</p>
+          </div>
+        </section>
+
+        <section class="case-study-section site-shell" aria-labelledby="strategy-title">
+          <div class="case-study-prose">
+            <h2 id="strategy-title">Three strategic decisions</h2>
+            <p>I used three principles to keep the experience relevant, bounded and usable without a facilitator.</p>
+          </div>
+          <ol class="ai-educator-strategy-grid">
+            <li><span aria-hidden="true">01</span><h3>Start with teacher tasks, not AI products</h3><p>Examples begin with planning, adapting resources and checking work so the technology remains connected to recognisable professional goals.</p></li>
+            <li><span aria-hidden="true">02</span><h3>Keep professional judgement visible</h3><p>Every scenario separates the situation, example prompt and teacher check. Outputs are positioned as material to review, not answers to accept.</p></li>
+            <li><span aria-hidden="true">03</span><h3>End with a bounded experiment</h3><p>The final plan asks teachers to identify one task, protected data, a checking method and a clear definition of success.</p></li>
+          </ol>
+        </section>
+
+        <section class="case-study-section site-shell" aria-labelledby="journey-title">
+          <div class="case-study-prose">
+            <h2 id="journey-title">A learning journey from orientation to action</h2>
+            <p>The ten-section experience uses a persistent navigation list, progress feedback and short interactions to make a longer topic feel manageable. Learners move through explanation, classroom examples, a matching activity, risk guidance, a knowledge check and an action plan.</p>
+            <p>Progress and planning notes are stored locally in the browser. This keeps the experience lightweight and removes the need to transmit the teacher’s draft plan to an external service.</p>
+          </div>
+          <ol class="ai-educator-journey" aria-label="Learning journey">
+            <li>Understand</li><li>Explore</li><li>Practise</li><li>Check</li><li>Plan</li>
+          </ol>
+          <figure class="case-study-media ai-educator-feature-media">
+            <a class="case-study-expandable" href="assets/images/ai-educator-scenario.webp" aria-label="Open the classroom scenario interaction at full size"><img src="assets/images/ai-educator-scenario.webp" width="1280" height="720" loading="lazy" alt="Classroom planning scenario with the situation, an example prompt and a teacher check presented as separate elements" /></a>
+            <figcaption>A classroom scenario keeps the teaching situation, prompt and professional check distinct.</figcaption>
+          </figure>
+        </section>
+
+        <section class="case-study-section site-shell" aria-labelledby="responsible-title">
+          <div class="case-study-prose">
+            <h2 id="responsible-title">Accessibility and responsible use</h2>
+            <p>Responsible use is taught as a decision process: which task, which data, which tool and which checks. Guardrails cover data protection, hallucinations and sustainability, with direct actions teachers can take before using an output.</p>
+            <p>The interface uses semantic controls, visible keyboard focus, labelled progress, readable hierarchy and responsive layouts. Content is divided into short explanations and concrete decisions to reduce cognitive load for people who may be unfamiliar with AI. These are implemented accessibility measures, not a claim of formal WCAG conformance.</p>
+          </div>
+          <div class="ai-educator-media-grid">
+            <figure class="case-study-media">
+              <a class="case-study-expandable" href="assets/images/ai-educator-guardrails.webp" aria-label="Open the responsible-use guardrails at full size"><img src="assets/images/ai-educator-guardrails.webp" width="1280" height="720" loading="lazy" alt="AI use guardrails covering data protection, hallucinations and sustainability" /></a>
+              <figcaption>Guardrails connect each risk to a concrete checking behaviour.</figcaption>
+            </figure>
+            <figure class="case-study-media ai-educator-mobile-media">
+              <a class="case-study-expandable" href="assets/images/ai-educator-mobile-focus.webp" data-lightbox-fit="height" aria-label="Open the mobile keyboard-focus detail at full size"><img src="assets/images/ai-educator-mobile-focus.webp" width="390" height="844" loading="lazy" alt="Mobile layout of the module with a visible focus outline around the Previous button" /></a>
+              <figcaption>The same journey reflows for small screens and retains visible keyboard focus.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="case-study-section site-shell" aria-labelledby="delivery-title">
+          <div class="case-study-prose">
+            <h2 id="delivery-title">AI-assisted delivery with human review</h2>
+            <p>I used AI to accelerate implementation while retaining control of the learning sequence, safeguarding boundaries, interaction choices and final review. Generated patterns were treated as drafts: I manually reviewed navigation, semantic controls, focus behaviour, local-storage messaging and responsive layouts before deployment.</p>
+          </div>
+          <ol class="ai-educator-process">
+            <li>Research and content structure</li><li>Interaction prototype</li><li>AI-assisted implementation</li><li>Manual QA and refinement</li>
+          </ol>
+          <figure class="case-study-media ai-educator-feature-media">
+            <a class="case-study-expandable" href="assets/images/ai-educator-plan.webp" aria-label="Open the locally saved AI use plan at full size"><img src="assets/images/ai-educator-plan.webp" width="1280" height="720" loading="lazy" alt="Four-field AI use plan for task, protected data, output checks and success, followed by a local-storage notice" /></a>
+            <figcaption>The final activity saves a small action plan in the learner’s browser; no form data is sent elsewhere.</figcaption>
+          </figure>
+        </section>
+
+        <section class="case-study-section site-shell" aria-labelledby="outcome-title">
+          <div class="case-study-prose">
+            <h2 id="outcome-title">Outcome and limitations</h2>
+            <p>The project produced a complete, self-contained learning experience rather than a static presentation or Figma prototype. Its ten connected sections combine interactive practice, progress tracking and a locally saved action plan, demonstrating the intended structure and safeguards across desktop and mobile.</p>
+            <aside class="ai-educator-evidence-note"><strong>Evidence boundary:</strong> this is delivery evidence, not evidence of improved teacher confidence, classroom practice or pupil outcomes.</aside>
+          </div>
+        </section>
+
+        <section class="case-study-section site-shell" aria-labelledby="reflection-title">
+          <div class="case-study-prose">
+            <h2 id="reflection-title">Reflection and next steps</h2>
+            <p>The central lesson was that responsible AI education should begin with the task, the data and the professional judgement required—not with the novelty of a tool. Making the teacher check visible throughout the journey helped keep that boundary clear.</p>
+            <p>The next step is moderated testing with teachers at different confidence levels. I would examine where learners pause or skip, whether the scenario structure supports transfer to their own work and whether the final plan feels specific enough to use. Findings would guide changes to content order, interaction support and the scope of the action plan.</p>
+          </div>
+          <section class="case-study-links" aria-labelledby="case-study-links-title">
+            <h3 id="case-study-links-title">Link</h3>
+            <ul><li><a href="https://jamesuxer.github.io/ai-educator-cpd/" target="_blank" rel="noopener noreferrer">Open the live AI Educator CPD module</a></li></ul>
+          </section>
+        </section>
+
+        <nav class="case-study-project-nav site-shell" aria-label="Project navigation">
+          <a class="button-link" href="salient-bio.html">&larr; Previous project</a>
+          <a class="button-link" href="talking-about-online-life.html">Next project <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
+        </nav>
+      </article>
+    </main>
+
+    <dialog class="case-study-lightbox" aria-label="Expanded case-study image">
+      <button class="case-study-lightbox-close" type="button" aria-label="Close expanded image"><svg aria-hidden="true"><use href="#icon-close"></use></svg></button>
+      <img class="case-study-lightbox-image" src="" alt="" />
+    </dialog>
+
+    <footer class="site-footer"><div class="site-shell"><p>&copy; <span id="year"></span> James Spiller</p></div></footer>
+    <script src="scripts.js?v=13"></script>
+  </body>
+</html>

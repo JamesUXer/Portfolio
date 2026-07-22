@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Designing a biotechnology information hub for patients and clinicians." />
+    <meta name="theme-color" content="#1d1d1d" />
+    <title>Designing a biotechnology information hub for patients and clinicians | James Spiller</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;900&amp;family=Archivo+Black&amp;family=Lato:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=110" />
+  </head>
+  <body class="salient-case-study" data-page="projects">
+    <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16" /></symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12" /></symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" /></symbol>
+      <symbol id="icon-contrast" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M12 18a6 6 0 0 0 0-12v12z" /></symbol>
+      <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></symbol>
+    </svg>
+
+    <header class="site-header projects-header">
+      <div class="site-shell header-inner">
+        <a class="logo-mark" href="index.html" aria-label="James Spiller home">js</a>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a class="active" href="projects.html" aria-current="page">Projects</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="index.html#cv">CV</a>
+          <button class="icon-button" type="button" data-action="theme" aria-controls="brightness-panel" aria-expanded="false" aria-label="Open brightness settings" title="Brightness settings"><svg aria-hidden="true"><use href="#icon-sun"></use></svg></button>
+          <button class="icon-button" type="button" data-action="contrast" aria-controls="contrast-panel" aria-expanded="false" aria-label="Open contrast settings" title="Contrast settings"><svg aria-hidden="true"><use href="#icon-contrast"></use></svg></button>
+        </nav>
+        <button class="menu-button" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation"><svg class="menu-open-icon" aria-hidden="true"><use href="#icon-menu"></use></svg><svg class="menu-close-icon" aria-hidden="true"><use href="#icon-close"></use></svg></button>
+      </div>
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+        <a href="index.html">Home</a><a href="projects.html" aria-current="page">Projects</a><a href="index.html#contact">Contact</a><a href="index.html#cv">CV</a>
+        <div class="mobile-accessibility">
+          <button class="icon-button" type="button" data-action="theme" aria-controls="brightness-panel" aria-expanded="false" aria-label="Open brightness settings"><svg aria-hidden="true"><use href="#icon-sun"></use></svg><span>Brightness</span></button>
+          <button class="icon-button" type="button" data-action="contrast" aria-controls="contrast-panel" aria-expanded="false" aria-label="Open contrast settings"><svg aria-hidden="true"><use href="#icon-contrast"></use></svg><span>Contrast</span></button>
+        </div>
+      </nav>
+      <div class="accessibility-panel" id="brightness-panel" role="dialog" aria-label="Brightness settings" hidden>
+        <div class="accessibility-setting-row">
+          <span class="accessibility-panel-title" id="dark-mode-label">Dark mode</span>
+          <label class="accessibility-switch"><input type="checkbox" data-setting="dark-mode" aria-labelledby="dark-mode-label" /><span aria-hidden="true"></span></label>
+        </div>
+        <label class="accessibility-slider"><span class="accessibility-panel-title">Lightness</span><input class="accessibility-range" type="range" min="0" max="100" step="1" value="0" data-setting="lightness" /></label>
+      </div>
+      <div class="accessibility-panel accessibility-panel-contrast" id="contrast-panel" role="dialog" aria-labelledby="contrast-label" hidden>
+        <label class="accessibility-slider"><span class="accessibility-panel-title" id="contrast-label">Contrast</span><input class="accessibility-range" type="range" min="0" max="100" step="1" value="0" data-setting="contrast" /></label>
+      </div>
+    </header>
+
+    <main id="top" class="case-study-page">
+      <article>
+        <header class="case-study-hero site-shell">
+          <a class="case-study-back" href="projects.html">&larr; Back to projects</a>
+          <h1>Designing a biotechnology information hub for patients and clinicians</h1>
+          <ul class="case-study-tags" aria-label="Project disciplines">
+            <li>Information architecture</li>
+            <li>User research</li>
+            <li>Usability testing</li>
+            <li>Information design</li>
+            <li>Prototyping</li>
+          </ul>
+          <figure class="case-study-media case-study-hero-media salient-hero-media">
+            <a class="case-study-expandable" href="assets/images/salient-bio-hero-large.png" data-lightbox-fit="flow-height" aria-label="Open the Salient Bio learning hub hero visual at full size">
+              <img src="assets/images/salient-bio-hero.png" width="1285" height="360" alt="Three Salient Bio Learn Hub views showing filtered microbiome resources, the learning-hub homepage and a detailed clinical guide" />
+            </a>
+          </figure>
+          <div class="case-study-prose case-study-intro">
+            <p>Salient Bio needed to help patients and clinicians navigate complex microbiome testing information with greater clarity and confidence.</p>
+            <p>I led discovery, translated research findings into design briefs, and ran usability testing with 10 participants: seven patients and three doctors.</p>
+            <p>We designed an intuitive Learn Hub that helps users find relevant guidance quickly, understand the testing journey and assess the credibility and practical value of microbiome testing.</p>
+          </div>
+          <dl class="case-study-meta">
+            <div><dt>Role</dt><dd>UX/Product Designer</dd></div>
+            <div><dt>Timeline</dt><dd>Apr 2026–May 2026</dd></div>
+            <div><dt>Scope</dt><dd>End-to-end team project</dd></div>
+          </dl>
+        </header>
+
+        <section class="case-study-section site-shell salient-challenge-section" aria-labelledby="challenge-title">
+          <div class="case-study-prose">
+            <h2 id="challenge-title">The challenge</h2>
+            <p>Users needed more than access to educational content. They needed to navigate the testing journey confidently and understand whether microbiome testing was credible, valid and useful for their situation.</p>
+            <p>The challenge was to organise complex information into intuitive, efficient routes that delivered the right level of detail at the right moment, without unnecessary friction.</p>
+          </div>
+          <ol class="salient-challenge-grid">
+            <li>
+              <span class="salient-challenge-number" aria-hidden="true">01</span>
+              <h3>Different user contexts</h3>
+              <p>New and existing patients and clinicians approached the hub with different questions, knowledge levels and responsibilities.</p>
+            </li>
+            <li>
+              <span class="salient-challenge-number" aria-hidden="true">02</span>
+              <h3>A journey with multiple entry points</h3>
+              <p>Users could arrive while considering testing, registering a kit, interpreting results, researching a report term or deciding what to do next.</p>
+            </li>
+            <li>
+              <span class="salient-challenge-number" aria-hidden="true">03</span>
+              <h3>Accessible without becoming simplistic</h3>
+              <p>The information needed to reduce scientific complexity without removing limitations, methodology or specialist detail.</p>
+            </li>
+          </ol>
+          <p class="salient-opportunity">The opportunity was to create a single educational destination that gives patients and clinicians a shared reference point, supports different routes through the testing journey, and makes complex information easier to find, understand and act on.</p>
+        </section>
+
+        <section class="case-study-section site-shell salient-discovery-section" aria-labelledby="discovery-title">
+          <div class="case-study-prose">
+            <h2 id="discovery-title">Discovery findings → system requirements</h2>
+            <p>Discovery established two requirements for the Learn Hub. The system needed to support flexible entry points while preserving enough structure to orient users through a complex testing journey.</p>
+          </div>
+          <div class="salient-discovery-grid">
+            <article>
+              <p class="salient-section-label">Finding 01</p>
+              <h3>Users needed flexible routes into the same information system</h3>
+              <p>People could arrive through search, product pages, report terms, clinician referral or general curiosity. A single prescribed path would not reflect those different starting points.</p>
+            </article>
+            <article>
+              <p class="salient-section-label">Finding 02</p>
+              <h3>Complex information needed to be simplified without flattening different user needs</h3>
+              <p>Patients needed clear orientation and plain-language explanations, while clinicians needed access to terminology, methodology, limitations and supporting resources.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="case-study-section site-shell salient-ia-section" aria-labelledby="ia-title">
+          <div class="case-study-prose">
+            <h2 id="ia-title">Designing one information system for different routes and levels of detail</h2>
+            <p>Instead of organising the Learn Hub solely around internal content categories, we structured it around the questions users were trying to answer and the stage of testing they were in.</p>
+            <p>Guided journey routes provided orientation, while search, contextual definitions and clinician resources gave users more direct access when they arrived with a specific question or term.</p>
+          </div>
+          <figure class="salient-ia-figure">
+            <div class="salient-route-comparison" aria-label="Homepage structure simplified from five competing destinations to three clearer routes">
+              <div><span>Earlier structure</span><strong>Five competing homepage destinations</strong></div>
+              <span class="salient-route-arrow" aria-hidden="true">→</span>
+              <div><span>Clearer structure</span><strong>Guided journeys · Search · Clinician support</strong></div>
+            </div>
+            <div class="salient-system-map">
+              <div class="salient-system-hub"><span>Shared destination</span><strong>Salient Bio Learn Hub</strong></div>
+              <div class="salient-system-search"><span>Cross-cutting access</span><strong>Search and filtering</strong></div>
+              <div class="salient-system-route"><span>Patient journey</span><strong>Before testing</strong></div>
+              <div class="salient-system-route"><span>Patient journey</span><strong>During testing</strong></div>
+              <div class="salient-system-route"><span>Patient journey</span><strong>After testing</strong></div>
+              <div class="salient-system-route"><span>Shared support</span><strong>Contextual terminology</strong></div>
+              <div class="salient-system-route"><span>Professional route</span><strong>Clinician resources</strong></div>
+            </div>
+            <a class="case-study-expandable" href="assets/images/salient-bio-ia-homepage.png" aria-label="Open the simplified Learn Hub homepage structure at full size">
+              <img src="assets/images/salient-bio-ia-homepage.png" width="1333" height="750" loading="lazy" alt="Final Learn Hub homepage showing search and four visible journey routes for testing decisions, the testing process, results and clinician resources" />
+            </a>
+            <figcaption>The final homepage makes guided journey routes visible while retaining search and a connected clinician pathway.</figcaption>
+          </figure>
+        </section>
+
+        <section class="case-study-section site-shell salient-evidence-section" aria-labelledby="evidence-title">
+          <div class="case-study-prose">
+            <h2 id="evidence-title">How to interpret the testing evidence</h2>
+          </div>
+          <div class="salient-evidence-grid">
+            <article><h3>Small task samples</h3><p>Most individual tasks were completed by six participants. The next-steps task had five participants.</p></article>
+            <article><h3>No time-on-task data</h3><p>Timing was not captured, so conclusions should focus on route clarity, completion, confidence, comprehension and observed friction.</p></article>
+            <article><h3>Directional evidence</h3><p>Some confidence and reassurance signals were supported by participant comments. The results should guide design decisions, not be presented as population-level proof.</p></article>
+          </div>
+        </section>
+
+        <section class="case-study-section site-shell salient-decision-section" aria-labelledby="entry-title">
+          <div class="case-study-prose">
+            <p class="salient-section-label">Design decision 01</p>
+            <h2 id="entry-title">Strengthen entry points into decision support</h2>
+            <p><strong>Design intention.</strong> The homepage needed to help people decide whether testing was relevant without allowing one access method to overpower the guided routes.</p>
+            <p><strong>Prototype behaviour.</strong> Search was prominent, but suitability guidance competed with other destinations and one intended “Is this test right for me?” route was not connected in the prototype.</p>
+          </div>
+          <ul class="salient-metric-grid" aria-label="Suitability task evidence">
+            <li><strong>4 of 6</strong><span>completed the task</span></li>
+            <li><strong>2 of 6</strong><span>stayed close to the intended route</span></li>
+            <li><strong>50%</strong><span>first-click success</span></li>
+          </ul>
+          <blockquote class="salient-quote">“It felt buried. Expected a CTA and product/service route.”</blockquote>
+          <div class="case-study-prose salient-interpretation">
+            <p>Users found relevant content through plausible but indirect routes. The issue was route clarity at a decision point, rather than evidence that the content itself lacked value. The missing prototype link also means the result reflects both information architecture and prototype completeness.</p>
+          </div>
+          <div class="salient-comparison-grid">
+            <figure class="case-study-media">
+              <a class="case-study-expandable" href="assets/images/salient-bio-entry-before.png" aria-label="Open the earlier homepage entry-point design at full size"><img src="assets/images/salient-bio-entry-before.png" width="1333" height="750" loading="lazy" alt="Earlier Learn Hub homepage with a dominant search area and suitability guidance positioned among several competing destinations" /></a>
+              <figcaption><strong>Earlier prototype.</strong> Relevant routes existed, but suitability support was easy to miss or reach indirectly.</figcaption>
+            </figure>
+            <figure class="case-study-media salient-proposed-figure">
+              <span class="salient-proposed-label">Proposed refinement after testing</span>
+              <a class="case-study-expandable" href="assets/images/salient-bio-entry-revised.png" aria-label="Open the revised homepage entry-point design at full size"><img src="assets/images/salient-bio-entry-revised.png" width="1333" height="750" loading="lazy" alt="Revised Learn Hub homepage with reduced search prominence, visible journey cards and clearer direct navigation" /></a>
+              <figcaption>Fewer competing choices, clearer signposting and more explicit decision-support routes. This revision was prompted by testing and is not presented as subsequently validated.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="case-study-section site-shell salient-decision-section" aria-labelledby="search-title">
+          <div class="case-study-prose">
+            <p class="salient-section-label">Design decision 02</p>
+            <h2 id="search-title">Make search results easier to interpret</h2>
+            <p><strong>Design intention.</strong> Search gave users a direct route when they arrived with a specific question, term or testing concern.</p>
+            <p><strong>Prototype behaviour.</strong> Relevant content was usually reachable, but active filters, topic chips, suggested searches and article results were not always easy to distinguish.</p>
+          </div>
+          <ul class="salient-metric-grid" aria-label="Search task evidence">
+            <li><strong>83%</strong><span>search-task success</span></li>
+            <li><strong>92%</strong><span>weighted usefulness</span></li>
+            <li><strong>5 of 6</strong><span>said results matched expectations</span></li>
+            <li><strong>50%</strong><span>experienced a filter or topic-chip issue</span></li>
+            <li><strong>0.5</strong><span>average path deviation</span></li>
+          </ul>
+          <div class="case-study-prose salient-interpretation">
+            <p>Search worked well as a direct access route, but the results page still needed to explain its own hierarchy. The revision separates the search term, proposed quick answer, primary article results, active filters, suggested searches, related topics and routes back into the wider Learn Hub.</p>
+          </div>
+          <ol class="salient-hierarchy-list" aria-label="Proposed search-results hierarchy">
+            <li><span>01</span><strong>Search term</strong></li>
+            <li><span>02</span><strong>Clearly labelled quick-answer concept</strong></li>
+            <li><span>03</span><strong>Primary article results</strong></li>
+            <li><span>04</span><strong>Visibly active filters</strong></li>
+            <li><span>05</span><strong>Suggested searches and related topics presented as separate groups</strong></li>
+            <li><span>06</span><strong>Clear routes back into the wider Learn Hub</strong></li>
+          </ol>
+          <div class="salient-comparison-grid">
+            <figure class="case-study-media">
+              <a class="case-study-expandable" href="assets/images/salient-bio-search-before.png" aria-label="Open the earlier search-results design at full size"><img src="assets/images/salient-bio-search-before.png" width="1333" height="750" loading="lazy" alt="Earlier search-results page where active filters, topic chips and result cards competed for attention" /></a>
+              <figcaption><strong>Earlier prototype.</strong> Results were relevant, but filtering controls and topic chips required interpretation.</figcaption>
+            </figure>
+            <figure class="case-study-media salient-proposed-figure">
+              <span class="salient-proposed-label">Proposed iteration</span>
+              <a class="case-study-expandable" href="assets/images/salient-bio-search-revised.png" aria-label="Open the proposed revised search-results hierarchy at full size"><img src="assets/images/salient-bio-search-revised.png" width="1333" height="750" loading="lazy" alt="Proposed search-results hierarchy with a quick-answer concept, visibly active filters and a larger primary article result" /></a>
+              <figcaption>The quick-answer feature is a proposed response to interpretation needs, not a tested outcome.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="case-study-section site-shell salient-decision-section" aria-labelledby="definitions-title">
+          <div class="case-study-prose">
+            <p class="salient-section-label">Design decision 03</p>
+            <h2 id="definitions-title">Keep definitions within the user’s context</h2>
+            <p><strong>Design intention.</strong> Glossary support was intended to make specialist terminology understandable without removing the scientific detail that gave the content credibility.</p>
+            <p><strong>Prototype behaviour.</strong> Glossary terms looked similar to surrounding text, and opening a separate glossary made it difficult to return to the original reading position.</p>
+          </div>
+          <ul class="salient-metric-grid" aria-label="Glossary task evidence">
+            <li><strong>33%</strong><span>strict glossary success</span></li>
+            <li><strong>67%</strong><span>experienced a clear loss-of-place issue</span></li>
+            <li><strong>High confidence</strong><span>once definition support was located</span></li>
+          </ul>
+          <blockquote class="salient-quote">“Link looked the same as surrounding text; could not click back from glossary to article.”</blockquote>
+          <div class="case-study-prose salient-interpretation">
+            <p>The proposed revision makes technical terms visibly interactive and opens definitions in an in-place popover or side panel. Users retain their reading position while specialist detail remains available without interrupting the main explanation.</p>
+          </div>
+          <div class="salient-comparison-grid">
+            <figure class="case-study-media">
+              <a class="case-study-expandable" href="assets/images/salient-bio-glossary-before.png" aria-label="Open the earlier glossary interaction at full size"><img src="assets/images/salient-bio-glossary-before.png" width="1333" height="750" loading="lazy" alt="Earlier article and glossary interaction where a linked technical term was difficult to recognise and leaving the article caused loss of place" /></a>
+              <figcaption><strong>Before.</strong> The glossary link was difficult to recognise and moved users away from the article.</figcaption>
+            </figure>
+            <figure class="case-study-media salient-proposed-figure">
+              <span class="salient-proposed-label">Proposed revision</span>
+              <a class="case-study-expandable" href="assets/images/salient-bio-glossary-revised.png" aria-label="Open the proposed contextual-definition interaction at full size"><img src="assets/images/salient-bio-glossary-revised.png" width="1333" height="750" loading="lazy" alt="Proposed article interaction with highlighted glossary terms and an in-place definition panel that preserves reading position" /></a>
+              <figcaption>This in-context definition behaviour was prompted by testing and is not presented as subsequently validated.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="case-study-section site-shell salient-connected-section" aria-labelledby="connected-title">
+          <div class="case-study-prose">
+            <h2 id="connected-title">A connected support system across the testing journey</h2>
+            <p>The final concept combines guided journey routes with direct access to specific information. Patients and clinicians can move through the Learn Hub according to their stage, question and level of knowledge without being forced through one prescribed pathway.</p>
+          </div>
+          <article class="salient-experience-group">
+            <div class="salient-experience-copy">
+              <p class="salient-section-label">Group 01</p>
+              <h3>Patient journey</h3>
+              <p>Guided routes connect deciding whether testing is relevant, kit registration, understanding results and deciding what to do next.</p>
+              <ul class="salient-compact-metrics"><li><strong>92%</strong> procedural clarity</li><li><strong>67%</strong> step-order comprehension</li><li><strong>100%</strong> next-step success</li><li><strong>4.75/5</strong> average next-step confidence</li></ul>
+            </div>
+            <figure class="case-study-media"><a class="case-study-expandable" href="assets/images/salient-bio-patient-journey.png" aria-label="Open the connected patient testing journey at full size"><img src="assets/images/salient-bio-patient-journey.png" width="1333" height="750" loading="lazy" alt="Four connected Learn Hub screens covering before testing, during testing, after testing and diagnostic gut-health results" /></a><figcaption>Practical guidance connects each stage of the patient testing journey.</figcaption></figure>
+          </article>
+          <article class="salient-experience-group">
+            <div class="salient-experience-copy">
+              <p class="salient-section-label">Group 02</p>
+              <h3>Search and contextual support</h3>
+              <p>Search, active filters, article hierarchy and the proposed quick-answer concept provide direct access, while contextual definitions keep technical support inside the article.</p>
+            </div>
+            <div class="salient-experience-media-grid salient-experience-media-grid-two">
+              <figure class="case-study-media"><a class="case-study-expandable" href="assets/images/salient-bio-search-support.png" aria-label="Open the search and filter support screens at full size"><img src="assets/images/salient-bio-search-support.png" width="1333" height="750" loading="lazy" alt="Search-result screens showing filtered microbiome results and direct information access" /></a><figcaption>Search and active filtering support users who arrive with a specific question.</figcaption></figure>
+              <figure class="case-study-media"><a class="case-study-expandable" href="assets/images/salient-bio-contextual-support.png" aria-label="Open the contextual terminology support screens at full size"><img src="assets/images/salient-bio-contextual-support.png" width="1333" height="750" loading="lazy" alt="Article screens showing result explanations and contextual microbiome terminology support" /></a><figcaption>Contextual definitions reduce interruption while preserving scientific detail.</figcaption></figure>
+            </div>
+          </article>
+          <article class="salient-experience-group">
+            <div class="salient-experience-copy">
+              <p class="salient-section-label">Group 03</p>
+              <h3>Patient and clinician shared support</h3>
+              <p>Plain-language result explanations connect to clinician follow-up, appointment questions, related Health Library content and professional resources.</p>
+              <ul class="salient-compact-metrics"><li><strong>100%</strong> result-meaning success</li><li><strong>100%</strong> comprehension accuracy</li><li><strong>4.5/5</strong> average result confidence</li><li><strong>100%</strong> next-step clarity</li><li><strong>40%</strong> wanted more practical follow-up support</li></ul>
+            </div>
+            <div class="salient-experience-media-grid">
+              <figure class="case-study-media"><a class="case-study-expandable" href="assets/images/salient-bio-clinician-home.png" aria-label="Open the shared patient and clinician support homepage at full size"><img src="assets/images/salient-bio-clinician-home.png" width="1333" height="750" loading="lazy" alt="Clinician-facing Learn Hub homepage connected to the patient journey routes" /></a><figcaption>A clearer route into clinician support.</figcaption></figure>
+              <figure class="case-study-media"><a class="case-study-expandable" href="assets/images/salient-bio-clinician-support.png" aria-label="Open the patient-support and clinician FAQ screens at full size"><img src="assets/images/salient-bio-clinician-support.png" width="1333" height="750" loading="lazy" alt="Patient-support and clinician FAQ screens with report explanations, referral guidance and appointment support" /></a><figcaption>Resources for patient conversations and appropriate next steps.</figcaption></figure>
+              <figure class="case-study-media"><a class="case-study-expandable" href="assets/images/salient-bio-clinician-materials.png" aria-label="Open the professional clinician materials at full size"><img src="assets/images/salient-bio-clinician-materials.png" width="1333" height="750" loading="lazy" alt="Professional Salient Bio materials covering test suitability, interpreting results and technical procedures" /></a><figcaption>Specialist resources remain connected to the same information system.</figcaption></figure>
+            </div>
+          </article>
+          <p class="salient-evidence-note">These task results describe navigation and comprehension within this usability study. They are not evidence of clinical effectiveness, long-term behaviour change or population-level outcomes.</p>
+        </section>
+
+        <section class="case-study-section site-shell salient-enables-section" aria-labelledby="enables-title">
+          <div class="case-study-prose"><h2 id="enables-title">What the design enables</h2></div>
+          <div class="salient-enables-grid">
+            <article><h3>For patients</h3><p>Makes support across the testing journey easier to find, understand and act on.</p></article>
+            <article><h3>For clinicians</h3><p>Provides clearer educational material for explaining reports and discussing appropriate next steps.</p></article>
+            <article><h3>For Salient Bio</h3><p>Turns educational content into a connected support system rather than a larger collection of articles.</p></article>
+          </div>
+        </section>
+
+        <section class="case-study-section site-shell salient-reflection-section" aria-labelledby="reflection-title">
+          <div class="case-study-prose">
+            <h2 id="reflection-title">Reflection and next steps</h2>
+            <p>The strongest contribution was not an individual interface feature, but an information system capable of balancing flexible access, guided journeys, scientific complexity, different levels of user knowledge and shared patient and clinician support.</p>
+            <p>The proposed refinements now need further evaluation. They should be treated as evidence-led directions rather than validated outcomes.</p>
+          </div>
+          <div class="salient-next-steps-grid">
+            <section aria-labelledby="refinements-title">
+              <h3 id="refinements-title">Product refinements</h3>
+              <ul><li>Strengthen homepage entry points and signposting.</li><li>Clarify search-result hierarchy, filters and topic chips.</li><li>Redesign glossary support as in-place popovers or side panels.</li><li>Make kit-registration sequencing explicit with numbered steps.</li><li>Add appointment-preparation prompts.</li><li>Make related Health Library links more visible.</li><li>Refine clinician-resource signposting.</li></ul>
+            </section>
+            <section aria-labelledby="evaluation-title">
+              <h3 id="evaluation-title">Further evaluation</h3>
+              <ul><li>Test with larger and more representative participant groups.</li><li>Capture time-on-task.</li><li>Test whether revised entry points reduce route deviation.</li><li>Validate the proposed quick-answer feature.</li><li>Test the revised glossary interaction.</li><li>Conduct more targeted research with practising microbiome clinicians.</li><li>Assess whether patients and clinicians understand the boundary between education and medical advice.</li></ul>
+            </section>
+          </div>
+        </section>
+
+        <nav class="case-study-project-nav site-shell" aria-label="Project navigation">
+          <a class="button-link" href="habit-hero.html">&larr; Previous project</a>
+          <a class="button-link" href="ai-educator.html">Next project <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
+        </nav>
+      </article>
+    </main>
+
+    <dialog class="case-study-lightbox" aria-label="Expanded case-study image">
+      <button class="case-study-lightbox-close" type="button" aria-label="Close expanded image"><svg aria-hidden="true"><use href="#icon-close"></use></svg></button>
+      <img class="case-study-lightbox-image" src="" alt="" />
+    </dialog>
+
+    <footer class="site-footer"><div class="site-shell"><p>&copy; <span id="year"></span> James Spiller</p></div></footer>
+    <script src="scripts.js?v=13"></script>
+  </body>
+</html>

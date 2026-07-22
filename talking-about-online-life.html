@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Talking About Online Life case study: designing microlearning that turns online-safety guidance into everyday safeguarding practice." />
+    <meta name="theme-color" content="#1d1d1d" />
+    <title>Talking About Online Life case study | James Spiller</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;900&amp;family=Archivo+Black&amp;family=Lato:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=110" />
+  </head>
+  <body class="online-life-case-study" data-page="projects">
+    <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16" /></symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12" /></symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" /></symbol>
+      <symbol id="icon-contrast" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M12 18a6 6 0 0 0 0-12v12z" /></symbol>
+      <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></symbol>
+    </svg>
+
+    <header class="site-header projects-header">
+      <div class="site-shell header-inner">
+        <a class="logo-mark" href="index.html" aria-label="James Spiller home">js</a>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a class="active" href="projects.html" aria-current="page">Projects</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="index.html#cv">CV</a>
+          <button class="icon-button" type="button" data-action="theme" aria-controls="brightness-panel" aria-expanded="false" aria-label="Open brightness settings" title="Brightness settings"><svg aria-hidden="true"><use href="#icon-sun"></use></svg></button>
+          <button class="icon-button" type="button" data-action="contrast" aria-controls="contrast-panel" aria-expanded="false" aria-label="Open contrast settings" title="Contrast settings"><svg aria-hidden="true"><use href="#icon-contrast"></use></svg></button>
+        </nav>
+        <button class="menu-button" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation"><svg class="menu-open-icon" aria-hidden="true"><use href="#icon-menu"></use></svg><svg class="menu-close-icon" aria-hidden="true"><use href="#icon-close"></use></svg></button>
+      </div>
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+        <a href="index.html">Home</a><a href="projects.html" aria-current="page">Projects</a><a href="index.html#contact">Contact</a><a href="index.html#cv">CV</a>
+        <div class="mobile-accessibility">
+          <button class="icon-button" type="button" data-action="theme" aria-controls="brightness-panel" aria-expanded="false" aria-label="Open brightness settings"><svg aria-hidden="true"><use href="#icon-sun"></use></svg><span>Brightness</span></button>
+          <button class="icon-button" type="button" data-action="contrast" aria-controls="contrast-panel" aria-expanded="false" aria-label="Open contrast settings"><svg aria-hidden="true"><use href="#icon-contrast"></use></svg><span>Contrast</span></button>
+        </div>
+      </nav>
+      <div class="accessibility-panel" id="brightness-panel" role="dialog" aria-label="Brightness settings" hidden>
+        <div class="accessibility-setting-row">
+          <span class="accessibility-panel-title" id="dark-mode-label">Dark mode</span>
+          <label class="accessibility-switch"><input type="checkbox" data-setting="dark-mode" aria-labelledby="dark-mode-label" /><span aria-hidden="true"></span></label>
+        </div>
+        <label class="accessibility-slider"><span class="accessibility-panel-title">Lightness</span><input class="accessibility-range" type="range" min="0" max="100" step="1" value="0" data-setting="lightness" /></label>
+      </div>
+      <div class="accessibility-panel accessibility-panel-contrast" id="contrast-panel" role="dialog" aria-labelledby="contrast-label" hidden>
+        <label class="accessibility-slider"><span class="accessibility-panel-title" id="contrast-label">Contrast</span><input class="accessibility-range" type="range" min="0" max="100" step="1" value="0" data-setting="contrast" /></label>
+      </div>
+    </header>
+
+    <main id="top" class="case-study-page">
+      <article>
+        <header class="case-study-hero site-shell">
+          <a class="case-study-back" href="projects.html">&larr; Back to projects</a>
+          <h1>Talking About Online Life</h1>
+          <p class="online-life-subheading">Designing a microlearning experience that makes online safety part of everyday safeguarding practice.</p>
+          <ul class="case-study-tags" aria-label="Project disciplines">
+            <li>Product strategy</li><li>Behaviour change</li><li>Learning design</li><li>Accessibility</li><li>Front-end development</li>
+          </ul>
+          <figure class="case-study-media case-study-hero-media online-life-hero-media">
+            <a class="case-study-expandable" href="assets/images/online-life-hero.webp" data-lightbox-fit="flow-height" aria-label="Open the Talking About Online Life overview at full size">
+              <img src="assets/images/online-life-hero.webp" width="1280" height="720" alt="Talking About Online Life homepage with an exercise-book background, introductory card and childlike classroom illustration" />
+            </a>
+          </figure>
+          <div class="case-study-prose case-study-intro">
+            <p>Online-safety training often concentrates on platforms, risks and formal reporting. I designed this short digital CPD sequence around a different question: how can primary-school staff make children’s online lives easier to talk about before a concern becomes a disclosure?</p>
+            <p>The experience turns safeguarding guidance into repeated stories, choices and small actions that can fit into ordinary school practice.</p>
+            <p>The overview and Weeks 1 and 2 are live. Weeks 3 and 4 remain in development.</p>
+          </div>
+          <dl class="case-study-meta">
+            <div><dt>Role</dt><dd>Product strategist, learning designer, UX designer &amp; front-end developer</dd></div>
+            <div><dt>Audience</dt><dd>Primary-school staff, including non-specialists</dd></div>
+            <div><dt>Format</dt><dd>Four-part microlearning concept</dd></div>
+          </dl>
+        </header>
+
+        <section class="case-study-section site-shell" aria-labelledby="online-life-challenge-title">
+          <div class="case-study-prose">
+            <h2 id="online-life-challenge-title">The challenge: make online life easier to discuss</h2>
+            <p>The core problem was not a lack of online-safety resources. Online life could still feel like a specialist, technical or compliance subject, separate from everyday safeguarding conversations. Staff might assume they need to understand every platform before they can respond usefully.</p>
+            <p>The intervention therefore needed to make the subject ordinary enough to discuss, serious enough to connect to safeguarding responsibilities and small enough to fit existing workload. Curiosity opens communication; it does not replace reporting procedures or professional judgement.</p>
+          </div>
+        </section>
+
+        <section class="case-study-section site-shell" aria-labelledby="online-life-strategy-title">
+          <div class="case-study-prose">
+            <h2 id="online-life-strategy-title">Four strategic decisions</h2>
+          </div>
+          <ol class="online-life-strategy-grid">
+            <li><span aria-hidden="true">01</span><h3>Reframe online safety as everyday safeguarding</h3><p>Games, videos and messages become familiar conversation starters rather than a test of platform expertise.</p></li>
+            <li><span aria-hidden="true">02</span><h3>Use microlearning instead of one-off training</h3><p>Short weekly practice moments reduce the initial burden and allow one behaviour to build through repetition.</p></li>
+            <li><span aria-hidden="true">03</span><h3>Repeat a stable learning pattern</h3><p>Every week moves from a recognisable story to interpretation, guidance, one action and private reflection.</p></li>
+            <li><span aria-hidden="true">04</span><h3>Measure the experience cautiously</h3><p>Page, section and interaction identifiers can show where attention drops without presenting engagement as behaviour change.</p></li>
+          </ol>
+        </section>
+
+        <section class="case-study-section site-shell" aria-labelledby="online-life-model-title">
+          <div class="case-study-prose">
+            <h2 id="online-life-model-title">Story → Notice → Guidance → Try → Reflect</h2>
+            <p>The central model establishes relevance before presenting policy. A short classroom story gives staff something concrete to interpret; selectable options make assumptions visible; concise guidance then connects the moment to safeguarding responsibilities. The sequence finishes with one low-pressure action and a private reflection.</p>
+          </div>
+          <ol class="online-life-sequence" aria-label="Microlearning sequence">
+            <li>Story</li><li>Notice</li><li>Guidance</li><li>Try</li><li>Reflect</li>
+          </ol>
+          <figure class="case-study-media online-life-feature-media">
+            <a class="case-study-expandable" href="assets/images/online-life-storyboard.webp" aria-label="Open the four-panel Maya storyboard at full size"><img src="assets/images/online-life-storyboard.webp" width="1280" height="720" loading="lazy" alt="Four-panel Maya storyboard moving from an excited comment about a game to a teacher asking what she likes about it" /></a>
+            <figcaption>A familiar moment involving Maya appears before formal guidance, reducing the problem to one calm professional choice.</figcaption>
+          </figure>
+          <div class="online-life-comparison-grid">
+            <figure class="case-study-media"><a class="case-study-expandable" href="assets/images/online-life-notice-before.webp" aria-label="Open the unselected Pause and notice interaction at full size"><img src="assets/images/online-life-notice-before.webp" width="1280" height="720" loading="lazy" alt="Pause and notice interaction showing four unselected interpretations of Maya’s classroom comment" /></a><figcaption>Before selection: four interpretations invite reflection without framing the task as a test.</figcaption></figure>
+            <figure class="case-study-media"><a class="case-study-expandable" href="assets/images/online-life-notice-after.webp" aria-label="Open the selected Pause and notice feedback at full size"><img src="assets/images/online-life-notice-after.webp" width="1280" height="720" loading="lazy" alt="Selected Pause and notice option with an immediate supportive explanation and visible focus outline" /></a><figcaption>After selection: immediate, non-punitive feedback explains why the moment matters.</figcaption></figure>
+          </div>
+          <div class="online-life-comparison-grid">
+            <figure class="case-study-media"><a class="case-study-expandable" href="assets/images/online-life-guidance.webp" aria-label="Open the safeguarding guidance in context at full size"><img src="assets/images/online-life-guidance.webp" width="1280" height="720" loading="lazy" alt="Concise safeguarding guidance with linked KCSIE and NSPCC sources, followed by the Try this week heading" /></a><figcaption>Authoritative guidance follows the decision and leads directly into one action for the week.</figcaption></figure>
+            <figure class="case-study-media"><a class="case-study-expandable" href="assets/images/online-life-reflection.webp" aria-label="Open the reflection and commitment controls at full size"><img src="assets/images/online-life-reflection.webp" width="1280" height="720" loading="lazy" alt="Private reflection field with copy, email and weekly commitment controls" /></a><figcaption>Reflection tools support transfer into practice without requiring an account.</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="case-study-section site-shell" aria-labelledby="online-life-system-title">
+          <div class="case-study-prose">
+            <h2 id="online-life-system-title">A reusable visual and interaction system</h2>
+            <p>The exercise-book visual language connects the CPD to classroom practice rather than corporate compliance training. Warm paper tones, ruled pages and childlike illustrations keep the tone calm and reflective. The same structure supports different scenarios and learning objectives across Weeks 1 and 2.</p>
+          </div>
+          <div class="online-life-comparison-grid">
+            <figure class="case-study-media"><a class="case-study-expandable" href="assets/images/online-life-week1.webp" aria-label="Open the Week 1 experience at full size"><img src="assets/images/online-life-week1.webp" width="1280" height="720" loading="lazy" alt="Week 1 page introducing online life as everyday life" /></a><figcaption>Week 1: open one calm conversation.</figcaption></figure>
+            <figure class="case-study-media"><a class="case-study-expandable" href="assets/images/online-life-week2.webp" aria-label="Open the Week 2 experience at full size"><img src="assets/images/online-life-week2.webp" width="1280" height="720" loading="lazy" alt="Week 2 page encouraging regular conversations about online life" /></a><figcaption>Week 2: make those conversations more regular.</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="case-study-section site-shell" aria-labelledby="online-life-accessibility-title">
+          <div class="case-study-prose">
+            <h2 id="online-life-accessibility-title">Accessible delivery and privacy-conscious measurement</h2>
+            <p>The live experience uses semantic headings, a skip link, labelled controls, visible keyboard focus, responsive single-column layouts, pressed states and polite announcements for dynamic feedback. Short sections, concrete language and a repeated pattern also reduce the effort required to interpret sensitive guidance. These are implemented decisions, not a claim of formal WCAG conformance.</p>
+            <p>The static site requires no staff account. Its current Google Analytics setup uses week and page identifiers alongside stable section and button labels. Those events can support aggregate reporting, but the implementation should not be described as fully anonymous until consent, retention and platform-generated identifiers have received a privacy review.</p>
+          </div>
+          <div class="online-life-delivery-grid">
+            <figure class="case-study-media online-life-mobile-media"><a class="case-study-expandable" href="assets/images/online-life-mobile-focus.webp" data-lightbox-fit="height" aria-label="Open the responsive keyboard-focus view at full size"><img src="assets/images/online-life-mobile-focus.webp" width="390" height="844" loading="lazy" alt="Single-column mobile Week 1 page with a high-contrast focus outline around the Begin the story button" /></a><figcaption>Responsive content and a distinct visible focus treatment.</figcaption></figure>
+            <div class="online-life-measurement" role="img" aria-label="Measurement sequence showing week and page viewed, section reached, option selected and reflection action, feeding aggregate reporting">
+              <p class="online-life-measurement-title">Current measurement events</p>
+              <ol><li>Week and page viewed</li><li>Section reached</li><li>Option selected</li><li>Reflection action</li></ol>
+              <p>Aggregate reporting</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="case-study-section site-shell" aria-labelledby="online-life-outcome-title">
+          <div class="case-study-prose">
+            <h2 id="online-life-outcome-title">Outcome, limitations and next steps</h2>
+            <p>The current result is a functioning microlearning system with an overview and two complete weekly experiences. It demonstrates how policy-led content can become stories, decisions and small professional actions; it is not yet a completed four-week programme.</p>
+            <aside class="online-life-evidence-note"><strong>Evidence boundary:</strong> Ofcom statistics used in Week 2 provide context, not product-impact evidence. The build does not yet demonstrate staff behaviour change, safeguarding outcomes, return rates or completion.</aside>
+            <p>The next step is to complete and test Weeks 3 and 4, examine where staff hesitate across the repeated sequence and conduct short interviews about relevance, tone and likelihood of trying the action. The live build references KCSIE 2025 and Ofcom 2024 data, so guidance and contextual statistics also require dated review before wider deployment.</p>
+          </div>
+          <section class="case-study-links" aria-labelledby="online-life-links-title">
+            <h3 id="online-life-links-title">Links</h3>
+            <ul>
+              <li><a href="https://jamesuxer.github.io/talking-about-online-life/" target="_blank" rel="noopener noreferrer">Open the live Talking About Online Life experience</a></li>
+              <li><a href="https://www.gov.uk/government/publications/keeping-children-safe-in-education--2" target="_blank" rel="noopener noreferrer">Current Keeping Children Safe in Education guidance</a></li>
+              <li><a href="https://learning.nspcc.org.uk/online-safety/online-safety-for-schools" target="_blank" rel="noopener noreferrer">NSPCC Learning: online safety and schools</a></li>
+            </ul>
+          </section>
+        </section>
+
+        <nav class="case-study-project-nav site-shell" aria-label="Project navigation">
+          <a class="button-link" href="ai-educator.html">&larr; Previous project</a>
+          <a class="button-link" href="projects.html">All projects <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
+        </nav>
+      </article>
+    </main>
+
+    <dialog class="case-study-lightbox" aria-label="Expanded case-study image">
+      <button class="case-study-lightbox-close" type="button" aria-label="Close expanded image"><svg aria-hidden="true"><use href="#icon-close"></use></svg></button>
+      <img class="case-study-lightbox-image" src="" alt="" />
+    </dialog>
+
+    <footer class="site-footer"><div class="site-shell"><p>&copy; <span id="year"></span> James Spiller</p></div></footer>
+    <script src="scripts.js?v=13"></script>
+  </body>
+</html>
