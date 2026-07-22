@@ -167,13 +167,13 @@ button:focus-visible {
   line-height: 1;
 }
 
-.logo-mark:hover {
+.site-header .logo-mark:hover {
   border-color: #f4daff;
   background: #f4daff;
   color: #1d1d1d;
 }
 
-.logo-mark:active {
+.site-header .logo-mark:active {
   border-color: #ffffff;
   background: #ffffff;
   color: #1d1d1d;
