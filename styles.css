@@ -934,7 +934,7 @@ a.project-image-link:hover img {
   display: grid;
   min-height: calc(100vh - 10rem);
   align-items: start;
-  padding: 100px 0 clamp(4rem, 8vw, 7.5rem);
+  padding: 40px 0 clamp(4rem, 8vw, 7.5rem);
 }
 
 .work-in-progress-layout {
