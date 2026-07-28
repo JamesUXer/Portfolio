@@ -926,6 +926,60 @@ a.project-image-link:hover img {
   grid-column: 1;
 }
 
+.progress-heading h2 a {
+  color: inherit;
+}
+
+.work-in-progress-page {
+  display: grid;
+  min-height: calc(100vh - 10rem);
+  align-items: start;
+  padding: 100px 0 clamp(4rem, 8vw, 7.5rem);
+}
+
+.work-in-progress-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(22rem, 1.15fr);
+  gap: clamp(3rem, 7vw, 7rem);
+  align-items: center;
+}
+
+.work-in-progress-copy {
+  max-width: 39rem;
+}
+
+.work-in-progress-copy h1 {
+  margin-top: 1.25rem;
+  font-family: var(--font-display);
+  font-size: clamp(3.75rem, 7vw, 7rem);
+  line-height: 0.95;
+}
+
+.work-in-progress-copy > p:last-of-type {
+  margin-top: 2rem;
+  color: var(--soft-text);
+  font-size: 1.25rem;
+  line-height: 1.55;
+}
+
+.work-in-progress-copy .button-link {
+  margin-top: 2rem;
+}
+
+.work-in-progress-media {
+  width: min(100%, 42rem);
+  margin: 0;
+  overflow: hidden;
+  justify-self: end;
+  border-radius: 20px;
+  background: #000000;
+}
+
+.work-in-progress-media img {
+  width: 100%;
+  height: auto;
+}
+
 .lawyer-project .progress-media {
   background: var(--bg);
 }
@@ -1183,6 +1237,10 @@ a.project-image-link:hover img {
 .case-study-diagram figcaption,
 .case-study-final-media figcaption {
   margin-inline: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.case-study-final-media + .case-study-prose {
+  margin-top: 2rem;
 }
 
 .case-study-diagram-canvas {
@@ -2639,6 +2697,15 @@ a.project-image-link:hover img {
 }
 
 @media (max-width: 900px) {
+  .work-in-progress-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .work-in-progress-media {
+    width: min(100%, 36rem);
+    justify-self: start;
+  }
+
   .online-life-strategy-grid,
   .online-life-comparison-grid,
   .online-life-delivery-grid {

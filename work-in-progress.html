@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="James Spiller portfolio projects currently in progress." />
+    <meta name="theme-color" content="#1d1d1d" />
+    <title>Work in progress | James Spiller</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;900&amp;family=Archivo+Black&amp;family=Lato:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=116" />
+  </head>
+  <body data-page="projects">
+    <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16" /></symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12" /></symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" /></symbol>
+      <symbol id="icon-contrast" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M12 18a6 6 0 0 0 0-12v12z" /></symbol>
+      <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></symbol>
+    </svg>
+
+    <header class="site-header projects-header">
+      <div class="site-shell header-inner">
+        <a class="logo-mark" href="index.html" aria-label="James Spiller home">js</a>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a class="active" href="projects.html" aria-current="page">Projects</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="index.html#cv">CV</a>
+          <button class="icon-button" type="button" data-action="theme" aria-controls="brightness-panel" aria-expanded="false" aria-label="Open brightness settings" title="Brightness settings"><svg aria-hidden="true"><use href="#icon-sun"></use></svg></button>
+          <button class="icon-button" type="button" data-action="contrast" aria-controls="contrast-panel" aria-expanded="false" aria-label="Open contrast settings" title="Contrast settings"><svg aria-hidden="true"><use href="#icon-contrast"></use></svg></button>
+        </nav>
+        <button class="menu-button" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation"><svg class="menu-open-icon" aria-hidden="true"><use href="#icon-menu"></use></svg><svg class="menu-close-icon" aria-hidden="true"><use href="#icon-close"></use></svg></button>
+      </div>
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+        <a href="index.html">Home</a><a href="projects.html" aria-current="page">Projects</a><a href="index.html#contact">Contact</a><a href="index.html#cv">CV</a>
+        <div class="mobile-accessibility">
+          <button class="icon-button" type="button" data-action="theme" aria-controls="brightness-panel" aria-expanded="false" aria-label="Open brightness settings"><svg aria-hidden="true"><use href="#icon-sun"></use></svg><span>Brightness</span></button>
+          <button class="icon-button" type="button" data-action="contrast" aria-controls="contrast-panel" aria-expanded="false" aria-label="Open contrast settings"><svg aria-hidden="true"><use href="#icon-contrast"></use></svg><span>Contrast</span></button>
+        </div>
+      </nav>
+      <div class="accessibility-panel" id="brightness-panel" role="dialog" aria-label="Brightness settings" hidden>
+        <div class="accessibility-setting-row">
+          <span class="accessibility-panel-title" id="dark-mode-label">Dark mode</span>
+          <label class="accessibility-switch"><input type="checkbox" data-setting="dark-mode" aria-labelledby="dark-mode-label" /><span aria-hidden="true"></span></label>
+        </div>
+        <label class="accessibility-slider"><span class="accessibility-panel-title">Lightness</span><input class="accessibility-range" type="range" min="0" max="100" step="1" value="0" data-setting="lightness" /></label>
+      </div>
+      <div class="accessibility-panel accessibility-panel-contrast" id="contrast-panel" role="dialog" aria-labelledby="contrast-label" hidden>
+        <label class="accessibility-slider"><span class="accessibility-panel-title" id="contrast-label">Contrast</span><input class="accessibility-range" type="range" min="0" max="100" step="1" value="0" data-setting="contrast" /></label>
+      </div>
+    </header>
+
+    <main id="top" class="work-in-progress-page">
+      <section class="site-shell work-in-progress-layout" aria-labelledby="work-in-progress-title">
+        <div class="work-in-progress-copy">
+          <p class="eyebrow">Projects under construction</p>
+          <h1 id="work-in-progress-title">Still working on it…</h1>
+          <p>These case studies are temporarily behind the barriers while I finish the details. Check back soon.</p>
+          <a class="button-link" href="projects.html">Back to projects <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
+        </div>
+        <figure class="work-in-progress-media">
+          <img src="assets/images/work-in-progress.webp" width="1254" height="1254" alt="Illustration of roadworks barriers, a traffic cone and a shovel" />
+        </figure>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="site-shell"><p>&copy; <span id="year"></span> James Spiller</p></div></footer>
+    <script src="scripts.js?v=14"></script>
+  </body>
+</html>

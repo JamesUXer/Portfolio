@@ -184,7 +184,7 @@ document.querySelectorAll(".pending-link").forEach((link) => {
   link.addEventListener("click", (event) => event.preventDefault());
 });
 
-document.querySelectorAll(".project-card-interactive[data-project-href]").forEach((card) => {
+document.querySelectorAll(".project-card-interactive[data-project-href], .progress-card-interactive[data-project-href]").forEach((card) => {
   card.addEventListener("click", (event) => {
     const clickedElement = event.target instanceof Element ? event.target : null;
     const clickedInteractiveElement = clickedElement?.closest(
@@ -203,6 +203,12 @@ document.querySelectorAll(".project-card-interactive[data-project-href]").forEac
       return;
     }
 
+    window.location.assign(card.dataset.projectHref);
+  });
+
+  card.addEventListener("keydown", (event) => {
+    if (event.target !== card || (event.key !== "Enter" && event.key !== " ")) return;
+    event.preventDefault();
     window.location.assign(card.dataset.projectHref);
   });
 });
