@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Designing a biotechnology information hub for patients and clinicians." />
+    <meta name="description" content="Designing a clearer Learn Hub for microbiome testing." />
     <meta name="theme-color" content="#1d1d1d" />
-    <title>Designing a biotechnology information hub for patients and clinicians | James Spiller</title>
+    <title>Designing a clearer Learn Hub for microbiome testing | James Spiller</title>
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;900&amp;family=Archivo+Black&amp;family=Lato:wght@400;700&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=117" />
+    <link rel="stylesheet" href="styles.css?v=122" />
   </head>
   <body class="salient-case-study" data-page="projects">
     <svg class="icon-sprite" aria-hidden="true">
@@ -57,7 +57,7 @@
       <article>
         <header class="case-study-hero site-shell">
           <a class="case-study-back" href="projects.html">&larr; Back to projects</a>
-          <h1>Designing a biotechnology information hub for patients and clinicians</h1>
+          <h1>Designing a clearer Learn Hub for microbiome testing</h1>
           <ul class="case-study-tags" aria-label="Project disciplines">
             <li>Information architecture</li>
             <li>User research</li>
@@ -71,9 +71,9 @@
             </a>
           </figure>
           <div class="case-study-prose case-study-intro">
-            <p>Salient Bio needed to help patients and clinicians navigate complex microbiome testing information with greater clarity and confidence.</p>
-            <p>I led discovery, translated research findings into design briefs, and ran usability testing with 10 participants: seven patients and three doctors.</p>
-            <p>We designed an intuitive Learn Hub that helps users find relevant guidance quickly, understand the testing journey and assess the credibility and practical value of microbiome testing.</p>
+            <p>Salient Bio — a UK biotechnology company specialising in microbiome testing — commissioned a redesign of its Learn Hub to help patients and clinicians navigate complex information and build confidence in the value of its services.</p>
+            <p>The team worked collaboratively across research, information architecture, prototyping and interface design. My strongest contributions were discovery research, quantitative analysis of usability testing, information architecture, and the exploration of search and filtering patterns.</p>
+            <p>We worked to reorganise the hub into a connected information system combining guided testing journeys with direct access through search, terminology support and clinician resources.</p>
           </div>
           <dl class="case-study-meta">
             <div><dt>Role</dt><dd>UX/Product Designer</dd></div>
@@ -85,44 +85,59 @@
         <section class="case-study-section site-shell salient-challenge-section" aria-labelledby="challenge-title">
           <div class="case-study-prose">
             <h2 id="challenge-title">The challenge</h2>
-            <p>Users needed more than access to educational content. They needed to navigate the testing journey confidently and understand whether microbiome testing was credible, valid and useful for their situation.</p>
-            <p>The challenge was to organise complex information into intuitive, efficient routes that delivered the right level of detail at the right moment, without unnecessary friction.</p>
+            <p>The Learn Hub needed to support people before, during and after microbiome testing. Users could arrive with a specific task, question or report term rather than following one continuous journey from beginning to end.</p>
+            <p>The challenge was to provide enough structure to orient users at each stage while preserving direct access for patients and clinicians with different goals and levels of knowledge.</p>
           </div>
           <ol class="salient-challenge-grid">
             <li>
               <span class="salient-challenge-number" aria-hidden="true">01</span>
-              <h3>Different user contexts</h3>
-              <p>New and existing patients and clinicians approached the hub with different questions, knowledge levels and responsibilities.</p>
+              <h3>Multiple stages and entry points</h3>
+              <p>Users could arrive while deciding whether testing was relevant, registering a kit, preparing a sample, interpreting results, researching terminology or deciding what to do next.</p>
             </li>
             <li>
               <span class="salient-challenge-number" aria-hidden="true">02</span>
-              <h3>A journey with multiple entry points</h3>
-              <p>Users could arrive while considering testing, registering a kit, interpreting results, researching a report term or deciding what to do next.</p>
+              <h3>Different user contexts and goals</h3>
+              <p>Patients and clinicians approached the same information system with different responsibilities, questions and expectations of the service.</p>
             </li>
             <li>
               <span class="salient-challenge-number" aria-hidden="true">03</span>
-              <h3>Accessible without becoming simplistic</h3>
-              <p>The information needed to reduce scientific complexity without removing limitations, methodology or specialist detail.</p>
+              <h3>Accessible without losing credibility</h3>
+              <p>Information needed to be understandable to patients while retaining the methodology, limitations and specialist detail clinicians required.</p>
             </li>
           </ol>
-          <p class="salient-opportunity">The opportunity was to create a single educational destination that gives patients and clinicians a shared reference point, supports different routes through the testing journey, and makes complex information easier to find, understand and act on.</p>
+          <aside class="salient-opportunity">
+            <p class="salient-section-label">Opportunity</p>
+            <p>The opportunity was to turn a collection of educational content into a coherent information system organised around testing stage, user intent and the level of detail required.</p>
+          </aside>
         </section>
 
         <section class="case-study-section site-shell salient-discovery-section" aria-labelledby="discovery-title">
           <div class="case-study-prose">
             <h2 id="discovery-title">Discovery findings → system requirements</h2>
-            <p>Discovery established two requirements for the Learn Hub. The system needed to support flexible entry points while preserving enough structure to orient users through a complex testing journey.</p>
+            <p>Discovery combined Salient Bio’s commissioned patient research, stakeholder interviews and our exploratory interviews with patients and clinicians. Two requirements shaped the Learn Hub.</p>
           </div>
-          <div class="salient-discovery-grid">
-            <article>
-              <p class="salient-section-label">Finding 01</p>
-              <h3>Users needed flexible routes into the same information system</h3>
-              <p>People could arrive through search, product pages, report terms, clinician referral or general curiosity. A single prescribed path would not reflect those different starting points.</p>
+          <div class="research-grid salient-research-grid">
+            <article class="research-card">
+              <h3>Users needed support before, during and after testing</h3>
+              <div class="research-quote">
+                <blockquote>“I’d be interested, but I’d want to know whether it’s actually useful or just another weird gut bacteria thing.”</blockquote>
+                <p>Patient participant</p>
+              </div>
+              <div class="research-priority">
+                <h4>System requirement</h4>
+                <p>Organise guidance around each testing stage, with direct routes for specific questions and report terms.</p>
+              </div>
             </article>
-            <article>
-              <p class="salient-section-label">Finding 02</p>
-              <h3>Complex information needed to be simplified without flattening different user needs</h3>
-              <p>Patients needed clear orientation and plain-language explanations, while clinicians needed access to terminology, methodology, limitations and supporting resources.</p>
+            <article class="research-card">
+              <h3>Patients and clinicians needed different levels of detail</h3>
+              <div class="research-quote">
+                <blockquote>“They are not interested in technical details; they want to know what it means to them, personally.”</blockquote>
+                <p>GP participant</p>
+              </div>
+              <div class="research-priority">
+                <h4>System requirement</h4>
+                <p>Start with plain-language guidance, then layer definitions, evidence, limitations and professional resources.</p>
+              </div>
             </article>
           </div>
         </section>
@@ -133,21 +148,16 @@
             <p>Instead of organising the Learn Hub solely around internal content categories, we structured it around the questions users were trying to answer and the stage of testing they were in.</p>
             <p>Guided journey routes provided orientation, while search, contextual definitions and clinician resources gave users more direct access when they arrived with a specific question or term.</p>
           </div>
-          <figure class="salient-ia-figure">
-            <div class="salient-route-comparison" aria-label="Homepage structure simplified from five competing destinations to three clearer routes">
-              <div><span>Earlier structure</span><strong>Five competing homepage destinations</strong></div>
-              <span class="salient-route-arrow" aria-hidden="true">→</span>
-              <div><span>Clearer structure</span><strong>Guided journeys · Search · Clinician support</strong></div>
-            </div>
-            <div class="salient-system-map">
-              <div class="salient-system-hub"><span>Shared destination</span><strong>Salient Bio Learn Hub</strong></div>
-              <div class="salient-system-search"><span>Cross-cutting access</span><strong>Search and filtering</strong></div>
-              <div class="salient-system-route"><span>Patient journey</span><strong>Before testing</strong></div>
-              <div class="salient-system-route"><span>Patient journey</span><strong>During testing</strong></div>
-              <div class="salient-system-route"><span>Patient journey</span><strong>After testing</strong></div>
-              <div class="salient-system-route"><span>Shared support</span><strong>Contextual terminology</strong></div>
-              <div class="salient-system-route"><span>Professional route</span><strong>Clinician resources</strong></div>
-            </div>
+          <figure class="case-study-media salient-architecture-figure">
+            <a class="case-study-expandable" href="assets/images/salient-bio-information-architecture-large.png" aria-label="Open the Salient Bio information architecture at full size">
+              <picture>
+                <source media="(max-width: 760px)" srcset="assets/images/salient-bio-information-architecture-small.png" />
+                <img src="assets/images/salient-bio-information-architecture-large.png" width="15036" height="15492" loading="lazy" alt="Information architecture diagram connecting the proposed Salient Bio Learn Hub to testing journeys, health information, clinician resources and existing website content" />
+              </picture>
+            </a>
+            <figcaption>The proposed information architecture connects testing guidance, the Health Library and clinician resources with existing Salient Bio content.</figcaption>
+          </figure>
+          <figure class="case-study-media salient-ia-homepage-figure">
             <a class="case-study-expandable" href="assets/images/salient-bio-ia-homepage.png" aria-label="Open the simplified Learn Hub homepage structure at full size">
               <img src="assets/images/salient-bio-ia-homepage.png" width="1333" height="750" loading="lazy" alt="Final Learn Hub homepage showing search and four visible journey routes for testing decisions, the testing process, results and clinician resources" />
             </a>
