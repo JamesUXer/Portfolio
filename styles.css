@@ -405,6 +405,90 @@ button:focus-visible {
   transform: translateX(-50%);
 }
 
+.hero-sheen-layer {
+  position: absolute;
+  z-index: 0;
+  top: -11.625rem;
+  left: 50%;
+  display: block;
+  width: 41.82rem;
+  aspect-ratio: 669 / 399;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+
+.hero-sheen-vector {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.hero-sheen-pass {
+  opacity: 0;
+}
+
+.hero-sheen-pass use {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+  will-change: stroke-dashoffset;
+}
+
+.hero-sheen-glow {
+  stroke: var(--accent);
+  stroke-width: 9;
+  opacity: 0.62;
+  filter: blur(3.2px);
+}
+
+.hero-sheen-refraction {
+  stroke: color-mix(in srgb, var(--salient-teal) 78%, white);
+  stroke-width: 4.6;
+  opacity: 0.94;
+  filter: drop-shadow(1.2px 0 1.4px var(--salient-orange));
+  transform: translate(0.35px, 0.35px);
+}
+
+.hero-sheen-core {
+  stroke: rgb(255 255 255 / 0.96);
+  stroke-width: 1.25;
+  filter: drop-shadow(0 0 1.8px var(--accent));
+}
+
+.hero-sheen-opening-pass .hero-sheen-glow {
+  stroke-width: 10;
+  opacity: 0.46;
+  filter: blur(4.4px);
+}
+
+.hero-sheen-opening-pass .hero-sheen-refraction {
+  stroke-width: 4;
+  opacity: 0.72;
+  filter: drop-shadow(0.8px 0 1.8px var(--accent));
+}
+
+.hero-sheen-opening-pass .hero-sheen-core {
+  stroke-width: 1;
+  opacity: 0.88;
+  filter: drop-shadow(0 0 2.2px var(--accent));
+}
+
+:root[data-theme="light"] .hero-sheen-layer {
+  mix-blend-mode: normal;
+}
+
+:root[data-theme="light"] .hero-sheen-glow {
+  opacity: 0.42;
+}
+
+:root[data-theme="light"] .hero-sheen-core {
+  stroke: color-mix(in srgb, var(--accent) 42%, white);
+}
+
 .hero-main h1 {
   position: relative;
   z-index: 1;
@@ -2954,6 +3038,7 @@ a.project-image-link:hover img {
   }
 
   .hero-artwork,
+  .hero-sheen-layer,
   .skill-row {
     display: none;
   }
@@ -3327,5 +3412,9 @@ a.project-image-link:hover img {
   *::after {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .hero-sheen-layer {
+    display: none;
   }
 }

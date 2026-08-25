@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 669 399" role="presentation" aria-hidden="true">
+  <!-- Generated locally from hero-artwork-transparent.png. Alpha threshold: 28; simplification: 0.7px. -->
+  <g id="hero-traced-lines" fill="none">
+    <path id="hero-trace-001" data-length="257.18" data-bounds="398 2 118 38" d="M398 27 L398 22 L399 22 L400 19 L401 19 L405 14 L408 13 L408 12 L410 12 L410 11 L413 10 L427 10 L427 9 L431 7 L434 7 L434 6 L452 6 L459 2 L474 2 L475 3 L478 3 L478 4 L480 4 L480 5 L483 5 L483 6 L485 6 L485 7 L489 7 L490 6 L502 7 L502 8 L505 9 L507 13 L507 17 L513 21 L516 26 L515 30 L513 31 L513 32 L509 33 L509 34 L505 34 L505 35 L495 35 L495 36 L489 38 L479 38 L473 36 L468 36 L467 37 L464 37 L464 38 L453 39 L452 40 L440 40 L437 39 L437 38 L434 38 L434 37 L421 38" />
+    <path id="hero-trace-002" data-length="253.85" data-bounds="291 24 130 21" d="M398 27 L367 27 L358 24 L342 24 L342 25 L338 25 L337 26 L319 26 L318 27 L313 26 L309 28 L306 28 L306 29 L297 31 L297 32 L291 36 L291 40 L295 42 L310 41 L312 42 L312 43 L318 45 L327 45 L333 43 L341 43 L345 45 L401 45 L402 44 L411 43 L411 42 L416 41 L416 40 L421 39 L421 38" />
+    <path id="hero-trace-003" data-length="222.6" data-bounds="44 0 91 32" d="M70 0 L80 0 L80 1 L84 1 L84 0 L94 0 L94 1 L99 3 L106 3 L106 4 L111 7 L111 8 L122 10 L127 17 L133 19 L133 20 L135 21 L135 27 L131 29 L131 30 L129 30 L129 31 L125 31 L124 32 L106 32 L106 31 L104 31 L104 30 L100 30 L94 32 L77 32 L76 31 L73 31 L73 30 L70 30 L70 29 L63 29 L62 30 L53 29 L44 23 L44 18 L50 12 L56 10 L62 3 L65 3 L65 2 L70 1 L70 0" />
+    <path id="hero-trace-004" data-length="185.59" data-bounds="589 140 68 120" d="M657 140 L655 147 L654 147 L648 154 L642 158 L642 159 L634 166 L633 169 L632 169 L632 175 L633 175 L633 177 L634 177 L643 188 L644 188 L645 191 L646 191 L646 193 L647 193 L647 200 L646 200 L646 202 L645 202 L636 212 L636 224 L637 224 L637 227 L638 228 L638 237 L633 240 L633 241 L624 244 L616 244 L615 245 L607 245 L606 246 L597 247 L597 248 L595 248 L590 252 L589 254 L589 260" />
+    <path id="hero-trace-005" data-length="175.54" data-bounds="153 137 173 9" d="M326 137 L317 137 L316 138 L308 138 L307 139 L281 139 L280 140 L253 141 L252 142 L224 142 L223 143 L211 143 L210 144 L153 146" />
+    <path id="hero-trace-006" data-length="153.68" data-bounds="84 180 152 5" d="M236 180 L215 180 L214 181 L203 181 L202 182 L169 182 L168 183 L107 183 L106 184 L84 185" />
+    <path id="hero-trace-007" data-length="153.12" data-bounds="357 63 121 21" d="M478 80 L477 77 L472 75 L472 74 L470 74 L470 73 L467 72 L467 71 L465 71 L465 70 L455 72 L451 70 L447 65 L445 65 L442 67 L442 68 L439 68 L438 69 L432 66 L432 65 L429 64 L429 63 L425 63 L414 75 L410 77 L409 79 L403 83 L399 81 L395 81 L393 82 L393 83 L391 83 L391 84 L387 84 L373 75 L368 75 L368 76 L359 81 L357 84" />
+    <path id="hero-trace-008" data-length="143.11" data-bounds="255 344 122 36" d="M255 344 L255 346 L260 348 L260 349 L262 349 L262 350 L265 351 L265 352 L267 352 L267 353 L272 355 L272 356 L277 358 L277 359 L279 359 L279 360 L282 361 L282 362 L285 362 L285 363 L287 363 L287 364 L293 365 L293 366 L298 367 L298 368 L301 368 L301 369 L305 369 L306 370 L343 370 L344 371 L353 371 L357 373 L363 374 L363 375 L365 375 L365 376 L367 376 L374 380 L377 380" />
+    <path id="hero-trace-009" data-length="123.26" data-bounds="166 152 122 4" d="M288 152 L265 152 L264 153 L236 153 L235 154 L207 154 L206 155 L166 156" />
+    <path id="hero-trace-010" data-length="112.08" data-bounds="502 292 94 33" d="M596 292 L594 298 L592 298 L592 299 L590 299 L590 300 L587 300 L586 301 L565 301 L564 302 L555 303 L555 304 L550 305 L550 306 L548 306 L545 308 L545 309 L540 312 L539 314 L535 315 L535 316 L533 316 L533 317 L531 317 L531 318 L525 320 L525 321 L513 325 L502 325" />
+    <path id="hero-trace-011" data-length="107.85" data-bounds="341 147 107 4" d="M448 147 L356 149 L355 150 L342 150 L341 151" />
+    <path id="hero-trace-012" data-length="95.89" data-bounds="4 158 94 3" d="M98 159 L96 158 L87 158 L86 159 L68 159 L67 160 L26 160 L25 161 L5 161 L4 160" />
+    <path id="hero-trace-013" data-length="91.55" data-bounds="455 229 24 22" d="M467 248 L467 247 L470 247 L472 243 L469 237 L464 235 L462 235 L457 238 L455 237 L455 234 L456 234 L458 231 L462 230 L462 229 L470 229 L470 230 L474 231 L474 232 L478 235 L478 237 L479 237 L479 246 L478 246 L478 247 L471 251 L467 251 L467 248" />
+    <path id="hero-trace-014" data-length="90.84" data-bounds="312 176 90 3" d="M402 176 L350 177 L349 178 L319 178 L318 179 L312 179" />
+    <path id="hero-trace-015" data-length="89.13" data-bounds="95 277 66 45" d="M95 277 L95 281 L96 281 L103 289 L109 292 L121 295 L121 296 L123 296 L123 297 L126 298 L133 304 L138 312 L139 312 L143 317 L146 318 L146 319 L148 319 L148 320 L150 320 L150 321 L161 322" />
+    <path id="hero-trace-016" data-length="87.24" data-bounds="402 173 86 3" d="M488 173 L485 173 L484 174 L451 174 L450 175 L412 175 L411 176 L402 176" />
+    <path id="hero-trace-017" data-length="80.24" data-bounds="167 166 79 3" d="M246 166 L242 166 L241 167 L219 167 L218 168 L197 168 L196 169 L167 169" />
+    <path id="hero-trace-018" data-length="78.65" data-bounds="164 248 53 18" d="M166 248 L165 251 L164 251 L164 253 L170 255 L170 256 L172 257 L172 261 L174 262 L185 262 L185 263 L189 266 L193 265 L195 262 L199 262 L200 261 L207 262 L209 260 L209 257 L210 257 L211 255 L216 255 L217 254 L217 250" />
+    <path id="hero-trace-019" data-length="75.43" data-bounds="94 94 61 19" d="M155 98 L149 98 L149 97 L144 96 L144 95 L141 95 L141 94 L131 94 L118 98 L118 99 L116 99 L116 100 L114 100 L114 101 L112 101 L112 102 L110 102 L110 103 L108 103 L108 104 L106 104 L106 105 L104 105 L104 106 L98 108 L94 113" />
+    <path id="hero-trace-020" data-length="71.31" data-bounds="357 288 22 19" d="M363 288 L373 288 L378 292 L379 294 L379 301 L377 305 L375 305 L375 306 L373 306 L373 307 L365 307 L365 306 L361 305 L361 304 L358 302 L358 300 L357 300 L358 293 L359 293 L363 288" />
+    <path id="hero-trace-021" data-length="71.24" data-bounds="503 200 35 19" d="M532 200 L532 201 L536 202 L538 205 L537 218 L507 218 L505 219 L503 218 L503 203" />
+    <path id="hero-trace-022" data-length="71.04" data-bounds="0 160 43 42" d="M4 160 L0 160 L0 166 L1 166 L3 170 L5 171 L6 174 L7 174 L10 178 L14 180 L14 181 L16 181 L16 182 L27 187 L27 188 L29 188 L36 198 L41 202 L43 202" />
+    <path id="hero-trace-023" data-length="70.92" data-bounds="604 103 33 29" d="M604 112 L610 108 L610 107 L615 107 L620 104 L620 103 L623 103 L623 104 L626 105 L626 106 L633 106 L635 109 L633 115 L637 117 L637 122 L634 124 L629 125 L627 128 L627 132" />
+    <path id="hero-trace-024" data-length="69.65" data-bounds="161 322 60 15" d="M161 322 L161 323 L169 323 L170 324 L189 324 L190 325 L194 325 L194 326 L196 326 L196 327 L198 327 L198 328 L200 328 L200 329 L202 329 L204 330 L204 331 L210 333 L210 334 L213 334 L216 335 L216 336 L221 337" />
+    <path id="hero-trace-025" data-length="67.95" data-bounds="278 84 63 16" d="M341 84 L341 85 L339 86 L320 87 L306 91 L297 92 L297 93 L280 97 L278 100" />
+    <path id="hero-trace-026" data-length="67.75" data-bounds="155 98 57 12" d="M155 98 L156 101 L158 101 L158 102 L160 102 L160 103 L163 103 L163 104 L168 105 L168 106 L170 106 L170 107 L173 107 L173 108 L179 110 L188 110 L189 109 L202 108 L203 107 L211 106 L212 104" />
+    <path id="hero-trace-027" data-length="65.82" data-bounds="282 218 23 34" d="M297 218 L299 218 L302 221 L305 230 L304 232 L304 239 L301 245 L300 245 L296 250 L294 250 L294 251 L292 251 L292 252 L289 252 L288 250 L287 250 L286 246 L285 246 L283 241 L282 241 L282 238" />
+    <path id="hero-trace-028" data-length="65.28" data-bounds="415 200 21 19" d="M426 200 L426 201 L423 202 L423 203 L419 204 L416 209 L415 209 L415 213 L416 213 L417 216 L421 218 L421 219 L430 219 L430 218 L434 217 L436 213 L435 208 L434 208 L434 205 L429 202 L429 200" />
+    <path id="hero-trace-029" data-length="64.21" data-bounds="98 159 59 11" d="M98 159 L98 161 L109 170 L157 170" />
+    <path id="hero-trace-030" data-length="60.83" data-bounds="98 157 60 2" d="M158 157 L112 157 L111 158 L99 158 L98 159" />
+    <path id="hero-trace-031" data-length="60.65" data-bounds="388 157 60 2" d="M448 157 L413 157 L412 158 L390 158 L388 159" />
+    <path id="hero-trace-032" data-length="60.01" data-bounds="28 120 25 18" d="M53 129 L53 127 L51 124 L48 124 L42 120 L39 120 L39 121 L37 121 L37 122 L34 123 L31 123 L31 124 L29 125 L28 131 L29 131 L29 134 L30 134 L30 135 L36 138 L45 138" />
+    <path id="hero-trace-033" data-length="59.45" data-bounds="448 145 59 2" d="M507 146 L486 145 L485 146 L448 147" />
+    <path id="hero-trace-034" data-length="58.51" data-bounds="305 280 18 42" d="M314 280 L317 280 L317 281 L318 281 L319 284 L320 284 L321 290 L322 290 L322 294 L323 295 L322 305 L321 305 L321 308 L318 314 L317 314 L312 320 L305 322" />
+    <path id="hero-trace-035" data-length="58.11" data-bounds="54 233 38 32" d="M54 233 L54 236 L57 238 L58 240 L62 242 L62 243 L64 243 L64 244 L66 244 L66 245 L69 246 L75 247 L75 248 L80 250 L80 251 L82 251 L82 252 L88 257 L89 261 L90 261 L90 263 L91 263 L92 265" />
+    <path id="hero-trace-036" data-length="57.75" data-bounds="530 143 47 12" d="M577 143 L537 144 L536 145 L530 145 L530 149 L532 155" />
+    <path id="hero-trace-037" data-length="56.91" data-bounds="202 76 42 23" d="M244 86 L242 86 L238 83 L238 82 L231 76 L228 76 L226 79 L223 80 L222 82 L219 83 L217 86 L207 93 L206 95 L202 97 L202 99" />
+    <path id="hero-trace-038" data-length="56.38" data-bounds="524 102 48 11" d="M524 102 L545 102 L545 103 L547 103 L547 104 L552 105 L552 106 L555 106 L555 107 L562 109 L562 110 L564 110 L564 111 L567 111 L567 112 L569 112 L569 113 L572 113" />
+    <path id="hero-trace-039" data-length="55.64" data-bounds="54 109 28 20" d="M82 116 L79 114 L79 111 L78 111 L77 109 L72 109 L72 110 L70 111 L67 111 L67 110 L65 110 L65 109 L60 109 L57 112 L57 114 L56 114 L56 116 L55 118 L54 118 L54 120 L58 123 L57 129" />
+    <path id="hero-trace-040" data-length="55.12" data-bounds="155 91 47 8" d="M155 98 L156 98 L156 97 L159 97 L159 96 L161 96 L161 95 L164 95 L173 92 L173 91 L181 91 L181 92 L188 94 L188 95 L195 97 L195 98 L202 99" />
+    <path id="hero-trace-041" data-length="54.93" data-bounds="440 307 17 14" d="M444 307 L456 308 L456 313 L457 314 L456 317 L455 317 L455 319 L452 319 L452 320 L449 321 L441 318 L441 316 L440 316 L440 311 L441 311 L441 309 L444 307" />
+    <path id="hero-trace-042" data-length="53.03" data-bounds="526 116 19 17" d="M527 133 L527 124 L526 124 L526 117 L527 117 L527 116 L545 117 L545 133" />
+    <path id="hero-trace-043" data-length="52.38" data-bounds="611 142 22 41" d="M633 142 L632 146 L631 146 L629 149 L613 160 L613 177 L612 179 L611 179 L611 183" />
+    <path id="hero-trace-044" data-length="52.01" data-bounds="424 134 52 1" d="M476 134 L424 135" />
+    <path id="hero-trace-045" data-length="50.41" data-bounds="545 132 50 1" d="M595 132 L583 132 L582 133 L545 133" />
+    <path id="hero-trace-046" data-length="50.24" data-bounds="402 162 46 5" d="M448 162 L404 162 L404 163 L402 164 L402 167" />
+    <path id="hero-trace-047" data-length="50.22" data-bounds="259 208 38 10" d="M259 217 L259 215 L263 211 L266 210 L266 209 L269 208 L286 208 L286 209 L289 209 L291 210 L291 211 L293 211 L293 212 L297 215 L297 218" />
+    <path id="hero-trace-048" data-length="49.15" data-bounds="431 327 44 10" d="M475 327 L451 327 L450 328 L446 328 L446 329 L444 329 L444 330 L439 331 L434 335 L433 337 L431 337" />
+    <path id="hero-trace-049" data-length="48.96" data-bounds="514 278 46 5" d="M514 279 L515 278 L536 278 L539 279 L539 280 L541 280 L541 281 L544 281 L549 283 L560 283" />
+    <path id="hero-trace-050" data-length="48.67" data-bounds="559 160 34 15" d="M559 168 L563 165 L564 162 L569 161 L569 160 L587 161 L587 163 L591 166 L591 170 L593 175" />
+    <path id="hero-trace-051" data-length="48.63" data-bounds="432 250 16 37" d="M446 250 L446 253 L447 253 L448 256 L448 271 L447 271 L446 277 L445 277 L444 280 L443 280 L437 287 L432 287" />
+    <path id="hero-trace-052" data-length="48.12" data-bounds="94 113 18 25" d="M94 113 L94 114 L97 115 L104 113 L106 116 L107 116 L108 118 L110 118 L112 121 L110 124 L111 133 L109 134 L109 135 L104 136 L104 137 L102 138" />
+    <path id="hero-trace-053" data-length="48.01" data-bounds="365 188 48 1" d="M413 188 L365 189" />
+    <path id="hero-trace-054" data-length="48.01" data-bounds="84 196 48 1" d="M132 196 L84 197" />
+    <path id="hero-trace-055" data-length="47.58" data-bounds="194 310 39 11" d="M194 310 L196 310 L196 311 L200 314 L200 316 L203 318 L218 319 L219 321 L222 321 L224 320 L225 318 L229 318 L230 320 L233 320" />
+    <path id="hero-trace-056" data-length="47.06" data-bounds="287 204 27 26" d="M287 205 L288 204 L293 204 L298 210 L303 210 L304 216 L309 217 L310 219 L309 220 L309 226 L311 226 L314 230" />
+    <path id="hero-trace-057" data-length="46.96" data-bounds="341 355 40 17" d="M341 355 L346 355 L357 359 L361 364 L362 364 L367 370 L369 370 L369 371 L381 372" />
+    <path id="hero-trace-058" data-length="46.6" data-bounds="263 342 44 8" d="M263 343 L284 342 L295 348 L297 348 L297 349 L307 350" />
+    <path id="hero-trace-059" data-length="46.43" data-bounds="263 74 37 12" d="M300 81 L297 79 L292 78 L292 77 L289 77 L289 76 L286 76 L286 75 L283 75 L283 74 L279 74 L279 75 L264 84 L263 86" />
+    <path id="hero-trace-060" data-length="46.06" data-bounds="300 78 41 6" d="M300 81 L301 80 L306 80 L312 78 L320 78 L320 79 L322 79 L322 80 L328 82 L341 82 L341 84" />
+    <path id="hero-trace-061" data-length="45.43" data-bounds="515 293 45 2" d="M560 293 L555 293 L554 294 L515 295" />
+    <path id="hero-trace-062" data-length="45.41" data-bounds="288 151 45 1" d="M333 151 L299 151 L298 152 L288 152" />
+    <path id="hero-trace-063" data-length="45.13" data-bounds="4 150 42 10" d="M46 150 L44 151 L32 151 L31 152 L20 153 L19 154 L8 156 L6 157 L4 160" />
+    <path id="hero-trace-064" data-length="43" data-bounds="387 379 34 9" d="M421 379 L388 379 L388 380 L387 380 L387 388" />
+    <path id="hero-trace-065" data-length="42.64" data-bounds="357 84 34 15" d="M357 84 L358 86 L369 87 L369 88 L376 90 L376 91 L378 91 L378 92 L380 92 L380 93 L382 93 L382 94 L388 95 L391 99" />
+    <path id="hero-trace-066" data-length="42.63" data-bounds="428 376 18 22" d="M440 376 L441 382 L442 382 L442 384 L443 384 L445 389 L446 389 L446 394 L443 395 L443 396 L436 396 L436 398 L428 398" />
+    <path id="hero-trace-067" data-length="42.36" data-bounds="576 109 28 16" d="M604 112 L600 110 L600 109 L597 109 L597 110 L594 110 L593 111 L592 110 L587 110 L583 114 L582 117 L580 117 L580 118 L578 118 L578 119 L576 120 L576 125" />
+    <path id="hero-trace-068" data-length="41.41" data-bounds="464 155 41 1" d="M505 155 L476 155 L475 156 L464 156" />
+    <path id="hero-trace-069" data-length="41.25" data-bounds="212 98 40 6" d="M252 98 L246 100 L236 101 L235 102 L224 103 L223 104 L212 104" />
+    <path id="hero-trace-070" data-length="40.65" data-bounds="312 189 40 1" d="M312 190 L340 190 L341 189 L350 189 L352 190" />
+    <path id="hero-trace-071" data-length="40.4" data-bounds="312 307 18 26" d="M330 307 L326 313 L326 316 L327 317 L326 318 L323 318 L320 321 L320 327 L315 326 L312 328 L312 332 L313 333" />
+    <path id="hero-trace-072" data-length="40.22" data-bounds="510 228 33 16" d="M543 228 L541 228 L535 235 L532 236 L532 237 L530 237 L530 238 L528 239 L526 239 L526 240 L518 241 L510 244" />
+    <path id="hero-trace-073" data-length="39.8" data-bounds="404 223 32 5" d="M404 224 L410 227 L413 226 L414 223 L417 223 L418 226 L421 228 L424 228 L427 226 L431 226 L431 227 L433 228 L436 227" />
+    <path id="hero-trace-074" data-length="39.77" data-bounds="270 320 35 7" d="M270 320 L272 323 L276 324 L276 325 L280 325 L285 327 L299 326 L304 324 L305 322" />
+    <path id="hero-trace-075" data-length="39.27" data-bounds="165 285 25 14" d="M190 289 L188 285 L173 285 L172 286 L167 286 L165 291 L165 299" />
+    <path id="hero-trace-076" data-length="38.93" data-bounds="399 287 33 5" d="M399 287 L401 290 L407 291 L407 292 L425 292 L425 291 L431 290 L432 287" />
+    <path id="hero-trace-077" data-length="38.15" data-bounds="246 286 8 32" d="M246 286 L246 291 L248 295 L246 305 L248 305 L249 311 L253 314 L254 317 L252 318" />
+    <path id="hero-trace-078" data-length="38.02" data-bounds="571 234 23 16" d="M594 234 L572 235 L572 236 L571 236 L571 250" />
+    <path id="hero-trace-079" data-length="38" data-bounds="92 265 38 0" d="M92 265 L130 265" />
+    <path id="hero-trace-080" data-length="37.46" data-bounds="294 160 35 6" d="M329 160 L328 162 L325 163 L325 164 L294 166" />
+    <path id="hero-trace-081" data-length="37.38" data-bounds="445 74 33 7" d="M445 74 L447 74 L447 75 L449 75 L449 76 L452 77 L455 77 L456 78 L459 78 L459 79 L463 79 L468 81 L477 81 L478 80" />
+    <path id="hero-trace-082" data-length="36.87" data-bounds="214 239 33 6" d="M214 241 L217 240 L217 239 L224 239 L224 240 L228 240 L228 241 L234 243 L237 243 L242 245 L247 245" />
+    <path id="hero-trace-083" data-length="36" data-bounds="396 379 25 11" d="M421 379 L421 388 L420 388 L420 389 L396 389 L396 390" />
+    <path id="hero-trace-084" data-length="35.92" data-bounds="278 100 31 10" d="M278 100 L278 101 L280 101 L280 102 L298 106 L298 107 L305 108 L305 109 L308 109 L309 110" />
+    <path id="hero-trace-085" data-length="35.63" data-bounds="522 245 18 17" d="M525 245 L525 246 L522 248 L522 260 L525 262 L539 262 L540 261" />
+    <path id="hero-trace-086" data-length="35.55" data-bounds="218 296 22 19" d="M240 296 L239 304 L236 306 L233 311 L231 311 L231 312 L229 312 L229 313 L227 313 L227 314 L218 315" />
+    <path id="hero-trace-087" data-length="35.45" data-bounds="455 250 6 23" d="M460 250 L460 253 L459 255 L456 257 L456 260 L457 260 L457 261 L461 261 L461 264 L459 264 L459 265 L455 268 L455 271 L458 273" />
+    <path id="hero-trace-088" data-length="34.65" data-bounds="627 132 33 3" d="M627 132 L654 132 L655 133 L659 133 L660 135" />
+    <path id="hero-trace-089" data-length="34.43" data-bounds="95 276 34 1" d="M95 277 L101 277 L102 276 L129 277" />
+    <path id="hero-trace-090" data-length="34.43" data-bounds="455 185 34 2" d="M489 185 L456 186 L455 187" />
+    <path id="hero-trace-091" data-length="34.36" data-bounds="348 285 8 25" d="M351 285 L352 292 L350 292 L350 293 L348 294 L348 300 L353 304 L354 306 L353 307 L353 310 L356 310" />
+    <path id="hero-trace-092" data-length="34.2" data-bounds="287 267 27 13" d="M287 268 L288 267 L294 267 L295 268 L302 269 L304 270 L304 271 L306 271 L307 273 L311 274 L314 280" />
+    <path id="hero-trace-093" data-length="33.83" data-bounds="203 193 33 2" d="M236 193 L211 193 L210 194 L204 194 L203 195" />
+    <path id="hero-trace-094" data-length="33.54" data-bounds="438 277 15 21" d="M453 277 L453 282 L447 286 L448 292 L440 292 L438 294 L438 297 L439 298" />
+    <path id="hero-trace-095" data-length="33.16" data-bounds="600 142 33 1" d="M633 142 L603 142 L600 143" />
+    <path id="hero-trace-096" data-length="33" data-bounds="377 135 33 0" d="M377 135 L410 135" />
+    <path id="hero-trace-097" data-length="32.89" data-bounds="583 192 9 25" d="M588 192 L583 200 L583 210 L584 210 L585 214 L586 214 L587 216 L592 217" />
+    <path id="hero-trace-098" data-length="32.53" data-bounds="221 326 26 11" d="M247 327 L245 326 L232 326 L229 327 L228 329 L225 330 L223 333 L222 333 L221 337" />
+    <path id="hero-trace-099" data-length="32.46" data-bounds="428 376 12 22" d="M440 376 L429 377 L428 378 L428 398" />
+    <path id="hero-trace-100" data-length="32.41" data-bounds="431 337 10 28" d="M431 337 L432 346 L434 347 L439 354 L439 356 L440 356 L440 359 L441 360 L440 365" />
+    <path id="hero-trace-101" data-length="32.17" data-bounds="308 197 17 10" d="M319 197 L322 197 L325 200 L325 203 L323 206 L320 207 L308 207 L309 204" />
+    <path id="hero-trace-102" data-length="32.04" data-bounds="506 89 18 13" d="M506 93 L506 91 L507 91 L508 89 L521 89 L523 94 L523 101 L524 102" />
+    <path id="hero-trace-103" data-length="31.69" data-bounds="502 312 23 13" d="M525 312 L514 312 L514 313 L510 314 L510 315 L507 316 L507 317 L502 321 L502 325" />
+    <path id="hero-trace-104" data-length="31.69" data-bounds="359 210 22 13" d="M381 210 L380 217 L376 222 L366 223 L363 222 L363 221 L359 221" />
+    <path id="hero-trace-105" data-length="31.54" data-bounds="477 306 17 7" d="M480 313 L477 312 L477 308 L483 306 L493 307 L493 308 L494 308 L494 312 L493 312 L493 313" />
+    <path id="hero-trace-106" data-length="31.26" data-bounds="334 307 9 23" d="M339 307 L341 310 L341 313 L342 313 L342 316 L343 317 L342 319 L342 326 L339 330 L334 330" />
+    <path id="hero-trace-107" data-length="30.93" data-bounds="592 217 26 6" d="M592 217 L595 221 L597 221 L597 222 L600 223 L612 223 L615 222 L615 221 L618 219" />
+    <path id="hero-trace-108" data-length="30.59" data-bounds="613 203 13 16" d="M613 203 L621 203 L622 204 L625 204 L626 206 L626 208 L622 216 L618 219" />
+    <path id="hero-trace-109" data-length="30.56" data-bounds="396 390 25 8" d="M396 390 L396 392 L398 393 L398 394 L404 396 L404 398 L421 398" />
+    <path id="hero-trace-110" data-length="30.41" data-bounds="376 116 13 19" d="M389 116 L381 116 L376 118 L377 135" />
+    <path id="hero-trace-111" data-length="30.41" data-bounds="398 116 12 19" d="M398 116 L409 116 L410 117 L410 135" />
+    <path id="hero-trace-112" data-length="30.34" data-bounds="507 145 19 10" d="M507 146 L509 145 L526 145 L526 150 L525 150 L524 155" />
+    <path id="hero-trace-113" data-length="30.25" data-bounds="132 213 5 27" d="M136 213 L136 236 L137 237 L132 240" />
+    <path id="hero-trace-114" data-length="29.99" data-bounds="129 264 9 15" d="M130 265 L131 264 L136 264 L138 267 L138 273 L137 274 L137 277 L136 277 L135 279 L129 277" />
+    <path id="hero-trace-115" data-length="29.79" data-bounds="383 267 16 20" d="M383 267 L383 273 L384 273 L384 275 L385 275 L387 279 L388 279 L394 286 L399 287" />
+    <path id="hero-trace-116" data-length="29.69" data-bounds="46 149 29 2" d="M75 149 L73 150 L60 150 L59 151 L46 150" />
+    <path id="hero-trace-117" data-length="29.41" data-bounds="103 147 29 1" d="M132 147 L126 147 L125 148 L103 148" />
+    <path id="hero-trace-118" data-length="29.31" data-bounds="413 359 27 6" d="M413 359 L415 362 L421 365 L440 365" />
+    <path id="hero-trace-119" data-length="29.3" data-bounds="264 268 23 11" d="M287 268 L279 268 L279 269 L276 269 L276 270 L274 270 L267 274 L264 277 L264 279" />
+    <path id="hero-trace-120" data-length="29.29" data-bounds="478 80 22 13" d="M478 80 L486 80 L486 81 L488 81 L492 86 L496 87 L496 88 L499 90 L500 93" />
+    <path id="hero-trace-121" data-length="29.14" data-bounds="137 245 22 9" d="M137 245 L148 245 L149 246 L149 252 L150 253 L152 254 L159 253" />
+    <path id="hero-trace-122" data-length="29.11" data-bounds="217 219 23 8" d="M217 224 L220 224 L227 220 L227 219 L231 219 L231 220 L233 220 L238 226 L240 227" />
+    <path id="hero-trace-123" data-length="29.03" data-bounds="313 234 19 9" d="M332 234 L319 235 L319 236 L318 236 L318 238 L320 240 L319 243 L313 243" />
+    <path id="hero-trace-124" data-length="29.02" data-bounds="496 183 29 1" d="M525 183 L496 184" />
+    <path id="hero-trace-125" data-length="29" data-bounds="496 173 29 0" d="M496 173 L525 173" />
+    <path id="hero-trace-126" data-length="28.64" data-bounds="256 300 14 20" d="M256 300 L256 307 L257 309 L259 310 L259 312 L261 313 L261 315 L262 315 L264 318 L270 320" />
+    <path id="hero-trace-127" data-length="28.61" data-bounds="504 200 28 2" d="M532 200 L515 200 L512 202 L504 202" />
+    <path id="hero-trace-128" data-length="28.6" data-bounds="398 27 23 11" d="M398 27 L403 28 L403 29 L405 29 L410 32 L418 33 L418 34 L421 36 L421 38" />
+    <path id="hero-trace-129" data-length="28.47" data-bounds="516 224 26 7" d="M542 224 L540 224 L532 229 L516 230 L516 231" />
+    <path id="hero-trace-130" data-length="28.4" data-bounds="347 324 21 11" d="M347 325 L349 324 L355 325 L356 331 L359 335 L368 335" />
+    <path id="hero-trace-131" data-length="28.36" data-bounds="495 215 21 16" d="M495 215 L500 221 L501 221 L501 223 L503 224 L505 227 L516 231" />
+    <path id="hero-trace-132" data-length="28.02" data-bounds="373 279 16 17" d="M373 279 L373 281 L375 282 L376 281 L379 281 L385 286 L385 289 L387 290 L389 296" />
+    <path id="hero-trace-133" data-length="28.02" data-bounds="75 148 28 1" d="M103 148 L75 149" />
+    <path id="hero-trace-134" data-length="28.02" data-bounds="245 171 1 28" d="M245 171 L246 199" />
+    <path id="hero-trace-135" data-length="28" data-bounds="476 134 28 0" d="M476 134 L504 134" />
+    <path id="hero-trace-136" data-length="27.82" data-bounds="414 86 19 6" d="M414 92 L414 90 L415 90 L416 87 L420 87 L421 86 L430 86 L432 88 L432 91 L433 92" />
+    <path id="hero-trace-137" data-length="27.59" data-bounds="256 323 19 10" d="M256 324 L261 323 L263 326 L262 327 L262 330 L272 330 L274 331 L275 333" />
+    <path id="hero-trace-138" data-length="27.41" data-bounds="493 279 14 14" d="M507 279 L507 292 L506 293 L493 293" />
+    <path id="hero-trace-139" data-length="27.16" data-bounds="350 135 27 1" d="M377 135 L374 136 L350 136" />
+    <path id="hero-trace-140" data-length="27" data-bounds="421 371 19 8" d="M440 371 L422 371 L422 372 L421 372 L421 379" />
+    <path id="hero-trace-141" data-length="26.89" data-bounds="320 108 6 21" d="M324 108 L322 109 L320 115 L320 127 L326 129" />
+    <path id="hero-trace-142" data-length="26.83" data-bounds="341 160 26 1" d="M341 161 L352 161 L353 160 L366 160 L367 161" />
+    <path id="hero-trace-143" data-length="26.64" data-bounds="86 125 16 13" d="M86 125 L88 125 L90 128 L89 129 L89 133 L90 133 L90 134 L95 136 L100 136 L100 137 L102 138" />
+    <path id="hero-trace-144" data-length="26.51" data-bounds="382 245 9 22" d="M391 245 L385 250 L384 254 L383 254 L382 257 L382 266 L383 267" />
+    <path id="hero-trace-145" data-length="26.49" data-bounds="438 234 18 11" d="M438 234 L441 235 L441 236 L450 236 L450 243 L456 245" />
+    <path id="hero-trace-146" data-length="26.45" data-bounds="34 185 26 2" d="M60 185 L48 185 L47 186 L34 187" />
+    <path id="hero-trace-147" data-length="26.41" data-bounds="341 167 26 1" d="M341 167 L362 167 L363 168 L367 168" />
+    <path id="hero-trace-148" data-length="26.4" data-bounds="347 108 7 20" d="M347 108 L349 108 L351 111 L351 118 L352 118 L354 124 L354 126 L350 128" />
+    <path id="hero-trace-149" data-length="26.39" data-bounds="187 247 20 10" d="M207 247 L207 251 L204 252 L204 253 L201 255 L191 256 L190 257 L187 256" />
+    <path id="hero-trace-150" data-length="26.32" data-bounds="265 251 22 6" d="M265 251 L265 252 L267 252 L267 253 L273 255 L287 255 L287 257" />
+    <path id="hero-trace-151" data-length="26.32" data-bounds="332 195 14 17" d="M346 195 L341 195 L341 196 L333 203 L332 209 L334 212" />
+    <path id="hero-trace-152" data-length="26.15" data-bounds="247 245 13 17" d="M247 245 L250 250 L251 250 L251 254 L252 254 L252 255 L254 256 L259 256 L260 262" />
+    <path id="hero-trace-153" data-length="26.08" data-bounds="252 98 26 2" d="M252 98 L278 100" />
+    <path id="hero-trace-154" data-length="26.03" data-bounds="483 105 21 7" d="M483 106 L487 106 L488 105 L501 105 L504 112" />
+    <path id="hero-trace-155" data-length="26.02" data-bounds="288 172 1 26" d="M288 172 L289 198" />
+    <path id="hero-trace-156" data-length="26.02" data-bounds="97 224 26 1" d="M123 224 L97 225" />
+    <path id="hero-trace-157" data-length="25.9" data-bounds="126 121 6 18" d="M131 121 L130 121 L129 124 L128 124 L128 130 L127 131 L127 134 L126 134 L126 137 L132 139" />
+    <path id="hero-trace-158" data-length="25.83" data-bounds="178 194 25 1" d="M178 195 L198 195 L199 194 L202 194 L203 195" />
+    <path id="hero-trace-159" data-length="25.7" data-bounds="198 304 20 11" d="M198 304 L198 307 L204 311 L204 312 L213 315 L218 315" />
+    <path id="hero-trace-160" data-length="25.6" data-bounds="256 279 8 21" d="M264 279 L262 279 L257 286 L256 286 L256 300" />
+    <path id="hero-trace-161" data-length="25.34" data-bounds="412 298 19 8" d="M431 300 L428 298 L425 298 L425 299 L421 299 L420 300 L414 300 L412 306" />
+    <path id="hero-trace-162" data-length="25.27" data-bounds="398 104 15 12" d="M413 104 L400 105 L400 106 L398 107 L398 116" />
+    <path id="hero-trace-163" data-length="25.26" data-bounds="633 140 24 2" d="M657 140 L647 140 L644 142 L642 141 L634 141 L633 142" />
+    <path id="hero-trace-164" data-length="25.05" data-bounds="289 194 23 4" d="M312 195 L302 194 L299 198 L289 198" />
+    <path id="hero-trace-165" data-length="24.77" data-bounds="401 345 18 9" d="M419 345 L418 348 L417 348 L415 351 L413 351 L413 352 L411 352 L411 353 L409 353 L409 354 L401 354" />
+    <path id="hero-trace-166" data-length="24.33" data-bounds="176 269 8 7" d="M179 276 L180 275 L183 275 L184 273 L182 269 L179 269 L179 270 L176 272 L176 274 L179 276" />
+    <path id="hero-trace-167" data-length="24.32" data-bounds="43 202 6 23" d="M43 202 L43 206 L46 215 L46 220 L49 225" />
+    <path id="hero-trace-168" data-length="24.24" data-bounds="508 102 16 9" d="M524 102 L524 109 L523 111 L508 111" />
+    <path id="hero-trace-169" data-length="24.16" data-bounds="565 260 24 1" d="M589 260 L568 260 L565 261" />
+    <path id="hero-trace-170" data-length="24.15" data-bounds="240 213 13 14" d="M253 213 L250 213 L248 215 L248 220 L246 221 L246 226 L240 227" />
+    <path id="hero-trace-171" data-length="24.02" data-bounds="534 176 24 1" d="M558 176 L534 177" />
+    <path id="hero-trace-172" data-length="24" data-bounds="472 271 8 8" d="M472 279 L472 272 L473 272 L473 271 L480 271 L480 279" />
+    <path id="hero-trace-173" data-length="23.89" data-bounds="381 350 20 5" d="M381 350 L385 353 L389 353 L393 355 L394 354 L397 354 L397 355 L400 355 L400 354 L401 354" />
+    <path id="hero-trace-174" data-length="23.88" data-bounds="252 235 13 16" d="M253 235 L252 236 L252 239 L253 239 L254 243 L261 249 L261 250 L265 251" />
+    <path id="hero-trace-175" data-length="23.77" data-bounds="252 217 7 18" d="M259 217 L255 218 L255 219 L253 220 L253 222 L252 222 L252 234 L253 235" />
+    <path id="hero-trace-176" data-length="23.69" data-bounds="448 92 18 7" d="M448 93 L451 93 L452 92 L464 92 L466 99" />
+    <path id="hero-trace-177" data-length="23.69" data-bounds="294 172 18 7" d="M294 173 L306 173 L307 172 L310 172 L312 179" />
+    <path id="hero-trace-178" data-length="23.61" data-bounds="471 280 9 16" d="M471 280 L471 294 L474 296 L480 296" />
+    <path id="hero-trace-179" data-length="23.5" data-bounds="383 264 23 3" d="M406 264 L384 266 L383 267" />
+    <path id="hero-trace-180" data-length="23.45" data-bounds="359 248 5 18" d="M361 248 L362 248 L363 251 L364 251 L364 261 L363 261 L362 265 L359 266" />
+    <path id="hero-trace-181" data-length="23.22" data-bounds="244 83 19 3" d="M244 86 L247 85 L247 84 L249 84 L249 83 L253 83 L253 84 L255 84 L255 85 L263 86" />
+    <path id="hero-trace-182" data-length="23.02" data-bounds="504 133 23 1" d="M527 133 L504 134" />
+    <path id="hero-trace-183" data-length="23" data-bounds="577 143 23 0" d="M577 143 L600 143" />
+    <path id="hero-trace-184" data-length="22.87" data-bounds="425 233 16 13" d="M425 233 L425 235 L436 239 L436 240 L440 243 L441 246" />
+    <path id="hero-trace-185" data-length="22.77" data-bounds="286 332 18 5" d="M304 334 L304 332 L296 332 L296 333 L293 334 L288 334 L286 337" />
+    <path id="hero-trace-186" data-length="22.72" data-bounds="316 334 17 13" d="M333 334 L330 339 L325 343 L325 344 L316 347" />
+    <path id="hero-trace-187" data-length="22.65" data-bounds="434 186 21 2" d="M455 187 L454 186 L436 186 L434 187 L434 188" />
+    <path id="hero-trace-188" data-length="22.62" data-bounds="136 195 21 3" d="M136 196 L138 195 L152 195 L152 196 L157 198" />
+    <path id="hero-trace-189" data-length="22.61" data-bounds="157 195 21 3" d="M178 195 L159 195 L157 198" />
+    <path id="hero-trace-190" data-length="22.48" data-bounds="169 247 18 9" d="M169 247 L172 249 L173 251 L177 253 L177 254 L179 254 L179 255 L182 256 L187 256" />
+    <path id="hero-trace-191" data-length="22.44" data-bounds="503 112 1 22" d="M504 112 L503 113 L504 134" />
+    <path id="hero-trace-192" data-length="22.43" data-bounds="436 220 7 8" d="M436 227 L436 222 L438 220 L440 220 L440 221 L443 221 L443 226 L440 228" />
+    <path id="hero-trace-193" data-length="22.41" data-bounds="413 104 13 10" d="M413 104 L424 104 L424 105 L425 105 L425 113 L426 114" />
+    <path id="hero-trace-194" data-length="22.41" data-bounds="424 114 2 21" d="M426 114 L425 115 L425 131 L424 131 L424 135" />
+    <path id="hero-trace-195" data-length="22.41" data-bounds="49 224 22 1" d="M71 224 L50 224 L49 225" />
+    <path id="hero-trace-196" data-length="22.37" data-bounds="340 266 19 7" d="M359 266 L358 269 L352 273 L340 273" />
+    <path id="hero-trace-197" data-length="22.34" data-bounds="329 238 17 8" d="M346 239 L345 238 L337 238 L337 239 L331 241 L329 244 L329 246" />
+    <path id="hero-trace-198" data-length="22.3" data-bounds="269 257 18 7" d="M287 257 L285 261 L282 262 L274 261 L272 264 L269 264" />
+    <path id="hero-trace-199" data-length="22.24" data-bounds="474 113 2 21" d="M474 113 L475 113 L476 115 L476 134" />
+    <path id="hero-trace-200" data-length="22.04" data-bounds="310 244 6 17" d="M313 244 L313 248 L314 248 L316 251 L314 254 L312 254 L310 256 L310 261" />
+    <path id="hero-trace-201" data-length="22.02" data-bounds="426 113 22 1" d="M448 113 L426 114" />
+    <path id="hero-trace-202" data-length="22.02" data-bounds="256 299 22 1" d="M278 299 L256 300" />
+    <path id="hero-trace-203" data-length="22" data-bounds="165 299 22 0" d="M165 299 L187 299" />
+    <path id="hero-trace-204" data-length="21.93" data-bounds="347 248 14 11" d="M361 248 L358 248 L358 249 L356 249 L356 250 L350 252 L350 253 L347 255 L347 259" />
+    <path id="hero-trace-205" data-length="21.92" data-bounds="579 175 14 13" d="M593 175 L591 178 L591 182 L590 182 L589 184 L585 187 L579 188" />
+    <path id="hero-trace-206" data-length="21.77" data-bounds="152 122 5 16" d="M152 122 L155 123 L156 130 L157 131 L157 137 L153 138" />
+    <path id="hero-trace-207" data-length="21.65" data-bounds="326 261 14 12" d="M326 261 L326 265 L327 265 L331 270 L334 271 L334 272 L340 273" />
+    <path id="hero-trace-208" data-length="21.47" data-bounds="346 238 15 10" d="M346 239 L347 238 L350 238 L350 239 L355 240 L355 241 L360 244 L361 248" />
+    <path id="hero-trace-209" data-length="21.41" data-bounds="367 167 21 1" d="M388 167 L371 167 L370 168 L367 168" />
+    <path id="hero-trace-210" data-length="21.37" data-bounds="240 227 7 18" d="M240 227 L240 230 L243 231 L245 234 L245 239 L247 242 L247 245" />
+    <path id="hero-trace-211" data-length="21.28" data-bounds="124 225 8 15" d="M124 225 L124 227 L125 227 L125 238 L132 240" />
+    <path id="hero-trace-212" data-length="21.16" data-bounds="295 305 10 17" d="M295 305 L295 308 L300 315 L301 315 L302 318 L304 319 L305 322" />
+    <path id="hero-trace-213" data-length="21.14" data-bounds="434 188 13 11" d="M434 188 L434 190 L440 194 L445 193 L447 195 L447 199" />
+    <path id="hero-trace-214" data-length="21.06" data-bounds="298 280 16 11" d="M314 280 L309 283 L308 285 L306 285 L306 286 L303 287 L303 288 L298 291" />
+    <path id="hero-trace-215" data-length="20.77" data-bounds="483 93 17 6" d="M500 93 L497 94 L485 94 L483 97 L483 99" />
+    <path id="hero-trace-216" data-length="20.62" data-bounds="425 246 16 10" d="M441 246 L439 246 L439 247 L436 248 L436 249 L433 250 L432 252 L425 256" />
+    <path id="hero-trace-217" data-length="20.36" data-bounds="405 195 9 8" d="M409 195 L413 198 L414 202 L413 202 L413 203 L410 203 L408 202 L408 201 L405 201" />
+    <path id="hero-trace-218" data-length="20.32" data-bounds="455 187 8 14" d="M455 187 L455 198 L456 198 L457 200 L463 201" />
+    <path id="hero-trace-219" data-length="20.02" data-bounds="287 268 1 20" d="M287 268 L288 288" />
+    <path id="hero-trace-220" data-length="20" data-bounds="380 307 9 9" d="M387 307 L388 307 L389 310 L389 312 L387 315 L385 316 L380 316 L380 313" />
+    <path id="hero-trace-221" data-length="20" data-bounds="448 93 0 20" d="M448 93 L448 113" />
+    <path id="hero-trace-222" data-length="20" data-bounds="391 245 16 12" d="M391 245 L407 257" />
+    <path id="hero-trace-223" data-length="19.87" data-bounds="270 305 12 15" d="M282 305 L277 313 L276 313 L273 318 L270 320" />
+    <path id="hero-trace-224" data-length="19.68" data-bounds="203 267 14 5" d="M217 267 L214 267 L213 270 L209 269 L208 272 L204 272 L203 270" />
+    <path id="hero-trace-225" data-length="19.66" data-bounds="609 183 4 16" d="M611 183 L612 183 L613 186 L612 187 L612 190 L611 190 L611 193 L610 193 L609 199" />
+    <path id="hero-trace-226" data-length="19.65" data-bounds="73 125 11 10" d="M84 125 L84 129 L83 129 L83 131 L81 132 L81 133 L79 133 L79 134 L74 134 L73 135" />
+    <path id="hero-trace-227" data-length="19.62" data-bounds="324 246 5 15" d="M329 246 L327 246 L325 251 L324 251 L324 260 L326 261" />
+    <path id="hero-trace-228" data-length="19.61" data-bounds="242 258 18 4" d="M242 258 L246 258 L247 259 L250 259 L250 260 L260 262" />
+    <path id="hero-trace-229" data-length="19.57" data-bounds="203 215 14 9" d="M203 216 L208 215 L210 219 L211 219 L211 220 L214 220 L217 224" />
+    <path id="hero-trace-230" data-length="19.42" data-bounds="335 281 16 4" d="M335 285 L338 284 L340 281 L343 281 L347 285 L351 285" />
+    <path id="hero-trace-231" data-length="19.42" data-bounds="399 271 11 16" d="M410 271 L399 287" />
+    <path id="hero-trace-232" data-length="19.42" data-bounds="421 271 11 16" d="M421 271 L432 287" />
+    <path id="hero-trace-233" data-length="19.42" data-bounds="264 279 16 11" d="M264 279 L280 290" />
+    <path id="hero-trace-234" data-length="19.41" data-bounds="294 173 1 19" d="M294 173 L294 188 L295 189 L295 192" />
+    <path id="hero-trace-235" data-length="19.4" data-bounds="482 245 11 7" d="M493 245 L485 246 L482 249 L482 251 L487 252" />
+    <path id="hero-trace-236" data-length="19.3" data-bounds="314 223 16 7" d="M330 223 L329 225 L323 225 L321 226 L321 227 L319 227 L314 230" />
+    <path id="hero-trace-237" data-length="19.27" data-bounds="413 235 2 19" d="M413 235 L414 252 L415 254" />
+    <path id="hero-trace-238" data-length="19.12" data-bounds="410 333 16 4" d="M410 333 L425 333 L426 337" />
+    <path id="hero-trace-239" data-length="19.03" data-bounds="506 93 2 18" d="M506 93 L506 94 L507 94 L508 111" />
+    <path id="hero-trace-240" data-length="19" data-bounds="97 233 19 0" d="M97 233 L116 233" />
+    <path id="hero-trace-241" data-length="19" data-bounds="222 295 18 1" d="M222 295 L236 295 L236 296 L240 296" />
+    <path id="hero-trace-242" data-length="18.99" data-bounds="334 214 10 12" d="M334 214 L338 214 L338 215 L341 216 L341 221 L344 226" />
+    <path id="hero-trace-243" data-length="18.89" data-bounds="252 262 9 12" d="M261 262 L260 270 L254 270 L252 272 L252 274" />
+    <path id="hero-trace-244" data-length="18.83" data-bounds="413 187 18 1" d="M413 188 L417 188 L418 187 L430 187 L431 188" />
+    <path id="hero-trace-245" data-length="18.79" data-bounds="194 278 13 11" d="M207 278 L203 278 L203 279 L195 286 L194 289" />
+    <path id="hero-trace-246" data-length="18.73" data-bounds="330 285 6 13" d="M335 285 L334 288 L331 290 L330 294 L333 296 L335 296 L336 298" />
+    <path id="hero-trace-247" data-length="18.64" data-bounds="589 266 6 16" d="M589 266 L590 266 L591 272 L592 272 L594 276 L595 282" />
+    <path id="hero-trace-248" data-length="18.61" data-bounds="57 129 16 6" d="M57 129 L59 133 L73 135" />
+    <path id="hero-trace-249" data-length="18.58" data-bounds="599 156 4 6" d="M600 156 L603 157 L603 162 L599 162 L599 157 L600 156" />
+    <path id="hero-trace-250" data-length="18.5" data-bounds="194 227 14 7" d="M208 227 L206 228 L206 229 L201 230 L201 231 L199 231 L199 232 L197 232 L197 233 L194 234" />
+    <path id="hero-trace-251" data-length="18.44" data-bounds="454 113 2 18" d="M454 113 L455 130 L456 131" />
+    <path id="hero-trace-252" data-length="18.4" data-bounds="217 252 5 15" d="M222 252 L221 255 L220 255 L220 260 L219 260 L219 262 L218 262 L217 264 L217 267" />
+    <path id="hero-trace-253" data-length="18.38" data-bounds="221 274 14 9" d="M221 274 L224 274 L231 277 L231 278 L234 280 L235 283" />
+    <path id="hero-trace-254" data-length="18.32" data-bounds="177 195 4 12" d="M178 195 L178 203 L177 203 L177 206 L180 207 L181 204" />
+    <path id="hero-trace-255" data-length="18.32" data-bounds="171 226 15 8" d="M171 226 L178 229 L178 230 L180 230 L180 231 L186 234" />
+    <path id="hero-trace-256" data-length="18.25" data-bounds="339 239 7 14" d="M346 239 L344 252 L339 253" />
+    <path id="hero-trace-257" data-length="18.24" data-bounds="258 168 17 2" d="M275 168 L273 170 L259 170 L258 169" />
+    <path id="hero-trace-258" data-length="18.24" data-bounds="389 99 2 17" d="M391 99 L390 101 L389 101 L389 116" />
+    <path id="hero-trace-259" data-length="18.24" data-bounds="573 281 5 12" d="M578 283 L577 281 L574 281 L574 282 L573 282 L573 293" />
+    <path id="hero-trace-260" data-length="18.2" data-bounds="169 239 16 4" d="M185 239 L182 239 L182 240 L179 240 L179 241 L169 243" />
+    <path id="hero-trace-261" data-length="18.16" data-bounds="301 244 12 11" d="M313 244 L308 244 L302 252 L301 255" />
+    <path id="hero-trace-262" data-length="18.03" data-bounds="299 298 18 1" d="M299 298 L317 299" />
+    <path id="hero-trace-263" data-length="18.02" data-bounds="458 151 6 9" d="M464 156 L462 153 L462 151 L459 151 L458 152 L458 160" />
+    <path id="hero-trace-264" data-length="18" data-bounds="527 133 18 0" d="M527 133 L545 133" />
+    <path id="hero-trace-265" data-length="18" data-bounds="578 292 18 0" d="M578 292 L596 292" />
+    <path id="hero-trace-266" data-length="18" data-bounds="142 299 18 0" d="M142 299 L160 299" />
+    <path id="hero-trace-267" data-length="18" data-bounds="161 304 0 18" d="M161 304 L161 322" />
+    <path id="hero-trace-268" data-length="17.84" data-bounds="564 281 5 13" d="M564 283 L565 281 L567 281 L569 284 L569 294" />
+    <path id="hero-trace-269" data-length="17.71" data-bounds="43 199 17 3" d="M60 199 L49 199 L43 202" />
+    <path id="hero-trace-270" data-length="17.65" data-bounds="253 233 17 2" d="M270 233 L262 233 L261 234 L255 234 L253 235" />
+    <path id="hero-trace-271" data-length="17.62" data-bounds="194 240 13 7" d="M194 240 L196 240 L196 241 L201 243 L201 244 L203 244 L203 245 L205 245 L205 246 L207 247" />
+    <path id="hero-trace-272" data-length="17.58" data-bounds="224 253 4 15" d="M228 253 L227 254 L227 257 L226 257 L226 259 L225 259 L224 262 L224 268" />
+    <path id="hero-trace-273" data-length="17.47" data-bounds="342 195 4 15" d="M346 195 L346 198 L344 202 L343 202 L343 205 L342 205 L342 210" />
+    <path id="hero-trace-274" data-length="17.41" data-bounds="237 271 15 3" d="M237 271 L237 273 L248 273 L249 274 L252 274" />
+    <path id="hero-trace-275" data-length="17.41" data-bounds="578 282 17 1" d="M595 282 L579 282 L578 283" />
+    <path id="hero-trace-276" data-length="17.34" data-bounds="233 334 13 7" d="M246 337 L245 335 L240 334 L237 336 L233 341" />
+    <path id="hero-trace-277" data-length="17.32" data-bounds="192 195 11 8" d="M203 195 L201 201 L199 201 L199 202 L197 202 L197 203 L192 203" />
+    <path id="hero-trace-278" data-length="17.24" data-bounds="259 166 16 2" d="M259 166 L274 166 L275 168" />
+    <path id="hero-trace-279" data-length="17.18" data-bounds="208 227 6 14" d="M208 227 L211 228 L211 230 L213 233 L213 240 L214 241" />
+    <path id="hero-trace-280" data-length="17.16" data-bounds="532 154 15 4" d="M532 155 L535 154 L543 154 L543 155 L547 158" />
+    <path id="hero-trace-281" data-length="17.16" data-bounds="422 317 7 13" d="M422 317 L423 317 L426 321 L426 329 L429 330" />
+    <path id="hero-trace-282" data-length="17.07" data-bounds="371 338 10 12" d="M371 338 L372 343 L373 343 L378 349 L381 350" />
+    <path id="hero-trace-283" data-length="17" data-bounds="466 99 17 0" d="M466 99 L483 99" />
+    <path id="hero-trace-284" data-length="17" data-bounds="132 196 0 17" d="M132 196 L132 213" />
+    <path id="hero-trace-285" data-length="17" data-bounds="136 196 0 17" d="M136 196 L136 213" />
+    <path id="hero-trace-286" data-length="17" data-bounds="246 199 16 1" d="M246 199 L262 199 L262 200" />
+    <path id="hero-trace-287" data-length="17" data-bounds="54 233 17 0" d="M54 233 L71 233" />
+    <path id="hero-trace-288" data-length="17" data-bounds="426 263 17 0" d="M426 263 L443 263" />
+    <path id="hero-trace-289" data-length="17" data-bounds="480 298 13 4" d="M493 298 L493 301 L492 301 L492 302 L480 302" />
+    <path id="hero-trace-290" data-length="16.65" data-bounds="236 171 9 9" d="M245 171 L239 171 L237 172 L236 173 L236 180" />
+    <path id="hero-trace-291" data-length="16.41" data-bounds="607 131 16 1" d="M607 131 L610 131 L611 132 L623 132" />
+    <path id="hero-trace-292" data-length="16.34" data-bounds="207 274 14 4" d="M221 274 L213 274 L213 275 L208 276 L207 278" />
+    <path id="hero-trace-293" data-length="16.32" data-bounds="532 248 8 13" d="M532 248 L533 253 L540 259 L540 261" />
+    <path id="hero-trace-294" data-length="16.28" data-bounds="237 258 5 13" d="M242 258 L240 265 L239 265 L239 267 L238 267 L238 269 L237 269 L237 271" />
+    <path id="hero-trace-295" data-length="16.28" data-bounds="387 368 15 3" d="M402 368 L399 368 L399 369 L392 371 L387 371" />
+    <path id="hero-trace-296" data-length="16.24" data-bounds="125 213 7 10" d="M132 213 L127 213 L127 214 L125 215 L125 223" />
+    <path id="hero-trace-297" data-length="16.24" data-bounds="163 223 8 8" d="M171 223 L164 223 L164 224 L163 224 L163 229 L164 231" />
+    <path id="hero-trace-298" data-length="16.16" data-bounds="370 322 16 1" d="M370 322 L383 322 L386 323" />
+    <path id="hero-trace-299" data-length="16.16" data-bounds="259 217 12 10" d="M259 217 L265 221 L266 223 L270 225 L271 227" />
+    <path id="hero-trace-300" data-length="16.11" data-bounds="401 92 13 6" d="M414 92 L410 92 L403 94 L401 96 L401 98" />
+    <path id="hero-trace-301" data-length="16" data-bounds="341 84 16 0" d="M341 84 L357 84" />
+    <path id="hero-trace-302" data-length="16" data-bounds="236 193 10 6" d="M236 193 L236 198 L237 198 L237 199 L246 199" />
+    <path id="hero-trace-303" data-length="16" data-bounds="491 249 14 2" d="M505 249 L504 249 L504 250 L501 250 L501 251 L491 251" />
+    <path id="hero-trace-304" data-length="16" data-bounds="480 279 0 16" d="M480 279 L480 295" />
+    <path id="hero-trace-305" data-length="16" data-bounds="235 283 5 13" d="M235 283 L237 283 L240 287 L240 296" />
+    <path id="hero-trace-306" data-length="16" data-bounds="218 299 0 16" d="M218 299 L218 315" />
+    <path id="hero-trace-307" data-length="15.92" data-bounds="393 224 11 7" d="M404 224 L401 226 L401 229 L400 229 L399 231 L393 230" />
+    <path id="hero-trace-308" data-length="15.9" data-bounds="310 230 4 13" d="M314 230 L310 234 L310 238 L313 241 L313 243" />
+    <path id="hero-trace-309" data-length="15.81" data-bounds="222 283 13 9" d="M235 283 L222 292" />
+    <path id="hero-trace-310" data-length="15.79" data-bounds="228 253 14 5" d="M228 253 L239 255 L239 256 L242 258" />
+    <path id="hero-trace-311" data-length="15.66" data-bounds="325 277 10 8" d="M325 277 L326 278 L331 278 L332 284 L335 285" />
+    <path id="hero-trace-312" data-length="15.65" data-bounds="252 157 7 9" d="M252 158 L253 157 L257 157 L258 159 L258 166 L259 166" />
+    <path id="hero-trace-313" data-length="15.61" data-bounds="185 210 12 5" d="M197 214 L191 210 L189 210 L185 215" />
+    <path id="hero-trace-314" data-length="15.6" data-bounds="425 231 13 3" d="M425 233 L426 231 L432 231 L434 232 L434 233 L438 234" />
+    <path id="hero-trace-315" data-length="15.52" data-bounds="592 207 11 10" d="M603 207 L603 208 L597 211 L592 217" />
+    <path id="hero-trace-316" data-length="15.47" data-bounds="285 218 12 8" d="M297 218 L292 221 L291 223 L289 223 L288 225 L285 226" />
+    <path id="hero-trace-317" data-length="15.44" data-bounds="265 238 7 13" d="M272 238 L271 242 L269 245 L268 245 L265 251" />
+    <path id="hero-trace-318" data-length="15.41" data-bounds="433 92 15 1" d="M433 92 L447 92 L448 93" />
+    <path id="hero-trace-319" data-length="15.41" data-bounds="73 135 2 14" d="M73 135 L73 142 L74 143 L74 146 L75 146 L75 149" />
+    <path id="hero-trace-320" data-length="15.38" data-bounds="244 86 8 12" d="M244 86 L244 89 L251 95 L252 98" />
+    <path id="hero-trace-321" data-length="15.03" data-bounds="187 241 1 15" d="M188 241 L187 256" />
+    <path id="hero-trace-322" data-length="15" data-bounds="342 210 15 0" d="M342 210 L357 210" />
+    <path id="hero-trace-323" data-length="15" data-bounds="317 355 15 0" d="M317 355 L332 355" />
+    <path id="hero-trace-324" data-length="14.99" data-bounds="207 278 6 12" d="M207 278 L207 280 L210 285 L211 285 L211 287 L212 287 L213 290" />
+    <path id="hero-trace-325" data-length="14.99" data-bounds="612 207 6 12" d="M612 207 L612 211 L613 211 L615 216 L616 216 L618 219" />
+    <path id="hero-trace-326" data-length="14.83" data-bounds="246 157 6 9" d="M252 158 L251 157 L247 157 L246 158 L246 166" />
+    <path id="hero-trace-327" data-length="14.81" data-bounds="45 129 8 9" d="M53 129 L52 132 L51 132 L51 135 L50 136 L47 136 L47 137 L45 138" />
+    <path id="hero-trace-328" data-length="14.67" data-bounds="381 338 6 12" d="M387 338 L385 343 L384 343 L383 346 L382 346 L381 350" />
+    <path id="hero-trace-329" data-length="14.66" data-bounds="347 259 12 7" d="M347 259 L349 259 L349 260 L359 266" />
+    <path id="hero-trace-330" data-length="14.47" data-bounds="446 249 14 1" d="M446 250 L448 249 L450 250 L460 250" />
+    <path id="hero-trace-331" data-length="14.41" data-bounds="493 279 14 1" d="M507 279 L494 279 L493 280" />
+    <path id="hero-trace-332" data-length="14.32" data-bounds="371 336 14 2" d="M385 336 L377 336 L371 338" />
+    <path id="hero-trace-333" data-length="14.24" data-bounds="333 160 8 7" d="M333 160 L333 165 L334 167 L341 167" />
+    <path id="hero-trace-334" data-length="14.16" data-bounds="597 183 14 1" d="M611 183 L600 183 L597 184" />
+    <path id="hero-trace-335" data-length="14.16" data-bounds="330 298 6 9" d="M336 298 L336 299 L333 299 L333 300 L330 301 L330 307" />
+    <path id="hero-trace-336" data-length="14.12" data-bounds="393 217 4 13" d="M397 217 L396 221 L393 225 L393 230" />
+    <path id="hero-trace-337" data-length="14.04" data-bounds="275 198 14 1" d="M289 198 L275 199" />
+    <path id="hero-trace-338" data-length="14.04" data-bounds="396 304 1 14" d="M396 304 L397 318" />
+    <path id="hero-trace-339" data-length="14.04" data-bounds="400 340 1 14" d="M400 340 L401 354" />
+    <path id="hero-trace-340" data-length="14" data-bounds="466 99 0 14" d="M466 99 L466 113" />
+    <path id="hero-trace-341" data-length="14" data-bounds="410 135 14 0" d="M410 135 L424 135" />
+    <path id="hero-trace-342" data-length="14" data-bounds="388 167 14 0" d="M388 167 L402 167" />
+    <path id="hero-trace-343" data-length="14" data-bounds="60 185 0 14" d="M60 185 L60 199" />
+    <path id="hero-trace-344" data-length="14" data-bounds="174 214 9 4" d="M183 215 L183 214 L175 214 L175 215 L174 215 L174 218" />
+    <path id="hero-trace-345" data-length="14" data-bounds="286 233 14 0" d="M286 233 L300 233" />
+    <path id="hero-trace-346" data-length="13.87" data-bounds="87 233 10 4" d="M97 233 L96 236 L94 237 L90 237 L88 236 L87 234" />
+    <path id="hero-trace-347" data-length="13.83" data-bounds="599 143 1 13" d="M600 143 L600 151 L599 152 L599 155 L600 156" />
+    <path id="hero-trace-348" data-length="13.83" data-bounds="66 185 1 13" d="M67 185 L66 186 L66 197 L67 198" />
+    <path id="hero-trace-349" data-length="13.77" data-bounds="307 345 9 5" d="M316 347 L313 346 L313 345 L310 345 L310 346 L307 348 L307 350" />
+    <path id="hero-trace-350" data-length="13.61" data-bounds="202 99 10 5" d="M202 99 L202 100 L205 100 L205 101 L209 101 L209 102 L212 104" />
+    <path id="hero-trace-351" data-length="13.61" data-bounds="87 221 10 4" d="M87 224 L89 221 L94 221 L97 225" />
+    <path id="hero-trace-352" data-length="13.6" data-bounds="326 257 13 4" d="M339 257 L326 261" />
+    <path id="hero-trace-353" data-length="13.5" data-bounds="374 237 7 7" d="M380 237 L381 243 L380 244 L374 244" />
+    <path id="hero-trace-354" data-length="13.49" data-bounds="387 338 13 2" d="M387 338 L392 338 L393 339 L400 340" />
+    <path id="hero-trace-355" data-length="13.47" data-bounds="340 260 2 13" d="M342 260 L342 264 L340 268 L340 273" />
+    <path id="hero-trace-356" data-length="13.41" data-bounds="166 156 1 13" d="M166 156 L166 168 L167 169" />
+    <path id="hero-trace-357" data-length="13.4" data-bounds="92 265 3 12" d="M92 265 L92 273 L93 276 L95 277" />
+    <path id="hero-trace-358" data-length="13.32" data-bounds="525 177 9 6" d="M534 177 L532 183 L525 183" />
+    <path id="hero-trace-359" data-length="13.29" data-bounds="233 341 12 3" d="M233 341 L233 342 L235 343 L245 344" />
+    <path id="hero-trace-360" data-length="13.28" data-bounds="480 293 13 2" d="M493 293 L486 295 L480 295" />
+    <path id="hero-trace-361" data-length="13.24" data-bounds="630 193 4 9" d="M633 193 L633 195 L634 195 L634 200 L632 200 L632 201 L630 202" />
+    <path id="hero-trace-362" data-length="13.24" data-bounds="413 233 12 2" d="M425 233 L415 233 L415 234 L413 235" />
+    <path id="hero-trace-363" data-length="13.22" data-bounds="166 232 3 11" d="M167 232 L166 240 L167 240 L168 243 L169 243" />
+    <path id="hero-trace-364" data-length="13.22" data-bounds="394 234 11 4" d="M405 234 L405 235 L402 236 L402 237 L394 238" />
+    <path id="hero-trace-365" data-length="13.21" data-bounds="386 318 11 5" d="M397 318 L393 318 L391 321 L388 323 L386 323" />
+    <path id="hero-trace-366" data-length="13.12" data-bounds="401 98 12 2" d="M401 98 L409 98 L409 99 L413 100" />
+    <path id="hero-trace-367" data-length="13.08" data-bounds="330 107 6 10" d="M336 107 L333 109 L333 114 L332 116 L330 117" />
+    <path id="hero-trace-368" data-length="13.04" data-bounds="157 157 1 13" d="M158 157 L157 170" />
+    <path id="hero-trace-369" data-length="13.04" data-bounds="77 185 1 13" d="M77 185 L78 198" />
+    <path id="hero-trace-370" data-length="13.04" data-bounds="352 189 13 1" d="M365 189 L352 190" />
+    <path id="hero-trace-371" data-length="13.04" data-bounds="480 279 13 1" d="M480 279 L493 280" />
+    <path id="hero-trace-372" data-length="13.04" data-bounds="385 323 1 13" d="M386 323 L385 336" />
+    <path id="hero-trace-373" data-length="13" data-bounds="433 92 0 13" d="M433 92 L433 105" />
+    <path id="hero-trace-374" data-length="13" data-bounds="595 131 12 1" d="M607 131 L604 131 L604 132 L595 132" />
+    <path id="hero-trace-375" data-length="13" data-bounds="337 136 13 0" d="M337 136 L350 136" />
+    <path id="hero-trace-376" data-length="13" data-bounds="511 155 13 0" d="M511 155 L524 155" />
+    <path id="hero-trace-377" data-length="13" data-bounds="236 180 0 13" d="M236 180 L236 193" />
+    <path id="hero-trace-378" data-length="13" data-bounds="129 265 1 12" d="M130 265 L130 274 L129 274 L129 277" />
+    <path id="hero-trace-379" data-length="13" data-bounds="493 280 0 13" d="M493 280 L493 293" />
+    <path id="hero-trace-380" data-length="13" data-bounds="282 305 13 0" d="M282 305 L295 305" />
+    <path id="hero-trace-381" data-length="13" data-bounds="380 307 7 6" d="M387 307 L383 307 L383 308 L382 308 L382 312 L380 312 L380 313" />
+    <path id="hero-trace-382" data-length="13" data-bounds="480 313 13 0" d="M480 313 L493 313" />
+    <path id="hero-trace-383" data-length="13" data-bounds="480 313 0 13" d="M480 313 L480 326" />
+    <path id="hero-trace-384" data-length="13" data-bounds="493 313 0 13" d="M493 313 L493 326" />
+    <path id="hero-trace-385" data-length="13" data-bounds="480 326 13 0" d="M480 326 L493 326" />
+    <path id="hero-trace-386" data-length="12.99" data-bounds="157 169 10 3" d="M167 169 L166 172 L159 172 L157 170" />
+    <path id="hero-trace-387" data-length="12.9" data-bounds="560 181 10 7" d="M560 181 L566 187 L569 187 L570 188" />
+    <path id="hero-trace-388" data-length="12.83" data-bounds="83 185 1 12" d="M84 185 L83 186 L83 196 L84 197" />
+    <path id="hero-trace-389" data-length="12.83" data-bounds="185 215 12 2" d="M185 215 L187 217 L197 217" />
+    <path id="hero-trace-390" data-length="12.81" data-bounds="409 337 10 8" d="M409 337 L419 345" />
+    <path id="hero-trace-391" data-length="12.8" data-bounds="525 172 9 5" d="M525 173 L526 172 L532 172 L534 177" />
+    <path id="hero-trace-392" data-length="12.73" data-bounds="385 296 4 9" d="M389 296 L389 297 L385 298 L385 302 L387 305" />
+    <path id="hero-trace-393" data-length="12.65" data-bounds="124 240 8 6" d="M132 240 L131 241 L131 245 L126 245 L124 246" />
+    <path id="hero-trace-394" data-length="12.6" data-bounds="80 116 4 9" d="M82 116 L81 120 L80 120 L80 123 L84 125" />
+    <path id="hero-trace-395" data-length="12.56" data-bounds="336 107 6 10" d="M336 107 L338 108 L339 114 L342 117" />
+    <path id="hero-trace-396" data-length="12.41" data-bounds="255 200 7 8" d="M262 200 L261 206 L255 208" />
+    <path id="hero-trace-397" data-length="12.24" data-bounds="301 260 9 4" d="M301 260 L302 260 L304 263 L307 264 L309 263 L310 261" />
+    <path id="hero-trace-398" data-length="12.22" data-bounds="556 260 9 4" d="M557 260 L556 263 L565 264" />
+    <path id="hero-trace-399" data-length="12.21" data-bounds="329 246 10 7" d="M329 246 L339 253" />
+    <path id="hero-trace-400" data-length="12.17" data-bounds="429 188 2 12" d="M431 188 L429 200" />
+    <path id="hero-trace-401" data-length="12.16" data-bounds="288 288 10 3" d="M288 288 L292 288 L292 289 L295 289 L295 290 L298 291" />
+    <path id="hero-trace-402" data-length="12.16" data-bounds="325 214 9 7" d="M334 214 L328 216 L325 221" />
+    <path id="hero-trace-403" data-length="12.07" data-bounds="408 322 2 11" d="M408 322 L408 326 L409 326 L410 333" />
+    <path id="hero-trace-404" data-length="12.05" data-bounds="546 258 11 2" d="M546 258 L557 259 L557 260" />
+    <path id="hero-trace-405" data-length="12.04" data-bounds="45 138 1 12" d="M45 138 L46 150" />
+    <path id="hero-trace-406" data-length="12.04" data-bounds="488 173 1 12" d="M488 173 L489 185" />
+    <path id="hero-trace-407" data-length="12.04" data-bounds="189 221 1 12" d="M189 221 L190 233" />
+    <path id="hero-trace-408" data-length="12.04" data-bounds="372 259 1 12" d="M372 259 L373 271" />
+    <path id="hero-trace-409" data-length="12" data-bounds="454 113 12 0" d="M454 113 L466 113" />
+    <path id="hero-trace-410" data-length="12" data-bounds="252 158 0 12" d="M252 158 L252 170" />
+    <path id="hero-trace-411" data-length="12" data-bounds="381 210 12 0" d="M381 210 L393 210" />
+    <path id="hero-trace-412" data-length="12" data-bounds="404 217 5 7" d="M409 217 L405 217 L405 218 L404 218 L404 224" />
+    <path id="hero-trace-413" data-length="12" data-bounds="415 254 10 2" d="M415 254 L418 254 L418 255 L421 255 L421 256 L425 256" />
+    <path id="hero-trace-414" data-length="12" data-bounds="377 379 5 6" d="M377 380 L378 380 L378 379 L382 379 L382 385" />
+    <path id="hero-trace-415" data-length="11.99" data-bounds="464 217 5 7" d="M464 217 L467 217 L467 219 L468 219 L469 222 L467 224" />
+    <path id="hero-trace-416" data-length="11.94" data-bounds="324 108 6 9" d="M324 108 L326 109 L326 112 L328 116 L330 117" />
+    <path id="hero-trace-417" data-length="11.93" data-bounds="389 195 6 10" d="M389 195 L394 201 L395 205" />
+    <path id="hero-trace-418" data-length="11.92" data-bounds="186 289 4 10" d="M190 289 L189 291 L186 293 L187 299" />
+    <path id="hero-trace-419" data-length="11.91" data-bounds="332 228 6 7" d="M337 228 L338 229 L337 234 L334 235 L332 234" />
+    <path id="hero-trace-420" data-length="11.83" data-bounds="365 189 2 11" d="M365 189 L365 196 L367 198 L367 200" />
+    <path id="hero-trace-421" data-length="11.83" data-bounds="620 228 11 2" d="M620 228 L624 228 L626 230 L631 230" />
+    <path id="hero-trace-422" data-length="11.81" data-bounds="358 200 9 5" d="M367 200 L367 201 L364 202 L363 204 L359 204 L358 205" />
+    <path id="hero-trace-423" data-length="11.7" data-bounds="397 318 11 4" d="M397 318 L408 322" />
+    <path id="hero-trace-424" data-length="11.68" data-bounds="342 108 5 9" d="M347 108 L346 108 L345 115 L342 117" />
+    <path id="hero-trace-425" data-length="11.67" data-bounds="448 160 10 3" d="M458 160 L456 163 L448 162" />
+    <path id="hero-trace-426" data-length="11.63" data-bounds="596 192 8 8" d="M596 192 L597 192 L604 200" />
+    <path id="hero-trace-427" data-length="11.53" data-bounds="202 218 6 9" d="M202 218 L202 219 L207 223 L208 227" />
+    <path id="hero-trace-428" data-length="11.47" data-bounds="374 155 5 4" d="M374 159 L374 156 L375 156 L375 155 L377 155 L379 159" />
+    <path id="hero-trace-429" data-length="11.47" data-bounds="60 181 7 4" d="M60 185 L62 181 L64 181 L67 185" />
+    <path id="hero-trace-430" data-length="11.47" data-bounds="307 350 9 4" d="M307 350 L307 352 L311 354 L316 354" />
+    <path id="hero-trace-431" data-length="11.46" data-bounds="602 231 11 2" d="M602 231 L612 232 L613 233" />
+    <path id="hero-trace-432" data-length="11.4" data-bounds="362 312 9 5" d="M362 312 L366 312 L366 313 L371 317" />
+    <path id="hero-trace-433" data-length="11.4" data-bounds="367 200 11 3" d="M367 200 L378 203" />
+    <path id="hero-trace-434" data-length="11.39" data-bounds="357 210 2 11" d="M357 210 L357 216 L359 221" />
+    <path id="hero-trace-435" data-length="11.36" data-bounds="351 280 8 5" d="M359 280 L354 280 L353 284 L351 285" />
+    <path id="hero-trace-436" data-length="11.34" data-bounds="158 231 6 7" d="M164 231 L163 231 L162 236 L160 236 L160 237 L158 238" />
+    <path id="hero-trace-437" data-length="11.34" data-bounds="365 240 7 6" d="M365 240 L365 243 L367 244 L367 245 L372 246" />
+    <path id="hero-trace-438" data-length="11.23" data-bounds="378 194 6 9" d="M384 194 L381 199 L379 200 L378 203" />
+    <path id="hero-trace-439" data-length="11.22" data-bounds="419 337 7 8" d="M426 337 L424 342 L419 345" />
+    <path id="hero-trace-440" data-length="11.21" data-bounds="373 271 3 8" d="M373 271 L376 273 L376 276 L375 276 L373 279" />
+    <path id="hero-trace-441" data-length="11.05" data-bounds="330 117 1 11" d="M330 117 L331 128" />
+    <path id="hero-trace-442" data-length="11.05" data-bounds="326 136 11 1" d="M337 136 L326 137" />
+    <path id="hero-trace-443" data-length="11.05" data-bounds="132 146 11 1" d="M143 146 L132 147" />
+    <path id="hero-trace-444" data-length="11.05" data-bounds="276 213 1 11" d="M276 213 L277 224" />
+    <path id="hero-trace-445" data-length="11.05" data-bounds="193 289 1 11" d="M194 289 L193 300" />
+    <path id="hero-trace-446" data-length="11" data-bounds="137 127 0 11" d="M137 127 L137 138" />
+    <path id="hero-trace-447" data-length="11" data-bounds="147 127 0 11" d="M147 127 L147 138" />
+    <path id="hero-trace-448" data-length="11" data-bounds="496 173 0 11" d="M496 173 L496 184" />
+    <path id="hero-trace-449" data-length="11" data-bounds="312 179 0 11" d="M312 179 L312 190" />
+    <path id="hero-trace-450" data-length="11" data-bounds="67 198 11 0" d="M67 198 L78 198" />
+    <path id="hero-trace-451" data-length="11" data-bounds="76 224 11 0" d="M76 224 L87 224" />
+    <path id="hero-trace-452" data-length="11" data-bounds="371 228 0 11" d="M371 228 L371 239" />
+    <path id="hero-trace-453" data-length="11" data-bounds="76 234 11 0" d="M76 234 L87 234" />
+    <path id="hero-trace-454" data-length="11" data-bounds="410 271 11 0" d="M410 271 L421 271" />
+    <path id="hero-trace-455" data-length="11" data-bounds="595 282 1 10" d="M595 282 L595 283 L596 283 L596 292" />
+    <path id="hero-trace-456" data-length="11" data-bounds="371 313 9 4" d="M380 313 L375 313 L375 314 L371 317" />
+    <path id="hero-trace-457" data-length="10.89" data-bounds="192 274 6 8" d="M198 274 L197 278 L194 279 L192 282" />
+    <path id="hero-trace-458" data-length="10.89" data-bounds="313 355 4 9" d="M317 355 L316 356 L316 361 L315 363 L313 364" />
+    <path id="hero-trace-459" data-length="10.83" data-bounds="415 310 7 7" d="M415 310 L421 313 L422 317" />
+    <path id="hero-trace-460" data-length="10.83" data-bounds="290 158 4 8" d="M290 158 L292 158 L294 160 L294 166" />
+    <path id="hero-trace-461" data-length="10.77" data-bounds="366 271 7 6" d="M373 271 L370 271 L370 272 L367 274 L366 277" />
+    <path id="hero-trace-462" data-length="10.73" data-bounds="312 263 5 6" d="M314 263 L313 263 L312 267 L315 269 L317 269" />
+    <path id="hero-trace-463" data-length="10.7" data-bounds="216 224 5 7" d="M217 224 L216 229 L219 231 L221 231" />
+    <path id="hero-trace-464" data-length="10.63" data-bounds="77 182 7 3" d="M77 185 L78 182 L81 182 L82 184 L84 185" />
+    <path id="hero-trace-465" data-length="10.55" data-bounds="49 225 5 8" d="M49 225 L50 231 L54 233" />
+    <path id="hero-trace-466" data-length="10.41" data-bounds="525 306 4 6" d="M528 306 L529 307 L529 312 L525 312" />
+    <path id="hero-trace-467" data-length="10.24" data-bounds="391 98 10 1" d="M401 98 L393 98 L391 99" />
+    <path id="hero-trace-468" data-length="10.24" data-bounds="474 106 4 7" d="M478 106 L476 106 L476 107 L474 108 L474 113" />
+    <path id="hero-trace-469" data-length="10.24" data-bounds="342 117 1 10" d="M342 117 L342 125 L343 127" />
+    <path id="hero-trace-470" data-length="10.24" data-bounds="564 283 1 10" d="M564 283 L564 291 L565 293" />
+    <path id="hero-trace-471" data-length="10.24" data-bounds="278 290 2 9" d="M280 290 L280 293 L279 293 L278 295 L278 299" />
+    <path id="hero-trace-472" data-length="10.16" data-bounds="407 254 8 3" d="M415 254 L412 254 L412 255 L410 255 L410 256 L407 257" />
+    <path id="hero-trace-473" data-length="10.12" data-bounds="247 327 5 8" d="M247 327 L247 328 L251 331 L252 335" />
+    <path id="hero-trace-474" data-length="10.06" data-bounds="279 165 8 3" d="M287 165 L279 166 L279 168" />
+    <path id="hero-trace-475" data-length="10.05" data-bounds="141 113 1 10" d="M141 113 L142 123" />
+    <path id="hero-trace-476" data-length="10.05" data-bounds="102 138 1 10" d="M102 138 L103 148" />
+    <path id="hero-trace-477" data-length="10.05" data-bounds="505 249 10 1" d="M505 249 L515 250" />
+    <path id="hero-trace-478" data-length="10" data-bounds="143 146 10 0" d="M143 146 L153 146" />
+    <path id="hero-trace-479" data-length="10" data-bounds="448 147 0 10" d="M448 147 L448 157" />
+    <path id="hero-trace-480" data-length="10" data-bounds="341 151 0 10" d="M341 151 L341 161" />
+    <path id="hero-trace-481" data-length="10" data-bounds="279 168 9 1" d="M279 168 L279 169 L288 169" />
+    <path id="hero-trace-482" data-length="10" data-bounds="525 173 0 10" d="M525 173 L525 183" />
+    <path id="hero-trace-483" data-length="10" data-bounds="67 185 10 0" d="M67 185 L77 185" />
+    <path id="hero-trace-484" data-length="10" data-bounds="378 203 3 7" d="M378 203 L378 206 L379 206 L379 208 L380 208 L380 210 L381 210" />
+    <path id="hero-trace-485" data-length="10" data-bounds="334 210 8 2" d="M342 210 L341 210 L341 211 L335 211 L335 212 L334 212" />
+    <path id="hero-trace-486" data-length="10" data-bounds="76 224 0 10" d="M76 224 L76 234" />
+    <path id="hero-trace-487" data-length="10" data-bounds="87 224 0 10" d="M87 224 L87 234" />
+    <path id="hero-trace-488" data-length="10" data-bounds="272 238 10 0" d="M272 238 L282 238" />
+    <path id="hero-trace-489" data-length="10" data-bounds="514 279 0 10" d="M514 279 L514 289" />
+    <path id="hero-trace-490" data-length="10" data-bounds="560 283 0 10" d="M560 283 L560 293" />
+    <path id="hero-trace-491" data-length="10" data-bounds="245 344 10 0" d="M245 344 L255 344" />
+    <path id="hero-trace-492" data-length="9.99" data-bounds="421 263 5 8" d="M426 263 L424 268 L421 270 L421 271" />
+    <path id="hero-trace-493" data-length="9.99" data-bounds="524 155 8 2" d="M524 155 L524 156 L527 157 L530 157 L532 155" />
+    <path id="hero-trace-494" data-length="9.95" data-bounds="539 252 7 6" d="M539 252 L543 253 L546 258" />
+    <path id="hero-trace-495" data-length="9.95" data-bounds="372 253 5 6" d="M376 253 L377 257 L375 259 L372 259" />
+    <path id="hero-trace-496" data-length="9.87" data-bounds="603 118 7 6" d="M603 118 L609 121 L610 124" />
+    <path id="hero-trace-497" data-length="9.84" data-bounds="131 121 6 6" d="M131 121 L132 121 L133 123 L134 123 L134 125 L137 127" />
+    <path id="hero-trace-498" data-length="9.84" data-bounds="505 155 6 3" d="M505 155 L505 157 L507 158 L509 158 L511 155" />
+    <path id="hero-trace-499" data-length="9.77" data-bounds="353 221 6 6" d="M359 221 L356 222 L356 223 L353 225 L353 227" />
+    <path id="hero-trace-500" data-length="9.71" data-bounds="400 337 9 3" d="M409 337 L406 337 L400 340" />
+    <path id="hero-trace-501" data-length="9.61" data-bounds="380 235 9 2" d="M389 235 L383 235 L380 237" />
+    <path id="hero-trace-502" data-length="9.61" data-bounds="213 290 9 2" d="M213 290 L219 290 L222 292" />
+    <path id="hero-trace-503" data-length="9.57" data-bounds="246 279 5 7" d="M251 279 L250 284 L246 286" />
+    <path id="hero-trace-504" data-length="9.47" data-bounds="349 230 7 4" d="M349 230 L349 232 L353 234 L356 234" />
+    <path id="hero-trace-505" data-length="9.4" data-bounds="78 197 6 3" d="M84 197 L83 200 L79 200 L78 198" />
+    <path id="hero-trace-506" data-length="9.39" data-bounds="86 113 8 3" d="M94 113 L91 113 L91 114 L86 116" />
+    <path id="hero-trace-507" data-length="9.39" data-bounds="387 388 9 2" d="M387 388 L392 390 L396 390" />
+    <path id="hero-trace-508" data-length="9.32" data-bounds="413 92 2 8" d="M414 92 L415 98 L414 100 L413 100" />
+    <path id="hero-trace-509" data-length="9.31" data-bounds="221 337 8 3" d="M221 337 L222 339 L229 340" />
+    <path id="hero-trace-510" data-length="9.29" data-bounds="409 188 4 7" d="M413 188 L412 192 L409 193 L409 195" />
+    <path id="hero-trace-511" data-length="9.25" data-bounds="619 125 4 7" d="M619 125 L622 126 L623 132" />
+    <path id="hero-trace-512" data-length="9.25" data-bounds="294 258 7 3" d="M294 258 L295 261 L301 260" />
+    <path id="hero-trace-513" data-length="9.24" data-bounds="424 192 2 8" d="M424 192 L424 198 L425 198 L426 200" />
+    <path id="hero-trace-514" data-length="9.22" data-bounds="204 297 9 2" d="M213 297 L204 299" />
+    <path id="hero-trace-515" data-length="9.16" data-bounds="575 217 5 5" d="M580 217 L577 217 L577 219 L576 219 L575 222" />
+    <path id="hero-trace-516" data-length="9.16" data-bounds="353 227 3 7" d="M353 227 L356 228 L356 234" />
+    <path id="hero-trace-517" data-length="9.16" data-bounds="359 277 7 3" d="M366 277 L360 277 L359 280" />
+    <path id="hero-trace-518" data-length="9.16" data-bounds="280 288 8 2" d="M288 288 L286 288 L286 289 L283 290 L280 290" />
+    <path id="hero-trace-519" data-length="9.12" data-bounds="413 310 2 8" d="M415 310 L414 314 L413 314 L413 318" />
+    <path id="hero-trace-520" data-length="9.06" data-bounds="610 124 9 1" d="M610 124 L619 125" />
+    <path id="hero-trace-521" data-length="9.06" data-bounds="387 304 9 1" d="M396 304 L387 305" />
+    <path id="hero-trace-522" data-length="9.06" data-bounds="413 317 9 1" d="M422 317 L413 318" />
+    <path id="hero-trace-523" data-length="9.06" data-bounds="493 325 9 1" d="M502 325 L493 326" />
+    <path id="hero-trace-524" data-length="9" data-bounds="86 116 0 9" d="M86 116 L86 125" />
+    <path id="hero-trace-525" data-length="9" data-bounds="389 116 9 0" d="M389 116 L398 116" />
+    <path id="hero-trace-526" data-length="9" data-bounds="577 143 0 9" d="M577 143 L577 152" />
+    <path id="hero-trace-527" data-length="9" data-bounds="333 151 0 9" d="M333 151 L333 160" />
+    <path id="hero-trace-528" data-length="9" data-bounds="379 159 9 0" d="M379 159 L388 159" />
+    <path id="hero-trace-529" data-length="9" data-bounds="402 167 0 9" d="M402 167 L402 176" />
+    <path id="hero-trace-530" data-length="9" data-bounds="570 188 9 0" d="M570 188 L579 188" />
+    <path id="hero-trace-531" data-length="9" data-bounds="441 206 9 0" d="M441 206 L450 206" />
+    <path id="hero-trace-532" data-length="9" data-bounds="603 207 9 0" d="M603 207 L612 207" />
+    <path id="hero-trace-533" data-length="9" data-bounds="441 213 9 0" d="M441 213 L450 213" />
+    <path id="hero-trace-534" data-length="9" data-bounds="71 224 0 9" d="M71 224 L71 233" />
+    <path id="hero-trace-535" data-length="9" data-bounds="344 226 5 4" d="M344 226 L344 230 L349 230" />
+    <path id="hero-trace-536" data-length="9" data-bounds="389 234 5 4" d="M389 234 L394 234 L394 238" />
+    <path id="hero-trace-537" data-length="9" data-bounds="460 248 7 2" d="M467 248 L462 248 L462 249 L460 249 L460 250" />
+    <path id="hero-trace-538" data-length="9" data-bounds="578 283 0 9" d="M578 283 L578 292" />
+    <path id="hero-trace-539" data-length="9" data-bounds="404 300 5 4" d="M409 300 L405 300 L405 301 L404 301 L404 304" />
+    <path id="hero-trace-540" data-length="8.83" data-bounds="406 264 4 7" d="M406 264 L406 266 L407 266 L410 271" />
+    <path id="hero-trace-541" data-length="8.83" data-bounds="405 195 4 6" d="M409 195 L407 195 L405 197 L405 201" />
+    <path id="hero-trace-542" data-length="8.83" data-bounds="277 224 8 2" d="M277 224 L281 224 L283 226 L285 226" />
+    <path id="hero-trace-543" data-length="8.83" data-bounds="96 225 1 8" d="M97 225 L96 226 L96 232 L97 233" />
+    <path id="hero-trace-544" data-length="8.77" data-bounds="71 221 5 3" d="M71 224 L73 221 L75 221 L76 224" />
+    <path id="hero-trace-545" data-length="8.7" data-bounds="176 215 7 4" d="M183 215 L181 218 L176 219" />
+    <path id="hero-trace-546" data-length="8.61" data-bounds="471 103 7 3" d="M471 103 L476 103 L478 106" />
+    <path id="hero-trace-547" data-length="8.61" data-bounds="287 158 3 7" d="M290 158 L287 160 L287 165" />
+    <path id="hero-trace-548" data-length="8.61" data-bounds="447 199 3 7" d="M447 199 L448 199 L450 202 L450 206" />
+    <path id="hero-trace-549" data-length="8.61" data-bounds="71 233 5 3" d="M71 233 L73 236 L76 236 L76 234" />
+    <path id="hero-trace-550" data-length="8.61" data-bounds="294 255 7 3" d="M301 255 L297 255 L297 256 L294 258" />
+    <path id="hero-trace-551" data-length="8.55" data-bounds="346 190 6 5" d="M352 190 L351 193 L346 195" />
+    <path id="hero-trace-552" data-length="8.41" data-bounds="152 114 1 8" d="M153 114 L152 115 L152 122" />
+    <path id="hero-trace-553" data-length="8.41" data-bounds="158 156 8 1" d="M166 156 L159 156 L158 157" />
+    <path id="hero-trace-554" data-length="8.41" data-bounds="405 234 8 1" d="M405 234 L412 234 L413 235" />
+    <path id="hero-trace-555" data-length="8.41" data-bounds="371 253 2 6" d="M373 253 L371 253 L371 258 L372 259" />
+    <path id="hero-trace-556" data-length="8.41" data-bounds="557 260 8 1" d="M557 260 L564 260 L565 261" />
+    <path id="hero-trace-557" data-length="8.32" data-bounds="60 198 7 2" d="M67 198 L66 200 L60 199" />
+    <path id="hero-trace-558" data-length="8.26" data-bounds="507 149 4 6" d="M507 149 L510 150 L511 155" />
+    <path id="hero-trace-559" data-length="8.25" data-bounds="404 304 8 2" d="M404 304 L412 306" />
+    <path id="hero-trace-560" data-length="8.24" data-bounds="323 100 1 8" d="M323 100 L323 106 L324 108" />
+    <path id="hero-trace-561" data-length="8.24" data-bounds="373 237 7 2" d="M380 237 L375 237 L373 238 L373 239" />
+    <path id="hero-trace-562" data-length="8.24" data-bounds="391 238 2 7" d="M393 238 L393 241 L392 243 L391 243 L391 245" />
+    <path id="hero-trace-563" data-length="8.24" data-bounds="441 246 5 4" d="M441 246 L443 246 L443 247 L445 248 L445 250 L446 250" />
+    <path id="hero-trace-564" data-length="8.24" data-bounds="366 277 7 2" d="M366 277 L366 278 L368 279 L373 279" />
+    <path id="hero-trace-565" data-length="8.16" data-bounds="367 159 7 2" d="M374 159 L370 159 L370 160 L367 161" />
+    <path id="hero-trace-566" data-length="8.16" data-bounds="543 228 5 4" d="M543 228 L545 228 L545 231 L548 232" />
+    <path id="hero-trace-567" data-length="8.1" data-bounds="314 263 4 5" d="M314 263 L317 263 L318 268" />
+    <path id="hero-trace-568" data-length="8.07" data-bounds="352 200 6 5" d="M352 200 L357 203 L358 205" />
+    <path id="hero-trace-569" data-length="8.06" data-bounds="558 168 1 8" d="M559 168 L558 176" />
+    <path id="hero-trace-570" data-length="8.06" data-bounds="267 199 8 1" d="M275 199 L267 200" />
+    <path id="hero-trace-571" data-length="8.06" data-bounds="356 233 8 1" d="M364 233 L356 234" />
+    <path id="hero-trace-572" data-length="8.06" data-bounds="295 298 4 7" d="M299 298 L295 305" />
+    <path id="hero-trace-573" data-length="8" data-bounds="347 100 0 8" d="M347 100 L347 108" />
+    <path id="hero-trace-574" data-length="8" data-bounds="466 113 8 0" d="M466 113 L474 113" />
+    <path id="hero-trace-575" data-length="8" data-bounds="607 124 3 7" d="M610 124 L607 128 L607 131" />
+    <path id="hero-trace-576" data-length="8" data-bounds="350 128 0 8" d="M350 128 L350 136" />
+    <path id="hero-trace-577" data-length="8" data-bounds="326 129 0 8" d="M326 129 L326 137" />
+    <path id="hero-trace-578" data-length="8" data-bounds="153 138 0 8" d="M153 138 L153 146" />
+    <path id="hero-trace-579" data-length="8" data-bounds="132 139 0 8" d="M132 139 L132 147" />
+    <path id="hero-trace-580" data-length="8" data-bounds="333 151 8 0" d="M333 151 L341 151" />
+    <path id="hero-trace-581" data-length="8" data-bounds="458 156 6 4" d="M464 156 L461 160 L458 160" />
+    <path id="hero-trace-582" data-length="8" data-bounds="388 159 0 8" d="M388 159 L388 167" />
+    <path id="hero-trace-583" data-length="8" data-bounds="488 173 8 0" d="M488 173 L496 173" />
+    <path id="hero-trace-584" data-length="8" data-bounds="489 184 7 1" d="M496 184 L495 184 L495 185 L489 185" />
+    <path id="hero-trace-585" data-length="8" data-bounds="389 230 4 4" d="M393 230 L390 230 L390 231 L389 231 L389 234" />
+    <path id="hero-trace-586" data-length="8" data-bounds="364 233 1 7" d="M364 233 L365 233 L365 240" />
+    <path id="hero-trace-587" data-length="8" data-bounds="162 242 4 6" d="M162 242 L162 244 L163 244 L166 248" />
+    <path id="hero-trace-588" data-length="8" data-bounds="123 252 0 8" d="M123 252 L123 260" />
+    <path id="hero-trace-589" data-length="8" data-bounds="472 279 8 0" d="M472 279 L480 279" />
+    <path id="hero-trace-590" data-length="8" data-bounds="396 304 8 0" d="M396 304 L404 304" />
+    <path id="hero-trace-591" data-length="7.83" data-bounds="377 380 5 5" d="M377 380 L377 382 L382 385" />
+    <path id="hero-trace-592" data-length="7.77" data-bounds="251 274 3 5" d="M252 274 L253 274 L254 277 L251 279" />
+    <path id="hero-trace-593" data-length="7.73" data-bounds="167 226 4 6" d="M171 226 L168 228 L167 232" />
+    <path id="hero-trace-594" data-length="7.71" data-bounds="147 122 5 5" d="M152 122 L151 122 L149 126 L147 127" />
+    <path id="hero-trace-595" data-length="7.65" data-bounds="271 224 6 3" d="M277 224 L275 225 L275 226 L272 226 L271 227" />
+    <path id="hero-trace-596" data-length="7.65" data-bounds="222 251 6 2" d="M222 252 L223 251 L226 251 L226 252 L228 253" />
+    <path id="hero-trace-597" data-length="7.63" data-bounds="278 299 4 6" d="M278 299 L279 301 L281 302 L282 305" />
+    <path id="hero-trace-598" data-length="7.61" data-bounds="213 245 4 5" d="M213 245 L214 245 L214 248 L217 250" />
+    <path id="hero-trace-599" data-length="7.61" data-bounds="525 306 3 6" d="M528 306 L525 308 L525 312" />
+    <path id="hero-trace-600" data-length="7.58" data-bounds="507 278 7 1" d="M507 279 L510 278 L513 278 L514 279" />
+    <path id="hero-trace-601" data-length="7.34" data-bounds="540 258 6 3" d="M546 258 L545 260 L540 261" />
+    <path id="hero-trace-602" data-length="7.29" data-bounds="493 245 7 1" d="M493 245 L496 246 L500 245" />
+    <path id="hero-trace-603" data-length="7.24" data-bounds="505 149 2 6" d="M507 149 L505 150 L505 155" />
+    <path id="hero-trace-604" data-length="7.24" data-bounds="603 200 1 7" d="M604 200 L603 202 L603 207" />
+    <path id="hero-trace-605" data-length="7.24" data-bounds="197 214 6 2" d="M197 214 L201 214 L203 215 L203 216" />
+    <path id="hero-trace-606" data-length="7.24" data-bounds="344 226 6 2" d="M344 226 L348 226 L348 227 L350 228" />
+    <path id="hero-trace-607" data-length="7.24" data-bounds="491 255 6 3" d="M491 255 L495 258 L497 257" />
+    <path id="hero-trace-608" data-length="7.24" data-bounds="425 256 1 7" d="M425 256 L425 261 L426 263" />
+    <path id="hero-trace-609" data-length="7.24" data-bounds="406 257 1 7" d="M407 257 L406 259 L406 264" />
+    <path id="hero-trace-610" data-length="7.24" data-bounds="320 270 6 2" d="M320 270 L325 270 L326 272" />
+    <path id="hero-trace-611" data-length="7.07" data-bounds="130 114 1 7" d="M130 114 L131 121" />
+    <path id="hero-trace-612" data-length="7.07" data-bounds="343 127 7 1" d="M343 127 L350 128" />
+    <path id="hero-trace-613" data-length="7.07" data-bounds="285 226 1 7" d="M285 226 L286 233" />
+    <path id="hero-trace-614" data-length="7.07" data-bounds="287 257 7 1" d="M287 257 L294 258" />
+    <path id="hero-trace-615" data-length="7.07" data-bounds="298 291 1 7" d="M298 291 L299 298" />
+    <path id="hero-trace-616" data-length="7.07" data-bounds="245 337 1 7" d="M246 337 L245 344" />
+    <path id="hero-trace-617" data-length="7" data-bounds="483 99 0 7" d="M483 99 L483 106" />
+    <path id="hero-trace-618" data-length="7" data-bounds="137 123 5 4" d="M142 123 L140 123 L137 127" />
+    <path id="hero-trace-619" data-length="7" data-bounds="595 125 0 7" d="M595 125 L595 132" />
+    <path id="hero-trace-620" data-length="7" data-bounds="337 129 0 7" d="M337 129 L337 136" />
+    <path id="hero-trace-621" data-length="7" data-bounds="143 139 0 7" d="M143 139 L143 146" />
+    <path id="hero-trace-622" data-length="7" data-bounds="367 161 0 7" d="M367 161 L367 168" />
+    <path id="hero-trace-623" data-length="7" data-bounds="450 206 0 7" d="M450 206 L450 213" />
+    <path id="hero-trace-624" data-length="7" data-bounds="402 210 7 0" d="M402 210 L409 210" />
+    <path id="hero-trace-625" data-length="7" data-bounds="373 249 3 4" d="M373 249 L376 249 L376 253" />
+    <path id="hero-trace-626" data-length="7" data-bounds="582 266 7 0" d="M582 266 L589 266" />
+    <path id="hero-trace-627" data-length="7" data-bounds="243 280 3 6" d="M243 280 L243 282 L246 286" />
+    <path id="hero-trace-628" data-length="7" data-bounds="213 290 0 7" d="M213 290 L213 297" />
+    <path id="hero-trace-629" data-length="7" data-bounds="368 328 0 7" d="M368 328 L368 335" />
+    <path id="hero-trace-630" data-length="7" data-bounds="255 337 0 7" d="M255 337 L255 344" />
+    <path id="hero-trace-631" data-length="7" data-bounds="316 347 0 7" d="M316 347 L316 354" />
+    <path id="hero-trace-632" data-length="7" data-bounds="421 398 7 0" d="M421 398 L428 398" />
+    <path id="hero-trace-633" data-length="6.83" data-bounds="282 233 4 5" d="M286 233 L283 238 L282 238" />
+    <path id="hero-trace-634" data-length="6.71" data-bounds="408 318 5 4" d="M413 318 L409 320 L408 322" />
+    <path id="hero-trace-635" data-length="6.65" data-bounds="267 200 3 4" d="M267 200 L267 203 L268 204 L270 203" />
+    <path id="hero-trace-636" data-length="6.61" data-bounds="288 152 2 6" d="M288 152 L288 155 L290 158" />
+    <path id="hero-trace-637" data-length="6.61" data-bounds="438 228 2 6" d="M440 228 L438 231 L438 234" />
+    <path id="hero-trace-638" data-length="6.47" data-bounds="194 300 4 4" d="M194 300 L194 302 L198 304" />
+    <path id="hero-trace-639" data-length="6.41" data-bounds="331 128 6 1" d="M331 128 L336 128 L337 129" />
+    <path id="hero-trace-640" data-length="6.41" data-bounds="137 138 6 1" d="M137 138 L142 138 L143 139" />
+    <path id="hero-trace-641" data-length="6.41" data-bounds="252 169 6 1" d="M258 169 L257 170 L252 170" />
+    <path id="hero-trace-642" data-length="6.41" data-bounds="229 270 4 2" d="M229 270 L229 272 L232 272 L233 271" />
+    <path id="hero-trace-643" data-length="6.41" data-bounds="194 299 6 1" d="M200 299 L195 299 L194 300" />
+    <path id="hero-trace-644" data-length="6.4" data-bounds="142 123 5 4" d="M142 123 L147 127" />
+    <path id="hero-trace-645" data-length="6.4" data-bounds="609 199 4 4" d="M609 199 L609 200 L612 201 L613 203" />
+    <path id="hero-trace-646" data-length="6.36" data-bounds="382 385 5 3" d="M382 385 L383 387 L387 388" />
+    <path id="hero-trace-647" data-length="6.32" data-bounds="337 127 6 2" d="M343 127 L337 129" />
+    <path id="hero-trace-648" data-length="6.32" data-bounds="441 199 6 2" d="M447 199 L441 201" />
+    <path id="hero-trace-649" data-length="6.32" data-bounds="207 245 6 2" d="M213 245 L207 247" />
+    <path id="hero-trace-650" data-length="6.32" data-bounds="368 322 2 6" d="M370 322 L368 328" />
+    <path id="hero-trace-651" data-length="6.32" data-bounds="246 335 6 2" d="M252 335 L246 337" />
+    <path id="hero-trace-652" data-length="6.24" data-bounds="217 250 5 2" d="M217 250 L221 250 L222 252" />
+    <path id="hero-trace-653" data-length="6.16" data-bounds="270 233 2 5" d="M270 233 L271 236 L272 236 L272 238" />
+    <path id="hero-trace-654" data-length="6.16" data-bounds="389 235 4 3" d="M389 235 L390 238 L393 238" />
+    <path id="hero-trace-655" data-length="6.16" data-bounds="487 252 4 3" d="M487 252 L488 255 L491 255" />
+    <path id="hero-trace-656" data-length="6.1" data-bounds="558 176 2 5" d="M558 176 L559 176 L560 181" />
+    <path id="hero-trace-657" data-length="6.08" data-bounds="603 112 1 6" d="M604 112 L603 118" />
+    <path id="hero-trace-658" data-length="6.08" data-bounds="288 166 6 1" d="M294 166 L288 167" />
+    <path id="hero-trace-659" data-length="6.08" data-bounds="288 172 6 1" d="M288 172 L294 173" />
+    <path id="hero-trace-660" data-length="6.08" data-bounds="578 188 1 6" d="M579 188 L578 194" />
+    <path id="hero-trace-661" data-length="6.08" data-bounds="270 227 1 6" d="M271 227 L270 233" />
+    <path id="hero-trace-662" data-length="6.08" data-bounds="365 239 6 1" d="M371 239 L365 240" />
+    <path id="hero-trace-663" data-length="6.08" data-bounds="188 240 6 1" d="M194 240 L188 241" />
+    <path id="hero-trace-664" data-length="6.08" data-bounds="465 279 6 1" d="M465 279 L471 280" />
+    <path id="hero-trace-665" data-length="6.08" data-bounds="187 299 6 1" d="M187 299 L193 300" />
+    <path id="hero-trace-666" data-length="6" data-bounds="500 93 6 0" d="M500 93 L506 93" />
+    <path id="hero-trace-667" data-length="6" data-bounds="336 101 0 6" d="M336 101 L336 107" />
+    <path id="hero-trace-668" data-length="6" data-bounds="448 113 6 0" d="M448 113 L454 113" />
+    <path id="hero-trace-669" data-length="6" data-bounds="660 135 6 0" d="M660 135 L666 135" />
+    <path id="hero-trace-670" data-length="6" data-bounds="147 138 6 0" d="M147 138 L153 138" />
+    <path id="hero-trace-671" data-length="6" data-bounds="341 161 0 6" d="M341 161 L341 167" />
+    <path id="hero-trace-672" data-length="6" data-bounds="246 170 6 0" d="M246 170 L252 170" />
+    <path id="hero-trace-673" data-length="6" data-bounds="312 195 0 6" d="M312 195 L312 201" />
+    <path id="hero-trace-674" data-length="6" data-bounds="194 234 0 6" d="M194 234 L194 240" />
+    <path id="hero-trace-675" data-length="6" data-bounds="589 260 0 6" d="M589 260 L589 266" />
+    <path id="hero-trace-676" data-length="6" data-bounds="261 262 6 0" d="M261 262 L267 262" />
+    <path id="hero-trace-677" data-length="6" data-bounds="573 292 5 1" d="M578 292 L577 292 L577 293 L573 293" />
+    <path id="hero-trace-678" data-length="6" data-bounds="218 295 4 4" d="M222 295 L222 296 L218 299" />
+    <path id="hero-trace-679" data-length="6" data-bounds="389 295 5 1" d="M394 295 L393 295 L393 296 L389 296" />
+    <path id="hero-trace-680" data-length="6" data-bounds="480 296 0 6" d="M480 296 L480 302" />
+    <path id="hero-trace-681" data-length="6" data-bounds="336 298 6 0" d="M336 298 L342 298" />
+    <path id="hero-trace-682" data-length="6" data-bounds="528 300 0 6" d="M528 300 L528 306" />
+    <path id="hero-trace-683" data-length="6" data-bounds="275 333 6 0" d="M275 333 L281 333" />
+    <path id="hero-trace-684" data-length="6" data-bounds="440 365 0 6" d="M440 365 L440 371" />
+    <path id="hero-trace-685" data-length="5.83" data-bounds="657 135 3 5" d="M660 135 L657 140" />
+    <path id="hero-trace-686" data-length="5.83" data-bounds="229 269 4 2" d="M229 270 L229 269 L231 269 L233 271" />
+    <path id="hero-trace-687" data-length="5.61" data-bounds="224 268 5 2" d="M224 268 L226 268 L229 270" />
+    <path id="hero-trace-688" data-length="5.47" data-bounds="565 293 4 2" d="M565 293 L565 294 L567 295 L569 294" />
+    <path id="hero-trace-689" data-length="5.41" data-bounds="326 128 5 1" d="M331 128 L327 128 L326 129" />
+    <path id="hero-trace-690" data-length="5.41" data-bounds="132 138 5 1" d="M137 138 L133 138 L132 139" />
+    <path id="hero-trace-691" data-length="5.41" data-bounds="542 219 1 5" d="M543 219 L542 220 L542 224" />
+    <path id="hero-trace-692" data-length="5.41" data-bounds="185 234 1 5" d="M186 234 L185 235 L185 239" />
+    <path id="hero-trace-693" data-length="5.41" data-bounds="342 259 5 1" d="M347 259 L343 259 L342 260" />
+    <path id="hero-trace-694" data-length="5.41" data-bounds="565 264 5 1" d="M565 264 L566 265 L570 265" />
+    <path id="hero-trace-695" data-length="5.41" data-bounds="200 298 4 1" d="M200 299 L200 298 L203 298 L204 299" />
+    <path id="hero-trace-696" data-length="5.41" data-bounds="370 317 1 5" d="M371 317 L370 318 L370 322" />
+    <path id="hero-trace-697" data-length="5.39" data-bounds="213 297 5 2" d="M213 297 L218 299" />
+    <path id="hero-trace-698" data-length="5.24" data-bounds="587 226 4 2" d="M587 226 L589 226 L589 227 L591 228" />
+    <path id="hero-trace-699" data-length="5.24" data-bounds="310 261 4 2" d="M310 261 L313 261 L314 263" />
+    <path id="hero-trace-700" data-length="5.24" data-bounds="158 295 2 4" d="M158 295 L160 296 L160 299" />
+    <path id="hero-trace-701" data-length="5.24" data-bounds="255 337 4 2" d="M255 337 L258 337 L259 339" />
+    <path id="hero-trace-702" data-length="5.16" data-bounds="263 86 3 3" d="M263 86 L263 88 L266 89" />
+    <path id="hero-trace-703" data-length="5.1" data-bounds="598 118 5 1" d="M603 118 L598 119" />
+    <path id="hero-trace-704" data-length="5.1" data-bounds="604 199 5 1" d="M609 199 L604 200" />
+    <path id="hero-trace-705" data-length="5.1" data-bounds="357 205 1 5" d="M358 205 L357 210" />
+    <path id="hero-trace-706" data-length="5.1" data-bounds="197 217 5 1" d="M197 217 L202 218" />
+    <path id="hero-trace-707" data-length="5.1" data-bounds="364 228 1 5" d="M365 228 L364 233" />
+    <path id="hero-trace-708" data-length="5.1" data-bounds="373 239 1 5" d="M373 239 L374 244" />
+    <path id="hero-trace-709" data-length="5.1" data-bounds="394 295 5 1" d="M394 295 L399 296" />
+    <path id="hero-trace-710" data-length="5.1" data-bounds="475 326 5 1" d="M480 326 L475 327" />
+    <path id="hero-trace-711" data-length="5" data-bounds="478 106 5 0" d="M478 106 L483 106" />
+    <path id="hero-trace-712" data-length="5" data-bounds="619 120 0 5" d="M619 120 L619 125" />
+    <path id="hero-trace-713" data-length="5" data-bounds="392 123 0 5" d="M392 123 L392 128" />
+    <path id="hero-trace-714" data-length="5" data-bounds="590 125 5 0" d="M590 125 L595 125" />
+    <path id="hero-trace-715" data-length="5" data-bounds="448 157 0 5" d="M448 157 L448 162" />
+    <path id="hero-trace-716" data-length="5" data-bounds="374 159 5 0" d="M374 159 L379 159" />
+    <path id="hero-trace-717" data-length="5" data-bounds="312 190 0 5" d="M312 190 L312 195" />
+    <path id="hero-trace-718" data-length="5" data-bounds="262 200 5 0" d="M262 200 L267 200" />
+    <path id="hero-trace-719" data-length="5" data-bounds="487 251 4 1" d="M491 251 L487 251 L487 252" />
+    <path id="hero-trace-720" data-length="5" data-bounds="301 255 0 5" d="M301 255 L301 260" />
+    <path id="hero-trace-721" data-length="5" data-bounds="217 267 4 3" d="M217 267 L221 270" />
+    <path id="hero-trace-722" data-length="5" data-bounds="560 293 5 0" d="M560 293 L565 293" />
+    <path id="hero-trace-723" data-length="5" data-bounds="161 299 0 5" d="M161 299 L161 304" />
+    <path id="hero-trace-724" data-length="5" data-bounds="156 304 5 0" d="M156 304 L161 304" />
+    <path id="hero-trace-725" data-length="5" data-bounds="412 306 3 4" d="M412 306 L415 310" />
+    <path id="hero-trace-726" data-length="5" data-bounds="330 307 5 0" d="M330 307 L335 307" />
+    <path id="hero-trace-727" data-length="5" data-bounds="426 337 5 0" d="M426 337 L431 337" />
+    <path id="hero-trace-728" data-length="5" data-bounds="229 340 4 1" d="M229 340 L229 341 L233 341" />
+    <path id="hero-trace-729" data-length="5" data-bounds="440 371 0 5" d="M440 371 L440 376" />
+  </g>
+</svg>
