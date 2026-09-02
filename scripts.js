@@ -22,10 +22,22 @@ const displayPalettes = {
     "--line": { base: "#4d4d4a", contrast: "#ffffff" },
     "--accent": { base: "#f0c8f6", contrast: "#ff9fff" },
     "--focus": { base: "#f49cff", contrast: "#ffff00" },
-    "--salient-teal": { base: "#71d1c8", contrast: "#a9fff6" },
-    "--salient-orange": { base: "#f2ad3d", contrast: "#ffd166" },
-    "--salient-surface": { base: "#12383a", contrast: "#000000" },
-    "--salient-on-accent": { base: "#071c20", contrast: "#000000" },
+    "--colour-support-primary": { base: "#71d1c8", contrast: "#a9fff6" },
+    "--colour-support-secondary": { base: "#f2ad3d", contrast: "#ffd166" },
+    "--surface-supporting": { base: "#12383a", contrast: "#000000" },
+    "--text-on-support-primary": { base: "#071c20", contrast: "#000000" },
+    "--stage-discover-ink": { base: "#81d584", contrast: "#ffffff" },
+    "--stage-discover-bright": { base: "#81d584", contrast: "#ffffff" },
+    "--stage-discover-soft": { base: "#2f3e30", contrast: "#000000" },
+    "--stage-define-ink": { base: "#71d1c8", contrast: "#ffffff" },
+    "--stage-define-bright": { base: "#71d1c8", contrast: "#ffffff" },
+    "--stage-define-soft": { base: "#2c3d3c", contrast: "#000000" },
+    "--stage-develop-ink": { base: "#f2ad3d", contrast: "#ffffff" },
+    "--stage-develop-bright": { base: "#f2ad3d", contrast: "#ffffff" },
+    "--stage-develop-soft": { base: "#433723", contrast: "#000000" },
+    "--stage-outcome-ink": { base: "#fea18a", contrast: "#ffffff" },
+    "--stage-outcome-bright": { base: "#fea18a", contrast: "#ffffff" },
+    "--stage-outcome-soft": { base: "#463531", contrast: "#000000" },
   },
   light: {
     "--bg": { base: "#f5f5f1", contrast: "#ffffff" },
@@ -37,10 +49,22 @@ const displayPalettes = {
     "--line": { base: "#b9b9b4", contrast: "#000000" },
     "--accent": { base: "#8e3f9c", contrast: "#5e006c" },
     "--focus": { base: "#861e99", contrast: "#43004d" },
-    "--salient-teal": { base: "#006b76", contrast: "#004650" },
-    "--salient-orange": { base: "#a85600", contrast: "#713200" },
-    "--salient-surface": { base: "#e7f3f1", contrast: "#ffffff" },
-    "--salient-on-accent": { base: "#ffffff", contrast: "#ffffff" },
+    "--colour-support-primary": { base: "#006b76", contrast: "#004650" },
+    "--colour-support-secondary": { base: "#a85600", contrast: "#713200" },
+    "--surface-supporting": { base: "#e7f3f1", contrast: "#ffffff" },
+    "--text-on-support-primary": { base: "#ffffff", contrast: "#ffffff" },
+    "--stage-discover-ink": { base: "#157123", contrast: "#000000" },
+    "--stage-discover-bright": { base: "#81d584", contrast: "#ffffff" },
+    "--stage-discover-soft": { base: "#deefdb", contrast: "#ffffff" },
+    "--stage-define-ink": { base: "#006b76", contrast: "#000000" },
+    "--stage-define-bright": { base: "#71d1c8", contrast: "#ffffff" },
+    "--stage-define-soft": { base: "#dbeee9", contrast: "#ffffff" },
+    "--stage-develop-ink": { base: "#a85600", contrast: "#000000" },
+    "--stage-develop-bright": { base: "#f2ad3d", contrast: "#ffffff" },
+    "--stage-develop-soft": { base: "#f4e7cd", contrast: "#ffffff" },
+    "--stage-outcome-ink": { base: "#95402b", contrast: "#000000" },
+    "--stage-outcome-bright": { base: "#fea18a", contrast: "#ffffff" },
+    "--stage-outcome-soft": { base: "#f7e4dc", contrast: "#ffffff" },
   },
 };
 
@@ -119,12 +143,13 @@ function closeAccessibilityPanels(returnFocus = false) {
   if (returnFocus) triggerToRestore?.focus();
 }
 
-function closeMenu() {
+function closeMenu(returnFocus = false) {
   if (!menuButton || !mobileMenu) return;
   menuButton.setAttribute("aria-expanded", "false");
   menuButton.setAttribute("aria-label", "Open navigation");
   mobileMenu.hidden = true;
   document.body.classList.remove("menu-open");
+  if (returnFocus) menuButton.focus();
 }
 
 if (menuButton && mobileMenu) {
@@ -271,7 +296,7 @@ document.addEventListener("keydown", (event) => {
     event.preventDefault();
     closeAccessibilityPanels(true);
   } else {
-    closeMenu();
+    closeMenu(true);
   }
 });
 
