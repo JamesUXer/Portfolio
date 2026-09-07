@@ -2420,12 +2420,21 @@ a.project-image-link:hover img {
   background: var(--bg);
 }
 
+.ai-educator-case-study .stage-define .ai-educator-strategy-grid li {
+  border-top-color: var(--stage-current-ink);
+  background: var(--stage-current-soft);
+}
+
 .ai-educator-strategy-grid span {
   display: block;
   margin-bottom: 2.5rem;
   font-family: var(--font-display);
   font-size: 2.25rem;
   line-height: 1;
+}
+
+.ai-educator-case-study .stage-define .ai-educator-strategy-grid span {
+  color: var(--stage-current-ink);
 }
 
 .ai-educator-strategy-grid p {
@@ -2470,8 +2479,41 @@ a.project-image-link:hover img {
   font-weight: 400;
 }
 
+.ai-educator-case-study .stage-develop .ai-educator-journey li,
+.ai-educator-case-study .stage-develop .ai-educator-process li {
+  border-color: var(--stage-current-ink);
+}
+
+.ai-educator-case-study .stage-develop .ai-educator-journey li:not(:last-child)::after,
+.ai-educator-case-study .stage-develop .ai-educator-process li:not(:last-child)::after {
+  color: var(--stage-current-ink);
+}
+
+.ai-educator-case-study .stage-develop .ai-educator-journey li:nth-child(3),
+.ai-educator-case-study .stage-develop .ai-educator-process li:nth-child(3) {
+  background: var(--stage-current-bright);
+  color: var(--stage-on-bright);
+}
+
+.ai-educator-case-study .stage-develop .ai-educator-journey li:nth-child(3)::after,
+.ai-educator-case-study .stage-develop .ai-educator-process li:nth-child(3)::after {
+  color: var(--stage-on-bright);
+}
+
 .ai-educator-feature-media {
   margin-top: 3rem !important;
+}
+
+.ai-educator-subsection {
+  margin-top: clamp(4rem, 8vw, 6rem);
+  border-top: 1px solid var(--stage-current-ink);
+  padding-top: clamp(2rem, 5vw, 3.5rem);
+}
+
+.ai-educator-subsection .case-study-prose h3 {
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.7rem, 3.5vw, 2.7rem);
+  line-height: 1.15;
 }
 
 .ai-educator-media-grid {
@@ -4310,12 +4352,12 @@ a.project-image-link:hover img {
   }
 
   .stage-rail ol {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 
   .stage-rail li {
     min-height: 0;
-    grid-template-columns: 2.25rem 1fr;
+    grid-template-columns: 2.25rem minmax(0, 1fr);
     padding: 1rem;
   }
 
