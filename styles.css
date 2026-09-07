@@ -4359,3 +4359,146 @@ a.project-image-link:hover img {
     gap: 3rem;
   }
 }
+
+/* HabitHero v1.1 case-study refinements */
+
+.habit-hero-case-study .habit-research-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.habit-hero-case-study .evidence-card blockquote {
+  margin: 1rem 0 0;
+  color: var(--text);
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.habit-hero-case-study .evidence-card cite {
+  display: block;
+  margin-top: 0.6rem;
+  color: var(--muted-text);
+  font-size: 0.9rem;
+  font-style: normal;
+}
+
+.habit-scope-copy,
+.habit-risk-intro,
+.habit-next-steps {
+  margin-top: clamp(4rem, 8vw, 6rem);
+}
+
+.habit-decision {
+  margin-top: clamp(4rem, 9vw, 7rem);
+  border-top: 1px solid var(--stage-current-ink);
+  padding-top: clamp(2rem, 5vw, 3.5rem);
+}
+
+.habit-decision-number {
+  margin-bottom: 0.75rem;
+  color: var(--stage-current-ink);
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.habit-decision > .case-study-prose > h3 {
+  font-size: clamp(1.7rem, 3.5vw, 2.7rem);
+  line-height: 1.15;
+}
+
+.habit-decision h4 {
+  color: var(--text);
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+
+.habit-decision .decision-grid h4 {
+  display: grid;
+  grid-template-columns: 3.5rem minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.habit-decision .decision-grid h4::before {
+  content: counter(decision-step);
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--stage-current-bright);
+  color: var(--stage-on-bright);
+  font-family: var(--font-heading);
+  font-size: 1rem;
+}
+
+.habit-decision .decision-options .decision-selected {
+  border-color: var(--stage-current-ink);
+}
+
+.habit-onboarding-flow {
+  margin-top: 3rem;
+}
+
+.decision-rationale {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 2.5rem 0 0;
+}
+
+.decision-rationale > div {
+  min-width: 0;
+  border-top: 0.3rem solid var(--stage-current-ink);
+  padding-top: 1.25rem;
+}
+
+.decision-rationale dt {
+  color: var(--stage-current-ink);
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.decision-rationale dd {
+  margin: 0.75rem 0 0;
+  color: var(--soft-text);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.habit-decision .case-study-home-structures {
+  margin-top: 3rem;
+}
+
+.habit-decision .case-study-split h4 {
+  margin-bottom: 1rem;
+}
+
+.habit-accessibility-note {
+  margin-top: clamp(4rem, 8vw, 6rem);
+}
+
+@media (max-width: 1100px) {
+  .habit-hero-case-study .habit-research-grid,
+  .decision-rationale {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .habit-hero-case-study .habit-research-grid,
+  .decision-rationale {
+    grid-template-columns: 1fr;
+  }
+
+  .habit-decision {
+    margin-top: 4rem;
+  }
+}
