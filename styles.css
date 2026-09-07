@@ -1612,6 +1612,121 @@ a.project-image-link:hover img {
   padding-bottom: 0;
 }
 
+.salient-design-question {
+  margin: 2rem 0;
+  border-left: 0.35rem solid var(--accent);
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  color: var(--text);
+  font-family: var(--font-heading);
+  font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.salient-route-list {
+  margin: 1.5rem 0 0;
+  padding-left: 1.25rem;
+  color: var(--soft-text);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.salient-route-list li + li {
+  margin-top: 0.45rem;
+}
+
+.salient-source-figure {
+  overflow: hidden;
+  border-radius: 1rem;
+  background: #ffffff;
+}
+
+.salient-source-figure img {
+  width: 100%;
+  height: auto;
+}
+
+.salient-source-figure figcaption,
+.salient-architecture-figure figcaption {
+  padding: 1rem 1.25rem;
+  background: var(--bg);
+  color: var(--muted-text);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.salient-case-study .case-study-stage > .case-study-prose > h3 {
+  margin-top: 2.5rem;
+}
+
+.salient-testing-framework {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.salient-testing-framework .evidence-card {
+  padding: 1.5rem;
+}
+
+.salient-testing-framework .evidence-card h3 {
+  font-size: 1.05rem;
+}
+
+.salient-results-strip {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.salient-results-strip li > span:first-child {
+  margin: 0 0 1.15rem;
+  color: var(--stage-current-ink);
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.salient-results-strip strong + span + strong {
+  margin-top: 1.35rem;
+}
+
+.salient-development-block {
+  margin-top: clamp(4.5rem, 9vw, 7rem);
+  border-top: 1px solid var(--line);
+  padding-top: clamp(3rem, 6vw, 4.5rem);
+}
+
+.salient-development-block > .case-study-prose h3,
+.salient-supporting-finding h3 {
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+}
+
+.salient-interim-figure {
+  position: relative;
+  border: 1px solid var(--stage-current-ink);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.salient-interim-figure .salient-proposed-label {
+  background: var(--stage-current-bright);
+  color: var(--stage-on-bright);
+}
+
+.salient-interim-comparison img,
+.salient-glossary-inset img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.salient-supporting-finding {
+  margin-top: clamp(3.5rem, 7vw, 5rem);
+}
+
+.salient-glossary-inset {
+  width: min(100%, 58rem);
+}
+
 .salient-hero-media {
   overflow: visible;
   background: transparent;
@@ -4321,6 +4436,10 @@ a.project-image-link:hover img {
 }
 
 @media (max-width: 1100px) {
+  .salient-testing-framework {
+    grid-template-columns: 1fr;
+  }
+
   .stage-rail ol,
   .behaviour-diagram {
     grid-template-columns: repeat(2, minmax(0, 1fr));
