@@ -1206,7 +1206,7 @@ async function initHeroSheen() {
   }
 
   const image = new Image();
-  image.src = "assets/images/hero-artwork-transparent.png";
+  image.src = "assets/images/hero-artwork-transparent-2x.png";
   const imageReady = image.decode ? image.decode().catch(() => {}) : Promise.resolve();
   const visibilityReady = new Promise((resolve) => {
     if (!window.IntersectionObserver) {

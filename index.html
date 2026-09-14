@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;900&amp;family=Archivo+Black&amp;family=Lato:wght@400;700&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=132" />
+    <link rel="stylesheet" href="styles.css?v=141" />
   </head>
   <body id="top" data-page="home">
     <svg class="icon-sprite" aria-hidden="true">
@@ -109,6 +109,175 @@
         <div class="site-shell hero-main">
           <span class="hero-artwork" aria-hidden="true"></span>
           <span class="hero-sheen-layer" aria-hidden="true"></span>
+          <span class="hero-fireworks-layer" aria-hidden="true">
+            <svg class="hero-fireworks-vector" viewBox="0 0 669 399" focusable="false">
+              <defs>
+                <g id="hero-firework-small-pop">
+                  <path class="hero-firework-line" d="M0 -3 L0 -11 M0 3 L0 11 M-3 0 L-11 0 M3 0 L11 0 M-2 -2 L-8 -8 M2 -2 L8 -8 M2 2 L8 8 M-2 2 L-8 8" />
+                  <circle class="hero-firework-dot" cx="0" cy="0" r="1.25" />
+                </g>
+
+                <g id="hero-firework-starburst">
+                  <path class="hero-firework-line" d="M0 -5 L0 -24 M0 5 L0 24 M-5 0 L-24 0 M5 0 L24 0 M-4 -4 L-18 -18 M4 -4 L18 -18 M4 4 L18 18 M-4 4 L-18 18" />
+                  <g class="hero-firework-dots">
+                    <circle class="hero-firework-dot" cx="-10" cy="-25" r="1.35" />
+                    <circle class="hero-firework-dot" cx="10" cy="-25" r="1.35" />
+                    <circle class="hero-firework-dot" cx="25" cy="-10" r="1.35" />
+                    <circle class="hero-firework-dot" cx="25" cy="10" r="1.35" />
+                    <circle class="hero-firework-dot" cx="10" cy="25" r="1.35" />
+                    <circle class="hero-firework-dot" cx="-10" cy="25" r="1.35" />
+                    <circle class="hero-firework-dot" cx="-25" cy="10" r="1.35" />
+                    <circle class="hero-firework-dot" cx="-25" cy="-10" r="1.35" />
+                  </g>
+                </g>
+
+                <g id="hero-firework-ring-burst">
+                  <circle class="hero-firework-ring" cx="0" cy="0" r="15" />
+                  <path class="hero-firework-line" d="M0 -3 L0 -10 M0 3 L0 10 M-3 0 L-10 0 M3 0 L10 0" />
+                  <g class="hero-firework-dots">
+                    <circle class="hero-firework-dot" cx="0" cy="-24" r="1.5" />
+                    <circle class="hero-firework-dot" cx="17" cy="-17" r="1.5" />
+                    <circle class="hero-firework-dot" cx="24" cy="0" r="1.5" />
+                    <circle class="hero-firework-dot" cx="17" cy="17" r="1.5" />
+                    <circle class="hero-firework-dot" cx="0" cy="24" r="1.5" />
+                    <circle class="hero-firework-dot" cx="-17" cy="17" r="1.5" />
+                    <circle class="hero-firework-dot" cx="-24" cy="0" r="1.5" />
+                    <circle class="hero-firework-dot" cx="-17" cy="-17" r="1.5" />
+                  </g>
+                </g>
+
+                <g id="hero-firework-alternating-burst">
+                  <path class="hero-firework-line" d="M0 -5 L0 -28 M0 5 L0 28 M-5 0 L-28 0 M5 0 L28 0" />
+                  <path class="hero-firework-line hero-firework-secondary-line" d="M-4 -4 L-14 -14 M4 -4 L14 -14 M4 4 L14 14 M-4 4 L-14 14" />
+                  <g class="hero-firework-dots">
+                    <circle class="hero-firework-dot" cx="-20" cy="-20" r="1.25" />
+                    <circle class="hero-firework-dot" cx="20" cy="-20" r="1.25" />
+                    <circle class="hero-firework-dot" cx="20" cy="20" r="1.25" />
+                    <circle class="hero-firework-dot" cx="-20" cy="20" r="1.25" />
+                  </g>
+                </g>
+
+                <g id="hero-firework-fan-burst">
+                  <path class="hero-firework-line" d="M0 7 Q-18 -8 -25 -22 M0 7 Q-10 -12 -12 -29 M0 7 L0 -32 M0 7 Q10 -12 12 -29 M0 7 Q18 -8 25 -22" />
+                  <g class="hero-firework-dots">
+                    <circle class="hero-firework-dot" cx="-27" cy="-25" r="1.35" />
+                    <circle class="hero-firework-dot" cx="-14" cy="-32" r="1.15" />
+                    <circle class="hero-firework-dot" cx="0" cy="-35" r="1.5" />
+                    <circle class="hero-firework-dot" cx="14" cy="-32" r="1.15" />
+                    <circle class="hero-firework-dot" cx="27" cy="-25" r="1.35" />
+                  </g>
+                </g>
+
+                <g id="hero-firework-curved-burst">
+                  <path class="hero-firework-line" d="M0 -4 Q-4 -15 0 -25 M4 0 Q15 -4 25 0 M0 4 Q4 15 0 25 M-4 0 Q-15 4 -25 0 M-3 -3 Q-13 -8 -18 -18 M3 -3 Q13 -8 18 -18 M3 3 Q13 8 18 18 M-3 3 Q-13 8 -18 18" />
+                  <circle class="hero-firework-dot" cx="0" cy="0" r="1.5" />
+                </g>
+
+                <g id="hero-firework-falling-embers">
+                  <path class="hero-firework-line" d="M-18 5 Q-17 14 -20 23 M-7 9 Q-5 18 -7 28 M7 9 Q5 18 7 28 M18 5 Q17 14 20 23" />
+                  <circle class="hero-firework-dot" cx="-20" cy="25" r="1.25" />
+                  <circle class="hero-firework-dot" cx="-7" cy="30" r="1.1" />
+                  <circle class="hero-firework-dot" cx="7" cy="30" r="1.1" />
+                  <circle class="hero-firework-dot" cx="20" cy="25" r="1.25" />
+                </g>
+              </defs>
+
+              <g class="hero-firework-desktop-sequence">
+              <g class="hero-firework-event hero-firework-event-one hero-firework-slot-a" transform="translate(72 72) scale(0.85)">
+                <path class="hero-firework-trail" pathLength="1" d="M-3 39 Q-1 20 0 3" />
+                <g class="hero-firework-burst"><use href="#hero-firework-small-pop" /></g>
+              </g>
+              <g class="hero-firework-event hero-firework-event-two hero-firework-slot-b" transform="translate(150 42) scale(1.05)">
+                <path class="hero-firework-trail" pathLength="1" d="M4 42 Q1 23 0 4" />
+                <g class="hero-firework-burst"><use href="#hero-firework-starburst" /></g>
+              </g>
+              <g class="hero-firework-event hero-firework-event-three hero-firework-slot-c" transform="translate(235 68) scale(0.72)">
+                <g class="hero-firework-burst"><use href="#hero-firework-small-pop" /></g>
+              </g>
+              <g class="hero-firework-event hero-firework-event-four hero-firework-slot-d" transform="translate(320 34) scale(1.05)">
+                <g class="hero-firework-burst"><use href="#hero-firework-ring-burst" /></g>
+              </g>
+              <g class="hero-firework-event hero-firework-event-five hero-firework-slot-e" transform="translate(410 78) scale(1.12)">
+                <g class="hero-firework-burst"><use href="#hero-firework-alternating-burst" /></g>
+              </g>
+              <g class="hero-firework-event hero-firework-event-six hero-firework-slot-f" transform="translate(510 108) scale(1.05)">
+                <g class="hero-firework-burst hero-firework-fan"><use href="#hero-firework-fan-burst" /></g>
+              </g>
+              <g class="hero-firework-event hero-firework-event-seven hero-firework-slot-g" transform="translate(600 96) scale(1.02)">
+                <path class="hero-firework-trail" pathLength="1" d="M-4 43 Q-2 22 0 4" />
+                <g class="hero-firework-burst"><use href="#hero-firework-starburst" /></g>
+              </g>
+              <g class="hero-firework-event hero-firework-event-eight hero-firework-slot-c" transform="translate(265 48) scale(1.12)">
+                <g class="hero-firework-burst hero-firework-inner-burst"><use href="#hero-firework-small-pop" /></g>
+                <g class="hero-firework-burst"><use href="#hero-firework-ring-burst" /></g>
+              </g>
+              <g class="hero-firework-event hero-firework-event-nine hero-firework-slot-e" transform="translate(455 94) scale(1.08)">
+                <g class="hero-firework-burst"><use href="#hero-firework-curved-burst" /></g>
+                <g class="hero-firework-fall"><use href="#hero-firework-falling-embers" /></g>
+              </g>
+              <g class="hero-firework-event hero-firework-event-ten hero-firework-slot-a" transform="translate(110 62) scale(1.28)">
+                <g class="hero-firework-burst"><use href="#hero-firework-alternating-burst" /></g>
+              </g>
+              <g class="hero-firework-event hero-firework-event-eleven hero-firework-slot-g" transform="translate(590 86) scale(0.82)">
+                <g class="hero-firework-burst"><use href="#hero-firework-small-pop" /></g>
+              </g>
+              <g class="hero-firework-event hero-firework-event-fifteen hero-firework-slot-c" transform="translate(205 30) scale(0.72)">
+                <g class="hero-firework-burst"><use href="#hero-firework-small-pop" /></g>
+              </g>
+              <g class="hero-firework-event hero-firework-event-sixteen hero-firework-slot-d" transform="translate(370 72)">
+                <path class="hero-firework-trail" pathLength="1" d="M-3 41 Q-1 22 0 4" />
+                <g class="hero-firework-burst"><use href="#hero-firework-curved-burst" /></g>
+              </g>
+              <g class="hero-firework-event hero-firework-event-seventeen hero-firework-slot-f" transform="translate(520 112) scale(0.9)">
+                <g class="hero-firework-burst"><use href="#hero-firework-ring-burst" /></g>
+              </g>
+
+              <g class="hero-firework-event hero-firework-event-twelve hero-firework-slot-focal" transform="translate(335 50) scale(1.55)">
+                <path class="hero-firework-trail" pathLength="1" d="M3 48 Q1 25 0 4" />
+                <g class="hero-firework-burst hero-firework-inner-burst"><use href="#hero-firework-small-pop" /></g>
+                <g class="hero-firework-burst"><use href="#hero-firework-alternating-burst" /></g>
+                <g class="hero-firework-fall"><use href="#hero-firework-falling-embers" /></g>
+              </g>
+              <g class="hero-firework-event hero-firework-event-thirteen hero-firework-slot-b" transform="translate(150 48) scale(0.92)">
+                <g class="hero-firework-burst"><use href="#hero-firework-small-pop" /></g>
+              </g>
+              <g class="hero-firework-event hero-firework-event-fourteen hero-firework-slot-f" transform="translate(555 108) scale(1.05)">
+                <g class="hero-firework-burst"><use href="#hero-firework-ring-burst" /></g>
+              </g>
+              <g class="hero-firework-event hero-firework-event-eighteen hero-firework-slot-e" transform="translate(470 110) scale(0.75)">
+                <g class="hero-firework-burst hero-firework-fan"><use href="#hero-firework-fan-burst" /></g>
+              </g>
+              </g>
+
+              <g class="hero-firework-mobile-sequence">
+                <g class="hero-firework-event hero-firework-mobile-one" transform="translate(540 250) scale(0.85)">
+                  <path class="hero-firework-trail" pathLength="1" d="M4 44 Q1 24 0 4" />
+                  <g class="hero-firework-burst"><use href="#hero-firework-small-pop" /></g>
+                </g>
+                <g class="hero-firework-event hero-firework-mobile-two" transform="translate(-10 55) scale(1.05)">
+                  <g class="hero-firework-burst"><use href="#hero-firework-starburst" /></g>
+                </g>
+                <g class="hero-firework-event hero-firework-mobile-three" transform="translate(330 135) scale(0.78)">
+                  <g class="hero-firework-burst"><use href="#hero-firework-small-pop" /></g>
+                </g>
+                <g class="hero-firework-event hero-firework-mobile-four" transform="translate(650 85) scale(1.1)">
+                  <g class="hero-firework-burst"><use href="#hero-firework-alternating-burst" /></g>
+                </g>
+                <g class="hero-firework-event hero-firework-mobile-five" transform="translate(455 235)">
+                  <g class="hero-firework-burst"><use href="#hero-firework-ring-burst" /></g>
+                  <g class="hero-firework-fall"><use href="#hero-firework-falling-embers" /></g>
+                </g>
+                <g class="hero-firework-event hero-firework-mobile-six" transform="translate(520 180) scale(1.2)">
+                  <path class="hero-firework-trail" pathLength="1" d="M-3 45 Q-1 24 0 4" />
+                  <g class="hero-firework-burst"><use href="#hero-firework-starburst" /></g>
+                  <g class="hero-firework-fall"><use href="#hero-firework-falling-embers" /></g>
+                </g>
+                <g class="hero-firework-event hero-firework-mobile-seven" transform="translate(120 270) scale(0.82)">
+                  <g class="hero-firework-burst hero-firework-fan"><use href="#hero-firework-fan-burst" /></g>
+                </g>
+              </g>
+            </svg>
+          </span>
           <h1 id="hero-title"><a href="#top">james <span>spiller</span></a></h1>
         </div>
 
@@ -282,6 +451,6 @@
       </div>
     </footer>
 
-    <script src="scripts.js?v=33"></script>
+    <script src="scripts.js?v=35"></script>
   </body>
 </html>
