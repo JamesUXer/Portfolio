@@ -1440,10 +1440,12 @@ a.project-image-link:hover img {
 
 .progress-item {
   position: relative;
+  display: block;
   height: 20.25rem;
   min-width: 0;
   overflow: hidden;
   border-radius: 1.5rem;
+  color: inherit;
 }
 
 .progress-card-normal {
@@ -1461,7 +1463,7 @@ a.project-image-link:hover img {
 
 .progress-media {
   display: grid;
-  min-height: 10rem;
+  height: 10rem;
   overflow: hidden;
   place-items: center;
   border-radius: 1rem;
@@ -1529,15 +1531,12 @@ a.project-image-link:hover img {
   white-space: nowrap;
 }
 
-.progress-card-interactive:hover .progress-card-normal,
-.progress-card-interactive:focus-within .progress-card-normal {
+.progress-card-interactive:focus-visible .progress-card-normal {
   opacity: 0;
 }
 
-.progress-card-interactive:hover .progress-card-hover,
-.progress-card-interactive:focus-within .progress-card-hover {
+.progress-card-interactive:focus-visible .progress-card-hover {
   opacity: 1;
-  pointer-events: auto;
 }
 
 .progress-card-interactive:focus-visible {
@@ -1545,8 +1544,33 @@ a.project-image-link:hover img {
   outline-offset: 4px;
 }
 
-.lawyer-project {
-  grid-column: 1;
+@media (hover: hover) and (pointer: fine) {
+  .progress-card-interactive:hover .progress-card-normal {
+    opacity: 0;
+  }
+
+  .progress-card-interactive:hover .progress-card-hover {
+    opacity: 1;
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .progress-item {
+    height: auto;
+    min-height: 20.25rem;
+  }
+
+  .progress-card-normal {
+    padding-bottom: 0.5rem;
+  }
+
+  .progress-card-normal .project-cta {
+    display: inline-flex;
+  }
+
+  .progress-card-hover {
+    display: none;
+  }
 }
 
 .progress-heading h2 a {
@@ -1559,53 +1583,145 @@ a.project-image-link:hover img {
 }
 
 .work-in-progress-page {
-  display: grid;
-  min-height: calc(100vh - 10rem);
-  align-items: start;
   padding: 1.5rem 0 clamp(4rem, 8vw, 7.5rem);
 }
 
-.work-in-progress-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(22rem, 1.15fr);
-  gap: clamp(3rem, 7vw, 7rem);
-  align-items: start;
+.work-in-progress-intro {
+  padding-bottom: clamp(4rem, 8vw, 7rem);
 }
 
-.work-in-progress-copy {
-  max-width: 39rem;
+.work-in-progress-intro .eyebrow {
+  margin-top: 2.25rem;
 }
 
-.work-in-progress-copy h1 {
-  margin-top: 1.25rem;
+.work-in-progress-intro h1 {
+  max-width: 62rem;
   font-family: var(--font-display);
-  font-size: clamp(3.75rem, 7vw, 7rem);
-  line-height: 0.95;
+  font-size: clamp(3rem, 6vw, 5.75rem);
+  line-height: 1;
 }
 
-.work-in-progress-copy > p:last-of-type {
+.work-in-progress-intro > p:last-of-type {
+  max-width: 52rem;
   margin-top: 2rem;
   color: var(--soft-text);
   font-size: 1.25rem;
   line-height: 1.55;
 }
 
-.work-in-progress-copy .button-link {
-  margin-top: 2rem;
+.work-project-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  margin-top: 2.5rem;
 }
 
-.work-in-progress-media {
-  width: min(100%, 42rem);
-  margin: 0;
-  overflow: hidden;
-  justify-self: end;
-  border-radius: 20px;
-  background: #000000;
+.work-project-nav a {
+  min-height: 2.75rem;
+  color: var(--accent);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
 }
 
-.work-in-progress-media img {
+.work-project {
+  scroll-margin-top: 6rem;
+  border-top: 1px solid var(--line);
+  padding-block: clamp(4rem, 8vw, 7rem);
+}
+
+.work-project-opening > .case-study-back {
+  margin-bottom: 2rem;
+}
+
+.work-project-status {
+  display: inline-flex;
+  min-height: 2.25rem;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.35rem 0.8rem;
+  color: var(--soft-text);
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.work-project h2 {
+  max-width: 65rem;
+  margin-top: 1.5rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 5.3vw, 5.25rem);
+  line-height: 1.05;
+}
+
+.work-project .case-study-tags {
+  justify-content: flex-start;
+}
+
+.work-project-media {
+  display: grid;
   width: 100%;
+  min-height: 22rem;
+  overflow: hidden;
+  margin: 0;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  padding: clamp(1rem, 4vw, 3rem);
+  background: var(--panel);
+}
+
+.work-project-media img {
+  width: auto;
   height: auto;
+  max-height: 44rem;
+  object-fit: contain;
+}
+
+.work-project-media-phone img {
+  width: min(100%, 24.375rem);
+}
+
+.legal-portfolio-media img {
+  width: 10.3125rem;
+}
+
+.spellquest-media img {
+  width: min(100%, 25.8125rem);
+}
+
+.work-project .case-study-intro {
+  max-width: 54rem;
+}
+
+.work-project .case-study-meta {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.work-project-next-step {
+  max-width: 54rem;
+  margin-top: 3rem;
+  border-left: 0.3rem solid var(--accent);
+  padding-left: 1.25rem;
+}
+
+.work-project-next-step strong {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+}
+
+.work-project-next-step p {
+  margin-top: 0.65rem;
+  color: var(--soft-text);
+  font-size: 1.125rem;
+  line-height: 1.55;
+}
+
+.logger-project .progress-media img {
+  object-position: center 12%;
 }
 
 .lawyer-project .progress-media {
@@ -3560,6 +3676,10 @@ a.project-image-link:hover img {
 }
 
 @media (min-width: 761px) and (max-width: 1100px) {
+  .work-project .case-study-meta {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .project-card-hover > p {
     display: none;
   }
@@ -4250,6 +4370,29 @@ a.project-image-link:hover img {
 
   .lawyer-project {
     grid-column: auto;
+  }
+
+  .work-in-progress-intro {
+    padding-top: 1rem;
+  }
+
+  .work-in-progress-intro h1,
+  .work-project h2 {
+    font-size: clamp(2.5rem, 12vw, 3.5rem);
+  }
+
+  .work-project-nav {
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .work-project-media {
+    min-height: 16rem;
+    border-radius: 1rem;
+  }
+
+  .work-project .case-study-meta {
+    grid-template-columns: 1fr;
   }
 
   .case-study-page {
