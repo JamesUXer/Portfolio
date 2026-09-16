@@ -1101,6 +1101,9 @@ button:focus-visible {
   cursor: pointer;
   box-shadow: inset 0 -0.3rem 0 var(--accent);
   transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
     transform 160ms ease,
     box-shadow 160ms ease;
 }
@@ -1112,22 +1115,21 @@ button:focus-visible {
   box-shadow: inset 0 -0.3rem 0 var(--accent);
 }
 
-.button-link:hover {
-  background: var(--accent);
-  color: var(--panel-text);
-  transform: translateY(-2px);
-  box-shadow:
-    inset 0 -0.4rem 0 var(--accent),
-    0 0.5rem 1.25rem rgb(0 0 0 / 0.18);
-}
+@media (hover: hover) and (pointer: fine) {
+  .button-link:hover {
+    background: var(--accent);
+    color: var(--panel-text);
+    transform: translateY(-2px);
+    box-shadow:
+      inset 0 -0.4rem 0 var(--accent),
+      0 0.375rem 1rem rgb(0 0 0 / 0.18);
+  }
 
-:root[data-theme="light"] .button-link:hover {
-  border-color: var(--text);
-  background: var(--text);
-  color: var(--bg);
-  box-shadow:
-    inset 0 -0.4rem 0 var(--accent),
-    0 0.5rem 1.25rem rgb(0 0 0 / 0.24);
+  :root[data-theme="light"] .button-link:hover {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: var(--colour-neutral-0);
+  }
 }
 
 .button-link:active {
@@ -1139,9 +1141,9 @@ button:focus-visible {
 }
 
 :root[data-theme="light"] .button-link:active {
-  border-color: var(--text);
-  background: var(--text);
-  color: var(--bg);
+  border-color: var(--focus);
+  background: var(--focus);
+  color: var(--colour-neutral-0);
   box-shadow: inset 0 -0.2rem 0 var(--accent);
 }
 
@@ -1172,8 +1174,10 @@ button:focus-visible {
 }
 
 .project-image-link img {
-  width: 100%;
-  height: 100%;
+  width: calc(100% + 4px);
+  max-width: none;
+  height: calc(100% + 4px);
+  margin: -2px;
   object-fit: cover;
   transition: transform 220ms ease;
 }
@@ -1315,20 +1319,30 @@ a.project-image-link:hover img {
   color: var(--text);
   font-family: var(--font-display);
   font-size: 1.25rem;
+  transition: color 160ms ease;
+}
+
+.brand-link:focus-visible {
+  color: var(--accent);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .brand-link:hover {
+    color: var(--accent);
+  }
 }
 
 .github-mark {
   border-radius: 50%;
 }
 
-.github-mark img {
+.github-mark::before {
+  content: "";
   width: 2.25rem;
   height: 2.25rem;
-  object-fit: contain;
-}
-
-:root[data-theme="light"] .github-mark img {
-  filter: invert(1);
+  background-color: currentColor;
+  -webkit-mask: url("assets/images/github-mark.webp") center / contain no-repeat;
+  mask: url("assets/images/github-mark.webp") center / contain no-repeat;
 }
 
 .pending-link[aria-disabled="true"] {
@@ -1454,8 +1468,10 @@ a.project-image-link:hover img {
 }
 
 .progress-media img {
-  width: 100%;
-  height: 100%;
+  width: calc(100% + 4px);
+  max-width: none;
+  height: calc(100% + 4px);
+  margin: -2px;
   object-fit: cover;
 }
 
@@ -1598,6 +1614,9 @@ a.project-image-link:hover img {
 
 .lawyer-project .progress-media img {
   width: auto;
+  height: calc(100% + 4px);
+  margin-block: -2px;
+  margin-inline: 0;
   object-fit: contain;
 }
 
