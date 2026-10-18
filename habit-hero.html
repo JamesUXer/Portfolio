@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="HabitHero case study: redesigning fitness progress tracking for real-life routines." />
+    <meta name="description" content="HabitHero: a research-led redesign of onboarding, daily guidance and weekly review." />
     <meta name="theme-color" content="#1d1d1d" />
     <title>HabitHero case study | James Spiller</title>
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
@@ -11,9 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;900&amp;family=Archivo+Black&amp;family=Lato:wght@400;700&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css?v=142" />
+    <link rel="stylesheet" href="habit-hero.css?v=1" />
   </head>
   <body data-page="projects">
     <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></symbol>
+      <symbol id="icon-drag" viewBox="0 0 24 24"><path d="M4 12h16M8 8l-4 4 4 4M16 8l4 4-4 4" /></symbol>
       <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16" /></symbol>
       <symbol id="icon-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12" /></symbol>
       <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" /></symbol>
@@ -53,346 +56,573 @@
       </div>
     </header>
 
-    <main id="top" class="case-study-page habit-hero-case-study">
-      <article>
-        <header class="case-study-hero site-shell">
-          <a class="case-study-back" href="projects.html">&larr; Back to projects</a>
-          <h1>HabitHero: redesigning fitness progress tracking for real-life routines</h1>
-          <ul class="case-study-tags" aria-label="Project disciplines">
-            <li>User research</li><li>Behaviour change design</li><li>Usability testing</li><li>Prototyping</li>
-          </ul>
-          <figure class="case-study-media case-study-hero-media">
-            <a class="case-study-expandable" href="assets/images/habit-hero-hero.webp" aria-label="Open the HabitHero hero screens at full size">
-              <img src="assets/images/habit-hero-hero.webp" width="1320" height="640" alt="Three HabitHero screens showing daily progress explanation, status and personalised goal selection" />
-            </a>
-          </figure>
-          <div class="case-study-prose case-study-intro">
-            <p>HabitHero is a rewards-based fitness app built around personalised activity goals.</p>
-            <p>I planned and conducted two distinct research rounds, synthesised the findings, redesigned the information architecture and progress experience, produced the prototype and ran usability testing.</p>
-            <p>The redesign focused on the progress loop, from onboarding and goal setting to daily guidance, recovery, weekly review and recalibration.</p>
-          </div>
-          <dl class="case-study-meta">
-            <div><dt>Role</dt><dd>UX/Product Designer</dd></div>
-            <div><dt>Timeline</dt><dd>Oct 2025–Apr 2026</dd></div>
-            <div><dt>Scope</dt><dd>End-to-end individual project</dd></div>
-          </dl>
-        </header>
+<main id="top" class="site-shell habit-story-page">
+<a class="case-study-back" href="projects.html">← Back to projects</a>
+<article id="hh-goal-study" aria-label="HabitHero case study: Discover, Define, Develop and Outcome">
+<div class="story-intro">
+<h1>HabitHero: personalising goals to make progress understandable</h1>
+<p>A research-led redesign of onboarding, daily guidance and weekly review.</p>
+<p class="small">Individual academic project · UX researcher and designer · October 2025–April 2026</p>
+<p class="small">I owned discovery, journey design, prototyping and usability testing. Delivered: a refined Figma prototype; longer-term habit formation remains unproven.</p>
+</div>
+<section class="story-chapter discover group-start">
+<p class="stage-label">Discover</p>
+<div class="chapter-overview">
+<div class="chapter-copy">
+<h2>I investigated what people needed from fitness tracking.</h2>
+<p class="chapter-bridge">The brief asked for better progress tracking. I interviewed people about how they tracked activity and what helped or discouraged them.</p>
+</div>
+<div class="story-preview original-preview" data-preview="0">
+<figure class="preview-phone">
+<img alt="Original HabitHero Activity insight screen with four equally weighted rings for steps, distance, heart rate and calories." src="assets/images/habithero/original-activity-insight.png" decoding="async" width="380" height="823" loading="lazy">
+<figcaption>Original experience</figcaption>
+</figure>
+<div class="preview-annotations">
+<p>Which metrics matter?</p>
+<p>When have I done enough?</p>
+<span class="small">Questions guiding discovery</span>
+</div>
+</div>
+</div>
+<details>
+<summary class="cursor-interaction">See the starting problem</summary>
+<div class="reading">
+<div class="framing">
+<div>
+<h3>Starting point</h3>
+<p>Help people track activity and understand their progress towards a goal.</p>
+</div>
+<div>
+<h3>What the research changed</h3>
+<p>Help people choose a realistic starting goal, understand daily progress and restart after missed days.</p>
+</div>
+</div>
+<p>I conducted five discovery interviews, then synthesised the findings into a persona, journey and design priorities.</p>
+</div>
+</details>
+</section>
+<section class="story-chapter discover">
+<div class="chapter-overview">
+<div class="chapter-copy">
+<h2>Interviews showed that tracking could add pressure.</h2>
+<p class="chapter-bridge">People described arbitrary targets, limited time and the pressure of tracking more information.</p>
+</div>
+<div class="story-preview persona-preview" data-preview="1">
+<div class="persona-summary">
+<p class="preview-caption">Research persona · synthesised from discovery</p>
+<h3>Ella, the time-poor parent</h3>
+</div>
+<figure class="persona-illustration">
+<img alt="Original discovery drawing: Ella considering information on her phone and laptop." src="assets/images/habithero/persona-advice.png" decoding="async" class="is-current" width="372" height="236" loading="lazy">
+<img src="assets/images/habithero/persona-planning.png" alt="Original discovery drawing: Ella planning with her phone." decoding="async" width="236" height="236" loading="lazy">
+<img src="assets/images/habithero/persona-activity.png" alt="Original discovery drawing: Ella stretching beside her laptop." decoding="async" width="396" height="236" loading="lazy">
+</figure>
+<p class="persona-scene-caption" aria-live="polite">Making sense of conflicting information.</p>
+<dl class="persona-scene-insights" aria-live="polite">
+<div>
+<dt>Key pain</dt>
+<dd data-persona-pain="">Conflicting advice makes it hard to know what matters.</dd>
+</div>
+<div>
+<dt>Key motivation</dt>
+<dd data-persona-motivation="">Clear guidance she can trust.</dd>
+</div>
+</dl>
+<div class="persona-scene-controls" role="group" aria-label="Choose an original persona illustration">
+<button type="button" class="cursor-interaction" aria-pressed="true">Advice</button>
+<button type="button" class="cursor-interaction" aria-pressed="false">Planning</button>
+<button type="button" class="cursor-interaction" aria-pressed="false">Activity</button>
+</div>
+<button type="button" class="persona-play cursor-interaction">Play Ella’s story</button>
+</div>
+</div>
+<details>
+<summary class="cursor-interaction">See what the interviews revealed</summary>
+<div class="reading">
+<section class="pull-evidence" aria-label="Three discovery interview perspectives">
+<div class="pull-window">
+<div class="pull-quote" id="hh-interview-quotes">
+<figure>
+<h3>Pressure</h3>
+<blockquote>“I'm not ready to track my sleep yet. It's another thing to get stressed about.”</blockquote>
+<figcaption>Eleni · discovery interview</figcaption>
+</figure>
+<figure>
+<h3>Arbitrary targets</h3>
+<blockquote>“At the moment, 10,000 steps a day is just some arbitrary number, but I still kind of go with that.”</blockquote>
+<figcaption>Alicia · discovery interview</figcaption>
+</figure>
+<figure>
+<h3>Limited time</h3>
+<blockquote>“I don't have five minutes to spare for anything. So my fitness mainly happens on weekdays when I'm at work.”</blockquote>
+<figcaption>Gareth · discovery interview</figcaption>
+</figure>
+<p class="small quote-source">Excerpts from discovery interviews, reproduced in the discovery presentation script.</p>
+</div>
+<div class="pull-cover" aria-hidden="true">
+<span>Behind the finding</span>
+<p>Three perspectives on pressure, targets and time.</p>
+</div>
+</div>
+<div class="pull-track">
+<button type="button" class="pull-tab cursor-interaction" aria-controls="hh-interview-quotes" aria-expanded="false">
+      <span>Reveal three interview quotes</span><svg aria-hidden="true"><use href="#icon-drag"></use></svg></button>
+</div>
+<p class="pull-hint small">Pull right or tap to reveal.</p>
+</section>
+<dl class="findings">
+<div>
+<dt>5 of 5 interviews</dt>
+<dd>Decision cost and prioritisation; confusion about progression.</dd>
+</div>
+<div>
+<dt>4 of 5 interviews</dt>
+<dd>Fragile motivation.</dd>
+</div>
+<div>
+<dt>3 of 5 interviews</dt>
+<dd>Uncertainty about when an activity or goal was complete.</dd>
+</div>
+</dl>
+<p>I concluded that progress feedback should explain what to do without adding pressure.</p>
+</div>
+</details>
+</section>
+<section class="story-chapter define group-start">
+<p class="stage-label">Define</p>
+<div class="chapter-overview">
+<div class="chapter-copy">
+<h2>I made goal setting the starting point for understanding progress.</h2>
+<p class="chapter-bridge">A goal based on recent activity would give people a starting point for judging their progress.</p>
+</div>
+<div class="story-preview define-preview" data-preview="2">
+<p class="preview-caption">Patterns across five discovery interviews</p>
+<div class="preview-themes" role="group" aria-label="Explore a finding and its design priority">
+<button type="button" class="cursor-interaction" data-preview-theme="0" aria-pressed="true"><span>Decision effort</span><span class="evidence-units" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span>5 / 5</span></button>
+<button type="button" class="cursor-interaction" data-preview-theme="1" aria-pressed="false"><span>Fragile motivation</span><span class="evidence-units" aria-hidden="true"><i></i><i></i><i></i><i></i><i class="uncounted"></i></span><span>4 / 5</span></button>
+<button type="button" class="cursor-interaction" data-preview-theme="2" aria-pressed="false"><span>Completion uncertainty</span><span class="evidence-units" aria-hidden="true"><i></i><i></i><i></i><i class="uncounted"></i><i class="uncounted"></i></span><span>3 / 5</span></button>
+</div>
+<div class="preview-connection" aria-hidden="true">
+<span></span>
+</div>
+<div class="preview-priority" aria-live="polite">
+<span class="small">Design priority</span>
+<p>Make the next action understandable.</p>
+</div>
+<p class="small">Counts describe these five interviews, not the wider population.</p>
+</div>
+</div>
+<details>
+<summary class="cursor-interaction">See how I set the design priorities</summary>
+<div class="reading">
+<div class="framing">
+<div>
+<h3>From findings to priorities</h3>
+<p>I used the persona and journey to bring the interview findings together, then compared opportunities by their expected impact and effort.</p>
+</div>
+<div>
+<h3>From priorities to scope</h3>
+<p>I focused on setting a starting goal, showing daily status, supporting restarts and reviewing the week. The starting goal gave the later feedback a reference point.</p>
+</div>
+</div>
+<div class="priority-explorer" aria-label="How research informed design priorities">
+<h3>Follow a finding into the brief</h3>
+<div class="priority-choices" role="group" aria-label="Choose a research theme">
+<button type="button" class="cursor-interaction" data-priority="0" aria-pressed="true">Decision effort</button>
+<button type="button" class="cursor-interaction" data-priority="1" aria-pressed="false">Unclear completion</button>
+<button type="button" class="cursor-interaction" data-priority="2" aria-pressed="false">Fragile motivation</button>
+</div>
+<div class="priority-path" aria-live="polite">
+<div class="priority-source">
+<span>Research finding</span>
+<p>Decision cost and prioritisation appeared across five discovery interviews.</p>
+</div>
+<div class="priority-connector" aria-hidden="true">
+<span></span>
+</div>
+<div class="priority-destination">
+<span>Design priority</span>
+<p>Reduce cognitive load: make the next action understandable.</p>
+</div>
+</div>
+<p class="small">These priorities reflect my interpretation of the research. Their effect on behaviour was not measured.</p>
+</div>
+<section class="priority-evidence" aria-label="Original impact-effort assessment">
+<h3>How I compared opportunities</h3>
+<p>The assessment favoured showing when a day was complete and what to do next. I treated a personalised starting goal as the reference point for that feedback.</p>
+<table class="priority-table">
+<caption>Selected rows from the original assessment. Scores are design estimates on a 1–5 scale.</caption>
+<thead><tr>
+<th scope="col">Opportunity</th>
+<th scope="col">Impact</th>
+<th scope="col">Effort</th>
+</tr></thead>
+<tbody>
+<tr>
+<th scope="row">Clear daily completion state</th>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr>
+<th scope="row">One suggested next action</th>
+<td>5</td>
+<td>3</td>
+</tr>
+<tr>
+<th scope="row">Restart flow with a small goal</th>
+<td>4</td>
+<td>2</td>
+</tr>
+<tr>
+<th scope="row">Default starter-goal bundle</th>
+<td>4</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p class="small">Opportunity names are shortened for readability. Ratings reproduce the original document; they are not measured product outcomes.</p>
+<a href="https://docs.google.com/document/d/1VthQwakU2hVkh0s6pxJopSC4FjG-UmiUlj_mYmAhQ9c/edit?usp=drivesdk" target="_blank" rel="noopener noreferrer">View the original assessment</a>
+</section>
+<section class="success-criteria">
+<h3>What success would mean</h3>
+<p>Measure whether people accept the starter goal and complete setup, interpret their status correctly, and understand the weekly outcome. Longer-term evaluation would examine continued activity after goal adjustment.</p>
+<p class="small">Planned measures from the project’s goals–signals–metrics work, not achieved results.</p>
+</section>
+<h3>What the design needed to do</h3>
+<ul class="criteria">
+<li>Make the next action understandable.</li>
+<li>Make completion clear.</li>
+<li>Support restarting without shame.</li>
+</ul>
+<p>Cross-app aggregation was deprioritised. Redesigning the rewards system sat outside this scope, although testing later exposed its limitations.</p>
+</div>
+</details>
+</section>
+<article class="sheet develop group-start">
+<p class="stage-label">Develop</p>
+<section class="chapter">
+<div class="chapter-overview">
+<div class="chapter-copy">
+<h2>I designed onboarding around a personalised, adjustable goal.</h2>
+<p class="lede">I compared three ways to accept or change a suggested goal, then explained the recommendation during onboarding.</p>
+</div>
+<div class="story-preview exploration-preview" data-preview="3">
+<figure>
+<img alt="First goal wireframe, with separate acceptance and manual creation routes." src="assets/images/habithero/goal-option-accept-or-create.png" decoding="async" width="351" height="760" loading="lazy">
+<figcaption>A · Accept or create</figcaption>
+</figure>
+<figure>
+<img alt="Second goal wireframe, with adjustment alongside the recommendation." src="assets/images/habithero/goal-option-adjust-in-place.png" decoding="async" width="351" height="760" loading="lazy">
+<figcaption>B · Adjust in place<span class="preview-chosen">Carried forward</span></figcaption>
+</figure>
+<figure>
+<img alt="Third goal wireframe, with easier, same and harder options." src="assets/images/habithero/goal-option-relative-adjustment.png" decoding="async" width="351" height="760" loading="lazy">
+<figcaption>C · Relative adjustment</figcaption>
+</figure>
+</div>
+</div>
+<details>
+<summary class="cursor-interaction"><span class="summary-text"><span class="open">Compare the goal-setting options</span><span class="close">Close the goal-setting options</span></span><span class="expand-mark" aria-hidden="true"><svg aria-hidden="true"><use href="#icon-plus"></use></svg></span></summary>
+<div class="detail-body">
+<div class="closed-diagram" aria-label="Design principle: recent activity informs a suggested goal which the person can adjust">
+<span>Recent activity</span>
+<span class="selected">Suggested goal</span>
+<span>Your adjustment</span>
+</div>
+<div class="research">
+<p><strong>The research</strong><br>All five discovery interviews raised difficulty interpreting progress and deciding what to do.</p>
+<p><strong>The design implication</strong><br>Start with a credible goal. Explain it, and leave room to change it.</p>
+</div>
+<section class="comparison" aria-label="Compare goal-setting approaches">
+<div class="comparison-heading">
+<h3>How could people change the recommendation?</h3>
+<p class="small">Three explorations</p>
+</div>
+<div class="comparison-content">
+<div class="wheel-layout">
+<div class="wheel-area">
+<div class="wheel" role="group" aria-label="Turn the wheel to compare goal approaches">
+<div class="rotor" style="transform: rotate(-120deg);">
+<button type="button" class="rim-choice cursor-interaction" data-option="0" aria-label="Compare Accept or create" aria-pressed="false" style="transform: rotate(0deg) translateY(-66px) rotate(120deg);">A</button>
+<button type="button" class="rim-choice cursor-interaction" data-option="1" aria-label="Compare Adjust in place" aria-pressed="true" style="transform: rotate(120deg) translateY(-66px) rotate(0deg);">B</button>
+<button type="button" class="rim-choice cursor-interaction" data-option="2" aria-label="Compare Easier / same / harder" aria-pressed="false" style="transform: rotate(240deg) translateY(-66px) rotate(-120deg);">C</button>
+</div>
+<div class="hub" aria-hidden="true">
+<b>B</b>
+<span>Selected approach</span>
+</div>
+<div class="pointer" aria-hidden="true"></div>
+</div>
+<div class="wheel-controls">
+<button type="button" class="cursor-interaction" data-prev="" aria-label="Previous goal-setting approach">Previous</button>
+<button type="button" class="cursor-interaction" data-next="" aria-label="Next goal-setting approach">Next</button>
+</div>
+<p class="wheel-hint">Turn to compare, or choose a name.</p>
+<div class="visible-names" role="group" aria-label="Jump to a wireframe">
+<button type="button" class="cursor-interaction" data-jump="0" aria-pressed="false">A · Accept or create</button>
+<button type="button" class="cursor-interaction carried-forward-option" data-jump="1" aria-pressed="true">B · Adjust in place<span class="carried-forward-label">Carried forward</span></button>
+<button type="button" class="cursor-interaction" data-jump="2" aria-pressed="false">C · Easier / same / harder</button>
+</div>
+</div>
+<div class="panel-slot">
+<section class="option-panel" data-goal-panel="0" aria-labelledby="goal-title-0">
+<div class="option-title">
+<span class="status ">Explored: separate routes</span>
+<h3 id="goal-title-0">Accept or create</h3>
+</div>
+<div class="artifact-pair">
+<figure class="original">
+<img src="assets/images/habithero/goal-option-accept-or-create.png" alt="Original low-fidelity Goal 1: recommended goal, information control, separate acceptance and manual creation buttons." width="351" height="760" loading="lazy">
+<figcaption>Acceptance and manual creation are separate.</figcaption>
+</figure>
+<div class="option-caption">
+<p><strong>The difference</strong><br>A clear choice: accept the suggestion or start a manual goal.</p>
+<p><strong>The trade-off</strong><br>Changing the recommendation means leaving this route.</p>
+<a href="https://www.figma.com/design/m4owBlcNcPZ4Xj68d1pwf4?node-id=2053-3003" target="_blank" rel="noopener noreferrer">View original in Figma</a>
+</div>
+</div>
+</section>
+<section class="option-panel" data-goal-panel="1" aria-labelledby="goal-title-1">
+<div class="option-title">
+<span class="status carried-forward-status">Carried forward: a suggested goal people can adjust</span>
+<h3 id="goal-title-1">Adjust in place</h3>
+</div>
+<div class="artifact-pair">
+<figure class="original">
+<img src="assets/images/habithero/goal-option-adjust-in-place.png" alt="Original low-fidelity Goal 2: goal explanation, optional more information, horizontal stepper, acceptance and manual creation." width="351" height="760" loading="lazy">
+<figcaption>Adjustment becomes part of reviewing the goal.</figcaption>
+</figure>
+<div class="option-caption">
+<p><strong>The difference</strong><br>The explanation, goal and adjustment sit together.</p>
+<p><strong>The trade-off</strong><br>The stepper must make the size of each change clear.</p>
+<a href="https://www.figma.com/design/m4owBlcNcPZ4Xj68d1pwf4?node-id=2053-4004" target="_blank" rel="noopener noreferrer">View original in Figma</a>
+</div>
+</div>
+</section>
+<section class="option-panel" data-goal-panel="2" aria-labelledby="goal-title-2">
+<div class="option-title">
+<span class="status ">Explored: relative adjustment</span>
+<h3 id="goal-title-2">Easier / same / harder</h3>
+</div>
+<div class="artifact-pair">
+<figure class="original">
+<img src="assets/images/habithero/goal-option-relative-adjustment.png" alt="Original low-fidelity Goal 3: goal explanation, context label and easier, same and harder choices." width="351" height="760" loading="lazy">
+<figcaption>Relative choices offer another way to adjust.</figcaption>
+</figure>
+<div class="option-caption">
+<p><strong>The difference</strong><br>Everyday labels offer a direction without asking for a number first.</p>
+<p><strong>The trade-off</strong><br>The result of each choice still needs explaining.</p>
+<a href="https://www.figma.com/design/m4owBlcNcPZ4Xj68d1pwf4?node-id=2053-4411" target="_blank" rel="noopener noreferrer">View original in Figma</a>
+</div>
+</div>
+</section>
+</div>
+<p class="goal-announcement visually-hidden" aria-live="polite"></p>
+</div>
+</div>
+</section>
+<div class="decision">
+<p><strong>The decision</strong><br>I carried forward a suggested goal with an explanation and adjustment controls. Onboarding explained how recent activity informed the goal before people accepted or changed it.</p>
+</div>
+<section class="finished-onboarding">
+<h3>The goal-setting design</h3>
+<div class="onboarding-screens final-screens">
+<figure>
+<img src="assets/images/habithero/final-personalised-goal.png" alt="Final personalised-goal screen with a recent-activity explanation, adjustment dial and acceptance controls." decoding="async" width="379" height="820" loading="lazy">
+<figcaption>Recommend a starting goal, with adjustment and a separate manual route.</figcaption>
+</figure>
+<figure>
+<img src="assets/images/habithero/final-goal-explanation.png" alt="Why this goal screen explaining the seven-day activity basis and how the goal adapts." decoding="async" width="379" height="820" loading="lazy">
+<figcaption>Make the basis of the recommendation available when people need it.</figcaption>
+</figure>
+</div>
+<p class="small">Final prototype screens. Suitability of the adaptive goal logic still needs specialist validation.</p>
+</section>
+<p class="sources">Original low-fidelity explorations. Captions explain the visible trade-offs retrospectively; no comparative test result is claimed.</p>
+</div>
+</details>
+</section>
+</article>
+<section class="story-chapter develop">
+<div class="chapter-overview">
+<div class="chapter-copy">
+<h2>I designed daily guidance and explained how weekly goals worked.</h2>
+<p class="chapter-bridge">The dashboard shows daily status and remaining steps. The weekly review explains how active days count towards the goal.</p>
+</div>
+<div class="story-preview daily-preview" data-preview="4">
+<figure class="preview-phone">
+<img alt="Final daily dashboard, showing On track and remaining steps." src="assets/images/habithero/final-daily-dashboard.png" decoding="async" width="379" height="820" loading="lazy">
+<figcaption>Final daily dashboard</figcaption>
+</figure>
+<div class="preview-annotations">
+<p>A clear daily status.</p>
+<p>Remaining effort made visible.</p>
+</div>
+</div>
+</div>
+<details>
+<summary class="cursor-interaction">See daily guidance and weekly review</summary>
+<div class="reading">
+<div class="daily-screens final-screens">
+<figure>
+<img src="assets/images/habithero/final-daily-dashboard.png" alt="Final daily dashboard showing On track, 2,502 of 5,000 steps and remaining steps." decoding="async" width="379" height="820" loading="lazy">
+<figcaption>Lead with daily status and remaining effort.</figcaption>
+</figure>
+<figure>
+<img src="assets/images/habithero/weekly-final.png" alt="Final weekly explanation: five successful days need not be consecutive." decoding="async" width="390" height="844" loading="lazy">
+<figcaption>Explain weekly success without requiring consecutive days.</figcaption>
+</figure>
+</div>
+<div class="framing">
+<div>
+<h3>Daily guidance</h3>
+<p>The dashboard shows whether someone is on track and how many steps remain.</p>
+</div>
+<div>
+<h3>Weekly review</h3>
+<p>Review progress, explain the next goal and recognise activity without requiring five consecutive successful days.</p>
+</div>
+</div>
+<p>I tested whether people understood these screens and found them useful. The sessions could not establish lasting changes in exercise habits.</p>
+<a href="https://www.figma.com/design/jVp6FlbqSXEviQo3TT1oZI?node-id=3018-23765" target="_blank" rel="noopener noreferrer">Explore the final screens in Figma</a>
+</div>
+</details>
+</section>
+<section class="story-chapter develop">
+<div class="chapter-overview">
+<div class="chapter-copy">
+<h2>I tested whether people understood the goals, feedback and controls.</h2>
+<p class="chapter-bridge">Seven people tested goal setup, daily status, weekly rules and goal adjustment in moderated sessions.</p>
+</div>
+<div class="story-preview testing-preview" data-preview="5">
+<figure class="preview-phone">
+<div class="testing-screen">
+<img alt="Tested weekly screen with wording about five days and a streak." src="assets/images/habithero/weekly-tested.png" decoding="async" width="390" height="846" loading="lazy">
+<span class="testing-highlight" aria-hidden="true"></span>
+</div>
+<figcaption>Mid-fidelity version tested</figcaption>
+</figure>
+<div class="testing-explanation">
+<strong>6 of 7</strong>
+<p>found the weekly criteria unclear.</p>
+<button type="button" class="cursor-interaction" data-show-ambiguity="">Show the ambiguity</button>
+<p class="ambiguity-caption" aria-live="polite">Illustration of the issue found in testing.</p>
+</div>
+</div>
+</div>
+<details>
+<summary class="cursor-interaction">See what testing revealed</summary>
+<div class="reading">
+<div class="framing">
+<div>
+<h3>What people found useful</h3>
+<p>Goals that adapt to recent activity received positive responses in six of seven sessions. Notifications and quick check-ins were useful for recovery across all seven.</p>
+</div>
+<div>
+<h3>What people misunderstood or needed to control</h3>
+<p>Five of seven sessions exposed confusion about how daily status was calculated. Four highlighted insufficient notification control. Six exposed unclear weekly-success criteria.</p>
+</div>
+</div>
+<p>I tested comprehension and reactions to a prototype. These sessions did not establish improved retention or lasting exercise habits.</p>
+</div>
+</details>
+</section>
+<section class="story-chapter outcome group-start">
+<p class="stage-label">Outcome</p>
+<div class="chapter-overview">
+<div class="chapter-copy">
+<h2>I clarified the wording and controls, then delivered the final prototype.</h2>
+<p class="chapter-bridge">I explained the weekly rule, added notification controls and documented the final screens for handover.</p>
+</div>
+<div class="story-preview delivery-preview" data-preview="6">
+<div class="delivery-sequence">
+<figure>
+<img alt="Delivered personalised-goal screen." src="assets/images/habithero/final-personalised-goal.png" decoding="async" width="379" height="820" loading="lazy">
+<figcaption>Set a starting goal</figcaption>
+</figure>
+<figure>
+<img alt="Delivered daily dashboard." src="assets/images/habithero/final-daily-dashboard.png" decoding="async" width="379" height="820" loading="lazy">
+<figcaption>Understand today</figcaption>
+</figure>
+<figure>
+<img alt="Delivered weekly progress screen." src="assets/images/habithero/weekly-final.png" decoding="async" width="390" height="844" loading="lazy">
+<figcaption>Review the week</figcaption>
+</figure>
+</div>
+<button type="button" class="cursor-interaction" data-show-journey="">Show the final journey</button>
+<p class="small delivery-caption" aria-live="polite">Delivered Figma prototype · behavioural impact not yet validated.</p>
+</div>
+</div>
+<details>
+<summary class="cursor-interaction">See the changes I delivered</summary>
+<div class="reading">
+<section class="weekly-example" aria-label="Weekly-success wording from testing to delivery">
+<h3>Five active days, without a streak.</h3>
+<p>The weekly rule allowed two missed days. The word “streak” suggested otherwise.</p>
+<div class="weekly-controls" role="group" aria-label="Choose the version of the weekly explanation">
+<button type="button" class="cursor-interaction" data-weekly="tested" aria-pressed="true">Tested version</button>
+<button type="button" class="cursor-interaction" data-weekly="revised" aria-pressed="false">Wording revised</button>
+<button type="button" class="cursor-interaction" data-weekly="final" aria-pressed="false">Final design</button>
+</div>
+<div class="weekly-layout">
+<figure class="weekly-figure">
+<div class="weekly-images" role="group" aria-label="Weekly explanations: tested version, wording revised and final design">
+<img src="assets/images/habithero/weekly-tested.png" alt="Tested version: string together five days and you are on a streak." data-weekly-image="tested" width="390" height="846" loading="lazy">
+<img src="assets/images/habithero/weekly-revised.png" alt="Wording revised: five days this week; they do not need to be in a row." data-weekly-image="revised" width="390" height="846" loading="lazy">
+<img src="assets/images/habithero/weekly-final.png" alt="Final design: reach your personal goal on five days this week; they need not be consecutive." data-weekly-image="final" width="390" height="844" loading="lazy">
+<div class="comparison-divider" hidden=""></div>
+</div>
+<figcaption class="weekly-caption">Mid-fidelity screen recorded in the refinement page.</figcaption>
+<div class="reveal-control" hidden="">
+<label for="hh-revision-reveal">Reveal the revised wording</label>
+<input type="range" id="hh-revision-reveal" min="0" max="100" aria-valuetext="Revised wording fully visible">
+<div class="reveal-extents">
+<span>Tested</span>
+<span>Revised</span>
+</div>
+</div>
+</figure>
+<div class="weekly-reasoning" aria-live="polite" aria-atomic="true">
+<h3 class="weekly-version">Tested version</h3>
+<p class="weekly-description">“String together 5 days this week and you’re on a streak” mixed a consecutive-day term with a rule that allowed missed days.</p>
+<p><strong>The finding</strong><br>Weekly success criteria were unclear in six of seven sessions.</p>
+<p class="weekly-change"><strong>The response</strong><br>State the five-day rule directly and explain that the days need not be consecutive.</p>
+<p class="small">The revision is documented. Improved comprehension after this change has not been established.</p>
+</div>
+</div>
+</section>
+<div class="revision-topics" role="group" aria-label="Compare testing findings with design revisions">
+<button type="button" class="cursor-interaction" data-topic="0" aria-pressed="true">Active times</button>
+<button type="button" class="cursor-interaction" data-topic="1" aria-pressed="false">Weekly language</button>
+<button type="button" class="cursor-interaction" data-topic="2" aria-pressed="false">Notifications</button>
+</div>
+<div class="revision-content framing" aria-live="polite">
+<div>
+<h3>Testing finding</h3>
+<p>Five of seven sessions revealed confusion about how daily status was calculated.</p>
+</div>
+<div>
+<h3>Design revision</h3>
+<p>Added explanations of active times during onboarding and routes to review those times.</p>
+</div>
+</div>
+<p>The refinement record also documents larger radio-button hit areas, clearer goal-setting labels and more consistent primary buttons.</p>
+<div class="boundary">
+<h3>Still unresolved</h3>
+<p>Permissions remained outstanding. Retesting of the revised prototype has not been established. The next validation would check comprehension of the revised rules and controls before investigating longer-term behaviour.</p>
+</div>
+<a href="https://www.figma.com/design/jVp6FlbqSXEviQo3TT1oZI?node-id=3063-29328" target="_blank" rel="noopener noreferrer">View the documented refinements</a>
+</div>
+</details>
+</section>
+</article>
+<nav class="case-study-project-nav site-shell" aria-label="Project navigation">
+<a class="button-link" href="projects.html">← All projects</a>
+<a class="button-link" href="salient-bio.html">Next project <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
+</nav>
+</main>
 
-        <section class="case-study-section case-study-context site-shell" aria-labelledby="challenge-title">
-          <div class="case-study-prose">
-            <h2 id="challenge-title">The challenge</h2>
-            <p>The existing experience made users interpret several metrics before they could decide whether they were on track. Discovery showed that goal setting created decision pressure, completion was ambiguous and motivation could become fragile when routines changed.</p>
-            <p>That created a product problem for PrimeCare: make progress easier to understand without turning an insurance-linked fitness product into another source of pressure.</p>
-          </div>
-          <figure class="case-study-media case-study-challenge-media">
-            <a class="case-study-expandable" href="assets/images/habit-hero-challenge-large.webp?v=2" aria-label="Open the original HabitHero screens at full size">
-              <img src="assets/images/habit-hero-challenge.webp?v=2" width="600" height="400" loading="lazy" alt="Three screens from the original HabitHero experience showing goal selection, activity details and the daily plan" />
-            </a>
-            <figcaption class="case-study-challenge-issues">
-              <ol>
-                <li><h3>Issue #1: Goal choice without guidance or context</h3><p>Users select an outcome before seeing how it becomes a realistic personal target.</p></li>
-                <li><h3>Issue #2: Progress complexity</h3><p>Users must compare several metrics to decide whether they are on track.</p></li>
-                <li><h3>Issue #3: Activity data lacks purpose</h3><p>Progress is recorded but doesn’t clarify completion or the next action.</p></li>
-              </ol>
-            </figcaption>
-          </figure>
-          <p class="case-study-prose">The opportunity was to make the early experience clearer and more supportive, while retaining enough explanation and control for users to trust it.</p>
-        </section>
 
-        <section class="stage-rail site-shell" aria-labelledby="stage-rail-title">
-          <h2 class="visually-hidden" id="stage-rail-title">Case-study stages</h2>
-          <ol>
-            <li class="stage-discover"><span>01</span><strong>Discover</strong><small>Interviews and evidence</small></li>
-            <li class="stage-define"><span>02</span><strong>Define</strong><small>Priorities and scope</small></li>
-            <li class="stage-develop"><span>03</span><strong>Develop</strong><small>Decisions and iteration</small></li>
-            <li class="stage-outcome"><span>04</span><strong>Outcome</strong><small>Validation and next work</small></li>
-          </ol>
-        </section>
-
-        <section id="discover" class="case-study-section case-study-stage stage-discover site-shell" aria-labelledby="discover-title">
-          <div class="stage-kicker"><span class="stage-number">01</span><span>Discover</span></div>
-          <div class="case-study-prose">
-            <h2 id="discover-title">Five interviews exposed three points of friction</h2>
-            <p><strong>Round 1 was discovery:</strong> five user interviews about fitness apps, everyday routines and what made progress feel manageable. The evidence established three priorities before any usability testing began.</p>
-          </div>
-          <ol class="evidence-to-decision habit-research-grid" aria-label="Discovery evidence mapped to design priorities">
-            <li class="evidence-card">
-              <p class="evidence-card-source">Discovery interviews &middot; Decision cost 5/5</p>
-              <p class="evidence-card-type">Finding</p>
-              <h3>Goal setting creates decision pressure</h3>
-              <blockquote>&ldquo;It needs to be realistic because... we&rsquo;re human beings, we&rsquo;re not machines.&rdquo;</blockquote>
-              <cite>Eleni, 34</cite>
-              <div class="evidence-card-decision"><span>Design priority</span><p>Recommend a realistic starting goal, explain it and keep adjustment available.</p></div>
-            </li>
-            <li class="evidence-card">
-              <p class="evidence-card-source">Discovery interviews &middot; Progression model 5/5</p>
-              <p class="evidence-card-type">Finding</p>
-              <h3>Progress needs a clear sense of &ldquo;done&rdquo;</h3>
-              <blockquote>&ldquo;You need to know immediately: I have done it now - and then you can relax.&rdquo;</blockquote>
-              <cite>Gareth, 43</cite>
-              <div class="evidence-card-decision"><span>Design priority</span><p>Show a clear daily status, a completion moment and one useful next action.</p></div>
-            </li>
-            <li class="evidence-card">
-              <p class="evidence-card-source">Discovery interviews &middot; Fragile motivation 4/5</p>
-              <p class="evidence-card-type">Finding</p>
-              <h3>Disruption can turn a goal into pressure</h3>
-              <blockquote>&ldquo;It&rsquo;s another thing to get stressed about.&rdquo;</blockquote>
-              <cite>Ashley, 36</cite>
-              <div class="evidence-card-decision"><span>Design priority</span><p>Make recovery and recalibration normal parts of the experience.</p></div>
-            </li>
-          </ol>
-          <aside class="validation-note">
-            <strong>Evidence boundary</strong>
-            <p>These are discovery findings from five interviews. Ambiguity around completion appeared in 3/5 interviews; fragmentation across apps appeared in 2/5.</p>
-          </aside>
-        </section>
-
-        <section id="define" class="case-study-section case-study-stage stage-define site-shell" aria-labelledby="define-title">
-          <div class="stage-kicker"><span class="stage-number">02</span><span>Define</span></div>
-          <div class="case-study-prose"><h2 id="define-title">Define a clearer progress loop</h2></div>
-          <figure class="case-study-media case-study-loop-media case-study-balanced-row">
-            <figcaption class="case-study-balanced-copy">
-              <p>I translated the three priorities into one connected experience: goal setup, daily guidance, completion, recovery, weekly review and recalibration.</p>
-              <p>The loop concentrated the redesign on lower decision effort, clearer progress and compassionate motivation.</p>
-            </figcaption>
-            <a class="case-study-expandable case-study-balanced-media" href="assets/images/habit-hero-loop-large.webp?v=3" data-lightbox-fit="height" aria-label="Open the adaptive progress experience loop at full size"><img src="assets/images/habit-hero-loop.webp?v=3" width="598" height="520" loading="lazy" alt="Circular adaptive progress experience connecting personalised goal setup, clear daily status, actionable guidance, daily completion, weekly review and goal recalibration" /></a>
-          </figure>
-          <div class="case-study-prose habit-scope-copy">
-            <h3>Choosing the boundary</h3>
-            <p>The redesign was scoped to the progress loop because it served all three discovery priorities. That meant leaving out work which was relevant to the wider product but did not directly improve this loop.</p>
-            <p>This was an awkward but deliberate boundary: HabitHero is a rewards-based app, yet a rewards-system redesign sat outside the project.</p>
-          </div>
-          <figure class="scope-diagram">
-            <div class="scope-diagram-group">
-              <p>Scope decision</p>
-              <ol>
-                <li class="diagram-node diagram-node-focal"><span>In scope</span><strong>The progress loop</strong><small>Onboarding, daily status, recovery and weekly review</small></li>
-                <li class="diagram-node"><span>Not built</span><strong>Broader activity tracking</strong><small>Tested as a discovery hypothesis and rejected</small></li>
-                <li class="diagram-node"><span>Deprioritised</span><strong>Cross-app aggregation</strong><small>Lowest interview coverage at 2/5 and worst impact-to-effort result</small></li>
-              </ol>
-            </div>
-            <figcaption>Rewards-system redesign was also excluded. Later testing confirmed that rewards need a separate piece of work: 2/7 understood the weekly reward rule, and the value-loop task was the hardest of eight.</figcaption>
-          </figure>
-          <aside class="validation-note">
-            <strong>How success would be assessed</strong>
-            <p><strong>Acquisition:</strong> recommended-goal acceptance, Day-1 activation and onboarding completion. <strong>Retention:</strong> comprehension and error rates, continuation after goal adjustment and weekly closure completion. <strong>North Star:</strong> monthly active users.</p>
-          </aside>
-        </section>
-
-        <section id="develop" class="case-study-section case-study-stage stage-develop site-shell" aria-labelledby="develop-title">
-          <div class="stage-kicker"><span class="stage-number">03</span><span>Develop</span></div>
-          <div class="case-study-prose">
-            <h2 id="develop-title">Make the trade-offs visible</h2>
-            <p>Four decisions shaped the progress loop. Each began with a user or product tension, considered a credible alternative and made the reason for the final direction explicit.</p>
-          </div>
-
-          <section class="habit-decision" aria-labelledby="decision-one-title">
-            <p class="habit-decision-number">Decision 01</p>
-            <div class="case-study-prose">
-              <h3 id="decision-one-title">Build confidence before commitment</h3>
-              <p>Goal setting needed to balance guidance with user control. I explored three different ways of helping users establish a realistic target.</p>
-            </div>
-            <div class="decision-options">
-              <figure>
-                <a class="case-study-expandable decision-option-link" href="assets/images/habit-hero-option-user-chooses-large.webp" data-lightbox-fit="height" aria-label="Open the user-goal wireframe at full size">
-                  <img class="decision-option-image" src="assets/images/habit-hero-option-user-chooses.webp?v=2" width="390" height="846" loading="lazy" alt="Low-fidelity mobile wireframe for manually choosing a goal, with user options and a vertical stepper" />
-                </a>
-                <figcaption>Option #1: A user-defined goal offered high control but created a high decision burden.</figcaption>
-              </figure>
-              <figure>
-                <a class="case-study-expandable decision-option-link" href="assets/images/habit-hero-option-app-assigns-large.webp" data-lightbox-fit="height" aria-label="Open the assigned-goal wireframe at full size">
-                  <img class="decision-option-image" src="assets/images/habit-hero-option-app-assigns.webp?v=2" width="390" height="846" loading="lazy" alt="Low-fidelity mobile wireframe showing an automatically assigned goal, its explanation and controls to accept or manually change it" />
-                </a>
-                <figcaption>Option #2: An assigned goal reduced effort but limited user control.</figcaption>
-              </figure>
-              <figure class="decision-selected">
-                <a class="case-study-expandable decision-option-link" href="assets/images/habit-hero-option-app-recommends-large.webp" data-lightbox-fit="height" aria-label="Open the recommended-goal wireframe at full size">
-                  <img class="decision-option-image" src="assets/images/habit-hero-option-app-recommends.webp?v=2" width="390" height="846" loading="lazy" alt="Low-fidelity mobile wireframe showing a recommended goal with an explanation, adjustment controls and an option to accept it" />
-                </a>
-                <figcaption>Selected option: A recommended goal balanced guidance with user control.</figcaption>
-              </figure>
-            </div>
-            <figure class="case-study-media habit-onboarding-flow">
-              <a class="case-study-expandable" href="assets/images/habit-hero-decision-flow-clean-large.webp" aria-label="Open the complete onboarding flow at full size">
-                <img src="assets/images/habit-hero-decision-flow-clean-large.webp" width="2640" height="2160" loading="lazy" alt="Complete HabitHero onboarding flow showing personalised goal setup, explanations, habit guidance, rewards and optional manual adjustment" />
-              </a>
-              <figcaption>The recommended goal uses progressive disclosure: loading, reveal, explanation, then accept or adjust.</figcaption>
-            </figure>
-            <aside class="validation-note">
-              <strong>Action and why it won</strong>
-              <p>The recommendation reduced initial effort without removing agency. Costa&rsquo;s progressive disclosure shaped the sequence; Vinney&rsquo;s mental-model principle informed the &ldquo;checking your last seven days&rdquo; step; Fogg&rsquo;s goal, prompt and closure structure connected setup to later action.</p>
-            </aside>
-          </section>
-
-          <section class="habit-decision" aria-labelledby="decision-two-title">
-            <p class="habit-decision-number">Decision 02</p>
-            <div class="case-study-prose"><h3 id="decision-two-title">Make progress immediately understandable</h3></div>
-            <dl class="decision-rationale">
-              <div><dt>Insight</dt><dd>Decision cost and prioritisation appeared in 5/5 discovery interviews. Home needed to answer: am I on track, and what next?</dd></div>
-              <div><dt>Options considered</dt><dd>A soft circular dashboard and a stacked, status-first hierarchy.</dd></div>
-              <div><dt>Action</dt><dd>Put status and today&rsquo;s progress first; keep weekly progress and rewards secondary.</dd></div>
-              <div><dt>Why this won</dt><dd>The circular option felt less like a performance dashboard, but could not hold explanatory text well on mobile.</dd></div>
-            </dl>
-            <figure class="case-study-media case-study-home-structures">
-              <a class="case-study-expandable" href="assets/images/habit-hero-decision-two-lowfi-large.webp?v=2" aria-label="Open the home-screen structure explorations at full size"><img src="assets/images/habit-hero-decision-two-lowfi-large.webp?v=2" width="1344" height="1344" loading="lazy" alt="Low-fidelity Home screen options, including the rejected circular layout and the selected stacked status-first direction" /></a>
-              <figcaption>The alternatives varied hierarchy, shape and density. The circular layout was softer, but the selected structure supported clearer mobile explanations.</figcaption>
-            </figure>
-            <div class="case-study-split case-study-split-reverse">
-              <div><h4>Selected direction</h4><p>The Home screen leads with current status, progress and contextual guidance. Plain-language tooltips, informed by Nguyen, provide explanation without making every user read it.</p></div>
-              <figure class="case-study-media case-study-phone-media">
-                <a class="case-study-expandable" href="assets/images/habit-hero-status-guidance-large.webp?v=2" data-lightbox-fit="height" aria-label="Open the selected progress-status screen at full size"><img src="assets/images/habit-hero-status-guidance.webp?v=2" width="391" height="998" loading="lazy" alt="Mid-fidelity HabitHero Home screen prioritising current status, today’s progress and focus, weekly activity and rewards" /></a>
-              </figure>
-            </div>
-            <aside class="validation-note">
-              <strong>Round 2 iteration &middot; n=7</strong>
-              <p>Visual hierarchy was not enough: 5/7 participants found the day-model logic unclear. I added a clearer explanation, controls for active hours and notifications, and an explanatory setup screen.</p>
-            </aside>
-            <figure class="case-study-media"><a class="case-study-expandable" href="assets/images/habit-hero-system-logic-large.webp" aria-label="Open the system-logic screens at full size"><img src="assets/images/habit-hero-system-logic-large.webp" width="1306" height="800" loading="lazy" alt="High-fidelity HabitHero settings, daily-progress explanation and Home screens showing adjustable controls and visible system logic" /></a><figcaption>The refined experience exposes the day model and gives users control over active hours.</figcaption></figure>
-          </section>
-
-          <section class="habit-decision" aria-labelledby="decision-three-title">
-            <p class="habit-decision-number">Decision 03</p>
-            <div class="case-study-prose"><h3 id="decision-three-title">Design for recovery, not perfection</h3><p>Fragile motivation appeared in 4/5 discovery interviews. Recovery needed to recognise partial progress and offer a manageable route back.</p></div>
-            <div class="develop-notes">
-              <section><h4>Options considered</h4><p>A progress-ring overlay versus a lean status snapshot; automatic reminders versus manual control.</p></section>
-              <section><h4>Action</h4><p>Use four plain-language states, one next action and an off-track &ldquo;Update in 1 hr&rdquo; route.</p></section>
-              <section><h4>Why this won</h4><p>Removing the duplicate ring lowered cognitive load. Manual controls protected autonomy while automatic prompts kept recovery easy.</p></section>
-            </div>
-            <figure class="case-study-media case-study-diagram"><a class="case-study-expandable" href="assets/images/habit-hero-daily-progress-flow-large.webp" data-lightbox-fit="flow-height" aria-label="Open the daily progress flow at full size"><span class="case-study-diagram-canvas"><img src="assets/images/habit-hero-daily-progress-flow.webp" width="1320" height="357" loading="lazy" alt="Detailed daily progress user flow showing status calculation, notification re-engagement and multiple routes for completing, delaying or recovering a goal" /><span class="finding-marker finding-marker-1" aria-hidden="true">1</span><span class="finding-marker finding-marker-2" aria-hidden="true">2</span><span class="finding-marker finding-marker-3" aria-hidden="true">3</span></span></a><figcaption>Daily progress responds to current state and offers more than one route back.</figcaption></figure>
-            <ol class="decision-grid">
-              <li><h4>Status responds to context</h4><p>Steps completed are compared with active hours remaining.</p></li>
-              <li><h4>Prompts arrive before the day closes</h4><p>Notifications surface one useful next action.</p></li>
-              <li><h4>Recovery stays flexible</h4><p>Act now, delay, return later or change the goal.</p></li>
-            </ol>
-            <div class="product-evidence-grid">
-              <figure class="case-study-media case-study-phone-media"><a class="case-study-expandable" href="assets/images/habit-hero-notification-deep-link-large.webp" data-lightbox-fit="height" aria-label="Open the completed quick check-in screen at full size"><img src="assets/images/habit-hero-notification-deep-link.webp" width="390" height="846" loading="lazy" alt="HabitHero quick check-in screen confirming completion and offering a direct route to the dashboard" /></a><figcaption><strong>Lean snapshot:</strong> status and next action replace duplicated progress detail.</figcaption></figure>
-              <figure class="case-study-media"><a class="case-study-expandable" href="assets/images/habit-hero-recovery-updated-large.webp" aria-label="Open the notification and recovery screens at full size"><img src="assets/images/habit-hero-recovery-updated.webp" width="654" height="325" loading="lazy" alt="HabitHero automatic notification setup, adjustable reminder, weekly progress and five-day goal explanation screens" /></a><figcaption><strong>Control after testing:</strong> automatic or manual setup, snooze and reminder controls.</figcaption></figure>
-            </div>
-            <aside class="validation-note">
-              <strong>Round 2 iteration &middot; n=7</strong>
-              <p>Notifications and splash screens were useful in 7/7 sessions, but 4/7 wanted more control. The design added a way to turn off a reminder; further work still needs multiple snoozes, dismiss and frequency controls.</p>
-            </aside>
-          </section>
-
-          <section class="habit-decision" aria-labelledby="decision-four-title">
-            <p class="habit-decision-number">Decision 04</p>
-            <div class="case-study-prose"><h3 id="decision-four-title">Put guardrails around recalibration</h3></div>
-            <dl class="decision-rationale">
-              <div><dt>Insight</dt><dd>Users needed control, but unconstrained editing could produce unrealistic goals and repeated failure.</dd></div>
-              <div><dt>Options considered</dt><dd>Unbounded manual adjustment or bounded adjustment with guardrails.</dd></div>
-              <div><dt>Action</dt><dd>Allow changes in 500-step increments, with a warning at 2,000 steps.</dd></div>
-              <div><dt>Why this won</dt><dd>It balanced agency with Nielsen&rsquo;s error-prevention principle and reduced dropout risk.</dd></div>
-            </dl>
-            <figure class="case-study-media case-study-diagram"><a class="case-study-expandable" href="assets/images/habit-hero-weekly-recalibration-flow-large.webp" data-lightbox-fit="flow-height" aria-label="Open the weekly recalibration flow at full size"><span class="case-study-diagram-canvas"><img src="assets/images/habit-hero-weekly-recalibration-flow.webp" width="1320" height="510" loading="lazy" alt="Detailed weekly progress flow showing personalised goal recalibration, bounded manual updates, progress review and return to daily tracking" /><span class="finding-marker finding-marker-4" aria-hidden="true">4</span><span class="finding-marker finding-marker-5" aria-hidden="true">5</span><span class="finding-marker finding-marker-6" aria-hidden="true">6</span></span></a><figcaption>Weekly review makes the recommendation visible before the next cycle begins.</figcaption></figure>
-            <ol class="decision-grid" start="4">
-              <li><h4>Review precedes recalibration</h4><p>A proposed goal follows the previous seven days.</p></li>
-              <li><h4>Adjustment stays bounded</h4><p>Users accept the recommendation or adjust within guardrails.</p></li>
-              <li><h4>Closure stays specific</h4><p>The outcome is explained before the next week.</p></li>
-            </ol>
-            <div class="case-study-split">
-              <div><h4>Make the weekly rule explicit</h4><p>Ramsay&rsquo;s guidance on specificity shaped the wrap-up. The interface explains the five-day target before asking users to continue or update their goal.</p></div>
-              <figure class="case-study-media case-study-phone-media"><a class="case-study-expandable" href="assets/images/habit-hero-weekly-deep-link-large.webp" data-lightbox-fit="height" aria-label="Open the weekly wrap-up screen at full size"><img src="assets/images/habit-hero-weekly-deep-link.webp" width="390" height="846" loading="lazy" alt="HabitHero weekly wrap-up screen explaining a five-day weekly goal and prompting recalibration" /></a></figure>
-            </div>
-          </section>
-
-          <aside class="validation-note habit-accessibility-note">
-            <strong>Interaction constraints</strong>
-            <p>The prototype used 32&times;32px tap targets and mostly 16px body text, following WCAG guidance. Nielsen&rsquo;s usability heuristics also informed system visibility, user control and error prevention.</p>
-          </aside>
-        </section>
-
-        <section id="outcome" class="case-study-section case-study-stage stage-outcome site-shell" aria-labelledby="outcome-title">
-          <div class="stage-kicker"><span class="stage-number">04</span><span>Outcome</span></div>
-          <div class="case-study-prose">
-            <h2 id="outcome-title">Testing validated the direction and exposed its limits</h2>
-            <p><strong>Round 2 was validation:</strong> seven moderated usability sessions in the UK market during February 2026, averaging 45 minutes. Five participants joined remotely on mobile, with an average age of 36; two joined in person in London on desktop, with an average age of 44.</p>
-            <p>Participants were recruited through an email screener. The target sample was aged 35&ndash;50, included Android and iOS users, and prioritised people with caregiving or long-commute constraints.</p>
-          </div>
-          <ol class="evidence-to-decision" aria-label="Usability validation results">
-            <li class="evidence-card">
-              <p class="evidence-card-source">System Usability Scale &middot; n=7</p>
-              <h3>Mean SUS was approximately 74</h3>
-              <p>This was above the conventional benchmark of 68, with one outlier score of 42.</p>
-            </li>
-            <li class="evidence-card">
-              <p class="evidence-card-source">Return intent &middot; n=7</p>
-              <h3>57.1% Yes, 28.6% Maybe, 14.3% No</h3>
-              <p>This was the study&rsquo;s closest behavioural proxy for retention.</p>
-            </li>
-            <li class="evidence-card">
-              <p class="evidence-card-source">Clean task success &middot; n=7</p>
-              <h3>Completion concealed two weak points</h3>
-              <p>Overall task completion was 83&ndash;88%, but clean success was approximately 14% for Home interpretation and the weekly outcome rule.</p>
-            </li>
-            <li class="evidence-card">
-              <p class="evidence-card-source">Rewards comprehension &middot; n=7</p>
-              <h3>Only 2/7 participants understood the weekly rule</h3>
-              <p>At 28.6%, this was the weakest comprehension result. The value-loop task was also hardest, with a mean ease score of 4.1.</p>
-            </li>
-          </ol>
-          <aside class="validation-note">
-            <strong>What held, and what did not</strong>
-            <p>Adaptive goals were trusted in 6/7 sessions and recovery prompts were useful in 7/7. However, day-model logic was unclear in 5/7, notification and day-model control were requested in 4/7, and weekly success criteria were unclear in 6/7.</p>
-          </aside>
-          <div class="case-study-prose habit-risk-intro">
-            <h3>Two trust problems could not be treated as copy details</h3>
-          </div>
-          <ol class="evidence-to-decision" aria-label="Unresolved trust risks">
-            <li class="evidence-card">
-              <p class="evidence-card-source">Terminology risk &middot; 5/7 participants</p>
-              <h3>&ldquo;Streak&rdquo; implied consecutive days</h3>
-              <p>HabitHero used it for a non-consecutive five-of-seven pattern. Interviewee 4, who was motivated by streak mechanics, warned that this could damage trust with the users most likely to value it.</p>
-              <div class="evidence-card-decision"><span>Next decision</span><p>Use consistent &ldquo;goal days&rdquo; language and define the rolling-week rule.</p></div>
-            </li>
-            <li class="evidence-card">
-              <p class="evidence-card-source">Adoption risk &middot; Participants 3, 5, 6 and 7</p>
-              <h3>Permission wording sounded like a locked gate</h3>
-              <p>Users were told tracking could be turned off, while also being told HabitHero would not work without it. Interviewee 5, an Android user and privacy-sceptic, questioned why an insurance-linked company wanted step data and gave the lowest confidence rating, 4/10.</p>
-              <div class="evidence-card-decision"><span>Next decision</span><p>Resolve the consent contradiction and make the scope of data access verifiable.</p></div>
-            </li>
-          </ol>
-          <figure class="case-study-media case-study-final-media"><a class="case-study-expandable" href="assets/images/habit-hero-final-experience-large.webp" aria-label="Open the final HabitHero screens at full size"><img src="assets/images/habit-hero-final-experience.webp" width="1320" height="821" loading="lazy" alt="Five final HabitHero screens showing goal loading, daily progress, recovery guidance, weekly progress and recalibration" /></a><figcaption>The final prototype connects goal setup, daily guidance, recovery, weekly review and recalibration.</figcaption></figure>
-          <div class="outcome-pair">
-            <section>
-              <p class="outcome-pair-label">Delivered</p>
-              <h3>A connected progress loop</h3>
-              <p>The prototype reduced interpretation, explained system decisions and offered more than one route back after disruption.</p>
-            </section>
-            <section>
-              <p class="outcome-pair-label">Next validation</p>
-              <h3>Trust, control and longer-term behaviour</h3>
-              <p>The next phase must test specialist approval, notification behaviour and whether users return after a lapse.</p>
-            </section>
-          </div>
-          <div class="case-study-prose habit-next-steps">
-            <h3>Evidence-led next steps</h3>
-            <ul>
-              <li>Rename &ldquo;streak&rdquo; and define a consistent rolling-week rule using &ldquo;goal days&rdquo;.</li>
-              <li>Resolve the tracking-permission contradiction and make data-access scope verifiable.</li>
-              <li>Build day-model controls so status reflects users&rsquo; real active hours.</li>
-              <li>Expand notification controls across snooze, dismiss, frequency and tone.</li>
-              <li>Address rewards as its own piece of work.</li>
-              <li>Validate adaptive-goal logic with product and health specialists.</li>
-              <li>Run a beta study on return after a lapse, continued trust in adaptive goals and long-term progress comprehension.</li>
-            </ul>
-            <h3>Reflection</h3>
-            <p>The project shifted my focus from designing individual screens to designing a habit-formation system. The strongest decisions came from treating missed goals, changing routines and user control as central product problems rather than edge cases. The validation also mattered because it resisted a tidy ending: the core loop became clearer, while rewards, permissions and weekly language remained substantial product work.</p>
-          </div>
-          <section class="case-study-links" aria-labelledby="case-study-links-title">
-            <h3 id="case-study-links-title">Links</h3>
-            <ul>
-              <li><a href="https://www.figma.com/design/5LrFI20tH18gvs4983uxeG/1.2.6_Implementing-usability-testing-findings-and-refining-mid-fidelity-wireframes-link_JSpiller?node-id=4369-8508&amp;t=FDMt5ZgOYNroNEx2-1" target="_blank" rel="noopener noreferrer">Figma file: Low-fidelity designs, mid-fidelity designs and prototype</a></li>
-              <li><a href="https://www.figma.com/design/jVp6FlbqSXEviQo3TT1oZI/HabitHero_high-definition-FINAL?node-id=3063-29328&amp;t=KUqoVDdPhwiK5am5-1" target="_blank" rel="noopener noreferrer">Figma file: High fidelity designs (implementing usability testing findings, style guide, components, flows, handover notes)</a></li>
-            </ul>
-          </section>
-        </section>
-
-        <nav class="case-study-project-nav site-shell" aria-label="Project navigation">
-          <a class="button-link" href="projects.html">&larr; All projects</a>
-          <a class="button-link" href="salient-bio.html">Next project <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
-        </nav>
-      </article>
-    </main>
 
     <dialog class="case-study-lightbox" aria-label="Expanded case-study image">
       <button class="case-study-lightbox-close" type="button" aria-label="Close expanded image">
@@ -403,5 +633,6 @@
 
     <footer class="site-footer"><div class="site-shell"><p>&copy; <span id="year"></span> James Spiller</p></div></footer>
     <script src="scripts.js?v=33"></script>
+    <script src="habit-hero.js?v=1"></script>
   </body>
 </html>
