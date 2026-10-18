@@ -11,9 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;900&amp;family=Archivo+Black&amp;family=Lato:wght@400;700&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css?v=142" />
-    <link rel="stylesheet" href="habit-hero.css?v=1" />
+    <link rel="stylesheet" href="habit-hero.css?v=2" />
   </head>
-  <body data-page="projects">
+  <body data-page="projects" class="habit-hero-case-study">
     <svg class="icon-sprite" aria-hidden="true">
       <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></symbol>
       <symbol id="icon-drag" viewBox="0 0 24 24"><path d="M4 12h16M8 8l-4 4 4 4M16 8l4 4-4 4" /></symbol>
@@ -60,10 +60,16 @@
 <a class="case-study-back" href="projects.html">← Back to projects</a>
 <article id="hh-goal-study" aria-label="HabitHero case study: Discover, Define, Develop and Outcome">
 <div class="story-intro">
+<div class="intro-copy">
 <h1>HabitHero: personalising goals to make progress understandable</h1>
 <p>A research-led redesign of onboarding, daily guidance and weekly review.</p>
 <p class="small">Individual academic project · UX researcher and designer · October 2025–April 2026</p>
 <p class="small">I owned discovery, journey design, prototyping and usability testing. Delivered: a refined Figma prototype; longer-term habit formation remains unproven.</p>
+</div>
+<figure class="intro-product desktop-evidence">
+<img src="assets/images/habithero/final-daily-dashboard.png" alt="Final HabitHero dashboard showing daily status and remaining steps." width="379" height="820" decoding="async" fetchpriority="high">
+<figcaption>Delivered prototype · daily guidance</figcaption>
+</figure>
 </div>
 <section class="story-chapter discover group-start">
 <p class="stage-label">Discover</p>
@@ -71,6 +77,7 @@
 <div class="chapter-copy">
 <h2>I investigated what people needed from fitness tracking.</h2>
 <p class="chapter-bridge">The brief asked for better progress tracking. I interviewed people about how they tracked activity and what helped or discouraged them.</p>
+<div class="desktop-evidence narrative-note"><h3>What the research changed</h3><p>Help people choose a realistic starting goal, understand daily progress and restart after missed days.</p></div>
 </div>
 <div class="story-preview original-preview" data-preview="0">
 <figure class="preview-phone">
@@ -309,26 +316,28 @@
 <div class="story-preview exploration-preview" data-preview="3">
 <figure>
 <img alt="First goal wireframe, with separate acceptance and manual creation routes." src="assets/images/habithero/goal-option-accept-or-create.png" decoding="async" width="351" height="760" loading="lazy">
-<figcaption>A · Accept or create</figcaption>
+<figcaption><span>A · Accept or create</span><p class="desktop-evidence">A clear choice: accept the suggestion or start a manual goal.</p><p class="desktop-evidence"><strong>The trade-off</strong><br>Changing the recommendation means leaving this route.</p></figcaption>
 </figure>
 <figure>
 <img alt="Second goal wireframe, with adjustment alongside the recommendation." src="assets/images/habithero/goal-option-adjust-in-place.png" decoding="async" width="351" height="760" loading="lazy">
-<figcaption>B · Adjust in place<span class="preview-chosen">Carried forward</span></figcaption>
+<figcaption><span>B · Adjust in place</span><span class="preview-chosen">Carried forward</span><p class="desktop-evidence">The explanation, goal and adjustment sit together.</p><p class="desktop-evidence"><strong>The trade-off</strong><br>The stepper must make the size of each change clear.</p></figcaption>
 </figure>
 <figure>
 <img alt="Third goal wireframe, with easier, same and harder options." src="assets/images/habithero/goal-option-relative-adjustment.png" decoding="async" width="351" height="760" loading="lazy">
-<figcaption>C · Relative adjustment</figcaption>
+<figcaption><span>C · Relative adjustment</span><p class="desktop-evidence">Everyday labels offer a direction without asking for a number first.</p><p class="desktop-evidence"><strong>The trade-off</strong><br>The result of each choice still needs explaining.</p></figcaption>
 </figure>
 </div>
 </div>
-<details>
-<summary class="cursor-interaction"><span class="summary-text"><span class="open">Compare the goal-setting options</span><span class="close">Close the goal-setting options</span></span><span class="expand-mark" aria-hidden="true"><svg aria-hidden="true"><use href="#icon-plus"></use></svg></span></summary>
+<p class="desktop-evidence decision-summary">I carried forward a suggested goal with an explanation and adjustment controls. Onboarding explained how recent activity informed the goal before people accepted or changed it.</p>
+<p class="small desktop-evidence">Original low-fidelity explorations. Captions explain the visible trade-offs retrospectively; no comparative test result is claimed.</p>
+<details class="goal-detail">
+<summary class="cursor-interaction"><span class="summary-text"><span class="open">See the goal-setting rationale and final screens</span><span class="close">Close the goal-setting rationale and final screens</span></span><span class="expand-mark" aria-hidden="true"><svg aria-hidden="true"><use href="#icon-plus"></use></svg></span></summary>
 <div class="detail-body">
-<div class="closed-diagram" aria-label="Design principle: recent activity informs a suggested goal which the person can adjust">
-<span>Recent activity</span>
-<span class="selected">Suggested goal</span>
-<span>Your adjustment</span>
-</div>
+<ol class="goal-sequence" aria-label="Design principle: recent activity informs a suggested goal which the person can adjust">
+<li>Recent activity</li>
+<li>Suggested goal</li>
+<li>Your adjustment</li>
+</ol>
 <div class="research">
 <p><strong>The research</strong><br>All five discovery interviews raised difficulty interpreting progress and deciding what to do.</p>
 <p><strong>The design implication</strong><br>Start with a credible goal. Explain it, and leave room to change it.</p>
@@ -488,7 +497,7 @@
 </div>
 </details>
 </section>
-<section class="story-chapter develop">
+<section class="story-chapter develop testing-chapter">
 <div class="chapter-overview">
 <div class="chapter-copy">
 <h2>I tested whether people understood the goals, feedback and controls.</h2>
@@ -509,6 +518,11 @@
 <p class="ambiguity-caption" aria-live="polite">Illustration of the issue found in testing.</p>
 </div>
 </div>
+</div>
+<div class="desktop-evidence testing-comparison" aria-label="Weekly wording from testing to revision">
+<figure><img src="assets/images/habithero/weekly-tested.png" alt="Tested weekly screen using the phrase string together five days and streak." width="390" height="846" loading="lazy"><figcaption>Tested wording · “streak” suggested consecutive days.</figcaption></figure>
+<div class="testing-finding"><h3>6 of 7 found the weekly criteria unclear.</h3><p>The weekly rule allowed two missed days. The word “streak” suggested otherwise.</p><p><strong>The response</strong><br>State the five-day rule directly and explain that the days need not be consecutive.</p><p class="small">The revision is documented. Improved comprehension after this change has not been established.</p></div>
+<figure><img src="assets/images/habithero/weekly-revised.png" alt="Revised weekly screen explaining that five active days do not need to be in a row." width="390" height="846" loading="lazy"><figcaption>Revised wording · comprehension still needs retesting.</figcaption></figure>
 </div>
 <details>
 <summary class="cursor-interaction">See what testing revealed</summary>
