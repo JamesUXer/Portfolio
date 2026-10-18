@@ -1,0 +1,133 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "broken-image",
+        "value": "*",
+        "files": [
+          "habit-hero.html"
+        ],
+        "createdAt": "2026-10-18T18:17:15.233Z",
+        "reason": "Agent: the existing closed lightbox image receives its selected source before showModal; not a visible broken asset."
+      },
+      {
+        "rule": "clipped-overflow-container",
+        "value": "*",
+        "files": [
+          "habit-hero.html"
+        ],
+        "createdAt": "2026-10-18T18:17:15.251Z",
+        "reason": "Agent: weekly image layers deliberately clip for the existing comparison; body horizontal clipping is established site styling, with no escaping popup cut off in verification."
+      },
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "habit-hero.html"
+        ],
+        "createdAt": "2026-10-18T18:17:15.271Z",
+        "reason": "User scope preserves established styling; agent identified the existing faint inset stage tint, not a new decorative glow."
+      },
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "habit-hero.html"
+        ],
+        "createdAt": "2026-10-18T18:17:15.288Z",
+        "reason": "User scope preserves the completed layout; existing top stage dividers and shared link underlines are intentional, not side accents."
+      },
+      {
+        "rule": "layout-transition",
+        "value": "*",
+        "files": [
+          "habit-hero.html"
+        ],
+        "createdAt": "2026-10-18T18:17:15.302Z",
+        "reason": "User scope explicitly preserves existing interactions; the existing quote reveal height transition is unchanged."
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "habit-hero.html"
+        ],
+        "createdAt": "2026-10-18T18:17:15.317Z",
+        "reason": "User scope preserves completed layout; desktop evidence panels intentionally have only a top separator, with no side boundary needing inset."
+      },
+      {
+        "rule": "overused-font",
+        "value": "*",
+        "files": [
+          "habit-hero.html"
+        ],
+        "createdAt": "2026-10-18T18:17:15.329Z",
+        "reason": "User explicitly preserves established typography; Lato is the shared case-study body font."
+      },
+      {
+        "rule": "layout-transition",
+        "value": "*",
+        "files": [
+          "habit-hero.css"
+        ],
+        "createdAt": "2026-10-18T18:19:59.758Z",
+        "reason": "Agent verified the pull-window height transition is identical in the pre-edit backup. User explicitly required existing interactions and animations to be preserved during this editorial pass."
+      },
+      {
+        "rule": "broken-image",
+        "value": "*",
+        "files": [
+          "ai-educator.html",
+          "salient-bio.html",
+          "talking-about-online-life.html"
+        ],
+        "createdAt": "2026-10-18T18:31:41.123Z",
+        "reason": "Agent verified each empty image is inside the existing closed lightbox; scripts.js assigns the selected full-size source before opening it. No visible placeholder asset."
+      },
+      {
+        "rule": "overused-font",
+        "value": "lato",
+        "files": [
+          "ai-educator.html",
+          "salient-bio.html",
+          "talking-about-online-life.html"
+        ],
+        "createdAt": "2026-10-18T18:36:18.788Z",
+        "reason": "User scope explicitly preserves existing typography. Agent verified Lato remains the established shared body font."
+      },
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "ai-educator.html",
+          "salient-bio.html",
+          "talking-about-online-life.html"
+        ],
+        "createdAt": "2026-10-18T18:36:18.803Z",
+        "reason": "Agent verified these findings identify the existing purple bottom inset link underlines in unchanged styles.css. User scope preserves existing website styling."
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "ai-educator.html",
+          "salient-bio.html",
+          "talking-about-online-life.html"
+        ],
+        "createdAt": "2026-10-18T18:36:18.814Z",
+        "reason": "Agent verified existing card and section layouts predate the progress change; shared evidence cards explicitly have 24–32px inset padding. User scope preserves these layouts."
+      },
+      {
+        "rule": "all-caps-body",
+        "value": "*",
+        "files": [
+          "talking-about-online-life.html"
+        ],
+        "createdAt": "2026-10-18T18:36:18.826Z",
+        "reason": "Agent verified uppercase is applied to existing evidence-source and editorial labels, with prose unchanged. User scope preserves existing typography."
+      }
+    ]
+  }
+}

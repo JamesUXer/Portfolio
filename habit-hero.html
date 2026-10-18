@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;900&amp;family=Archivo+Black&amp;family=Lato:wght@400;700&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css?v=142" />
-    <link rel="stylesheet" href="habit-hero.css?v=2" />
+    <link rel="stylesheet" href="habit-hero.css?v=9" />
+    <link rel="stylesheet" href="case-study-progress.css?v=1" />
   </head>
   <body data-page="projects" class="habit-hero-case-study">
     <svg class="icon-sprite" aria-hidden="true">
@@ -58,7 +59,7 @@
 
 <main id="top" class="site-shell habit-story-page">
 <a class="case-study-back" href="projects.html">← Back to projects</a>
-<article id="hh-goal-study" aria-label="HabitHero case study: Discover, Define, Develop and Outcome">
+<article id="hh-goal-study" data-reading-progress aria-label="HabitHero case study: Discover, Define, Develop and Outcome">
 <div class="story-intro">
 <div class="intro-copy">
 <h1>HabitHero: personalising goals to make progress understandable</h1>
@@ -71,13 +72,14 @@
 <figcaption>Delivered prototype · daily guidance</figcaption>
 </figure>
 </div>
+<div class="narrative-body">
+<span class="narrative-line" aria-hidden="true"></span>
 <section class="story-chapter discover group-start">
 <p class="stage-label">Discover</p>
 <div class="chapter-overview">
 <div class="chapter-copy">
-<h2>I investigated what people needed from fitness tracking.</h2>
+<h2 class="narrative-heading"><span class="narrative-marker" aria-hidden="true"></span>I investigated what people needed from fitness tracking.</h2>
 <p class="chapter-bridge">The brief asked for better progress tracking. I interviewed people about how they tracked activity and what helped or discouraged them.</p>
-<div class="desktop-evidence narrative-note"><h3>What the research changed</h3><p>Help people choose a realistic starting goal, understand daily progress and restart after missed days.</p></div>
 </div>
 <div class="story-preview original-preview" data-preview="0">
 <figure class="preview-phone">
@@ -92,18 +94,10 @@
 </div>
 </div>
 <details>
-<summary class="cursor-interaction">See the starting problem</summary>
+<summary class="cursor-interaction">See the original brief and discovery approach</summary>
 <div class="reading">
-<div class="framing">
-<div>
 <h3>Starting point</h3>
 <p>Help people track activity and understand their progress towards a goal.</p>
-</div>
-<div>
-<h3>What the research changed</h3>
-<p>Help people choose a realistic starting goal, understand daily progress and restart after missed days.</p>
-</div>
-</div>
 <p>I conducted five discovery interviews, then synthesised the findings into a persona, journey and design priorities.</p>
 </div>
 </details>
@@ -111,8 +105,12 @@
 <section class="story-chapter discover">
 <div class="chapter-overview">
 <div class="chapter-copy">
-<h2>Interviews showed that tracking could add pressure.</h2>
+<h2 class="narrative-heading"><span class="narrative-marker" aria-hidden="true"></span>Interviews showed that tracking could add pressure.</h2>
 <p class="chapter-bridge">People described arbitrary targets, limited time and the pressure of tracking more information.</p>
+<div class="narrative-note">
+<h3>What the research changed</h3>
+<p>I concluded that progress feedback should explain what to do without adding pressure. I focused on helping people choose a realistic starting goal, understand daily progress and restart after missed days.</p>
+</div>
 </div>
 <div class="story-preview persona-preview" data-preview="1">
 <div class="persona-summary">
@@ -144,7 +142,7 @@
 </div>
 </div>
 <details>
-<summary class="cursor-interaction">See what the interviews revealed</summary>
+<summary class="cursor-interaction">Read the interview quotes and synthesis</summary>
 <div class="reading">
 <section class="pull-evidence" aria-label="Three discovery interview perspectives">
 <div class="pull-window">
@@ -191,7 +189,6 @@
 <dd>Uncertainty about when an activity or goal was complete.</dd>
 </div>
 </dl>
-<p>I concluded that progress feedback should explain what to do without adding pressure.</p>
 </div>
 </details>
 </section>
@@ -199,8 +196,8 @@
 <p class="stage-label">Define</p>
 <div class="chapter-overview">
 <div class="chapter-copy">
-<h2>I made goal setting the starting point for understanding progress.</h2>
-<p class="chapter-bridge">A goal based on recent activity would give people a starting point for judging their progress.</p>
+<h2 class="narrative-heading"><span class="narrative-marker" aria-hidden="true"></span>I made goal setting the starting point for understanding progress.</h2>
+<p class="chapter-bridge">A goal based on recent activity would give people a starting point for judging their progress. I used this as the reference point for daily status and weekly review.</p>
 </div>
 <div class="story-preview define-preview" data-preview="2">
 <p class="preview-caption">Patterns across five discovery interviews</p>
@@ -220,7 +217,7 @@
 </div>
 </div>
 <details>
-<summary class="cursor-interaction">See how I set the design priorities</summary>
+<summary class="cursor-interaction">See the assessment and planned measures</summary>
 <div class="reading">
 <div class="framing">
 <div>
@@ -228,8 +225,8 @@
 <p>I used the persona and journey to bring the interview findings together, then compared opportunities by their expected impact and effort.</p>
 </div>
 <div>
-<h3>From priorities to scope</h3>
-<p>I focused on setting a starting goal, showing daily status, supporting restarts and reviewing the week. The starting goal gave the later feedback a reference point.</p>
+<h3>Scope boundaries</h3>
+<p>Cross-app aggregation was deprioritised. Redesigning the rewards system sat outside this scope, although testing later exposed its limitations.</p>
 </div>
 </div>
 <div class="priority-explorer" aria-label="How research informed design priorities">
@@ -256,7 +253,7 @@
 </div>
 <section class="priority-evidence" aria-label="Original impact-effort assessment">
 <h3>How I compared opportunities</h3>
-<p>The assessment favoured showing when a day was complete and what to do next. I treated a personalised starting goal as the reference point for that feedback.</p>
+<p>The assessment favoured showing when a day was complete and what to do next.</p>
 <table class="priority-table">
 <caption>Selected rows from the original assessment. Scores are design estimates on a 1–5 scale.</caption>
 <thead><tr>
@@ -301,7 +298,6 @@
 <li>Make completion clear.</li>
 <li>Support restarting without shame.</li>
 </ul>
-<p>Cross-app aggregation was deprioritised. Redesigning the rewards system sat outside this scope, although testing later exposed its limitations.</p>
 </div>
 </details>
 </section>
@@ -310,7 +306,7 @@
 <section class="chapter">
 <div class="chapter-overview">
 <div class="chapter-copy">
-<h2>I designed onboarding around a personalised, adjustable goal.</h2>
+<h2 class="narrative-heading"><span class="narrative-marker" aria-hidden="true"></span>I designed onboarding around a personalised, adjustable goal.</h2>
 <p class="lede">I compared three ways to accept or change a suggested goal, then explained the recommendation during onboarding.</p>
 </div>
 <div class="story-preview exploration-preview" data-preview="3">
@@ -328,20 +324,16 @@
 </figure>
 </div>
 </div>
-<p class="desktop-evidence decision-summary">I carried forward a suggested goal with an explanation and adjustment controls. Onboarding explained how recent activity informed the goal before people accepted or changed it.</p>
-<p class="small desktop-evidence">Original low-fidelity explorations. Captions explain the visible trade-offs retrospectively; no comparative test result is claimed.</p>
+<p class="decision-summary">I carried forward adjustment in place to keep the explanation, suggested goal and controls together. Onboarding explained how recent activity informed the goal before people accepted or changed it.</p>
+<p class="small">Original low-fidelity explorations. Captions explain the visible trade-offs retrospectively; no comparative test result is claimed.</p>
 <details class="goal-detail">
-<summary class="cursor-interaction"><span class="summary-text"><span class="open">See the goal-setting rationale and final screens</span><span class="close">Close the goal-setting rationale and final screens</span></span><span class="expand-mark" aria-hidden="true"><svg aria-hidden="true"><use href="#icon-plus"></use></svg></span></summary>
+<summary class="cursor-interaction"><span class="summary-text"><span class="open">Explore the goal-setting screens</span><span class="close">Close the goal-setting screens</span></span><span class="expand-mark" aria-hidden="true"><svg aria-hidden="true"><use href="#icon-plus"></use></svg></span></summary>
 <div class="detail-body">
 <ol class="goal-sequence" aria-label="Design principle: recent activity informs a suggested goal which the person can adjust">
 <li>Recent activity</li>
 <li>Suggested goal</li>
 <li>Your adjustment</li>
 </ol>
-<div class="research">
-<p><strong>The research</strong><br>All five discovery interviews raised difficulty interpreting progress and deciding what to do.</p>
-<p><strong>The design implication</strong><br>Start with a credible goal. Explain it, and leave room to change it.</p>
-</div>
 <section class="comparison" aria-label="Compare goal-setting approaches">
 <div class="comparison-heading">
 <h3>How could people change the recommendation?</h3>
@@ -430,9 +422,6 @@
 </div>
 </div>
 </section>
-<div class="decision">
-<p><strong>The decision</strong><br>I carried forward a suggested goal with an explanation and adjustment controls. Onboarding explained how recent activity informed the goal before people accepted or changed it.</p>
-</div>
 <section class="finished-onboarding">
 <h3>The goal-setting design</h3>
 <div class="onboarding-screens final-screens">
@@ -445,9 +434,8 @@
 <figcaption>Make the basis of the recommendation available when people need it.</figcaption>
 </figure>
 </div>
-<p class="small">Final prototype screens. Suitability of the adaptive goal logic still needs specialist validation.</p>
+<p class="small">Final prototype screens.</p>
 </section>
-<p class="sources">Original low-fidelity explorations. Captions explain the visible trade-offs retrospectively; no comparative test result is claimed.</p>
 </div>
 </details>
 </section>
@@ -455,7 +443,7 @@
 <section class="story-chapter develop">
 <div class="chapter-overview">
 <div class="chapter-copy">
-<h2>I designed daily guidance and explained how weekly goals worked.</h2>
+<h2 class="narrative-heading"><span class="narrative-marker" aria-hidden="true"></span>I designed daily guidance and explained how weekly goals worked.</h2>
 <p class="chapter-bridge">The dashboard shows daily status and remaining steps. The weekly review explains how active days count towards the goal.</p>
 </div>
 <div class="story-preview daily-preview" data-preview="4">
@@ -470,7 +458,7 @@
 </div>
 </div>
 <details>
-<summary class="cursor-interaction">See daily guidance and weekly review</summary>
+<summary class="cursor-interaction">See the daily and weekly screens</summary>
 <div class="reading">
 <div class="daily-screens final-screens">
 <figure>
@@ -482,17 +470,6 @@
 <figcaption>Explain weekly success without requiring consecutive days.</figcaption>
 </figure>
 </div>
-<div class="framing">
-<div>
-<h3>Daily guidance</h3>
-<p>The dashboard shows whether someone is on track and how many steps remain.</p>
-</div>
-<div>
-<h3>Weekly review</h3>
-<p>Review progress, explain the next goal and recognise activity without requiring five consecutive successful days.</p>
-</div>
-</div>
-<p>I tested whether people understood these screens and found them useful. The sessions could not establish lasting changes in exercise habits.</p>
 <a href="https://www.figma.com/design/jVp6FlbqSXEviQo3TT1oZI?node-id=3018-23765" target="_blank" rel="noopener noreferrer">Explore the final screens in Figma</a>
 </div>
 </details>
@@ -500,8 +477,11 @@
 <section class="story-chapter develop testing-chapter">
 <div class="chapter-overview">
 <div class="chapter-copy">
-<h2>I tested whether people understood the goals, feedback and controls.</h2>
+<h2 class="narrative-heading"><span class="narrative-marker" aria-hidden="true"></span>I tested whether people understood the goals, feedback and controls.</h2>
 <p class="chapter-bridge">Seven people tested goal setup, daily status, weekly rules and goal adjustment in moderated sessions.</p>
+<div class="narrative-note">
+<p>Five of seven sessions exposed confusion about how daily status was calculated. Four highlighted insufficient notification control.</p>
+</div>
 </div>
 <div class="story-preview testing-preview" data-preview="5">
 <figure class="preview-phone">
@@ -519,25 +499,16 @@
 </div>
 </div>
 </div>
-<div class="desktop-evidence testing-comparison" aria-label="Weekly wording from testing to revision">
+<div class="testing-comparison" aria-label="Weekly wording from testing to revision">
 <figure><img src="assets/images/habithero/weekly-tested.png" alt="Tested weekly screen using the phrase string together five days and streak." width="390" height="846" loading="lazy"><figcaption>Tested wording · “streak” suggested consecutive days.</figcaption></figure>
 <div class="testing-finding"><h3>6 of 7 found the weekly criteria unclear.</h3><p>The weekly rule allowed two missed days. The word “streak” suggested otherwise.</p><p><strong>The response</strong><br>State the five-day rule directly and explain that the days need not be consecutive.</p><p class="small">The revision is documented. Improved comprehension after this change has not been established.</p></div>
 <figure><img src="assets/images/habithero/weekly-revised.png" alt="Revised weekly screen explaining that five active days do not need to be in a row." width="390" height="846" loading="lazy"><figcaption>Revised wording · comprehension still needs retesting.</figcaption></figure>
 </div>
 <details>
-<summary class="cursor-interaction">See what testing revealed</summary>
+<summary class="cursor-interaction">Read participants’ responses to the prototype</summary>
 <div class="reading">
-<div class="framing">
-<div>
 <h3>What people found useful</h3>
 <p>Goals that adapt to recent activity received positive responses in six of seven sessions. Notifications and quick check-ins were useful for recovery across all seven.</p>
-</div>
-<div>
-<h3>What people misunderstood or needed to control</h3>
-<p>Five of seven sessions exposed confusion about how daily status was calculated. Four highlighted insufficient notification control. Six exposed unclear weekly-success criteria.</p>
-</div>
-</div>
-<p>I tested comprehension and reactions to a prototype. These sessions did not establish improved retention or lasting exercise habits.</p>
 </div>
 </details>
 </section>
@@ -545,8 +516,8 @@
 <p class="stage-label">Outcome</p>
 <div class="chapter-overview">
 <div class="chapter-copy">
-<h2>I clarified the wording and controls, then delivered the final prototype.</h2>
-<p class="chapter-bridge">I explained the weekly rule, added notification controls and documented the final screens for handover.</p>
+<h2 class="narrative-heading"><span class="narrative-marker" aria-hidden="true"></span>I clarified the wording and controls, then delivered the final prototype.</h2>
+<p class="chapter-bridge">I explained active times during onboarding, added notification controls and documented the final screens for handover.</p>
 </div>
 <div class="story-preview delivery-preview" data-preview="6">
 <div class="delivery-sequence">
@@ -567,12 +538,16 @@
 <p class="small delivery-caption" aria-live="polite">Delivered Figma prototype · behavioural impact not yet validated.</p>
 </div>
 </div>
+<div class="boundary chapter-copy">
+<h3>Still unresolved</h3>
+<p>I tested comprehension and reactions to a prototype. These sessions did not establish improved retention or lasting exercise habits.</p>
+<p>Permissions remained outstanding. Suitability of the adaptive goal logic still needs specialist validation. Retesting of the revised prototype has not been established. The next validation would check comprehension of the revised rules and controls before investigating longer-term behaviour.</p>
+</div>
 <details>
-<summary class="cursor-interaction">See the changes I delivered</summary>
+<summary class="cursor-interaction">Compare the documented revisions</summary>
 <div class="reading">
 <section class="weekly-example" aria-label="Weekly-success wording from testing to delivery">
 <h3>Five active days, without a streak.</h3>
-<p>The weekly rule allowed two missed days. The word “streak” suggested otherwise.</p>
 <div class="weekly-controls" role="group" aria-label="Choose the version of the weekly explanation">
 <button type="button" class="cursor-interaction" data-weekly="tested" aria-pressed="true">Tested version</button>
 <button type="button" class="cursor-interaction" data-weekly="revised" aria-pressed="false">Wording revised</button>
@@ -599,9 +574,6 @@
 <div class="weekly-reasoning" aria-live="polite" aria-atomic="true">
 <h3 class="weekly-version">Tested version</h3>
 <p class="weekly-description">“String together 5 days this week and you’re on a streak” mixed a consecutive-day term with a rule that allowed missed days.</p>
-<p><strong>The finding</strong><br>Weekly success criteria were unclear in six of seven sessions.</p>
-<p class="weekly-change"><strong>The response</strong><br>State the five-day rule directly and explain that the days need not be consecutive.</p>
-<p class="small">The revision is documented. Improved comprehension after this change has not been established.</p>
 </div>
 </div>
 </section>
@@ -621,14 +593,11 @@
 </div>
 </div>
 <p>The refinement record also documents larger radio-button hit areas, clearer goal-setting labels and more consistent primary buttons.</p>
-<div class="boundary">
-<h3>Still unresolved</h3>
-<p>Permissions remained outstanding. Retesting of the revised prototype has not been established. The next validation would check comprehension of the revised rules and controls before investigating longer-term behaviour.</p>
-</div>
 <a href="https://www.figma.com/design/jVp6FlbqSXEviQo3TT1oZI?node-id=3063-29328" target="_blank" rel="noopener noreferrer">View the documented refinements</a>
 </div>
 </details>
 </section>
+</div>
 </article>
 <nav class="case-study-project-nav site-shell" aria-label="Project navigation">
 <a class="button-link" href="projects.html">← All projects</a>
@@ -648,5 +617,6 @@
     <footer class="site-footer"><div class="site-shell"><p>&copy; <span id="year"></span> James Spiller</p></div></footer>
     <script src="scripts.js?v=33"></script>
     <script src="habit-hero.js?v=1"></script>
+    <script src="case-study-progress.js?v=1"></script>
   </body>
 </html>
