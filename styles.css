@@ -5282,3 +5282,16 @@ a.project-image-link:hover img {
     margin-top: 4rem;
   }
 }
+
+/* Progressive enhancement: ordinary links remain usable without shared JS. */
+html:not(.navigation-ready) :is(.menu-button, [data-action="theme"], [data-action="contrast"], .mobile-accessibility) {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  html:not(.navigation-ready) .mobile-menu[hidden] {
+    position: static;
+    display: grid;
+    padding-inline: var(--page-gutter);
+  }
+}

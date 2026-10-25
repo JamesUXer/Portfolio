@@ -1,9 +1,18 @@
 const root = document.documentElement;
 const menuButton = document.querySelector(".menu-button");
 const mobileMenu = document.querySelector(".mobile-menu");
-const savedTheme = localStorage.getItem("portfolio-theme");
-const savedContrast = localStorage.getItem("portfolio-contrast");
-const savedLightness = localStorage.getItem("portfolio-lightness");
+// Preference storage can be unavailable in private or restricted browsing.
+function readPreference(key) {
+  try { return localStorage.getItem(key); } catch { return null; }
+}
+
+function savePreference(key, value) {
+  try { localStorage.setItem(key, value); } catch { /* Keep this session usable. */ }
+}
+
+const savedTheme = readPreference("portfolio-theme");
+const savedContrast = readPreference("portfolio-contrast");
+const savedLightness = readPreference("portfolio-lightness");
 const darkModeControl = document.querySelector('[data-setting="dark-mode"]');
 const lightnessControl = document.querySelector('[data-setting="lightness"]');
 const contrastControl = document.querySelector('[data-setting="contrast"]');
@@ -84,10 +93,36 @@ function mixColor(from, to, amount) {
   return `#${channels.map((channel) => channel.toString(16).padStart(2, "0")).join("")}`;
 }
 
+function luminance(color) {
+  return hexToRgb(color).map((channel) => {
+    const value = channel / 255;
+    return value <= 0.04045 ? value / 12.92 : ((value + 0.055) / 1.055) ** 2.4;
+  }).reduce((total, value, index) => total + value * [0.2126, 0.7152, 0.0722][index], 0);
+}
+
+function contrastRatio(first, second) {
+  const a = luminance(first);
+  const b = luminance(second);
+  return (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
+}
+
+function readableColor(color, backgrounds, target) {
+  const meetsTarget = (candidate) => backgrounds.every((background) => contrastRatio(candidate, background) >= 4.5);
+  if (meetsTarget(color)) return color;
+  let low = 0;
+  let high = 1;
+  for (let step = 0; step < 12; step += 1) {
+    const middle = (low + high) / 2;
+    if (meetsTarget(mixColor(color, target, middle))) high = middle;
+    else low = middle;
+  }
+  return mixColor(color, target, high);
+}
+
 function setTheme(isDark, persist = true) {
   root.dataset.theme = isDark ? "dark" : "light";
   if (darkModeControl) darkModeControl.checked = isDark;
-  if (persist) localStorage.setItem("portfolio-theme", isDark ? "dark" : "light");
+  if (persist) savePreference("portfolio-theme", isDark ? "dark" : "light");
   updateDisplaySettings(false);
 }
 
@@ -99,11 +134,32 @@ function updateDisplaySettings(persist = true) {
   const contrastAmount = contrast / 100;
   const lightnessAmount = (lightness / 100) * 0.3;
 
-  Object.entries(palette).forEach(([property, colors]) => {
-    const contrastedColor = mixColor(colors.base, colors.contrast, contrastAmount);
-    const adjustedColor = mixColor(contrastedColor, "#ffffff", lightnessAmount);
-    root.style.setProperty(property, adjustedColor);
-  });
+  const surfaceProperties = ["--bg", "--panel", "--surface-supporting", ...["discover", "define", "develop", "outcome"].map((stage) => `--stage-${stage}-soft`)];
+  const adjusted = Object.fromEntries(Object.entries(palette).map(([property, colors]) => {
+    const contrasted = mixColor(colors.base, colors.contrast, contrastAmount);
+    const isSurface = surfaceProperties.includes(property) || property.endsWith("-bright") || property === "--line";
+    return [property, isSurface ? mixColor(contrasted, "#ffffff", lightnessAmount) : contrasted];
+  }));
+
+  // Brighten surfaces rather than washing out their text. Keep the default
+  // palette intact and protect normal-size text on the adjusted page surfaces.
+  if (lightness > 0) {
+    const target = root.dataset.theme === "light" ? "#000000" : "#ffffff";
+    const textSurfaces = surfaceProperties.filter((property) => property !== "--panel").map((property) => adjusted[property]);
+    ["--text", "--soft-text", "--muted-text"].forEach((property) => {
+      adjusted[property] = readableColor(adjusted[property], textSurfaces, target);
+    });
+    ["discover", "define", "develop", "outcome"].forEach((stage) => {
+      const property = `--stage-${stage}-ink`;
+      adjusted[property] = readableColor(adjusted[property], [adjusted["--bg"], adjusted[`--stage-${stage}-soft`]], target);
+    });
+    // Shared controls also use a faint accent tint behind their labels.
+    const controlSurfaces = [adjusted["--bg"], mixColor(adjusted["--bg"], target, 0.06)];
+    ["--accent", "--focus"].forEach((property) => {
+      adjusted[property] = readableColor(adjusted[property], controlSurfaces, target);
+    });
+  }
+  Object.entries(adjusted).forEach(([property, color]) => root.style.setProperty(property, color));
 
   document.querySelector('meta[name="theme-color"]')?.setAttribute("content", root.style.getPropertyValue("--bg"));
 
@@ -111,8 +167,8 @@ function updateDisplaySettings(persist = true) {
   contrastControl?.setAttribute("aria-valuetext", contrast === 0 ? "Normal" : `${contrast}% higher contrast`);
 
   if (persist) {
-    localStorage.setItem("portfolio-lightness", String(lightness));
-    localStorage.setItem("portfolio-contrast", String(contrast));
+    savePreference("portfolio-lightness", String(lightness));
+    savePreference("portfolio-contrast", String(contrast));
   }
 }
 
@@ -143,22 +199,46 @@ function closeAccessibilityPanels(returnFocus = false) {
   if (returnFocus) triggerToRestore?.focus();
 }
 
+const menuBackground = new Map();
+
+function setMenuBackgroundInert(isOpen) {
+  if (isOpen) {
+    [...document.body.children].filter((element) => !element.contains(mobileMenu) && !element.matches("script, style, svg")).forEach((element) => {
+      menuBackground.set(element, element.inert);
+      element.inert = true;
+    });
+  } else {
+    menuBackground.forEach((wasInert, element) => { element.inert = wasInert; });
+    menuBackground.clear();
+  }
+}
+
 function closeMenu(returnFocus = false) {
   if (!menuButton || !mobileMenu) return;
+  const wasOpen = menuButton.getAttribute("aria-expanded") === "true";
+  closeAccessibilityPanels();
   menuButton.setAttribute("aria-expanded", "false");
   menuButton.setAttribute("aria-label", "Open navigation");
   mobileMenu.hidden = true;
   document.body.classList.remove("menu-open");
-  if (returnFocus) menuButton.focus();
+  setMenuBackgroundInert(false);
+  if (returnFocus && wasOpen) menuButton.focus();
 }
 
 if (menuButton && mobileMenu) {
   menuButton.addEventListener("click", () => {
     const isOpen = menuButton.getAttribute("aria-expanded") === "true";
-    menuButton.setAttribute("aria-expanded", String(!isOpen));
-    menuButton.setAttribute("aria-label", isOpen ? "Open navigation" : "Close navigation");
-    mobileMenu.hidden = isOpen;
-    document.body.classList.toggle("menu-open", !isOpen);
+    if (isOpen) {
+      closeMenu(true);
+      return;
+    }
+    closeAccessibilityPanels();
+    menuButton.setAttribute("aria-expanded", "true");
+    menuButton.setAttribute("aria-label", "Close navigation");
+    mobileMenu.hidden = false;
+    document.body.classList.add("menu-open");
+    setMenuBackgroundInert(true);
+    mobileMenu.querySelector("a")?.focus();
   });
 
   mobileMenu.querySelectorAll("a").forEach((link) => {
@@ -175,6 +255,37 @@ if (menuButton && mobileMenu) {
     }
   });
 }
+
+function menuFocusTargets() {
+  const openPanel = accessibilityPanels.find((panel) => !panel.hidden);
+  const controls = openPanel
+    ? [...openPanel.querySelectorAll("input, button, a[href]")]
+    : [menuButton, ...mobileMenu.querySelectorAll("a[href], button")];
+  return controls.filter((element) => !element.disabled && element.getClientRects().length > 0);
+}
+
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "Tab" || menuButton?.getAttribute("aria-expanded") !== "true") return;
+  const targets = menuFocusTargets();
+  const first = targets[0];
+  const last = targets[targets.length - 1];
+  if (event.shiftKey && (document.activeElement === first || !targets.includes(document.activeElement))) {
+    event.preventDefault();
+    last?.focus();
+  } else if (!event.shiftKey && (document.activeElement === last || !targets.includes(document.activeElement))) {
+    event.preventDefault();
+    first?.focus();
+  }
+});
+
+document.addEventListener("focusin", (event) => {
+  if (menuButton?.getAttribute("aria-expanded") !== "true") return;
+  const targets = menuFocusTargets();
+  if (!targets.includes(event.target)) targets[0]?.focus();
+});
+
+// CSS leaves ordinary navigation available until the controls are ready.
+root.classList.add("navigation-ready");
 
 accessibilityTriggers.forEach((button) => {
   button.addEventListener("click", () => {
