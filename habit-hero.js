@@ -25,6 +25,39 @@
   };
   const pressed = (buttons, selected) => buttons.forEach(button => button.setAttribute('aria-pressed', String(button === selected)));
 
+  // Keep every screen available when JavaScript is disabled.
+  const goalCarousel = one('.goal-carousel');
+  if (goalCarousel) {
+    const slides = [...goalCarousel.querySelectorAll('.goal-slide')];
+    const dots = [...goalCarousel.querySelectorAll('[data-goal-index]')];
+    let current = 0;
+    const showGoal = index => {
+      current = (index + slides.length) % slides.length;
+      slides.forEach((slide, i) => { slide.hidden = i !== current; });
+      pressed(dots, dots[current]);
+      goalCarousel.querySelector('.goal-status').textContent = `${current + 1} of ${slides.length}`;
+    };
+    goalCarousel.querySelector('.goal-controls').hidden = false;
+    dots.forEach(button => on(button, 'click', () => showGoal(Number(button.dataset.goalIndex))));
+    goalCarousel.querySelectorAll('[data-goal-step]').forEach(button => on(button, 'click', () => showGoal(current + Number(button.dataset.goalStep))));
+    on(goalCarousel, 'keydown', event => {
+      if (event.target.closest('a')) return;
+      if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+        event.preventDefault();
+        showGoal(current + (event.key === 'ArrowRight' ? 1 : -1));
+      }
+    });
+    let touchStart = null;
+    on(goalCarousel, 'touchstart', event => { const t = event.changedTouches[0]; touchStart = { x: t.clientX, y: t.clientY }; }, { passive: true });
+    on(goalCarousel, 'touchend', event => {
+      if (!touchStart) return;
+      const t = event.changedTouches[0], dx = t.clientX - touchStart.x, dy = t.clientY - touchStart.y;
+      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) showGoal(current + (dx < 0 ? 1 : -1));
+      touchStart = null;
+    }, { passive: true });
+    showGoal(0);
+  }
+
   // Native disclosures continue to work without these interruptible height transitions.
   all('details').forEach(details => {
     const summary = details.querySelector('summary');
@@ -129,8 +162,7 @@
     pressed(priorityButtons, button);
     one('.priority-source p').textContent = priorities[index][0];
     one('.priority-destination p').textContent = priorities[index][1];
-    const scale = matchMedia('(max-width:500px)').matches ? 'scaleY' : 'scaleX';
-    animate(one('.priority-connector span'), [{ transform: `${scale}(0)` }, { transform: `${scale}(1)` }], 360);
+    animate(one('.priority-connector svg'), [{ opacity: .3 }, { opacity: 1 }], 360);
   }));
 
   // These original screens share the same canvas and fixed visual positions.
