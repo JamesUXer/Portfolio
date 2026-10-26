@@ -1,5 +1,27 @@
 # Salient Bio case-study brief
 
+## Current working agreement, 26 October 2026
+
+This section is the current source of truth. The dated entries below and the plan/progress files are historical records, not instructions to repeat completed work.
+
+- **Working version:** keep the newer page using `case-study-system.css`, its shared typography, chapter rail/markers and phase labels. The saved earlier/newer copies are reference archives, not competing active plans.
+- **Fixed:** the agreed five-stage story and its research, information architecture and search emphasis; expanded evidence; existing imagery; validation boundaries; working disclosures, route controls, image viewer and navigation. Language may be refined when requested without reframing the story.
+- **Completed integration:** one desktop-opening adjustment restores product-image prominence. At 1280px the montage is approximately 230px high (previously 144px); at 1440px it is 256px high. Desktop-only spacing changes keep the title, context, personal contribution and product/caption together in the target viewport. Shared type roles and tablet/mobile presentation are retained.
+- **Review complete:** on 26 October 2026 the user confirmed they had fully reviewed the whole page. The requested review edits are implemented. Retain the current local version; further changes require a specific request. The subsequent approved interaction pass adds visible architecture exploration, guided comparisons and disclosure motion. Preserve the reviewed story and opening; do not reopen settled decisions or rerun completed audits by default.
+- **Completed interaction pass:** the approved compact architecture diagram now includes route exploration in the visible story. Five expanded evidence pairs have Earlier / Revision / Both controls, defaulting to Both. Native disclosures have interruptible motion consistent with Habit Hero. Reduced motion and static fallbacks preserve the story and evidence. The approved opening, source images, wording and validation boundaries are unchanged.
+- **Verification rule:** check the affected layout at the four agreed sizes in both themes. Broaden checks only if a new change affects shared behaviour or reveals an unresolved issue.
+- **Existing unresolved items:** task-level participant counts/version chronology; Safari automation and a real VoiceOver check. Keep uncertainty explicit; do not invent evidence. These do not require rebuilding the case study.
+- **Delivery:** on 26 October 2026 the user authorised publication with “push to live”. Publish the approved Salient runtime files and required shared stylesheet; retain unrelated local changes. Earlier local-only restrictions below are historical.
+
+Frozen comparison and ZIP are saved outside the repository at `/Users/ladmin/.codex/visualizations/2026/10/20/01a15a8c-c544-79a1-86ee-3314d58eebb2/salient-bio-comparison-2026-10-26`. Its earlier copy is the recoverable commit `0b3baf5`, including later visual refinements, not the unavailable exact Pass 11 temporary snapshot.
+
+25 October 2026: Salient now adopts the shared case-study system extracted from
+Habit Hero. Its type roles, chapter spacing, stage labels, disclosures and desktop
+reading rail follow that reference. The opening accommodates the larger title;
+the existing five-part narrative, evidence, assets and interactions are preserved.
+See Pass 14 in the progress log. Historical implementation notes below describe
+the earlier passes and do not override this subsequently approved migration.
+
 Updated: 21 October 2026. Status: the agreed five-stage story and separately approved visible/expanded presentation are implemented locally. Earlier opening, figure and accessibility work is retained. The separately approved expanded-content refinement is also complete. Visual reasoning now covers all five stages, including the approved follow-on architecture, testing and next-validation visuals. User review of the two reading layers is next; wording may be refined without changing the agreed story.
 
 ## Purpose and positioning
@@ -33,7 +55,7 @@ I mapped patient journeys from considering a test to understanding results and n
 
 ### Guided journeys and search served different starting points.
 
-Someone exploring whether to take a test needed guidance. Someone looking for a specific answer needed direct access. I developed the search and retrieval approach alongside the navigation, so the concept could support both ways of finding information.
+Someone exploring whether to take a test needed guidance. Someone looking for a specific answer needed direct access. I developed the search and retrieval approach alongside the navigation, so the concept could support many different ways of finding information.
 
 ### Testing showed that finding an answer did not always mean the route was clear.
 
@@ -50,7 +72,7 @@ The user clarified that Habit Hero's essential reference pattern is a skimmable 
 Implemented presentation:
 
 1. Research paragraph plus patient/clinician needs comparison; expandable links between existing findings and design requirements.
-2. Architecture paragraph plus compact access model; expandable full model/route controls and structural decisions, with an inline working-architecture excerpt and source links to supplementary diagrams.
+2. Architecture paragraph plus compact access model with route controls; expandable full model and structural decisions, with an inline working-architecture excerpt and source links to supplementary diagrams.
 3. Navigation/search paragraph plus focused earlier search excerpt; expandable decisions about active filters, suggestions and visual result priority, with source-view links and explicit revision limits.
 4. Testing paragraph plus focused homepage comparison and the recorded homepage-testing quotation; expandable method diagram, reported results and all existing design comparisons. Revised usability remains visibly unvalidated.
 5. Delivery/next-tests paragraph beside a visual map of proposed patient and clinician tasks feeding into common evaluation measures; expandable task details first, followed by reflection.

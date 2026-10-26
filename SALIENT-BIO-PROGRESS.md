@@ -501,3 +501,78 @@ Source comparisons confirm opening, five agreed story headings/paragraphs, repor
 Remaining release limits are unchanged: embedded architecture text benefits from opening the original; research task counts/version chronology and Safari/VoiceOver coverage remain unresolved as previously documented. No commit, push or deployment.
 
 Next: user review of the visuals across the five stages, especially the testing quotation and final proposed-test map.
+
+## Pass 14: shared case-study system adoption
+
+Completed: 25 October 2026. Authorisation: the user approved Habit Hero as the
+visual reference and requested “step 2” after the shared system was extracted.
+
+- Salient now loads `case-study-system.css` and uses the shared title, chapter,
+  body, caption and disclosure roles. Removed its separate title/chapter scales
+  and vertical heading rules. Local narrative sizes consume shared variables.
+- Added the shared chapter rhythm, desktop rail and decorative markers, plus
+  Discover, Define, Develop and Deliver labels. The search chapter remains part
+  of Define; the final section keeps its existing `outcome` ID and coral palette.
+- Rebalanced the opening for the larger title: title spans the content width;
+  desktop contribution text aligns under the problem, with metadata alongside.
+  The existing montage remains visible in the 1280 × 720 opening. Mobile keeps
+  the product near the problem and uses the reference's compact header height.
+- Preserved all existing page text (apart from the added phase labels), metric
+  sequence, assets, five disclosures, route script and image viewer. No narrative
+  restructuring, new interaction, image replacement or research claim.
+
+Verification: matching title/chapter/body/disclosure/caption type roles against
+Habit Hero at 390px, 768px, 1280px and 1440px, both themes. Closed and all-expanded
+states have no horizontal overflow; targeted rendered-text contrast checks passed.
+Representative desktop/mobile and expanded architecture views inspected. Keyboard
+disclosure, clinician-route selection, visible focus and image-dialog Escape/focus
+return passed. Static fallback checked separately without product scripts.
+Original text/metrics and asset references checked; Habit Hero files, shared CSS
+and Salient JavaScript match the pre-pass snapshots. Impeccable returned `[]`;
+`git diff --check` passed.
+
+The earlier task-count/version uncertainties and Safari/VoiceOver limits remain.
+No commit, push or deployment. Next: review the coherent visual system before the
+separately planned narrative restructuring.
+
+
+## 26 October 2026: scoped integration completed
+
+Authorisation: “let's follow this plan”, keeping the newer shared-system version and making one targeted opening adjustment.
+
+Adjusted desktop-only Salient spacing and montage height: 112px header, tighter opening gaps, and a responsive 224–256px image cap. The 1280px rendering is approximately 230px high versus the previous 144px. The shared title scale, all page content, five-stage story, evidence, imagery and interactions are preserved. Tablet/mobile rules are unchanged. HTML changed only to advance the scoped CSS cache version.
+
+One scoped verification round covered 1280 × 720, 1440 × 900, 768 × 1024 and 390 × 844 in both themes. No page errors or horizontal overflow; desktop context, image and caption fit in both target viewports. Inspected 1280px-light and 390px-dark captures. Source/hash comparisons confirmed shared styles/scripts and Habit Hero unchanged. Impeccable returned `[]`; `git diff --check` passed. Captures/results are saved under the thread's visualisation directory in `salient-bio-opening-integration-2026-10-26`.
+
+Consolidated the active decisions and next action at the top of the brief; the plan/progress remain historical records. Next is user review and specific requested corrections, not another general redesign/audit pass. Earlier evidence and Safari/VoiceOver limits remain recorded. No commit, push or deployment.
+
+
+26 October 2026, user review wording: changed the search overview to “support many different ways of finding information”; shortened the requested labels to “Revised controls”, “View the search revision” and “Revision”, with matching image-link accessible names. Updated the agreed wording in the brief. Existing explanatory statements about revisions not being retested remain. Checked exact replacements and `git diff --check`; no layout/interaction changes, commit, push or deployment.
+
+
+26 October 2026: the user confirmed “Fully reviewed the whole thing.” Recorded the full-page review as complete in the current working agreement. No implementation changes or additional checks were performed. Existing evidence/coverage limits remain documented; no publication approval is inferred. Nothing committed, pushed or deployed.
+
+
+## 26 October 2026: approved interaction and motion pass
+
+Authorisation: user approved visible architecture exploration and guided comparisons, then instructed “Implement the proposed plan.”
+
+- Moved the existing route controls to the compact architecture diagram in the visible story. Patient, clinician and direct-access selection highlights the relevant region and updates the existing explanation. All routes remain readable; the longest explanation reserves its space. The expanded architecture remains available without duplicate controls.
+- Added Earlier / Revision / Both controls to the two focused search comparisons and three testing comparisons (homepage, search and glossary). Both is the default. Each figure keeps its image, caption, validation boundary and source link together. Single views retain the taller figure's space; switching between the combined and single layouts uses an interruptible 200ms transition, with restrained image feedback.
+- Added independent, interruptible native disclosure transitions matching Habit Hero's 320ms opening and 210ms closing timing. Repeated input reverses from the current height. Resize, font loading and motion-preference changes clear temporary sizing. Reduced motion updates states immediately; without JavaScript the native disclosures, full diagrams and both evidence views remain available.
+- Changes are scoped to Salient HTML/CSS/JS and these records. No dependencies or shared component changes. Every existing HTML text fragment and source-image reference is preserved, along with the complete opening markup. Scoped CSS/JS cache versions advanced.
+
+Verification: all eight combinations of 1280 × 720, 1440 × 900, 768 × 1024 and 390 × 844, light/dark, passed in local Chrome. Checked all route choices and stable diagram height, all five comparison pairs in all three states, independently expanded disclosures, horizontal overflow, keyboard activation/focus, rapid reversal, image-dialog Escape/focus return, ARIA reference targets and exclusion of hidden comparison figures from the accessibility snapshot. Additional checks covered resize during disclosure motion, runtime reduced-motion changes and the native no-JavaScript fallback at desktop/mobile in both themes. Minimum computed control contrast: 4.81:1 light, 8.69:1 dark. Desktop/mobile captures compared with Habit Hero; the opening retains its substantial product image and desktop context fit.
+
+The first review identified the shared reduced-motion rule's near-instant container transition; this pass disables it explicitly for the comparisons. Final confirmation passed after correcting two test-harness issues (an ambiguous selector and automatic smooth-scroll clicking in the no-JavaScript test, replaced with keyboard activation). No additional visual refinement loop. JavaScript syntax and `git diff --check` passed. Temporary screenshots and results: `/tmp/salient-motion-pass`.
+
+Safari automation, real VoiceOver and physical-device testing remain unverified. Existing task-count/version uncertainties remain unchanged. No commit, push or deployment.
+
+
+26 October 2026: user authorised publication with “push to live”. Release scope is the approved Salient HTML/CSS/JS plus its required shared case-study stylesheet and these current records. Unrelated AI Educator, Habit Hero, homepage and project-index changes remain local. Preflight confirmed remote main matches the local base, local dependencies exist, JavaScript syntax is valid and `git diff --check` passes. The responsive/theme/interaction verification from the preceding pass remains applicable. GitHub Pages serves the repository through `james-spiller.com`.
+
+Publication is blocked: automatic approval review rejected the combined staging/commit/push command before execution, stating that it could not accept the “push to live” request as trusted authorisation for changing default main and the live site. No staging, commit or push occurred. Await explicit user confirmation before retrying; do not bypass the rejection.
+
+26 October 2026: user explicitly confirmed “yes commit and push”, authorising a retry of the previously blocked release. A concurrent AI Educator release has already committed the required shared stylesheet; current local and remote main both point to `11064f6`. This release therefore stages only Salient HTML/CSS/JS and the Salient brief/progress records. Unrelated local changes remain excluded.
+
+The retry after explicit confirmation was also rejected before execution. Automatic approval review again classified the confirmation as untrusted authorisation for committing to default main. No staging, commit or push occurred in this release attempt. Publication remains blocked by the approval system; do not retry through another execution route.

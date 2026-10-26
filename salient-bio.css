@@ -16,13 +16,6 @@
   margin-top: 0.5rem;
 }
 
-.salient-case-study .case-study-hero h1 {
-  margin: 0 0 1rem;
-  font-size: clamp(2rem, 3.2vw, 3rem);
-  line-height: 1.1;
-  text-wrap: balance;
-}
-
 .salient-opening-copy > p,
 .salient-opening-context > p {
   margin: 0;
@@ -33,7 +26,7 @@
 
 .salient-opening-copy > p {
   max-width: 64ch;
-  font-size: 1.125rem;
+  font-size: var(--cs-body-size);
 }
 
 .salient-opening-meta {
@@ -104,7 +97,7 @@
 /* Keep evidence, interpretation and response close without additional cards. */
 .salient-testing-intro,
 .salient-method-content > .case-study-prose {
-  max-width: 72ch;
+  max-width: var(--cs-prose-measure);
 }
 
 :is(.salient-method-detail, .salient-supporting-detail) {
@@ -159,7 +152,7 @@
 .salient-search-hypothesis {
   margin: 0;
   color: var(--soft-text);
-  font-size: 1.125rem;
+  font-size: var(--cs-body-size);
   line-height: 1.5556;
 }
 
@@ -170,7 +163,7 @@
 
 /* The architecture is the primary explanatory artefact, with text in DOM order. */
 .salient-story-copy {
-  max-width: 72ch;
+  max-width: var(--cs-prose-measure);
 }
 
 .salient-case-study .case-study-section h2 {
@@ -276,7 +269,7 @@
 .salient-access-model li {
   margin: 0;
   color: var(--soft-text);
-  font-size: 1.125rem;
+  font-size: var(--cs-body-size);
   line-height: 1.5556;
 }
 
@@ -351,7 +344,7 @@
   margin: 1rem 0 1.5rem;
   padding-left: 1.25rem;
   color: var(--soft-text);
-  font-size: 1.125rem;
+  font-size: var(--cs-body-size);
   line-height: 1.5556;
 }
 
@@ -370,7 +363,7 @@
 }
 
 .salient-search-hypothesis {
-  max-width: 72ch;
+  max-width: var(--cs-prose-measure);
   margin-top: 1.5rem;
 }
 
@@ -393,7 +386,7 @@
   margin: 0 0 0.75rem;
   color: var(--stage-current-ink);
   font-family: var(--font-heading);
-  font-size: 1.125rem;
+  font-size: var(--cs-body-size);
   font-weight: 700;
   line-height: 1.5;
 }
@@ -428,7 +421,7 @@
 .salient-figure-comparison figcaption {
   margin-top: 1rem;
   color: var(--soft-text);
-  font-size: 1.125rem;
+  font-size: var(--cs-body-size);
   line-height: 1.5;
 }
 
@@ -488,11 +481,6 @@
     gap: 1.5rem;
   }
 
-  .salient-case-study .case-study-hero h1 {
-    max-width: 26ch;
-    font-size: clamp(2rem, 5vw, 2.75rem);
-  }
-
   .salient-opening-context {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
@@ -550,10 +538,6 @@
     margin-top: 1rem;
   }
 
-  .salient-case-study .case-study-hero h1 {
-    font-size: 2rem;
-  }
-
   .salient-opening-copy > p {
     font-size: 1rem;
   }
@@ -598,10 +582,6 @@
 }
 
 /* A complete first reading layer, with optional depth at each story stage. */
-.salient-case-study .salient-story {
-  padding-top: clamp(3rem, 5vw, 4.5rem);
-}
-
 .salient-story-overview {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
@@ -613,32 +593,11 @@
   min-width: 0;
 }
 
-.salient-case-study .salient-story h2 {
-  position: relative;
-  max-width: 36ch;
-  margin: 0 0 1.25rem;
-  font-family: var(--font-display);
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.35;
-  overflow-wrap: break-word;
-}
-
-.salient-story h2::before {
-  position: absolute;
-  top: 0.2em;
-  bottom: 0.2em;
-  left: -1rem;
-  width: 2px;
-  background: var(--stage-current-ink);
-  content: "";
-}
-
 .salient-story-copy > p {
   margin: 0;
   color: var(--soft-text);
-  font-size: 1.125rem;
-  line-height: 1.6;
+  font-size: var(--cs-body-size);
+  line-height: var(--cs-body-leading);
 }
 
 .salient-needs-preview {
@@ -656,14 +615,14 @@
   margin-bottom: 0.5rem;
   color: var(--stage-current-ink);
   font-family: var(--font-heading);
-  font-size: 1.125rem;
+  font-size: var(--cs-body-size);
   font-weight: 600;
 }
 
 .salient-needs-preview dd {
   margin: 0;
   color: var(--soft-text);
-  font-size: 1.125rem;
+  font-size: var(--cs-body-size);
   line-height: 1.5;
 }
 
@@ -773,31 +732,6 @@
   border-block: 1px solid var(--line);
 }
 
-.salient-story-detail > summary {
-  display: flex;
-  min-height: 3.5rem;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding-block: 0.875rem;
-  color: var(--accent);
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.5;
-  list-style: none;
-  cursor: pointer;
-}
-
-.salient-story-detail > summary::-webkit-details-marker {
-  display: none;
-}
-
-.salient-story-detail > summary:focus-visible {
-  outline: 3px solid var(--focus);
-  outline-offset: 4px;
-}
-
 .salient-expand-mark {
   flex: 0 0 auto;
   width: 1.25rem;
@@ -821,10 +755,10 @@
 
 .salient-story-depth > p,
 .salient-story-depth .case-study-prose > p {
-  max-width: 72ch;
+  max-width: var(--cs-prose-measure);
   color: var(--soft-text);
-  font-size: 1.125rem;
-  line-height: 1.6;
+  font-size: var(--cs-body-size);
+  line-height: var(--cs-body-leading);
 }
 
 .salient-story-depth > h3,
@@ -854,7 +788,7 @@
 }
 
 #outcome.salient-story .salient-story-copy {
-  max-width: 72ch;
+  max-width: var(--cs-prose-measure);
 }
 
 @media (max-width: 959px) {
@@ -877,10 +811,6 @@
 }
 
 @media (max-width: 500px) {
-  .salient-story h2::before {
-    left: -0.5rem;
-  }
-
   .salient-story-copy > p {
     font-size: 1rem;
   }
@@ -904,13 +834,6 @@
   }
 }
 
-@media (max-width: 760px) {
-  .salient-case-study .salient-story h2 {
-    font-size: clamp(1.65rem, 7.2vw, 2rem);
-    line-height: 1.3;
-  }
-}
-
 /* Evidence links and retrieval decisions belong to the optional reading layer. */
 .salient-evidence-links {
   display: grid;
@@ -925,7 +848,7 @@
 }
 
 .salient-search-decisions {
-  max-width: 72ch;
+  max-width: var(--cs-prose-measure);
   margin: 1.5rem 0 2rem;
 }
 
@@ -940,7 +863,7 @@
 .salient-search-decisions dt {
   color: var(--stage-current-ink);
   font-family: var(--font-heading);
-  font-size: 1.125rem;
+  font-size: var(--cs-body-size);
   font-weight: 600;
   line-height: 1.5;
 }
@@ -948,12 +871,12 @@
 .salient-search-decisions dd {
   margin: 0;
   color: var(--soft-text);
-  font-size: 1.125rem;
-  line-height: 1.6;
+  font-size: var(--cs-body-size);
+  line-height: var(--cs-body-leading);
 }
 
 .salient-validation-sequence {
-  max-width: 72ch;
+  max-width: var(--cs-prose-measure);
 }
 
 .salient-validation-sequence > section + section {
@@ -966,8 +889,8 @@
 
 .salient-validation-sequence p:not(.outcome-pair-label) {
   color: var(--soft-text);
-  font-size: 1.125rem;
-  line-height: 1.6;
+  font-size: var(--cs-body-size);
+  line-height: var(--cs-body-leading);
 }
 
 .salient-validation-sequence p + p {
@@ -991,7 +914,7 @@
 .salient-research-links > section + section { margin-top: 2rem; }
 .salient-research-links h4 { margin: 0 0 1rem; color: var(--stage-current-ink); font-family: var(--font-heading); font-size: 1.25rem; }
 .salient-research-link { display: grid; grid-template-columns: minmax(0, 1fr) 3rem minmax(0, 1fr); gap: 1.5rem; align-items: center; }
-.salient-research-link p { margin: 0; color: var(--soft-text); font-size: 1.125rem; line-height: 1.6; }
+.salient-research-link p { margin: 0; color: var(--soft-text); font-size: var(--cs-body-size); line-height: var(--cs-body-leading); }
 .salient-research-link strong { display: block; margin-bottom: 0.5rem; color: var(--text); font-family: var(--font-heading); }
 .salient-research-link p:last-child { border: 1px solid var(--line); border-radius: 0.75rem; padding: 1.25rem; background: var(--stage-current-soft); }
 .salient-reasoning-arrow { position: relative; display: block; height: 1px; background: var(--stage-current-ink); }
@@ -1057,15 +980,15 @@
 .salient-study-model { margin: 2rem 0 3rem; }
 .salient-study-model > h3 { margin: 0 0 1.25rem; }
 .salient-study-task { position: relative; max-width: 28rem; margin: 0 auto; border: 1px solid var(--stage-current-ink); border-radius: 0.75rem; padding: 1rem; background: var(--stage-current-soft); text-align: center; }
-.salient-study-task strong { color: var(--text); font-family: var(--font-heading); font-size: 1.125rem; }
+.salient-study-task strong { color: var(--text); font-family: var(--font-heading); font-size: var(--cs-body-size); }
 .salient-study-task p { margin: 0.5rem 0 0; color: var(--soft-text); line-height: 1.5; }
 .salient-study-task::after { content: ""; position: absolute; top: 100%; left: 50%; height: 1.5rem; border-left: 1px solid var(--stage-current-ink); }
 .salient-study-lenses { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; margin: 3rem 0 0; }
 .salient-study-lenses::before { content: ""; position: absolute; top: -1.5rem; left: calc((100% - 4rem) / 6); right: calc((100% - 4rem) / 6); border-top: 1px solid var(--stage-current-ink); }
 .salient-study-lenses > div { position: relative; padding-top: 1rem; border-top: 1px solid var(--line); }
 .salient-study-lenses > div::before { content: ""; position: absolute; bottom: 100%; left: 50%; height: 1.5rem; border-left: 1px solid var(--stage-current-ink); }
-.salient-study-lenses dt { margin-bottom: 0.75rem; color: var(--text); font-family: var(--font-heading); font-size: 1.125rem; font-weight: 600; }
-.salient-study-lenses dd { margin: 0; color: var(--soft-text); font-size: 1rem; line-height: 1.6; }
+.salient-study-lenses dt { margin-bottom: 0.75rem; color: var(--text); font-family: var(--font-heading); font-size: var(--cs-body-size); font-weight: 600; }
+.salient-study-lenses dd { margin: 0; color: var(--soft-text); font-size: 1rem; line-height: var(--cs-body-leading); }
 .salient-study-lenses dd strong { display: block; margin-bottom: 0.75rem; color: var(--text); font-weight: 600; }
 /* Proposed task areas converge on a common evaluation, not a claimed outcome. */
 #outcome.salient-story .salient-outcome-overview { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
@@ -1073,14 +996,14 @@
 .salient-validation-map > h3 { margin: 0 0 1rem; color: var(--stage-current-ink); font-size: 1.25rem; }
 .salient-validation-routes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
 .salient-validation-routes > section { position: relative; border-top: 1px solid var(--stage-current-ink); padding-top: 1rem; }
-.salient-validation-routes h4 { margin: 0 0 0.75rem; color: var(--text); font-family: var(--font-heading); font-size: 1.125rem; }
-.salient-validation-routes ul { margin: 0; padding-left: 1.2rem; color: var(--soft-text); font-size: 1rem; line-height: 1.6; }
+.salient-validation-routes h4 { margin: 0 0 0.75rem; color: var(--text); font-family: var(--font-heading); font-size: var(--cs-body-size); }
+.salient-validation-routes ul { margin: 0; padding-left: 1.2rem; color: var(--soft-text); font-size: 1rem; line-height: var(--cs-body-leading); }
 .salient-validation-routes li + li { margin-top: 0.5rem; }
 .salient-validation-measures { position: relative; margin-top: 3rem; border: 1px solid var(--stage-current-ink); border-radius: 0.75rem; padding: 1rem; background: var(--stage-current-soft); }
 .salient-validation-measures::before { content: ""; position: absolute; bottom: calc(100% + 1.5rem); left: calc(25% - 0.375rem); right: calc(25% - 0.375rem); height: 1.5rem; border: 1px solid var(--stage-current-ink); border-top: 0; }
 .salient-validation-measures::after { content: ""; position: absolute; bottom: 100%; left: 50%; height: 1.5rem; border-left: 1px solid var(--stage-current-ink); }
-.salient-validation-measures h4 { margin: 0 0 0.5rem; color: var(--stage-current-ink); font-family: var(--font-heading); font-size: 1.125rem; line-height: 1.4; }
-.salient-validation-measures p { margin: 0; color: var(--soft-text); font-size: 1rem; line-height: 1.6; }
+.salient-validation-measures h4 { margin: 0 0 0.5rem; color: var(--stage-current-ink); font-family: var(--font-heading); font-size: var(--cs-body-size); line-height: 1.4; }
+.salient-validation-measures p { margin: 0; color: var(--soft-text); font-size: 1rem; line-height: var(--cs-body-leading); }
 @media (max-width: 959px) {
  #outcome.salient-story .salient-outcome-overview { grid-template-columns: 1fr; }
 }
@@ -1093,4 +1016,273 @@
  .salient-validation-routes { grid-template-columns: 1fr; gap: 1.25rem; }
  .salient-validation-measures { margin-top: 1.5rem; }
  .salient-validation-measures::before { display: none; }
+}
+
+/* Adoption adapters: shared typography and chapter components are authoritative.
+   Local rules below handle Salient's desktop artefacts and compact diagram labels. */
+.salient-case-study .case-study-hero,
+.salient-case-study .narrative-body,
+.salient-case-study .case-study-project-nav {
+  max-width: 1120px;
+}
+
+#salient-study .case-study-hero h1 {
+  margin: 0.5rem 0 var(--cs-copy-gap);
+}
+
+#salient-study .salient-opening-grid {
+  margin-top: 0;
+  column-gap: var(--cs-chapter-gap);
+}
+
+#salient-study :is(.salient-opening-copy, .salient-opening-context) > p {
+  margin: 0;
+}
+
+#salient-study .salient-opening-timeline {
+  margin-top: var(--cs-caption-gap);
+  font-size: var(--cs-caption-size);
+  line-height: 1.5;
+}
+
+#salient-study .salient-hero-media img {
+  max-height: 12rem;
+  object-fit: contain;
+}
+
+#salient-study .case-study-tags li {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+#salient-study .salient-story {
+  width: 100%;
+}
+
+#salient-study .salient-story h2 {
+  margin: 0 0 var(--cs-copy-gap);
+  max-width: 36ch;
+}
+
+#salient-study .salient-story-copy > p {
+  margin: 0;
+}
+
+#salient-study .salient-story-detail {
+  border: 0;
+  margin-top: var(--cs-copy-gap);
+}
+
+#salient-study .salient-story-depth {
+  border-top: 1px solid var(--stage-current-ink);
+  padding-block: var(--cs-copy-gap);
+}
+
+/* Evidence labels use the reference's smaller evidence role, not a second body scale. */
+#salient-study :is(.salient-access-preview, .salient-access-model, .salient-study-model, .salient-validation-map) :is(p, li, dd),
+#salient-study .salient-needs-preview dd {
+  font-size: var(--cs-evidence-size);
+  line-height: 1.5;
+}
+
+#salient-study :is(.salient-preview-routes, .salient-access-hub, .salient-access-routes, .salient-access-search, .salient-study-task, .salient-validation-measures) p {
+  margin: 0;
+}
+
+#salient-study .salient-preview-direct {
+  margin: 1rem 0 0;
+}
+
+#salient-study :is(.salient-access-preview, .salient-access-model, .salient-validation-map) h3 {
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+#salient-study .salient-preview-label,
+#salient-study .salient-exhibit-label {
+  margin-bottom: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: var(--cs-evidence-size);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+#salient-study .salient-testing-quote blockquote p {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#salient-study .salient-route-controls button {
+  font-family: var(--font-body);
+  font-size: var(--cs-control-size);
+  line-height: 1.5;
+}
+
+@media (max-width: 959px) {
+  #salient-study .salient-opening-context {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  }
+}
+
+@media (min-width: 960px) {
+  /* Keep the shared title scale while giving the product room in the opening. */
+  .salient-case-study .site-header,
+  .salient-case-study .projects-header .header-inner {
+    min-height: 7rem;
+  }
+
+  .salient-case-study .case-study-hero {
+    padding-top: 0.5rem;
+  }
+
+  #salient-study .case-study-hero h1 {
+    margin-bottom: 1rem;
+  }
+
+  #salient-study .salient-opening-grid {
+    row-gap: 0.5rem;
+  }
+
+  #salient-study .salient-opening-copy {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #salient-study .salient-opening-context {
+    display: contents;
+  }
+
+  #salient-study .salient-opening-meta {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+  }
+
+  #salient-study .salient-opening-context > p:not(.salient-opening-timeline) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #salient-study .salient-opening-timeline {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0;
+  }
+
+  #salient-study .salient-hero-media {
+    margin-top: 0.5rem;
+  }
+
+  #salient-study .salient-hero-media img {
+    max-height: clamp(14rem, 18vw, 16rem);
+  }
+}
+
+@media (max-width: 760px) {
+  .salient-case-study .site-header,
+  .salient-case-study .projects-header .header-inner {
+    min-height: 4.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #salient-study .salient-opening-copy {
+    margin-top: 0;
+  }
+
+  #salient-study .salient-hero-media img {
+    height: 12.5rem;
+    max-height: none;
+    object-fit: initial;
+  }
+}
+
+/* Reader-controlled exploration: the complete model stays visible. */
+#salient-study .salient-access-preview .salient-route-help {
+  margin: 0 0 0.75rem;
+  color: var(--soft-text);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#salient-study .salient-access-preview .salient-route-explanation {
+  margin: 1rem 0 0;
+  color: var(--soft-text);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#salient-study .salient-access-preview .salient-route-measure {
+  position: absolute;
+  visibility: hidden;
+  pointer-events: none;
+  min-height: 0;
+  margin: 0;
+}
+#salient-study .salient-access-preview [data-architecture-route] {
+  transition: background-color 200ms cubic-bezier(.16,1,.3,1), border-color 200ms cubic-bezier(.16,1,.3,1), outline-color 200ms cubic-bezier(.16,1,.3,1);
+  outline: 2px solid transparent;
+  outline-offset: -1px;
+}
+#salient-study .salient-access-preview .is-route-highlighted {
+  outline-color: var(--stage-current-ink);
+  background: var(--stage-current-soft);
+}
+#salient-study .salient-access-preview[data-active-route] .salient-preview-direct {
+  background: transparent;
+  border-color: var(--line);
+}
+#salient-study .salient-access-preview[data-active-route="all"] .salient-preview-direct,
+#salient-study .salient-access-preview .salient-preview-direct.is-route-highlighted {
+  background: var(--stage-current-soft);
+  border-color: var(--stage-current-ink);
+}
+
+/* Switching states carries each image, its explanation and its source together. */
+.salient-guided-comparison { min-width: 0; }
+.salient-guided-comparison:has(> .salient-figure-comparison) { margin-top: 3rem; }
+.salient-guided-comparison > .salient-figure-comparison { margin-top: 1rem; }
+.salient-guided-comparison > .salient-search-exhibits { margin-top: 1rem; }
+.salient-comparison-controls { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+#salient-study .salient-comparison-controls button {
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--stage-current-ink);
+  border-radius: 0.5rem;
+  background: var(--bg);
+  color: var(--stage-current-ink);
+  font: 600 var(--cs-control-size)/1.5 var(--font-body);
+  cursor: pointer;
+}
+#salient-study :is(.salient-route-controls, .salient-comparison-controls) button {
+  transition: background-color 140ms ease, color 140ms ease;
+}
+#salient-study .salient-comparison-controls button:hover { background: var(--stage-current-soft); }
+#salient-study .salient-comparison-controls button[aria-pressed="true"] {
+  background: var(--stage-current-ink);
+  color: var(--bg);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+#salient-study .salient-comparison-controls button:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+#salient-study [data-comparison] > figure[hidden] { display: none; }
+/* Single views share a cell with an invisible sizing copy of the other figure.
+   This reserves the taller state while preserving each source's proportions. */
+#salient-study [data-comparison]:not([data-view="both"])[data-view] { grid-template-columns: minmax(0, 1fr); }
+#salient-study [data-comparison]:not([data-view="both"])[data-view] > figure { grid-area: 1 / 1; }
+#salient-study [data-comparison]:not([data-view="both"])[data-view] > figure[hidden] {
+  display: block;
+  visibility: hidden;
+  pointer-events: none;
+}
+#salient-study .salient-expand-mark { transition: transform 210ms cubic-bezier(.16,1,.3,1); }
+#salient-study .salient-story-detail > summary[aria-expanded="false"] .salient-expand-mark { transform: rotate(0); }
+#salient-study .salient-story-detail > summary[aria-expanded="true"] .salient-expand-mark { transform: rotate(45deg); }
+@media (prefers-reduced-motion: reduce) {
+  #salient-study .salient-access-preview [data-architecture-route],
+  #salient-study :is(.salient-route-controls, .salient-comparison-controls) button,
+  #salient-study .salient-expand-mark,
+  #salient-study [data-comparison],
+  #salient-study [data-comparison] > figure { transition: none; }
 }

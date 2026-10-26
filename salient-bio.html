@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,8 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;900&amp;family=Archivo+Black&amp;family=Lato:wght@400;700&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css?v=145" />
+    <link rel="stylesheet" href="salient-bio.css?v=12" />
+    <link rel="stylesheet" href="case-study-system.css?v=1" />
     <link rel="stylesheet" href="case-study-progress.css?v=1" />
-    <link rel="stylesheet" href="salient-bio.css?v=9" />
   </head>
   <body class="salient-case-study" data-page="projects">
     <a class="skip-link" href="#case-study-content">Skip to case study</a>
@@ -44,12 +45,12 @@
       <div class="accessibility-panel accessibility-panel-contrast" id="contrast-panel" role="dialog" aria-labelledby="contrast-label" hidden><label class="accessibility-slider"><span class="accessibility-panel-title" id="contrast-label">Contrast</span><input class="accessibility-range" type="range" min="0" max="100" step="1" value="0" data-setting="contrast" /></label></div>
     </header>
     <main id="case-study-content" class="case-study-page">
-      <article data-reading-progress>
+      <article id="salient-study" class="case-study-system" data-reading-progress>
         <header class="case-study-hero site-shell">
           <a class="case-study-back" href="projects.html">&larr; Back to projects</a>
+          <h1>Salient Bio: a clearer Learn Hub for microbiome testing</h1>
           <div class="salient-opening-grid">
             <div class="salient-opening-copy">
-              <h1>Salient Bio: a clearer Learn Hub for microbiome testing</h1>
               <p>Patients needed clear explanations of testing and its personal relevance. Clinicians needed evidence and detail to interpret results and support patients. We designed a Learn Hub organised around user intent and testing stage.</p>
             </div>
             <div class="salient-opening-context">
@@ -67,8 +68,11 @@
           </figure>
           <ul class="case-study-tags" aria-label="Project disciplines"><li>Information architecture</li><li>User research</li><li>Usability testing</li><li>Information design</li><li>Prototyping</li></ul>
         </header>
-        <section id="discover" class="case-study-section case-study-stage stage-discover site-shell salient-story" aria-labelledby="discover-title">
-<div class="salient-story-overview"><div class="salient-story-copy"><h2 id="discover-title">I researched what patients and clinicians needed from the Learn Hub.</h2><p>I interviewed two clinicians and one patient, alongside reviewing existing client research. Patients needed to judge whether testing was relevant to them and understand its implications. Clinicians needed evidence, methodology and resources to support discussions with patients.</p></div><dl class="salient-needs-preview" aria-label="Patient and clinician information needs">
+        <div class="narrative-body site-shell">
+          <span class="narrative-line" aria-hidden="true"></span>
+        <section id="discover" class="case-study-section case-study-stage stage-discover salient-story story-chapter discover group-start" aria-labelledby="discover-title">
+<p class="stage-label">Discover</p>
+<div class="salient-story-overview"><div class="salient-story-copy chapter-copy"><h2 class="narrative-heading" id="discover-title"><span class="narrative-marker" aria-hidden="true"></span>I researched what patients and clinicians needed from the Learn Hub.</h2><p>I interviewed two clinicians and one patient, alongside reviewing existing client research. Patients needed to judge whether testing was relevant to them and understand its implications. Clinicians needed evidence, methodology and resources to support discussions with patients.</p></div><dl class="salient-needs-preview" aria-label="Patient and clinician information needs">
 <div><dt>Patients</dt><dd>Is testing relevant to me? What could it mean, and what happens next?</dd></div>
 <div><dt>Clinicians</dt><dd>How does testing work? What evidence and resources support patient discussions?</dd></div>
 </dl></div>
@@ -83,26 +87,29 @@
 </details>
 </section>
 
-<section id="define" class="case-study-section case-study-stage stage-define site-shell salient-story" aria-labelledby="define-title">
-<div class="salient-story-overview"><div class="salient-story-copy"><h2 id="define-title">I organised the information around testing stages and professional needs.</h2><p>I mapped patient journeys from considering a test to understanding results and next steps. Alongside those journeys, I developed a distinct clinician route, bringing professional information together within the same hub.</p></div><figure class="salient-access-preview" aria-labelledby="access-preview-title">
+<section id="define" class="case-study-section case-study-stage stage-define salient-story story-chapter define group-start" aria-labelledby="define-title">
+<p class="stage-label">Define</p>
+<div class="salient-story-overview"><div class="salient-story-copy chapter-copy"><h2 class="narrative-heading" id="define-title"><span class="narrative-marker" aria-hidden="true"></span>I organised the information around testing stages and professional needs.</h2><p>I mapped patient journeys from considering a test to understanding results and next steps. Alongside those journeys, I developed a distinct clinician route, bringing professional information together within the same hub.</p></div><figure class="salient-access-preview" data-architecture-model aria-labelledby="access-preview-title">
+            <div class="salient-route-explorer" hidden>
+              <p class="salient-route-help" id="salient-route-help">Choose a route to highlight its place in the shared structure.</p>
+              <div class="salient-route-controls" role="group" aria-label="Explore information routes" aria-describedby="salient-route-help">
+                <button type="button" data-route-choice="all" aria-pressed="true" aria-controls="salient-preview-patient salient-preview-clinician salient-preview-search">All routes</button>
+                <button type="button" data-route-choice="patient" aria-pressed="false" aria-controls="salient-preview-patient">Patient journeys</button>
+                <button type="button" data-route-choice="clinician" aria-pressed="false" aria-controls="salient-preview-clinician">Clinician resources</button>
+                <button type="button" data-route-choice="search" aria-pressed="false" aria-controls="salient-preview-search">Search and direct access</button>
+              </div>
+
+            </div>
+
 <h3 id="access-preview-title">Learn Hub</h3>
-<div class="salient-preview-routes"><div><h4>Patient journeys</h4><ol><li>Considering a test</li><li>Taking a test</li><li>Results and next steps</li></ol></div><div><h4>Clinician resources</h4><p>Evidence, methodology and patient-support materials</p></div></div>
-<p class="salient-preview-direct">Search and direct access across the hub</p>
+<div class="salient-preview-routes"><div id="salient-preview-patient" data-architecture-route="patient"><h4>Patient journeys</h4><ol><li>Considering a test</li><li>Taking a test</li><li>Results and next steps</li></ol></div><div id="salient-preview-clinician" data-architecture-route="clinician"><h4>Clinician resources</h4><p>Evidence, methodology and patient-support materials</p></div></div>
+<p class="salient-preview-direct" id="salient-preview-search" data-architecture-route="search">Search and direct access across the hub</p>
+              <p class="salient-route-explanation" id="salient-route-explanation" hidden role="status" aria-live="polite" aria-atomic="true">Guided patient journeys, clinician resources and search provide different routes through the same Learn Hub.</p>
 <figcaption>Guided journeys and professional resources, with direct access across both.</figcaption>
 </figure></div>
 <details class="salient-story-detail">
   <summary><span>Explore the journeys and information architecture</span><svg class="salient-expand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg></summary>
-  <div class="salient-story-depth"><figure class="salient-access-model" data-architecture-model aria-labelledby="access-model-title" aria-describedby="access-model-caption">
-            <div class="salient-route-explorer" hidden>
-              <p class="salient-route-help" id="salient-route-help">Choose a route to highlight its place in the shared structure.</p>
-              <div class="salient-route-controls" role="group" aria-label="Explore information routes" aria-describedby="salient-route-help">
-                <button type="button" data-route-choice="all" aria-pressed="true" aria-controls="salient-patient-route salient-clinician-route salient-direct-route">All routes</button>
-                <button type="button" data-route-choice="patient" aria-pressed="false" aria-controls="salient-patient-route">Patient journeys</button>
-                <button type="button" data-route-choice="clinician" aria-pressed="false" aria-controls="salient-clinician-route">Clinician resources</button>
-                <button type="button" data-route-choice="search" aria-pressed="false" aria-controls="salient-direct-route">Search and direct access</button>
-              </div>
-              <p class="salient-route-explanation" id="salient-route-explanation" role="status" aria-live="polite" aria-atomic="true">Guided patient journeys, clinician resources and search provide different routes through the same Learn Hub.</p>
-            </div>
+  <div class="salient-story-depth"><figure class="salient-access-model" aria-labelledby="access-model-title" aria-describedby="access-model-caption">
             <div class="salient-access-hub">
               <h3 id="access-model-title">Learn Hub</h3>
               <p>A shared structure: general overview, testing journey, health library and clinician resources.</p>
@@ -134,8 +141,8 @@
 </details>
 </section>
 
-<section id="search-architecture" class="case-study-section case-study-stage stage-define site-shell salient-story" aria-labelledby="search-architecture-title">
-<div class="salient-story-overview"><div class="salient-story-copy"><h2 id="search-architecture-title">Guided journeys and search served different starting points.</h2><p>Someone exploring whether to take a test needed guidance. Someone looking for a specific answer needed direct access. I developed the search and retrieval approach alongside the navigation, so the concept could support both ways of finding information.</p></div><figure class="salient-story-image"><p class="salient-preview-label">Search concept</p><a class="case-study-expandable salient-preview-link" href="assets/images/salient-bio-search-before.png" aria-label="Enlarge the earlier search-results view"><div class="salient-figure-frame">
+<section id="search-architecture" class="case-study-section case-study-stage stage-define salient-story story-chapter define" aria-labelledby="search-architecture-title">
+<div class="salient-story-overview"><div class="salient-story-copy chapter-copy"><h2 class="narrative-heading" id="search-architecture-title"><span class="narrative-marker" aria-hidden="true"></span>Guided journeys and search served different starting points.</h2><p>Someone exploring whether to take a test needed guidance. Someone looking for a specific answer needed direct access. I developed the search and retrieval approach alongside the navigation, so the concept could support many different ways of finding information.</p></div><figure class="salient-story-image"><p class="salient-preview-label">Search concept</p><a class="case-study-expandable salient-preview-link" href="assets/images/salient-bio-search-before.png" aria-label="Enlarge the earlier search-results view"><div class="salient-figure-frame">
                   <div class="salient-figure-excerpt" style="--crop-x: 58; --crop-y: 209; --crop-width: 736; --crop-height: 390;">
                     <img src="assets/images/salient-bio-search-before.png" width="1334" height="750" loading="lazy" alt="Excerpt of the tested search view showing topic chips, sidebar navigation and equally weighted result cards" />
                   </div>
@@ -144,23 +151,24 @@
   <summary><span>See the search and retrieval approach</span><svg class="salient-expand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg></summary>
   <div class="salient-story-depth"><div class="case-study-prose"><h3>Search alongside navigation</h3><p>Search provided access across General Overview, Testing Journey, Health Library and Clinician Resources, without requiring someone to follow a complete testing journey.</p><p>I developed the retrieval approach and identified ambiguity in how the results view communicated what was active, suggested or most relevant. The team’s design response addressed three parts of the search experience.</p></div>
 <div class="salient-search-evidence">
-<section class="salient-search-explanation" aria-labelledby="search-controls-title"><div><h3 id="search-controls-title">Recognising the search state</h3><dl class="salient-search-decisions"><div><dt>Active filters</dt><dd>We separated applied filters from suggested terms, aiming to make the current search state easier to recognise.</dd></div><div><dt>Suggested terms</dt><dd>Possible refinements needed to be distinguishable from filters already in use, so people could tell what they might select next.</dd></div></dl></div><div class="salient-search-exhibits salient-control-exhibits"><figure class="salient-search-exhibit"><p class="salient-exhibit-label">Earlier controls</p><a class="case-study-expandable salient-exhibit-link" href="assets/images/salient-bio-search-before.png" aria-label="Enlarge earlier controls search view"><div class="salient-figure-excerpt" style="--crop-x: 95; --crop-y: 272; --crop-width: 560; --crop-height: 59;"><img src="assets/images/salient-bio-search-before.png" width="1334" height="750" loading="lazy" alt="Earlier search controls: Topics selected, Gut Microbiome and Microbiome Diversity chips." /></div></a><figcaption><strong>Applied topics.</strong> Selected terms appear as removable chips.</figcaption></figure><figure class="salient-search-exhibit"><p class="salient-exhibit-label">Revised controls · not retested</p><a class="case-study-expandable salient-exhibit-link" href="assets/images/salient-bio-search-revised.png" aria-label="Enlarge revised controls · not retested search view"><div class="salient-figure-excerpt" style="--crop-x: 306; --crop-y: 404; --crop-width: 615; --crop-height: 57;"><img src="assets/images/salient-bio-search-revised.png" width="1334" height="750" loading="lazy" alt="Revised topic controls with Gut Microbiome filled and the other topics outlined." /></div></a><figcaption><strong>Selected topic.</strong> A filled Gut Microbiome control sits alongside outlined topic options.</figcaption></figure></div></section>
-<section class="salient-search-explanation" aria-labelledby="search-priority-title"><div><h3 id="search-priority-title">Giving the leading result more emphasis</h3><dl class="salient-search-decisions"><div><dt>Result priority</dt><dd>We gave the most relevant article stronger visual priority, rather than presenting all results with equal emphasis.</dd></div></dl></div><div class="salient-search-exhibits"><figure class="salient-search-exhibit"><p class="salient-exhibit-label">Earlier results</p><a class="case-study-expandable salient-exhibit-link" href="assets/images/salient-bio-search-before.png" aria-label="Enlarge earlier results search view"><div class="salient-figure-excerpt" style="--crop-x: 270; --crop-y: 352; --crop-width: 490; --crop-height: 251;"><img src="assets/images/salient-bio-search-before.png" width="1334" height="750" loading="lazy" alt="Three equally sized article cards in the earlier search results." /></div></a><figcaption><strong>Equal emphasis.</strong> The article cards use the same size and visual weight.</figcaption></figure><figure class="salient-search-exhibit"><p class="salient-exhibit-label">Revised results · not retested</p><a class="case-study-expandable salient-exhibit-link" href="assets/images/salient-bio-search-revised.png" aria-label="Enlarge revised results · not retested search view"><div class="salient-figure-excerpt" style="--crop-x: 307; --crop-y: 489; --crop-width: 710; --crop-height: 255;"><img src="assets/images/salient-bio-search-revised.png" width="1334" height="750" loading="lazy" alt="Revised results with a large leading article image beside smaller article cards." /><span class="salient-result-highlight" aria-hidden="true"></span></div></a><figcaption><strong>Stronger emphasis.</strong> The leading article has a larger image beside the smaller results.</figcaption></figure></div></section>
+<section class="salient-search-explanation" aria-labelledby="search-controls-title"><div><h3 id="search-controls-title">Recognising the search state</h3><dl class="salient-search-decisions"><div><dt>Active filters</dt><dd>We separated applied filters from suggested terms, aiming to make the current search state easier to recognise.</dd></div><div><dt>Suggested terms</dt><dd>Possible refinements needed to be distinguishable from filters already in use, so people could tell what they might select next.</dd></div></dl></div><div class="salient-search-exhibits salient-control-exhibits" data-comparison="Search controls"><figure class="salient-search-exhibit"><p class="salient-exhibit-label">Earlier controls</p><a class="case-study-expandable salient-exhibit-link" href="assets/images/salient-bio-search-before.png" aria-label="Enlarge earlier controls search view"><div class="salient-figure-excerpt" style="--crop-x: 95; --crop-y: 272; --crop-width: 560; --crop-height: 59;"><img src="assets/images/salient-bio-search-before.png" width="1334" height="750" loading="lazy" alt="Earlier search controls: Topics selected, Gut Microbiome and Microbiome Diversity chips." /></div></a><figcaption><strong>Applied topics.</strong> Selected terms appear as removable chips.</figcaption></figure><figure class="salient-search-exhibit"><p class="salient-exhibit-label">Revised controls</p><a class="case-study-expandable salient-exhibit-link" href="assets/images/salient-bio-search-revised.png" aria-label="Enlarge revised controls search view"><div class="salient-figure-excerpt" style="--crop-x: 306; --crop-y: 404; --crop-width: 615; --crop-height: 57;"><img src="assets/images/salient-bio-search-revised.png" width="1334" height="750" loading="lazy" alt="Revised topic controls with Gut Microbiome filled and the other topics outlined." /></div></a><figcaption><strong>Selected topic.</strong> A filled Gut Microbiome control sits alongside outlined topic options.</figcaption></figure></div></section>
+<section class="salient-search-explanation" aria-labelledby="search-priority-title"><div><h3 id="search-priority-title">Giving the leading result more emphasis</h3><dl class="salient-search-decisions"><div><dt>Result priority</dt><dd>We gave the most relevant article stronger visual priority, rather than presenting all results with equal emphasis.</dd></div></dl></div><div class="salient-search-exhibits" data-comparison="Result priority"><figure class="salient-search-exhibit"><p class="salient-exhibit-label">Earlier results</p><a class="case-study-expandable salient-exhibit-link" href="assets/images/salient-bio-search-before.png" aria-label="Enlarge earlier results search view"><div class="salient-figure-excerpt" style="--crop-x: 270; --crop-y: 352; --crop-width: 490; --crop-height: 251;"><img src="assets/images/salient-bio-search-before.png" width="1334" height="750" loading="lazy" alt="Three equally sized article cards in the earlier search results." /></div></a><figcaption><strong>Equal emphasis.</strong> The article cards use the same size and visual weight.</figcaption></figure><figure class="salient-search-exhibit"><p class="salient-exhibit-label">Revised results · not retested</p><a class="case-study-expandable salient-exhibit-link" href="assets/images/salient-bio-search-revised.png" aria-label="Enlarge revised results · not retested search view"><div class="salient-figure-excerpt" style="--crop-x: 307; --crop-y: 489; --crop-width: 710; --crop-height: 255;"><img src="assets/images/salient-bio-search-revised.png" width="1334" height="750" loading="lazy" alt="Revised results with a large leading article image beside smaller article cards." /><span class="salient-result-highlight" aria-hidden="true"></span></div></a><figcaption><strong>Stronger emphasis.</strong> The leading article has a larger image beside the smaller results.</figcaption></figure></div></section>
 </div>
 <div class="case-study-prose"><h3>The documented search views</h3><p>The earlier view and revision show the changes to controls and result emphasis. The revised search experience was not retested. The AI summary shown in the revision slide was also an unvalidated proposal.</p></div>
-<ul class="salient-evidence-links"><li><a class="salient-original-link" href="assets/images/salient-bio-search-before.png" target="_blank" rel="noopener">View the earlier search view and testing finding<span class="visually-hidden"> (opens in a new tab)</span></a></li><li><a class="salient-original-link" href="assets/images/salient-bio-search-revised.png" target="_blank" rel="noopener">View the unvalidated search revision<span class="visually-hidden"> (opens in a new tab)</span></a></li></ul>
+<ul class="salient-evidence-links"><li><a class="salient-original-link" href="assets/images/salient-bio-search-before.png" target="_blank" rel="noopener">View the earlier search view and testing finding<span class="visually-hidden"> (opens in a new tab)</span></a></li><li><a class="salient-original-link" href="assets/images/salient-bio-search-revised.png" target="_blank" rel="noopener">View the search revision<span class="visually-hidden"> (opens in a new tab)</span></a></li></ul>
 <p>The next stage brings together the testing figures, my interpretation and the design comparisons.</p></div>
 </details>
 </section>
 
-<section id="develop" class="case-study-section case-study-stage stage-develop site-shell salient-story" aria-labelledby="develop-title">
-<div class="salient-story-overview"><div class="salient-story-copy"><h2 id="develop-title">Testing showed that finding an answer did not always mean the route was clear.</h2><p>Participants took indirect paths and encountered difficulties with search controls and clinician resources. I simplified overlapping content in the architecture. We also made journey choices more visible, separated active filters from suggested terms and strengthened signposting to clinician resources. These revisions were not retested.</p>
+<section id="develop" class="case-study-section case-study-stage stage-develop salient-story story-chapter develop group-start" aria-labelledby="develop-title">
+<p class="stage-label">Develop</p>
+<div class="salient-story-overview"><div class="salient-story-copy chapter-copy"><h2 class="narrative-heading" id="develop-title"><span class="narrative-marker" aria-hidden="true"></span>Testing showed that finding an answer did not always mean the route was clear.</h2><p>Participants took indirect paths and encountered difficulties with search controls and clinician resources. I simplified overlapping content in the architecture. We also made journey choices more visible, separated active filters from suggested terms and strengthened signposting to clinician resources. These revisions were not retested.</p>
 <figure class="salient-testing-quote"><blockquote><p>“It felt a little buried”</p></blockquote><figcaption><a class="case-study-expandable" href="assets/images/salient-bio-entry-before.png" aria-label="Open the homepage testing slide containing this feedback">Homepage testing feedback</a></figcaption></figure>
 </div><div class="salient-story-comparison"><figure class="salient-story-image"><p class="salient-preview-label">Earlier homepage</p><a class="case-study-expandable salient-preview-link" href="assets/images/salient-bio-entry-before.png" aria-label="Enlarge the earlier homepage view"><div class="salient-figure-frame">
                   <div class="salient-figure-excerpt" style="--crop-x: 346; --crop-y: 194; --crop-width: 483; --crop-height: 556;">
                     <img src="assets/images/salient-bio-entry-before.png" width="1334" height="750" loading="lazy" alt="Excerpt of the tested homepage with a large search area above expandable testing routes" />
                   </div>
-                </div></a><figcaption>Search above expandable journey routes.</figcaption></figure><figure class="salient-story-image"><p class="salient-preview-label">Unvalidated revision</p><a class="case-study-expandable salient-preview-link" href="assets/images/salient-bio-entry-revised.png" aria-label="Enlarge the unvalidated homepage revision"><div class="salient-figure-frame">
+                </div></a><figcaption>Search above expandable journey routes.</figcaption></figure><figure class="salient-story-image"><p class="salient-preview-label">Revision</p><a class="case-study-expandable salient-preview-link" href="assets/images/salient-bio-entry-revised.png" aria-label="Enlarge the homepage revision"><div class="salient-figure-frame">
                   <div class="salient-figure-excerpt" style="--crop-x: 84; --crop-y: 198; --crop-width: 576; --crop-height: 357;">
                     <img src="assets/images/salient-bio-entry-revised.png" width="1334" height="750" loading="lazy" alt="Excerpt of the revised homepage with smaller search and four visible journey cards" />
                   </div>
@@ -194,7 +202,7 @@
               </div>
             </div>
             <p class="salient-decision-limit"><strong>Still to validate:</strong> whether the revised homepage and information architecture help people find the right route. They were not retested.</p>
-            <div class="salient-figure-comparison">
+            <div class="salient-figure-comparison" data-comparison="Homepage routes">
               <figure>
                 <p class="salient-figure-label">Before testing · expandable routes</p>
                 <div class="salient-figure-frame">
@@ -232,7 +240,7 @@
             </div>
             <p class="salient-decision-limit"><strong>Still to validate:</strong> whether these changes make the search controls clearer. The revised search experience was not retested.</p>
             <p class="salient-search-hypothesis">The proposed plain-English AI summary remained an unvalidated hypothesis. It needed clinical and content guardrails and further usability testing before any benefit to understanding could be established.</p>
-            <div class="salient-figure-comparison">
+            <div class="salient-figure-comparison" data-comparison="Search controls and results">
               <figure>
                 <p class="salient-figure-label">Before testing · unclear result controls</p>
                 <div class="salient-figure-frame">
@@ -258,7 +266,7 @@
             <div class="case-study-prose"><h3 id="clinician-title">Clinician route and contextual support</h3><p>Testing showed that professional users were not recognising where clinician-specific support lived. Only 33% achieved partial success, while 67% showed high path deviation; no participant found the clinician route without some uncertainty.</p><p>Discovery had identified clinicians’ need for evidence, methodology, suitability information and patient-support resources. I brought those requirements together in the architecture. We then grouped professional content under a more visible Clinician Resources route.</p></div>
             <div class="salient-comparison-grid salient-interim-comparison"><figure class="case-study-media"><a class="case-study-expandable" href="assets/images/salient-bio-clinician-home.png" aria-label="Open the clinician resource concept"><img src="assets/images/salient-bio-clinician-home.png" width="1334" height="750" loading="lazy" alt="Concept slide showing a clinician homepage, professional resources and a visible clinician route from the Learn Hub" /></a><figcaption><strong>Clinician resource concept.</strong> The slide describes intended support, rather than a measured improvement.</figcaption></figure><figure class="case-study-media salient-interim-figure"><span class="salient-proposed-label">Interim visual</span><a class="case-study-expandable" href="assets/images/salient-bio-clinician-materials.png" aria-label="Open the professional resource concept views"><img src="assets/images/salient-bio-clinician-materials.png" width="1334" height="750" loading="lazy" alt="Concept views showing clinician guides to testing suitability, interpreting results and technical information" /></a><figcaption><strong>Professional materials.</strong> These slides illustrate the concept, rather than a tested before-and-after comparison. The clinician route was not retested.</figcaption></figure></div>
             <div class="case-study-prose salient-supporting-finding"><p class="evidence-card-type">Supporting finding</p><h3>Terminology without losing context</h3><p>The same principle applied at a smaller scale to scientific terminology. Glossary definitions were useful once found, but only 33% fully completed the task and 67% showed significant path deviation.</p><p>We added clearer signposting to glossary terms and refined the in-context definition panel, aiming to make explanations easier to find without losing the reading context.</p></div>
-            <div class="salient-figure-comparison">
+            <div class="salient-figure-comparison" data-comparison="Glossary support">
               <figure>
                 <p class="salient-figure-label">Before testing · limited signposting</p>
                 <div class="salient-figure-frame">
@@ -284,8 +292,9 @@
 </details>
 </section>
 
-<section id="outcome" class="case-study-section case-study-stage stage-outcome site-shell salient-story" aria-labelledby="outcome-title">
-<div class="salient-story-overview salient-outcome-overview"><div class="salient-story-copy"><h2 id="outcome-title">We delivered a Learn Hub concept with clear questions for further testing.</h2><p>The next tests would check whether patients could find suitability information, refine searches and understand results and next steps. Clinician tasks would assess access to evidence, methodology and patient-support materials. Those findings would guide further development for both groups.</p></div><figure class="salient-validation-map" aria-labelledby="validation-map-title">
+<section id="outcome" class="case-study-section case-study-stage stage-outcome salient-story story-chapter deliver group-start" aria-labelledby="outcome-title">
+<p class="stage-label">Deliver</p>
+<div class="salient-story-overview salient-outcome-overview"><div class="salient-story-copy chapter-copy"><h2 class="narrative-heading" id="outcome-title"><span class="narrative-marker" aria-hidden="true"></span>We delivered a Learn Hub concept with clear questions for further testing.</h2><p>The next tests would check whether patients could find suitability information, refine searches and understand results and next steps. Clinician tasks would assess access to evidence, methodology and patient-support materials. Those findings would guide further development for both groups.</p></div><figure class="salient-validation-map" aria-labelledby="validation-map-title">
 <h3 id="validation-map-title">Next tests for the concept</h3>
 <div class="salient-validation-routes">
 <section aria-labelledby="patient-next-title"><h4 id="patient-next-title">Patient tasks</h4><ul><li>Find suitability information</li><li>Refine a search</li><li>Understand results and next steps</li></ul></section>
@@ -299,13 +308,14 @@
   <div class="salient-story-depth"><div class="salient-validation-sequence"><section aria-labelledby="validation-title"><p class="outcome-pair-label">Next validation</p><h3 id="validation-title">Test access with both user groups</h3><ul class="salient-next-tests"><li><strong>Patient starting points:</strong> can people considering testing recognise where to begin and find suitability information?</li><li><strong>Search refinement:</strong> can people distinguish active filters from suggested terms and reach relevant content?</li><li><strong>Results and next steps:</strong> can patients find explanations of results and identify what to do next?</li><li><strong>Clinician resources:</strong> can clinicians find evidence, methodology and patient-support materials?</li></ul><p>I would track task completion, path deviation, time on task and comprehension, and check where people believe education ends and medical advice begins. Those findings would guide further development for both groups.</p></section><section aria-labelledby="reflection-title"><p class="outcome-pair-label">Reflection</p><h3 id="reflection-title">Different routes, a shared structure</h3><p>The project strengthened my view that information architecture needed to reflect people's stage, intent and level of knowledge, while keeping direct routes available.</p><p>For the company, uncertainty about suitability, credibility or next steps could weaken confidence and cause people to leave the journey. This commercial risk remains a hypothesis, rather than a measured outcome.</p></section></div></div>
 </details>
 </section>
+        </div>
       </article>
       <nav class="case-study-project-nav site-shell" aria-label="Project navigation"><a class="button-link" href="habit-hero.html">&larr; Previous project</a><a class="button-link" href="ai-educator.html">Next project <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a></nav>
     </main>
     <dialog class="case-study-lightbox" aria-label="Expanded case-study image"><button class="case-study-lightbox-close" type="button" aria-label="Close expanded image"><svg aria-hidden="true"><use href="#icon-close"></use></svg></button><img class="case-study-lightbox-image" src="" alt="" /></dialog>
     <footer class="site-footer"><div class="site-shell"><p>&copy; <span id="year"></span> James Spiller</p></div></footer>
     <script src="scripts.js?v=36"></script>
-    <script src="salient-bio.js?v=1"></script>
+    <script src="salient-bio.js?v=2"></script>
     <script src="case-study-progress.js?v=1"></script>
   </body>
 </html>

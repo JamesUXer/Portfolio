@@ -53,26 +53,9 @@
   outline: 3px solid var(--purple);
   outline-offset: 4px;
 }
-#hh-goal-study summary:focus-visible {
-  outline: 3px solid var(--purple);
-  outline-offset: 4px;
-}
 #hh-goal-study ::selection {
   background: var(--purple);
   color: var(--page);
-}
-#hh-goal-study summary {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  min-height: 56px;
-  color: var(--purple);
-  padding: 18px 0;
-}
-#hh-goal-study summary::-webkit-details-marker {
-  display: none;
 }
 #hh-goal-study summary .close {
   display: none;
@@ -141,13 +124,7 @@
 #hh-goal-study .story-intro>p {
   max-width: 58ch;
 }
-#hh-goal-study .story-chapter {
-  padding: 26px 0;
-  margin: 0;
-  border-radius: 0;
-  min-height: 0;
-  border-top: 1px solid var(--line);
-}
+
 #hh-goal-study .sheet {
   padding: 26px 0;
   margin: 0;
@@ -162,16 +139,6 @@
 }
 #hh-goal-study .stage-label {
   margin: 0 0 12px;
-}
-#hh-goal-study .discover {
-  --stage: var(--stage-discover-ink);
-  --tint: var(--stage-discover-soft);
-  --bright: var(--stage-discover-bright);
-}
-#hh-goal-study .deliver {
-  --stage: var(--stage-outcome-ink);
-  --tint: var(--stage-outcome-soft);
-  --bright: var(--stage-outcome-bright);
 }
 #hh-goal-study h2 {
   max-width: 35ch;
@@ -231,31 +198,7 @@
   padding: 26px 0;
 }
 }
-#hh-goal-study .discover {
-  --stage: var(--stage-discover-ink);
-  --tint: var(--stage-discover-soft);
-  --bright: var(--stage-discover-bright);
-}
-#hh-goal-study .define {
-  --stage: var(--stage-define-ink);
-  --tint: var(--stage-define-soft);
-  --bright: var(--stage-define-bright);
-}
-#hh-goal-study .develop {
-  --stage: var(--stage-develop-ink);
-  --tint: var(--stage-develop-soft);
-  --bright: var(--stage-develop-bright);
-}
 /* Deliver uses the portfolio's established final-stage (Outcome) coral tokens. */
-#hh-goal-study .deliver {
-  --stage: var(--stage-outcome-ink);
-  --tint: var(--stage-outcome-soft);
-  --bright: var(--stage-outcome-bright);
-}
-#hh-goal-study .group-start {
-  border-top: 3px solid var(--stage);
-  margin-top: 18px;
-}
 #hh-goal-study .stage-label {
   display: inline-block;
   padding: 6px 10px;
@@ -292,10 +235,6 @@
 }
 }
 
-#hh-goal-study summary {
-  transition: color 140ms ease;
-  position: relative;
-}
 #hh-goal-study details>summary:not(:has(.expand-mark))::after {
   content: '+';
   transition: transform 180ms ease;
@@ -848,7 +787,7 @@
 
 .habit-story-page {padding-top:40px;padding-bottom:32px}
 #hh-goal-study {margin-top:24px}
-#hh-goal-study button, #hh-goal-study summary {cursor:pointer}
+#hh-goal-study button {cursor:pointer}
 #hh-goal-study a:focus-visible, #hh-goal-study input:focus-visible {outline:3px solid var(--purple);outline-offset:4px}
 #hh-goal-study .persona-illustration {height:auto;min-height:200px}
 #hh-goal-study .persona-illustration img {opacity:1;grid-area:auto;filter:none;mix-blend-mode:normal}
@@ -918,10 +857,7 @@ html[data-theme="dark"] #hh-goal-study details > :is(.reading,.detail-body) {bor
     margin-top: 12px;
     color: var(--secondary);
   }
-  #hh-goal-study .story-chapter,
   #hh-goal-study .sheet { padding: 28px 0 16px; }
-  #hh-goal-study .group-start { margin-top: 32px; padding-top: 36px; }
-  #hh-goal-study .stage-label { margin-bottom: 20px; }
   #hh-goal-study .chapter-overview {
     grid-template-columns: minmax(0, 1fr);
     align-items: start;
@@ -1086,83 +1022,10 @@ html[data-theme="dark"] #hh-goal-study details > :is(.reading,.detail-body) {bor
   #hh-goal-study .goal-sequence li::marker { color: var(--stage); }
 }
 
-/* Typography roles, measured against the local Salient Bio case study.
-   Families are shared site tokens; this scale is scoped to HabitHero.
-   Keep long narrative headings fluid on small screens and preserve the layout above. */
-#hh-goal-study {
-  --hh-body-size: 1.125rem;
-  --hh-body-leading: 1.55555556;
-  --hh-evidence-size: 1.05rem;
-  --hh-caption-size: .9375rem;
-  --hh-control-size: 1rem;
-  --hh-heading-size: 2.5rem;
-  --hh-heading-leading: 1.35;
-  --hh-prose-measure: 70ch;
-  font-family: var(--font-body);
-  font-size: var(--hh-body-size);
-  line-height: var(--hh-body-leading);
-}
-#hh-goal-study p,
-#hh-goal-study li,
-#hh-goal-study dd {
-  font-family: var(--font-body);
-  font-size: var(--hh-body-size);
-  line-height: var(--hh-body-leading);
-}
-#hh-goal-study p { margin-bottom: 1.25rem; }
-#hh-goal-study h1 {
-  font-family: var(--font-display);
-  font-size: clamp(3rem, 4.2vw, 4rem);
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: normal;
-  max-width: 26ch;
-  overflow-wrap: break-word;
-  text-wrap: balance;
-  margin-bottom: 1.5rem;
-}
-#hh-goal-study h2 {
-  font-family: var(--font-display);
-  font-size: var(--hh-heading-size);
-  font-weight: 700;
-  line-height: var(--hh-heading-leading);
-  letter-spacing: normal;
-  overflow-wrap: break-word;
-  text-wrap: balance;
-}
-#hh-goal-study h3 {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.3;
-  margin-bottom: 1.25rem;
-  overflow-wrap: break-word;
-}
-#hh-goal-study .chapter-copy,
-#hh-goal-study .chapter-overview:has(.exploration-preview) .chapter-copy,
-#hh-goal-study .chapter-overview:has(.delivery-preview) .chapter-copy,
-#hh-goal-study .testing-chapter .chapter-copy {
-  max-width: var(--hh-prose-measure);
-}
-#hh-goal-study .chapter-copy h2,
-#hh-goal-study .chapter-overview:has(.exploration-preview) h2,
-#hh-goal-study .chapter-overview:has(.delivery-preview) h2,
-#hh-goal-study .testing-chapter .chapter-copy h2 { max-width: 36ch; }
-#hh-goal-study .chapter-bridge,
-#hh-goal-study .lede { max-width: var(--hh-prose-measure); margin-top: 1.5rem; margin-bottom: 0; }
-#hh-goal-study .intro-copy > p,
-#hh-goal-study .reading p,
-#hh-goal-study .detail-body p { max-width: var(--hh-prose-measure); }
-#hh-goal-study .intro-copy .intro-meta {
-  margin-bottom: 2rem;
-  color: var(--secondary);
-  line-height: 1.75;
-}
-#hh-goal-study .reading p + h3,
-#hh-goal-study .detail-body p + h3 { margin-top: 1.25rem; }
+/* Project-specific evidence variants consume the shared case-study scale. */
 #hh-goal-study .preview-priority p {
   font-family: var(--font-heading);
-  font-size: var(--hh-body-size);
+  font-size: var(--cs-body-size);
   font-weight: 600;
   line-height: 1.5;
 }
@@ -1173,87 +1036,30 @@ html[data-theme="dark"] #hh-goal-study details > :is(.reading,.detail-body) {bor
   font-weight: 700;
   line-height: 1.35;
 }
-#hh-goal-study blockquote {
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 1.5;
-}
 #hh-goal-study .persona-scene-insights dt,
-#hh-goal-study .preview-chosen{
+#hh-goal-study .preview-chosen {
   font-family: var(--font-heading);
   font-size: .875rem;
   font-weight: 700;
   line-height: 1.4;
 }
 #hh-goal-study .preview-chosen { max-width: 100%; white-space: normal; }
-#hh-goal-study .stage-label {
-  font-family: var(--font-heading);
-  font-size: .875rem;
-  font-weight: 700;
-  line-height: 1.4;
-  letter-spacing: .04em;
-}
-
-/* Captions and qualifications stay legible instead of shrinking with their container. */
-#hh-goal-study .small,
-#hh-goal-study .preview-caption,
-#hh-goal-study figcaption,
-#hh-goal-study .story-preview figcaption,
-#hh-goal-study .persona-summary .preview-caption,
-#hh-goal-study .define-preview > .small,
-#hh-goal-study .persona-scene-caption,
-#hh-goal-study .delivery-caption{
-  font-family: var(--font-body);
-  font-size: var(--hh-caption-size);
-  font-weight: 400;
-  line-height: 1.5;
-  color: var(--soft-text);
-}
-#hh-goal-study .story-preview figcaption { margin-top: .75rem; }
 #hh-goal-study .priority-table caption {
-  font-size: var(--hh-caption-size);
+  font-size: var(--cs-caption-size);
   line-height: 1.5;
 }
 #hh-goal-study .priority-table :is(th, td) { font-size: 1rem; line-height: 1.5; }
 #hh-goal-study .priority-table { font-variant-numeric: tabular-nums; }
 #hh-goal-study .preview-themes button {
   font-family: var(--font-body);
-  font-size: var(--hh-evidence-size);
+  font-size: var(--cs-evidence-size);
   font-weight: 400;
   line-height: 1.5;
 }
 #hh-goal-study .preview-themes button > span:last-child { font-weight: 700; font-variant-numeric: tabular-nums; }
-
-/* Salient has no accordions. Keep these purple controls distinct from narrative headings. */
-#hh-goal-study button,
-#hh-goal-study .persona-scene-controls button,
-#hh-goal-study .persona-play,
-#hh-goal-study .delivery-preview > button{
-  font-family: var(--font-body);
-  font-size: var(--hh-control-size);
-  font-weight: 400;
-  line-height: 1.5;
-}
-#hh-goal-study .preview-themes button { font-size: var(--hh-evidence-size); }
-#hh-goal-study summary {
-  font-family: var(--font-heading);
-  font-size: var(--hh-body-size);
-  font-weight: 600;
-  line-height: 1.5;
-}
-#hh-goal-study .summary-text { font: inherit; }
-#hh-goal-study .goal-sequence li { font-family: var(--font-heading); font-size: var(--hh-body-size); font-weight: 600; }
-
+#hh-goal-study .preview-themes button { font-size: var(--cs-evidence-size); }
+#hh-goal-study .goal-sequence li { font-family: var(--font-heading); font-size: var(--cs-body-size); font-weight: 600; }
 @media (max-width: 760px) {
-  #hh-goal-study {
-    --hh-body-size: 1rem;
-    --hh-body-leading: 1.5;
-    --hh-evidence-size: 1rem;
-    --hh-heading-size: clamp(1.65rem, 7.2vw, 2rem);
-    --hh-heading-leading: 1.3;
-  }
-  #hh-goal-study h1 { font-size: clamp(2rem, 9.5vw, 3.5rem); }
   #hh-goal-study .preview-annotations p { font-size: 1.125rem; line-height: 1.5; }
 }
 
@@ -1283,55 +1089,6 @@ html[data-theme="dark"] #hh-goal-study details > :is(.reading,.detail-body) {bor
 /* Only wrap the existing shell controls when enlarged text exhausts their row. */
 .habit-hero-case-study .desktop-nav { min-width: 0; flex-wrap: wrap; justify-content: flex-end; row-gap: .5rem; }
 .habit-hero-case-study .case-study-project-nav { flex-wrap: wrap; }
-
-/* Editorial phase labels carry no control affordance. */
-#hh-goal-study .stage-label {
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: none;
-  box-shadow: none;
-  color: var(--stage);
-}
-
-/* Supporting explanations inherit their section's stage; controls retain purple. */
-#hh-goal-study .narrative-note,
-#hh-goal-study .boundary { border-top-color: var(--stage); }
-
-/* Decorative reading rail: use the existing desktop margin, not the content width. */
-#hh-goal-study .narrative-line,
-#hh-goal-study .narrative-marker {
-  display: none;
-  pointer-events: none;
-}
-@media (min-width: 960px) {
-  #hh-goal-study .narrative-body {
-    --hh-rail-offset: 32px;
-    display: flow-root;
-    position: relative;
-  }
-  #hh-goal-study .narrative-line {
-    display: block;
-    position: absolute;
-    inset-block: 0;
-    inset-inline-start: calc(-1 * var(--hh-rail-offset) - .5px);
-    width: 1px;
-    background: color-mix(in srgb, var(--line) 65%, var(--page));
-  }
-  #hh-goal-study .narrative-heading { position: relative; }
-  #hh-goal-study .narrative-marker {
-    display: block;
-    position: absolute;
-    inset-inline-start: calc(-1 * var(--hh-rail-offset) - 4px);
-    /* Centre on the heading's first line, including when it wraps or type grows. */
-    inset-block-start: .675em;
-    transform: translateY(-50%);
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--stage);
-  }
-}
 
 /* One direct comparison: original screens, then the existing evidence and source links. */
 #hh-goal-study .chapter-overview:has(.exploration-preview) {
@@ -1394,7 +1151,7 @@ html[data-theme="dark"] #hh-goal-study details > :is(.reading,.detail-body) {bor
 #hh-goal-study .interview-evidence .quote-source { grid-column: 1 / -1; margin: 0; }
 #hh-goal-study .interview-evidence + .narrative-note {
   margin-top: 0;
-  max-width: var(--hh-prose-measure);
+  max-width: var(--cs-prose-measure);
 }
 @media (min-width: 960px) {
   #hh-goal-study .interview-evidence { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -1402,7 +1159,7 @@ html[data-theme="dark"] #hh-goal-study details > :is(.reading,.detail-body) {bor
 
 /* Matched, unedited weekly screens: static evidence first, native divider enhancement. */
 #hh-goal-study .testing-comparison { display: grid; gap: 28px; margin-top: 28px; }
-#hh-goal-study .testing-finding { max-width: var(--hh-prose-measure); }
+#hh-goal-study .testing-finding { max-width: var(--cs-prose-measure); }
 #hh-goal-study .weekly-example { min-width: 0; --weekly-split: 50%; }
 #hh-goal-study .weekly-images { display: grid; gap: 24px; }
 #hh-goal-study .weekly-images figure { margin: 0; min-width: 0; }
@@ -1411,7 +1168,7 @@ html[data-theme="dark"] #hh-goal-study details > :is(.reading,.detail-body) {bor
 #hh-goal-study .weekly-images figcaption { margin-top: 12px; }
 #hh-goal-study :is(.weekly-labels, .weekly-divider-input, .comparison-divider, .weekly-reveal-tools) { display: none; }
 #hh-goal-study .weekly-source-links { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 16px; }
-#hh-goal-study .weekly-source-links a { padding: 0; color: var(--purple); font-size: var(--hh-control-size); text-underline-offset: 4px; }
+#hh-goal-study .weekly-source-links a { padding: 0; color: var(--purple); font-size: var(--cs-control-size); text-underline-offset: 4px; }
 #hh-goal-study .weekly-delivered { max-width: 390px; margin-bottom: 28px; }
 #hh-goal-study .weekly-delivered figure { margin: 0; }
 #hh-goal-study .weekly-delivered .case-study-expandable { padding: 0; }
@@ -1466,7 +1223,7 @@ html[data-theme="dark"] #hh-goal-study details > :is(.reading,.detail-body) {bor
   border-right: 1px solid var(--stage);
   transform: rotate(45deg);
 }
-#hh-goal-study .journey-stages h4 { font-family: var(--font-heading); font-size: var(--hh-body-size); line-height: 1.4; margin: 0 0 1.25rem; }
+#hh-goal-study .journey-stages h4 { font-family: var(--font-heading); font-size: var(--cs-body-size); line-height: 1.4; margin: 0 0 1.25rem; }
 #hh-goal-study .journey-stages p { font-size: 1rem; line-height: 1.6; }
 #hh-goal-study .journey-stages strong { display: block; margin-bottom: .25rem; }
 #hh-goal-study .journey-stages p:last-child { margin-bottom: 0; }

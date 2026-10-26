@@ -7,6 +7,8 @@ Static portfolio website scaffolded for GitHub Pages.
 - `index.html` contains the semantic page sections.
 - `projects.html` contains the selected and in-progress projects index.
 - `styles.css` contains design tokens and responsive layout rules.
+- `case-study-system.css` contains the shared case-study styles extracted from Habit Hero.
+- `CASE-STUDY-DESIGN.md` documents their roles and adoption by other case studies.
 - `scripts.js` contains small progressive enhancements.
 - `assets/images/` contains the current project and hero imagery.
 - `assets/icons/` is for exported SVG icons.

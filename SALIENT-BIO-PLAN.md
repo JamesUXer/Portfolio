@@ -1,5 +1,12 @@
 # Salient Bio improvement plan
 
+Current status, 26 October 2026: integration is complete. Use the “Current working agreement” in [the brief](SALIENT-BIO-BRIEF.md) for the active scope and next action. Entries below record completed decisions and should not be restarted as separate plans.
+
+25 October 2026: shared-system adoption is complete (Pass 14 in the progress log).
+Habit Hero is the visual reference for typography, chapter rhythm, stage labels,
+captions and disclosures. The next narrative restructuring remains a separate
+step; this pass preserves the agreed five-part story and all research boundaries.
+
 Updated: 21 October 2026. Baseline: current working tree, including completed opening Pass 1.
 
 Read `SALIENT-BIO-BRIEF.md` and `SALIENT-BIO-PROGRESS.md` before each pass. This is an ordered plan, not authorisation to implement every phase at once.
