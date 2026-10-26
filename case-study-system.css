@@ -1,0 +1,283 @@
+/* Shared case-study system, extracted from Habit Hero.
+   Load after styles.css and the case-specific stylesheet. Opt in with
+   class="case-study-system" on the article. Existing site tokens own colours
+   and font families; this file owns the established narrative type roles.
+   The legacy ID in :is() preserves specificity against Habit Hero's existing
+   ID-scoped rules during migration. Other case studies need only the class.
+   Keep project-specific layouts and interactive evidence in their own CSS. */
+
+:is(.case-study-system, #hh-goal-study) {
+  --page: var(--bg);
+  --ink: var(--text);
+  --secondary: var(--soft-text);
+  --purple: var(--accent);
+  --stage: var(--stage-develop-ink);
+  --tint: var(--stage-develop-soft);
+  --bright: var(--stage-develop-bright);
+  --cs-title-size: clamp(3rem, 4.2vw, 4rem);
+  --cs-body-size: 1.125rem;
+  --cs-body-leading: 1.55555556;
+  --cs-evidence-size: 1.05rem;
+  --cs-caption-size: .9375rem;
+  --cs-control-size: 1rem;
+  --cs-heading-size: 2.5rem;
+  --cs-heading-leading: 1.35;
+  --cs-prose-measure: 70ch;
+  --cs-prose-gap: 1.25rem;
+  --cs-copy-gap: 1.5rem;
+  --cs-chapter-gap: 32px;
+  --cs-caption-gap: .75rem;
+  --cs-rail-offset: 32px;
+  font-family: var(--font-body);
+  font-size: var(--cs-body-size);
+  line-height: var(--cs-body-leading);
+}
+
+:is(.case-study-system, #hh-goal-study) p,
+:is(.case-study-system, #hh-goal-study) li,
+:is(.case-study-system, #hh-goal-study) dd {
+  font-family: var(--font-body);
+  font-size: var(--cs-body-size);
+  line-height: var(--cs-body-leading);
+}
+
+:is(.case-study-system, #hh-goal-study) p { margin-bottom: var(--cs-prose-gap); }
+
+:is(.case-study-system, #hh-goal-study) h1 {
+  font-family: var(--font-display);
+  font-size: var(--cs-title-size);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: normal;
+  max-width: 26ch;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+  margin-bottom: var(--cs-copy-gap);
+}
+
+:is(.case-study-system, #hh-goal-study) h2 {
+  font-family: var(--font-display);
+  font-size: var(--cs-heading-size);
+  font-weight: 700;
+  line-height: var(--cs-heading-leading);
+  letter-spacing: normal;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+
+:is(.case-study-system, #hh-goal-study) h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: var(--cs-prose-gap);
+  overflow-wrap: break-word;
+}
+
+:is(.case-study-system, #hh-goal-study) .chapter-copy,
+:is(.case-study-system, #hh-goal-study) .chapter-overview:has(.exploration-preview) .chapter-copy,
+:is(.case-study-system, #hh-goal-study) .chapter-overview:has(.delivery-preview) .chapter-copy,
+:is(.case-study-system, #hh-goal-study) .testing-chapter .chapter-copy {
+  max-width: var(--cs-prose-measure);
+}
+
+:is(.case-study-system, #hh-goal-study) .chapter-copy h2,
+:is(.case-study-system, #hh-goal-study) .chapter-overview:has(.exploration-preview) h2,
+:is(.case-study-system, #hh-goal-study) .chapter-overview:has(.delivery-preview) h2,
+:is(.case-study-system, #hh-goal-study) .testing-chapter .chapter-copy h2 { max-width: 36ch; }
+
+:is(.case-study-system, #hh-goal-study) .chapter-bridge,
+:is(.case-study-system, #hh-goal-study) .lede { max-width: var(--cs-prose-measure); margin-top: var(--cs-copy-gap); margin-bottom: 0; }
+
+:is(.case-study-system, #hh-goal-study) .intro-copy > p,
+:is(.case-study-system, #hh-goal-study) .reading p,
+:is(.case-study-system, #hh-goal-study) .detail-body p { max-width: var(--cs-prose-measure); }
+
+:is(.case-study-system, #hh-goal-study) .intro-copy .intro-meta {
+  margin-bottom: 2rem;
+  color: var(--secondary);
+  line-height: 1.75;
+}
+
+:is(.case-study-system, #hh-goal-study) .reading p + h3,
+:is(.case-study-system, #hh-goal-study) .detail-body p + h3 { margin-top: var(--cs-prose-gap); }
+
+:is(.case-study-system, #hh-goal-study) blockquote {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+:is(.case-study-system, #hh-goal-study) .stage-label {
+  font-family: var(--font-heading);
+  font-size: .875rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: .04em;
+}
+
+:is(.case-study-system, #hh-goal-study) .small,
+:is(.case-study-system, #hh-goal-study) .preview-caption,
+:is(.case-study-system, #hh-goal-study) figcaption,
+:is(.case-study-system, #hh-goal-study) .story-preview figcaption,
+:is(.case-study-system, #hh-goal-study) .persona-summary .preview-caption,
+:is(.case-study-system, #hh-goal-study) .define-preview > .small,
+:is(.case-study-system, #hh-goal-study) .persona-scene-caption,
+:is(.case-study-system, #hh-goal-study) .delivery-caption {
+  font-family: var(--font-body);
+  font-size: var(--cs-caption-size);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--soft-text);
+}
+
+:is(.case-study-system, #hh-goal-study) .story-preview figcaption { margin-top: var(--cs-caption-gap); }
+
+:is(.case-study-system, #hh-goal-study) button,
+:is(.case-study-system, #hh-goal-study) .persona-scene-controls button,
+:is(.case-study-system, #hh-goal-study) .persona-play,
+:is(.case-study-system, #hh-goal-study) .delivery-preview > button {
+  font-family: var(--font-body);
+  font-size: var(--cs-control-size);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+:is(.case-study-system, #hh-goal-study) summary {
+  font-family: var(--font-heading);
+  font-size: var(--cs-body-size);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+:is(.case-study-system, #hh-goal-study) .summary-text { font: inherit; }
+
+@media (max-width: 760px) {
+  :is(.case-study-system, #hh-goal-study) {
+    --cs-body-size: 1rem;
+    --cs-body-leading: 1.5;
+    --cs-evidence-size: 1rem;
+    --cs-heading-size: clamp(1.65rem, 7.2vw, 2rem);
+    --cs-heading-leading: 1.3;
+    --cs-title-size: clamp(2rem, 9.5vw, 3.5rem);
+  }
+}
+
+/* Shared stage roles retain the portfolio palette in both themes. */
+:is(.case-study-system, #hh-goal-study) .discover {
+  --cs-stage-ink: var(--stage-discover-ink);
+  --cs-stage-soft: var(--stage-discover-soft);
+  --cs-stage-bright: var(--stage-discover-bright);
+  --stage: var(--cs-stage-ink);
+  --tint: var(--cs-stage-soft);
+  --bright: var(--cs-stage-bright);
+}
+:is(.case-study-system, #hh-goal-study) .define {
+  --cs-stage-ink: var(--stage-define-ink);
+  --cs-stage-soft: var(--stage-define-soft);
+  --cs-stage-bright: var(--stage-define-bright);
+  --stage: var(--cs-stage-ink);
+  --tint: var(--cs-stage-soft);
+  --bright: var(--cs-stage-bright);
+}
+:is(.case-study-system, #hh-goal-study) .develop {
+  --cs-stage-ink: var(--stage-develop-ink);
+  --cs-stage-soft: var(--stage-develop-soft);
+  --cs-stage-bright: var(--stage-develop-bright);
+  --stage: var(--cs-stage-ink);
+  --tint: var(--cs-stage-soft);
+  --bright: var(--cs-stage-bright);
+}
+:is(.case-study-system, #hh-goal-study) .deliver {
+  --cs-stage-ink: var(--stage-outcome-ink);
+  --cs-stage-soft: var(--stage-outcome-soft);
+  --cs-stage-bright: var(--stage-outcome-bright);
+  --stage: var(--cs-stage-ink);
+  --tint: var(--cs-stage-soft);
+  --bright: var(--cs-stage-bright);
+}
+
+/* Chapter rhythm and disclosure rows. */
+:is(.case-study-system, #hh-goal-study) .story-chapter {
+  padding: 26px 0;
+  margin: 0;
+  border-radius: 0;
+  min-height: 0;
+  border-top: 1px solid var(--line);
+}
+:is(.case-study-system, #hh-goal-study) .group-start { border-top: 3px solid var(--stage); margin-top: 18px; }
+@media (min-width: 960px) {
+  :is(.case-study-system, #hh-goal-study) .story-chapter { padding: 28px 0 16px; }
+  :is(.case-study-system, #hh-goal-study) .group-start { margin-top: var(--cs-chapter-gap); padding-top: 36px; }
+  :is(.case-study-system, #hh-goal-study) .stage-label { margin-bottom: 20px; }
+}
+
+:is(.case-study-system, #hh-goal-study) summary::-webkit-details-marker {
+  display: none;
+}
+:is(.case-study-system, #hh-goal-study) summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  min-height: 56px;
+  color: var(--purple);
+  padding: 18px 0;
+  transition: color 140ms ease;
+  position: relative;
+  cursor: pointer;
+}
+:is(.case-study-system, #hh-goal-study) summary:focus-visible {
+  outline: 3px solid var(--purple);
+  outline-offset: 4px;
+}
+
+/* Editorial phase labels carry no control affordance. */
+:is(.case-study-system, #hh-goal-study) .stage-label {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  color: var(--stage);
+}
+
+/* Supporting explanations inherit their section's stage; controls retain purple. */
+:is(.case-study-system, #hh-goal-study) .narrative-note,
+:is(.case-study-system, #hh-goal-study) .boundary { border-top-color: var(--stage); }
+
+/* Decorative reading rail: use the existing desktop margin, not the content width. */
+:is(.case-study-system, #hh-goal-study) .narrative-line,
+:is(.case-study-system, #hh-goal-study) .narrative-marker {
+  display: none;
+  pointer-events: none;
+}
+@media (min-width: 960px) {
+  :is(.case-study-system, #hh-goal-study) .narrative-body {
+    display: flow-root;
+    position: relative;
+  }
+  :is(.case-study-system, #hh-goal-study) .narrative-line {
+    display: block;
+    position: absolute;
+    inset-block: 0;
+    inset-inline-start: calc(-1 * var(--cs-rail-offset) - .5px);
+    width: 1px;
+    background: color-mix(in srgb, var(--line) 65%, var(--page));
+  }
+  :is(.case-study-system, #hh-goal-study) .narrative-heading { position: relative; }
+  :is(.case-study-system, #hh-goal-study) .narrative-marker {
+    display: block;
+    position: absolute;
+    inset-inline-start: calc(-1 * var(--cs-rail-offset) - 4px);
+    /* Centre on the heading's first line, including when it wraps or type grows. */
+    inset-block-start: .675em;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--stage);
+  }
+}

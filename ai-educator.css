@@ -1,0 +1,73 @@
+/* AI-specific evidence layouts. Typography and stage colours belong to the shared system. */
+.ai-educator-case-study .site-header,
+.ai-educator-case-study .header-inner { min-height: 144px; }
+.ai-story-page { max-width: 1120px; padding-top: 24px; padding-bottom: 32px; }
+.ai-story { margin-top: 24px; color: var(--text); }
+.ai-story *, .ai-story *::before, .ai-story *::after { box-sizing: border-box; }
+.ai-story [hidden], .ai-story .scenario-panel[hidden], .ai-story .scenario-controls[hidden] { display: none; }
+.ai-story .story-intro { display: grid; gap: 32px; padding-bottom: 32px; }
+.ai-story .intro-copy > p { max-width: 64ch; }
+.ai-story h2 { margin: 0; }
+.ai-story .chapter-overview { display: grid; gap: 24px; }
+.ai-story figure { margin: 0; min-width: 0; }
+.ai-story figure img { display: block; width: 100%; height: auto; border-radius: 12px; }
+.ai-story .case-study-expandable { display: block; padding: 0; border-radius: 12px; }
+.ai-story .intro-product { align-self: center; }
+.ai-story figcaption { margin-top: var(--cs-caption-gap); }
+.ai-story .intro-link { display: inline-flex; align-items: center; min-height: 44px; text-underline-offset: 4px; }
+.ai-story .intro-copy .intro-meta { margin-bottom: 20px; }
+.ai-story .intro-copy .intro-status { margin-bottom: 12px; }
+.ai-story .stage-label { margin-top: 0; }
+.ai-story .detail-body { padding: 8px 0 24px; }
+.ai-story details { margin-top: 16px; border-top: 1px solid var(--line); }
+.ai-story summary::after { content: '+'; color: var(--accent); font-size: 1.5rem; flex-shrink: 0; }
+.ai-story details[open] > summary::after { content: '−'; }
+.ai-story .detail-body > :last-child { margin-bottom: 0; }
+.ai-story .detail-body ul { padding-left: 1.25em; }
+.ai-story .detail-body li + li { margin-top: 8px; }
+.ai-story .audience-range { display: grid; gap: 24px; margin: 28px 0 8px; }
+.ai-story .audience-range > div { padding-top: 16px; border-top: 1px solid var(--stage); }
+.ai-story .audience-range dt { font-family: var(--font-heading); font-weight: 700; margin-bottom: 8px; }
+.ai-story .audience-range dd { margin: 0; color: var(--soft-text); }
+.ai-story .audience-range .outside-scope { border-top-style: dashed; border-top-color: var(--line); }
+.ai-story .scenario-explorer { margin-top: 28px; }
+.ai-story .scenario-controls { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 24px; }
+.ai-story .scenario-controls button { min-height: 44px; padding: 10px 16px; border: 1px solid var(--line); border-radius: 7px; background: var(--bg); color: var(--text); cursor: pointer; }
+.ai-story .scenario-controls button:hover { border-color: var(--accent); }
+.ai-story .scenario-controls button[aria-pressed='true'] { border-color: var(--accent); background: var(--accent); color: var(--bg); }
+.ai-story button:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+.ai-story .scenario-panel { display: grid; gap: 24px; margin-top: 24px; }
+.ai-story .scenario-panel h3 { margin-top: 0; }
+.ai-story .scenario-extract { margin: 0; }
+.ai-story .scenario-extract > div { padding: 16px 0; border-top: 1px solid var(--line); }
+.ai-story .scenario-extract dt { font-family: var(--font-heading); font-weight: 700; margin-bottom: 8px; }
+.ai-story .scenario-extract dd { margin: 0; }
+.ai-story .scenario-extract .professional-check { border-top-color: var(--stage); }
+.ai-story .professional-check dt { color: var(--stage); }
+.ai-story .scenario-panel figcaption { max-width: 55ch; }
+.ai-story .evidence-pair { display: grid; gap: 24px; margin: 24px 0; }
+.ai-story .delivery-record { display: grid; gap: 20px; padding: 0; margin: 28px 0; list-style: none; }
+.ai-story .delivery-record li { border-top: 1px solid var(--stage); padding-top: 16px; }
+.ai-story .delivery-record strong { display: block; font-family: var(--font-heading); margin-bottom: 8px; }
+.ai-story .delivery-record span { color: var(--soft-text); }
+.ai-story .boundary { max-width: var(--cs-prose-measure); border-top: 1px solid var(--stage); padding-top: 16px; margin-top: 24px; }
+.ai-story .boundary p { margin-bottom: 0; }
+.ai-story .supporting-image { max-width: 780px; margin-top: 24px; }
+.ai-story-page .case-study-project-nav { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; margin-top: 40px; }
+@media (min-width: 960px) {
+  .ai-story .story-intro { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); align-items: center; gap: 40px; }
+  .ai-story .audience-range { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .ai-story .scenario-panel { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; }
+  .ai-story .delivery-record { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+  .ai-story .evidence-pair { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
+}
+@media (max-width: 760px) {
+  .ai-educator-case-study .site-header,
+  .ai-educator-case-study .header-inner { min-height: 72px; }
+  .ai-story-page { padding-top: 24px; }
+  .ai-story .story-intro { gap: 24px; }
+  .ai-story .intro-product { max-width: 540px; }
+}
+@media (forced-colors: active) {
+  .ai-story .scenario-controls button[aria-pressed='true'] { outline: 2px solid Highlight; outline-offset: 2px; }
+}
