@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Talking About Online Life case study: translating a safeguarding need into a complete four-week online-safety microlearning intervention for primary-school staff."
+      content="Talking About Online Life: designing a connected safeguarding intervention for staff, parents and pupils, with practical learning and early observations of changed practice."
     />
     <meta name="theme-color" content="#1d1d1d" />
     <title>Talking About Online Life case study | James Spiller</title>
@@ -17,6 +17,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css?v=145" />
+    <link rel="stylesheet" href="online-life.css?v=1" />
+    <link rel="stylesheet" href="case-study-system.css?v=1" />
     <link rel="stylesheet" href="case-study-progress.css?v=1" />
   </head>
   <body class="online-life-case-study" data-page="projects">
@@ -82,247 +84,170 @@
       </div>
     </header>
 
-    <main id="case-study-content" class="case-study-page" tabindex="-1">
-      <article data-reading-progress>
-        <header class="case-study-hero site-shell">
-          <a class="case-study-back" href="projects.html">&larr; Back to projects</a>
-          <h1>Talking About Online Life</h1>
-          <p class="online-life-subheading">Designing short, scenario-led online-safety CPD that helps school staff discuss children&rsquo;s digital lives before a concern escalates.</p>
-          <ul class="case-study-tags" aria-label="Project disciplines">
-            <li>Learning strategy</li>
-            <li>Product design</li>
-            <li>Safeguarding</li>
-            <li>Front-end development</li>
-          </ul>
-          <a class="button-link online-life-live-link" href="https://jamesuxer.github.io/talking-about-online-life/" target="_blank" rel="noopener noreferrer">
-            Open the live four-week experience
-            <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
-          </a>
-          <figure class="case-study-media case-study-hero-media online-life-hero-media">
-            <a class="case-study-expandable" href="assets/images/online-life-hero.webp" aria-label="Open the Talking About Online Life overview at full size">
-              <img src="assets/images/online-life-hero.webp" width="1280" height="720" alt="Talking About Online Life overview with an exercise-book background, introductory card and classroom-object illustration" />
+    <main id="case-study-content" class="site-shell online-story-page" tabindex="-1">
+      <a class="case-study-back" href="projects.html">&larr; Back to projects</a>
+      <article class="case-study-system online-story" data-reading-progress aria-label="Talking About Online Life case study">
+        <header class="story-intro">
+          <div class="intro-copy">
+            <h1>Online safety: a shared responsibility</h1>
+            <p class="intro-meta">Talking About Online Life &middot; September 2026 onwards</p>
+            <p>As online-safety safeguarding lead, I designed a connected intervention for staff, parents and pupils. The aim was to make responsibilities clear and give people practical ways to act.</p>
+            <p>Staff learning, parent workshops and pupil lessons delivered. Early changes in practice remain observations rather than measured impact.</p>
+            <a class="intro-link" href="https://jamesuxer.github.io/talking-about-online-life/" target="_blank" rel="noopener noreferrer">Explore the four-week staff module <span class="visually-hidden">(opens in a new tab)</span></a>
+          </div>
+          <figure class="intro-product">
+            <a class="case-study-expandable" href="assets/images/online-life-week3.webp" aria-label="Enlarge the staff practice activity">
+              <img src="assets/images/online-life-week3.webp" width="1384" height="1000" fetchpriority="high" decoding="async" alt="Week 3 staff learning: an everyday comment about gaming is paired with a calm conversation opener and supportive feedback." />
             </a>
-            <figcaption>The live overview introduces four short weekly modules within a calm exercise-book visual system.</figcaption>
+            <figcaption>Four-week staff module &middot; practising calm first responses in ordinary school moments.</figcaption>
           </figure>
-          <dl class="case-study-meta online-life-meta">
-            <div><dt>Role</dt><dd>Learning experience designer and front-end developer</dd></div>
-            <div><dt>Audience</dt><dd>Teachers, TAs, admin, lunchtime staff and leaders</dd></div>
-            <div><dt>Scope</dt><dd>Strategy, content, UX/UI, accessibility and analytics</dd></div>
-            <div><dt>Delivered</dt><dd>The complete four-week Awareness phase</dd></div>
-          </dl>
-          <section class="online-life-tools" aria-labelledby="online-life-tools-title">
-            <h2 id="online-life-tools-title">Built with</h2>
-            <ul class="online-life-tool-list">
-              <li><span class="online-life-tool-mark" aria-hidden="true">Ch</span><span>ChatGPT</span></li>
-              <li><span class="online-life-tool-mark" aria-hidden="true">Cx</span><span>Codex</span></li>
-              <li><span class="online-life-tool-mark" aria-hidden="true">GA</span><span>Google Analytics 4</span></li>
-              <li><span class="online-life-tool-mark" aria-hidden="true">H5</span><span>HTML5</span></li>
-              <li><span class="online-life-tool-mark" aria-hidden="true">C3</span><span>CSS3</span></li>
-              <li><span class="online-life-tool-mark" aria-hidden="true">JS</span><span>JavaScript</span></li>
-              <li><span class="online-life-tool-mark" aria-hidden="true">GH</span><span>GitHub Pages</span></li>
-            </ul>
-          </section>
         </header>
 
-        <section class="case-study-section case-study-context site-shell" aria-labelledby="online-life-challenge-title">
-          <div class="case-study-prose">
-            <h2 id="online-life-challenge-title">The challenge: share safeguarding ownership</h2>
-            <p>In my role as Computing and Digital Learning Lead, online-safety questions and concerns were routinely referred to me. Conversations with staff suggested that children&rsquo;s online lives could feel like a specialist or technical subject, rather than part of the safeguarding practice every adult already owned.</p>
-            <p>That mattered because pupil concerns sometimes became visible only after a problem had escalated, while parents were also asking the school for practical support. Staff did not need detailed knowledge of every game or platform to begin a useful conversation.</p>
-            <p>The design challenge was to make the subject serious enough to support safeguarding, ordinary enough to discuss without alarm and small enough to fit into an already crowded school week.</p>
-          </div>
-        </section>
-
-        <section class="stage-rail site-shell" aria-labelledby="stage-rail-title">
-          <h2 class="visually-hidden" id="stage-rail-title">Case-study stages</h2>
-          <ol>
-            <li class="stage-discover"><span>01</span><strong>Discover</strong><small>Evidence and constraints</small></li>
-            <li class="stage-define"><span>02</span><strong>Define</strong><small>Behaviour and model</small></li>
-            <li class="stage-develop"><span>03</span><strong>Develop</strong><small>Product and interactions</small></li>
-            <li class="stage-outcome"><span>04</span><strong>Outcome</strong><small>Validation and limits</small></li>
-          </ol>
-        </section>
-
-        <section id="discover" class="case-study-section case-study-stage stage-discover site-shell" aria-labelledby="discover-title">
-          <div class="stage-kicker"><span class="stage-number">01</span><span>Discover</span></div>
-          <div class="case-study-prose">
-            <h2 id="discover-title">Turn school evidence into practical design decisions</h2>
-            <p>The evidence was organisational and contextual, rather than a formal user-research study. I kept the observed pattern, my inference and the resulting design response separate.</p>
-          </div>
-          <ol class="evidence-to-decision" aria-label="Evidence-to-decision mapping">
-            <li class="evidence-card">
-              <p class="evidence-card-source">Source &middot; Specialist referral pattern</p>
-              <p class="evidence-card-type">Finding</p>
-              <h3>Online safety was being treated as specialist expertise</h3>
-              <div class="evidence-card-decision"><span>Design response</span><p>Frame online life as shared safeguarding practice.</p></div>
-            </li>
-            <li class="evidence-card">
-              <p class="evidence-card-source">Source &middot; Pupil concerns after escalation</p>
-              <p class="evidence-card-type">Finding</p>
-              <h3>Useful conversations were sometimes starting late</h3>
-              <div class="evidence-card-decision"><span>Design response</span><p>Teach earlier, everyday conversations that keep the door open.</p></div>
-            </li>
-            <li class="evidence-card">
-              <p class="evidence-card-source">Source &middot; Parent requests</p>
-              <p class="evidence-card-type">Finding</p>
-              <h3>Families wanted practical help from the school</h3>
-              <div class="evidence-card-decision"><span>Design response</span><p>Give staff calm prompts they can use immediately.</p></div>
-            </li>
-            <li class="evidence-card">
-              <p class="evidence-card-source">Source &middot; Limited staff capacity</p>
-              <p class="evidence-card-type">Finding</p>
-              <h3>A large training demand would be difficult to sustain</h3>
-              <div class="evidence-card-decision"><span>Design response</span><p>Use four short modules and one repeatable format.</p></div>
-            </li>
-          </ol>
-          <aside class="validation-note">
-            <strong>Remaining validation</strong>
-            <p>These patterns established a credible need and direction. They do not show how independently using staff will interpret the interface or whether their practice will change.</p>
-          </aside>
-        </section>
-
-        <section id="define" class="case-study-section case-study-stage stage-define site-shell" aria-labelledby="define-title">
-          <div class="stage-kicker"><span class="stage-number">02</span><span>Define</span></div>
-          <div class="case-study-prose">
-            <h2 id="define-title">Define one behaviour, then repeat it</h2>
-            <p>I moved the focus away from teaching staff about individual platforms. The central behaviour became simpler: notice a small reference to online life, ask a calm question and keep the door open. If a concern appears, the school&rsquo;s safeguarding route takes over.</p>
-          </div>
-          <ol class="behaviour-diagram" aria-label="Behavioural reframe from noticing a reference to following the safeguarding route">
-            <li class="diagram-node"><span>01</span><strong>Notice</strong><small>A child mentions online life</small></li>
-            <li class="diagram-node diagram-node-focal"><span>02</span><strong>Ask calmly</strong><small>Curiosity, not platform expertise</small></li>
-            <li class="diagram-node"><span>03</span><strong>Keep listening</strong><small>Make future conversations easier</small></li>
-            <li class="diagram-node"><span>04</span><strong>Respond</strong><small>Use the safeguarding route when needed</small></li>
-          </ol>
-          <div class="case-study-prose online-life-scope-copy">
-            <h3>From a 12-week strategy to a complete intervention</h3>
-            <p>The broader concept was a 12-week culture-change pathway across Awareness, Confidence and Action. I delivered the complete four-week Awareness phase first. The overview and all four weekly modules are finished and live; Confidence and Action remain potential extensions.</p>
-          </div>
-          <figure class="scope-diagram">
-            <div class="scope-diagram-group">
-              <p>Proposed 12-week culture-change strategy</p>
-              <ol>
-                <li class="diagram-node diagram-node-focal"><span>Delivered</span><strong>Awareness</strong><small>Four complete weekly modules</small></li>
-                <li class="diagram-node"><span>Potential extension</span><strong>Confidence</strong></li>
-                <li class="diagram-node"><span>Potential extension</span><strong>Action</strong></li>
-              </ol>
+        <div class="narrative-body">
+          <span class="narrative-line" aria-hidden="true"></span>
+          <section class="story-chapter discover group-start" id="discover" aria-labelledby="challenge-title">
+            <p class="stage-label">Discover</p>
+            <div class="chapter-copy">
+              <h2 class="narrative-heading" id="challenge-title"><span class="narrative-marker" aria-hidden="true"></span>Staff lacked confidence and a clear sense of responsibility.</h2>
+              <p class="chapter-bridge">Online-safety concerns were routinely referred to me. Conversations suggested that some staff saw the subject as specialist territory and felt uncomfortable discussing it with pupils. I inferred that awareness of responsibilities needed practical support alongside it.</p>
             </div>
-            <figcaption>The wider strategy provides context. Only the four-week Awareness phase is presented as delivered work.</figcaption>
-          </figure>
-          <section class="learning-model" aria-labelledby="learning-model-title">
-            <div class="case-study-prose">
-              <h3 id="learning-model-title">A repeatable learning model</h3>
-              <p>Each module follows the same sequence, with immediate, non-punitive feedback that builds judgement without turning safeguarding into a recall test.</p>
+            <details>
+              <summary>What informed the problem</summary>
+              <div class="detail-body reading">
+                <p>The evidence came from my safeguarding role, recurring referrals and conversations with staff. This was organisational and contextual evidence, rather than a formal user-research study.</p>
+                <p>My interpretation was that staff needed a way to begin useful conversations without knowing every game or platform. Limited staff capacity also shaped the decision to use short, repeatable learning.</p>
+                <p>These observations informed the design direction. They did not establish how independently using staff would interpret the digital interface.</p>
+              </div>
+            </details>
+          </section>
+
+          <section class="story-chapter define group-start" id="define" aria-labelledby="strategy-title">
+            <p class="stage-label">Define</p>
+            <div class="chapter-copy">
+              <h2 class="narrative-heading" id="strategy-title"><span class="narrative-marker" aria-hidden="true"></span>I designed a joined-up safeguarding response.</h2>
+              <p class="chapter-bridge">Safeguarding guidance and ten years in education informed my decision to involve staff, parents and pupils. The delivery approach connected staff development with parent workshops and internet-safety lessons in computing.</p>
             </div>
-            <ol aria-label="Story, Notice, Guidance, Try and Reflect sequence">
-              <li><span>01</span><strong>Story</strong><small>A recognisable school moment</small></li>
-              <li><span>02</span><strong>Notice</strong><small>Interpret what it might mean</small></li>
-              <li><span>03</span><strong>Guidance</strong><small>Connect to safeguarding</small></li>
-              <li><span>04</span><strong>Try</strong><small>Choose one realistic action</small></li>
-              <li><span>05</span><strong>Reflect</strong><small>Place it in real practice</small></li>
+            <dl class="stakeholder-map" aria-label="Connected audiences and delivered activities">
+              <div><dt>Staff</dt><dd>Online learning and professional development on responsibilities and practical responses.</dd></div>
+              <div><dt>Parents</dt><dd>Workshops as part of the wider safeguarding intervention.</dd></div>
+              <div><dt>Pupils</dt><dd>Internet-safety lessons within computing.</dd></div>
+            </dl>
+            <details>
+              <summary>Why the approach includes the wider school community</summary>
+              <div class="detail-body reading">
+                <p>The wider approach was a professional design decision from the outset. The module was one part of that response, rather than a separate product whose results determined whether parents and pupils should be involved.</p>
+                <p><a href="https://learning.nspcc.org.uk/online-safety/online-safety-for-schools" target="_blank" rel="noopener noreferrer">NSPCC Learning’s guidance on online safety and schools</a> recommends a whole-school approach involving staff and parents, alongside teaching children about online safety. It supports the rationale for connecting these audiences; it does not evaluate this intervention.</p>
+              </div>
+            </details>
+          </section>
+
+          <section class="story-chapter develop group-start" id="develop" aria-labelledby="interaction-title">
+            <p class="stage-label">Develop</p>
+            <div class="chapter-copy">
+              <h2 class="narrative-heading" id="interaction-title"><span class="narrative-marker" aria-hidden="true"></span>I made the first action small and practical.</h2>
+              <p class="chapter-bridge">The staff module uses familiar situations, calm questions and supportive feedback. Maya mentions an unfamiliar game: asking “What do you like about it?” gives the adult a starting point. Concerns still follow the school’s safeguarding route.</p>
+            </div>
+            <ol class="behaviour-path" aria-label="Intended staff response, from noticing to safeguarding action">
+              <li><strong>Notice</strong><span>A reference to online life.</span></li>
+              <li><strong>Ask calmly</strong><span>A simple, open question.</span></li>
+              <li><strong>Keep listening</strong><span>Space for the pupil to respond.</span></li>
+              <li><strong>Follow the safeguarding route</strong><span>When a concern appears.</span></li>
             </ol>
-            <p class="online-life-model-note">Week 1 begins with Maya mentioning an unfamiliar game. The adult does not need to recognise it. Asking &ldquo;What do you like about it?&rdquo; is enough to begin.</p>
+            <div class="interaction-evidence" data-interaction-evidence>
+              <div class="state-controls" data-state-controls role="group" aria-label="Compare the interaction before and after a selection" hidden>
+                <button type="button" aria-controls="notice-before" aria-pressed="true">Before selection</button>
+                <button type="button" aria-controls="notice-feedback" aria-pressed="false">Feedback after selection</button>
+              </div>
+              <p class="visually-hidden" data-state-status role="status" aria-atomic="true"></p>
+              <section class="state-panel" id="notice-before" aria-labelledby="before-title">
+                <div class="state-copy">
+                  <h3 id="before-title">Notice the opportunity</h3>
+                  <p>The activity asks what an adult could notice in Maya’s comment. It focuses attention on the pupil’s experience, rather than testing knowledge of the game.</p>
+                </div>
+                <figure>
+                  <a class="case-study-expandable" href="assets/images/online-life-notice-before.webp" aria-label="Enlarge the activity before a selection"><img src="assets/images/online-life-notice-before.webp" width="1280" height="720" loading="lazy" alt="Pause and notice activity with four unselected responses about Maya’s comment and the adult’s opportunity to respond." /></a>
+                  <figcaption>Before selection &middot; an interpretation task grounded in an ordinary school moment.</figcaption>
+                </figure>
+              </section>
+              <section class="state-panel" id="notice-feedback" aria-labelledby="feedback-title">
+                <div class="state-copy">
+                  <h3 id="feedback-title">Explain why the response matters</h3>
+                  <p>Selecting that Maya is talking about something important to her reveals an explanation. The feedback connects the small moment to the intended safeguarding approach; it is not evidence that the approach has changed behaviour.</p>
+                </div>
+                <figure>
+                  <a class="case-study-expandable" href="assets/images/online-life-notice-after.webp" aria-label="Enlarge the feedback after a selection"><img src="assets/images/online-life-notice-after.webp" width="1280" height="720" loading="lazy" alt="Maya response selected, with immediate feedback explaining why taking an interest in her online life can open communication." /></a>
+                  <figcaption>After selection &middot; explanatory feedback. These are interaction states, not a before-and-after design revision.</figcaption>
+                </figure>
+              </section>
+            </div>
+            <details>
+              <summary>How the four weeks support practice</summary>
+              <div class="detail-body reading">
+                <p>Each week follows Story → Notice → Guidance → Try → Reflect. The sequence introduces a recognisable moment, asks staff to interpret it, connects it to guidance and ends with a small action and reflection.</p>
+                <p>Weeks 1 and 2 introduce everyday online life and repeated conversation. Week 3 offers five ordinary moments to practise a response. Week 4 asks staff to choose a role-specific habit and create a private action plan.</p>
+                <div class="supporting-pair">
+                  <figure>
+                    <a class="case-study-expandable" href="assets/images/online-life-storyboard.webp" aria-label="Enlarge Maya’s storyboard"><img src="assets/images/online-life-storyboard.webp" width="1280" height="720" loading="lazy" alt="Four-panel storyboard showing Maya mentioning a game, an adult not recognising it, and the choice to ask a calm question." /></a>
+                    <figcaption>A familiar situation introduces the decision before the guidance.</figcaption>
+                  </figure>
+                  <figure>
+                    <a class="case-study-expandable" href="assets/images/online-life-week4.webp" aria-label="Enlarge the role-specific action plan"><img src="assets/images/online-life-week4.webp" width="1440" height="1063" loading="lazy" alt="Week 4 action plan for office or admin staff, including a role-specific habit and options to copy, download or create an email draft." /></a>
+                    <figcaption>The final activity makes the next action specific to a staff role.</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </details>
           </section>
-        </section>
 
-        <section id="develop" class="case-study-section case-study-stage stage-develop site-shell" aria-labelledby="develop-title">
-          <div class="stage-kicker"><span class="stage-number">03</span><span>Develop</span></div>
-          <div class="case-study-prose">
-            <h2 id="develop-title">Build the complete four-week experience in code</h2>
-            <p>There was no separate Figma phase. I designed and iterated in the browser, using AI to accelerate content exploration and implementation while retaining responsibility for the learning strategy, interactions, safeguarding framing and final copy.</p>
-            <p>The exercise-book visual world connects the CPD to everyday classroom practice without turning it into a children&rsquo;s activity. Lined paper, restrained annotations and object-based illustrations add warmth without using identifiable pupils, platform branding or fear-based cyber-safety imagery.</p>
-          </div>
-          <div class="product-evidence-grid" aria-label="Finished Week 1 to Week 4 interface evidence">
-            <figure class="case-study-media">
-              <a class="case-study-expandable" href="assets/images/online-life-week1.webp" aria-label="Open the finished Week 1 interface at full size">
-                <img src="assets/images/online-life-week1.webp" width="1280" height="720" loading="lazy" alt="Finished Week 1 introduction titled Online life is everyday life, with an exercise-book layout and classroom-object illustration" />
-              </a>
-              <figcaption><strong>Week 1: everyday lives.</strong> Maya&rsquo;s story establishes relevance before policy or guidance.</figcaption>
-            </figure>
-            <figure class="case-study-media">
-              <a class="case-study-expandable" href="assets/images/online-life-week2.webp" aria-label="Open the finished Week 2 interface at full size">
-                <img src="assets/images/online-life-week2.webp" width="1280" height="720" loading="lazy" alt="Finished Week 2 introduction titled Make online life normal to talk about, with speech bubbles and classroom objects" />
-              </a>
-              <figcaption><strong>Week 2: talking builds trust.</strong> Repetition shifts the idea from one conversation to an everyday habit.</figcaption>
-            </figure>
-            <figure class="case-study-media">
-              <a class="case-study-expandable" href="assets/images/online-life-week3.webp" aria-label="Open the finished Week 3 response and feedback state at full size">
-                <img src="assets/images/online-life-week3.webp" width="1384" height="1000" loading="lazy" alt="Finished Week 3 practice screen showing a late-gaming comment, the selected calm question What were you playing, and immediate supportive feedback" />
-              </a>
-              <figcaption><strong>Week 3: natural openings.</strong> Five ordinary moments let staff practise calm, proportionate first responses and change their answer after feedback.</figcaption>
-            </figure>
-            <figure class="case-study-media">
-              <a class="case-study-expandable" href="assets/images/online-life-week4.webp" aria-label="Open the finished Week 4 action-plan state at full size">
-                <img src="assets/images/online-life-week4.webp" width="1440" height="1063" loading="lazy" alt="Finished Week 4 action-plan screen for office or admin staff, with a role-specific habit, plan preview and copy, download and email-draft controls" />
-              </a>
-              <figcaption><strong>Week 4: a whole-school habit.</strong> Role selection, a safeguarding checkpoint and a private action plan make the next step specific.</figcaption>
-            </figure>
-          </div>
-          <div class="develop-notes">
-            <section>
-              <h3>Accessible interaction</h3>
-              <p>Semantic headings, a skip link, visible focus, labelled controls, pressed states and live feedback support keyboard, touch and screen-reader use.</p>
-            </section>
-            <section>
-              <h3>Short, stable format</h3>
-              <p>Each standalone link uses the same two-to-four-minute structure, suitable for independent use or a short staff briefing.</p>
-            </section>
-            <section>
-              <h3>Careful measurement</h3>
-              <p>Aggregate events record reach and interaction without staff accounts. Instrumentation is useful for diagnosis, but it cannot establish impact.</p>
-            </section>
-          </div>
-          <p class="online-life-accessibility-note">These are implemented accessibility measures, not a claim of formal conformance. Supporting email and QR touchpoints were prototyped; a proposed short video was not produced.</p>
-        </section>
-
-        <section id="outcome" class="case-study-section case-study-stage stage-outcome site-shell" aria-labelledby="outcome-title">
-          <div class="stage-kicker"><span class="stage-number">04</span><span>Outcome</span></div>
-          <div class="case-study-prose">
-            <h2 id="outcome-title">Organisational validation, with the limits kept visible</h2>
-            <p>I guided SLT through the functioning four-week intervention. This was an organisational stakeholder walkthrough, not usability testing. SLT approved the genuine need, calm tone, short weekly format, interface and rollout direction.</p>
-            <p>Low staff capacity made the end of the summer term unsuitable, so rollout moved to the beginning of the following school year.</p>
-          </div>
-          <div class="outcome-pair">
-            <section>
-              <p class="outcome-pair-label">Delivered work</p>
-              <h3>A complete four-week Awareness intervention</h3>
-              <p>The overview and all four weekly modules are complete and live. The build demonstrates product delivery and an organisationally approved direction.</p>
-            </section>
-            <section>
-              <p class="outcome-pair-label">Next validation</p>
-              <h3>Independent staff use and behavioural evaluation</h3>
-              <p>Rollout must still test whether staff can use the interactions without guidance, find the scenarios relevant and identify an action they would realistically try.</p>
-            </section>
-          </div>
-          <aside class="instrumentation-note evidence-card">
-            <p class="evidence-card-source">Instrumentation check &middot; Small, uncontrolled sample</p>
-            <h3>16 page views, 9 active users and 192 events</h3>
-            <p>These early figures show that GA4 event instrumentation was firing. Traffic provenance has not been established, so they are not evidence of completion, learning, staff confidence, behaviour change or safeguarding impact.</p>
-          </aside>
-          <div class="case-study-prose online-life-evaluation">
-            <h3>Limitations and next evaluation</h3>
-            <ul>
-              <li>Independent staff use and sustained behavioural impact remain unproven.</li>
-              <li>Short interviews are needed to explain where analytics show attention dropping.</li>
-              <li>Follow-up should examine whether prompts lead to more regular conversations and earlier recognition of concerns.</li>
-              <li>The live content needs a dated review of its KCSIE 2025 and Ofcom 2024 references before wider deployment.</li>
-            </ul>
-          </div>
-          <section class="case-study-links" aria-labelledby="online-life-links-title">
-            <h3 id="online-life-links-title">Product and guidance links</h3>
-            <ul>
-              <li><a href="https://jamesuxer.github.io/talking-about-online-life/" target="_blank" rel="noopener noreferrer">Open the live four-week experience</a></li>
-              <li><a href="https://github.com/JamesUXer/talking-about-online-life" target="_blank" rel="noopener noreferrer">View the learning-product source</a></li>
-              <li><a href="https://www.gov.uk/government/publications/keeping-children-safe-in-education--2" target="_blank" rel="noopener noreferrer">Department for Education: Keeping children safe in education</a></li>
-              <li><a href="https://www.ofcom.org.uk/siteassets/resources/documents/research-and-data/media-literacy-research/children/children-media-use-and-attitudes-2024/childrens-media-literacy-report-2024.pdf" target="_blank" rel="noopener noreferrer">Ofcom: Children&rsquo;s Media Literacy Report 2024</a></li>
-            </ul>
+          <section class="story-chapter develop" id="delivery" aria-labelledby="delivery-title">
+            <div class="chapter-copy">
+              <h2 class="narrative-heading" id="delivery-title"><span class="narrative-marker" aria-hidden="true"></span>The module started a wider programme.</h2>
+              <p class="chapter-bridge">The four-week staff module was used from September 2026. Staff professional development, parent workshops and pupil lessons followed as connected parts of the intervention. Further activity is planned; sustained change needs continued work and evaluation.</p>
+            </div>
+            <details>
+              <summary>Delivery, stakeholder review and product details</summary>
+              <div class="detail-body reading">
+                <h3>Delivered scope</h3>
+                <p>The overview and all four weekly experiences are live. The broader intervention also includes the staff development, parent workshops and pupil lessons described above. Those activities should not be confused with completion of a separate twelve-week digital course.</p>
+                <p>An earlier concept proposed Awareness, Confidence and Action over twelve weeks. Only the four-week Awareness module is presented as a delivered digital sequence. Supporting email and QR touchpoints were prototyped; a proposed video was not produced.</p>
+                <h3>Organisational review</h3>
+                <p>I guided senior leadership through the functioning module. They approved the need, calm tone, short format, interface and rollout direction. This was a stakeholder walkthrough, rather than usability testing.</p>
+                <h3>Implementation and accessibility</h3>
+                <p>I designed and iterated in the browser, using AI-assisted development while retaining responsibility for the strategy, interactions and safeguarding framing. Semantic headings, a skip link, visible focus, labelled controls and live feedback are implemented measures, rather than a claim of formal accessibility conformance.</p>
+                <p><a href="https://github.com/JamesUXer/talking-about-online-life" target="_blank" rel="noopener noreferrer">View the learning-product source</a></p>
+              </div>
+            </details>
           </section>
-        </section>
 
+          <section class="story-chapter deliver group-start" id="outcome" aria-labelledby="outcome-title">
+            <p class="stage-label">Outcome</p>
+            <div class="chapter-copy">
+              <h2 class="narrative-heading" id="outcome-title"><span class="narrative-marker" aria-hidden="true"></span>I’ve observed early changes in reporting and teaching.</h2>
+              <p class="chapter-bridge">Since rollout, I’ve observed increased reporting of internet-safety incidents and more internet-safety teaching across all year groups. These observations come from my role as online-safety safeguarding lead.</p>
+            </div>
+            <aside class="boundary"><p>Increased reporting may reflect better recognition or willingness to report. These observations do not establish more incidents, sustained behaviour change or improved pupil safety.</p></aside>
+            <details>
+              <summary>Evidence limits and the next evaluation</summary>
+              <div class="detail-body reading">
+                <p>The reporting and teaching changes are professional observations, not a quantified before-and-after evaluation. Follow-up needs to examine how staff apply the approach, whether practice persists and what incident records can reliably show.</p>
+                <p>Independent use of the module also needs usability evaluation. Analytics can help identify where people stop or interact, but interviews or observed sessions are needed to understand why.</p>
+                <h3>Earlier instrumentation check</h3>
+                <p>16 page views, 9 active users and 192 events showed that GA4 events were firing. Traffic provenance was not established. These figures are retained as an instrumentation check, not evidence of training completion, learning or safeguarding impact.</p>
+                <h3>Dated references in the module</h3>
+                <ul>
+                  <li><a href="https://www.gov.uk/government/publications/keeping-children-safe-in-education--2" target="_blank" rel="noopener noreferrer">Department for Education: Keeping children safe in education</a> (the module cites the 2025 edition).</li>
+                  <li><a href="https://www.ofcom.org.uk/siteassets/resources/documents/research-and-data/media-literacy-research/children/children-media-use-and-attitudes-2024/childrens-media-literacy-report-2024.pdf" target="_blank" rel="noopener noreferrer">Ofcom: Children’s Media Literacy Report 2024</a>.</li>
+                </ul>
+                <p>The module’s dated references need a currency review as part of ongoing content maintenance.</p>
+              </div>
+            </details>
+          </section>
+        </div>
       </article>
-        <nav class="case-study-project-nav site-shell" aria-label="Project navigation">
-          <a class="button-link" href="ai-educator.html">&larr; Previous project</a>
-          <a class="button-link" href="projects.html">All projects <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
-        </nav>
+      <nav class="case-study-project-nav" aria-label="Project navigation">
+        <a class="button-link" href="ai-educator.html">&larr; Previous project</a>
+        <a class="button-link" href="projects.html">All projects <svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
+      </nav>
     </main>
 
     <dialog class="case-study-lightbox" aria-label="Expanded case-study image">
@@ -332,6 +257,7 @@
 
     <footer class="site-footer"><div class="site-shell"><p>&copy; <span id="year"></span> James Spiller</p></div></footer>
     <script src="scripts.js?v=36"></script>
+    <script src="online-life.js?v=1"></script>
     <script src="case-study-progress.js?v=1"></script>
   </body>
 </html>
