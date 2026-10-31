@@ -74,3 +74,15 @@ themes, with disclosures closed and expanded. Check title/heading wrapping, body
 measure, captions, stage colours, spacing and horizontal overflow. Exercise
 disclosure keyboard controls, focus visibility, image enlargement and reduced
 motion. Preserve evidence, attribution and validation boundaries.
+
+## Final project navigation
+
+Match Salient Bio’s bottom navigation row. Apply one width constraint: a constrained
+`main.site-shell` owns the gutter, so its navigation fills that width without a
+second shell inset. Keep the row unwrapped, with zero margin and 48px top padding;
+main bottom padding is 80px on desktop and 48px up to 760px.
+
+Place Previous project on the left and Next project on the right. The completed
+sequence is HabitHero → Salient Bio → AI Educator → Talking About Online Life →
+AC Law. Use All projects at the sequence endpoints. Cosmonauts remains separate:
+All projects on the left, Next project linking to HabitHero on the right.

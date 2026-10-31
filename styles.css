@@ -5295,3 +5295,23 @@ html:not(.navigation-ready) :is(.menu-button, [data-action="theme"], [data-actio
     padding-inline: var(--page-gutter);
   }
 }
+
+/* Case-study closing navigation: Salient Bio is the shared reference.
+   Full-width mains use .site-shell on the nav; constrained mains already own it. */
+main.site-shell > .case-study-project-nav {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  border-top: 1px solid var(--line);
+}
+main.site-shell:has(> .case-study-project-nav) { padding-bottom: 5rem; }
+
+@media (max-width: 760px) {
+  main.site-shell:has(> .case-study-project-nav) { padding-bottom: 3rem; }
+}
