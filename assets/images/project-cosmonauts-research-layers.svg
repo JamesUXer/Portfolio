@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="696" viewBox="0 0 1200 696" role="img" aria-label="Illustrative task prompt, prototype and evidence as three linked research artefacts"><defs><filter id="shadow" x="-25%" y="-25%" width="155%" height="170%"><feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#111b18" flood-opacity=".22"/></filter></defs>
+<rect width="1200" height="696" fill="#263a35"/>
+<g filter="url(#shadow)"><rect x="270" y="65" width="670" height="535" rx="15" fill="#f7f7f4"/>
+<path d="M285 65H925Q940 65 940 80V125H270V80Q270 65 285 65" fill="#dcb15d"/>
+<g fill="#745f38"><circle cx="301" cy="96" r="6"/><circle cx="322" cy="96" r="6"/><circle cx="343" cy="96" r="6"/></g>
+<g font-family="Arial,sans-serif"><text x="384" y="105" font-size="26" font-weight="700" fill="#263a35">Prototype activity</text>
+<text x="315" y="191" font-size="35" font-weight="700" fill="#233b31">Proposed audience</text><text x="315" y="235" font-size="25" fill="#4c6357">People working in product design</text>
+<rect x="315" y="274" width="550" height="122" rx="9" fill="#e6ede7"/>
+<text x="344" y="319" font-size="21" font-weight="700" fill="#365c4b">Role</text><text x="344" y="357" font-size="28" fill="#263e32">Product designer</text>
+<text x="315" y="447" font-size="24" fill="#4c6357">Based on the uploaded brief</text>
+<rect x="315" y="479" width="260" height="64" rx="7" fill="#214e42"/><text x="351" y="520" font-size="26" font-weight="700" fill="#fff">Inspect source</text>
+</g></g>
+<g filter="url(#shadow)"><rect x="58" y="156" width="250" height="348" rx="12" fill="#e4bb69"/>
+<g font-family="Arial,sans-serif" fill="#233b31"><text x="90" y="206" font-size="22" font-weight="700">The task</text><path d="M89 231H280" stroke="#ad8c4b" stroke-width="2"/>
+<text x="90" y="286" font-size="32" font-weight="700"><tspan x="90">Review this</tspan><tspan x="90" dy="40">proposed</tspan><tspan x="90" dy="40">audience.</tspan></text>
+<text x="90" y="427" font-size="24"><tspan x="90">What is it</tspan><tspan x="90" dy="33">based on?</tspan></text>
+</g></g>
+<g filter="url(#shadow)"><rect x="817" y="307" width="328" height="322" rx="12" fill="#c7d8c7"/>
+<g font-family="Arial,sans-serif" fill="#233b31"><text x="846" y="357" font-size="29" font-weight="700">Evidence</text><text x="846" y="390" font-size="18">Fictional session</text><path d="M846 411H1116" stroke="#9eaf9f" stroke-width="2"/>
+<text x="846" y="452" font-size="21" font-weight="700">Action</text><text x="846" y="485" font-size="24">Inspected source</text>
+<text x="846" y="536" font-size="21" font-weight="700">Answer</text><text x="846" y="571" font-size="24">The uploaded brief</text>
+</g></g>
+</svg>
