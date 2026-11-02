@@ -63,3 +63,7 @@ Official docs:
 
 - https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
 - https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+
+## Playground
+
+`playground.html` contains the interactive island, six experiments, annotated design moments and full-size play links. `playground.js`, `playground-testing.js`, `playground.css` and `playground-world.css` implement the experience. Runtime assets are under `assets/playground/`. Field notes is a clearly labelled fictional demo with separate local storage; Testing journeys is an illustrative explanation without research collection. The private testing platforms and participant data are not included. Legacy `work-in-progress.html` links redirect into the Playground.

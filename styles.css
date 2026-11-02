@@ -5315,3 +5315,7 @@ main.site-shell:has(> .case-study-project-nav) { padding-bottom: 5rem; }
 @media (max-width: 760px) {
   main.site-shell:has(> .case-study-project-nav) { padding-bottom: 3rem; }
 }
+
+/* Playground navigation: retain the existing tablet and mobile shell. */
+@media(min-width:761px) and (max-width:1100px){.desktop-nav{gap:clamp(1rem,2.5vw,1.75rem)}}
+@media(max-width:760px){.mobile-menu{overflow-y:auto;overscroll-behavior:contain}}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 669 399">
+  <defs>
+    <mask id="clearance" maskUnits="userSpaceOnUse" x="0" y="0" width="669" height="399" mask-type="luminance">
+      <rect width="669" height="399" fill="white"/>
+      <rect x="318" y="84" width="130" height="54" fill="black"/>
+      <path d="M326 136 V113 L334.5 107 L343 113 V101 H338 L376 77 L414 101 H409 V113 L417.5 107 L426 113 V136 Z" fill="black"/>
+    </mask>
+  </defs>
+  <rect width="669" height="399" fill="white" mask="url(#clearance)"/>
+</svg>

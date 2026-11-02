@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0B5D52" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'" />
+<title>Field notes: fictional Playground demo</title>
+<link rel="stylesheet" href="css/styles.css?v=demo2" />
+</head>
+<body>
+  <header class="topbar">
+    <button id="btn-back" class="icon-btn" hidden aria-label="Back to home">←</button>
+    <h1 id="screen-title">Cosmonauts UX Research Field Evidence Logger</h1>
+  </header>
+
+  <p class="demo-notice">Fictional demo. Notes stay in this browser. Use sample data, not real research.</p>
+  <main id="app">
+    <section id="view-home" class="view" aria-label="Home"></section>
+    <section id="view-form" class="view" hidden aria-label="Entry form"></section>
+    <section id="view-saved" class="view" hidden aria-label="Saved entries"></section>
+    <section id="view-export" class="view" hidden aria-label="Export"></section>
+    <section id="view-guide" class="view" hidden aria-label="Question guide"></section>
+  </main>
+
+  <div id="toast" class="toast" role="status" hidden></div>
+
+  <script src="js/constants.js?v=demo2"></script>
+  <script src="js/db.js?v=demo2"></script>
+  <script src="js/export.js?v=demo2"></script>
+  <script src="js/app.js?v=demo2"></script>
+</body>
+</html>
