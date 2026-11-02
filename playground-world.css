@@ -1,10 +1,10 @@
 /* Developed island: woodland entry, school collection and reserved machinery. */
 :root { --study-line:#eeeede; --study-ink:var(--text); --wash-strength:.72; }
 :root[data-theme="light"] { --study-line:#343b35; --wash-strength:.62; }
-.scene { --island-width:min(62%,840px,calc((100svh - 190px)*1.15)); --island-top:24%; position:relative; isolation:isolate; min-height:480px; height:calc(100svh - 190px); overflow:hidden; }
+.scene { --island-width:min(82%,1120px,calc((100svh - 220px)*1.67669)); --island-top:calc(50% + 32px); position:relative; isolation:isolate; margin:0; min-height:440px; height:calc(100svh - 96px); overflow:hidden; }
 .overview-scene { position:absolute; inset:0; transform-origin:0 0; transition:transform 1050ms cubic-bezier(.65,0,.2,1),opacity 500ms 180ms; }
 .arrival-title { position:absolute; top:3%; left:6%; color:var(--study-ink); font:400 clamp(28px,3.5vw,48px)/1.1 var(--font-display,'Archivo Black',sans-serif); z-index:3; }
-.arrival-colour { position:absolute; width:var(--island-width); aspect-ratio:669/399; left:50%; top:var(--island-top); transform:translateX(-50%); pointer-events:none; }
+.arrival-colour { position:absolute; width:var(--island-width); aspect-ratio:669/399; left:50%; top:var(--island-top); transform:translate(-50%,-50%); pointer-events:none; }
 .wash { position:absolute; opacity:var(--wash-strength); pointer-events:none; max-width:none; }
 /* The original clear paint is local to the island, with open space around it. */
 /* Separate, level washes follow the island's coordinates rather than the viewport. */
@@ -12,7 +12,7 @@
 .wash-coral { width:25%; height:30%; left:67%; top:53%; filter:hue-rotate(86deg); }
 .wash-teal { width:30%; height:29%; left:10%; top:10%; transform:scaleX(-1); filter:hue-rotate(-112deg); }
 .wash-gold { width:34%; height:28%; left:48%; top:12%; filter:hue-rotate(153deg); }
-.island { position:absolute; z-index:1; width:var(--island-width); left:50%; top:var(--island-top); transform:translateX(-50%); aspect-ratio:669/399; transition:transform 850ms cubic-bezier(.2,.8,.2,1),opacity 500ms; pointer-events:none; }
+.island { position:absolute; z-index:1; width:var(--island-width); left:50%; top:var(--island-top); transform:translate(-50%,-50%); aspect-ratio:669/399; transition:transform 850ms cubic-bezier(.2,.8,.2,1),opacity 500ms; pointer-events:none; }
 .island .hero-artwork,.island .hero-sheen-layer { position:absolute; inset:0; width:100%; height:100%; display:block; transform:none; aspect-ratio:669/399; }
 .island .hero-artwork { background:transparent; -webkit-mask:none; mask:none; object-fit:contain; filter:url(#study-artwork-contrast) brightness(0) invert(1); opacity:.92; }
 :root[data-theme="light"] .island .hero-artwork { filter:url(#study-artwork-contrast) brightness(0); opacity:.78; }
@@ -45,7 +45,7 @@
 .scene:not([data-scene="island"]) .portal-wash { opacity:.18; }
 
 @media(max-width:760px) {
-  .scene { --island-width:94%; --island-top:34%; height:calc(100svh - 210px); min-height:560px; }
+  .scene { --island-width:min(96%,calc((100svh - 190px)*1.67669)); --island-top:calc(50% + 32px); height:calc(100svh - 78px); min-height:300px; }
   .arrival-title { top:4%; left:6%; font-size:31px; }
   .collection-portal { --home-width:58; --home-height:22; --home-left:40; --home-top:14; }
   .cloud-entry { width:58%; height:27%; left:40%; top:14%; padding-bottom:3%; font-size:18px; }

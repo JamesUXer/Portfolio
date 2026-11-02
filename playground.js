@@ -447,7 +447,7 @@
     if (!width || !height || !stageWidth || !stageHeight) return;
     const home = {
       x:island.offsetLeft-width/2+width*316/669,
-      y:island.offsetTop+height*70/399,
+      y:island.offsetTop-height/2+height*70/399,
       width:width*122/669,
       height:height*78/399
     };
