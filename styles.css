@@ -1403,6 +1403,11 @@ a.project-image-link:hover img {
   opacity: 0.92;
 }
 
+/* Keep the homepage name dominant over its background illustration. */
+:root[data-theme="dark"] .home-hero .hero-artwork {
+  opacity: 0.65;
+}
+
 /* Separate navigation lettering from the brighter lines passing behind it. */
 :root[data-theme="dark"]:has(.home-hero, .projects-page-hero) .desktop-nav a {
   text-shadow: 0 0 3px var(--bg), 0 0 6px var(--bg);
