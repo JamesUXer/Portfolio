@@ -457,7 +457,9 @@ async function initHeroSheen() {
   const sheenLayer = document.querySelector(".hero-sheen-layer");
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-  if (!artwork || !sheenLayer || reducedMotion.matches) return;
+  if (!artwork || !sheenLayer || reducedMotion.matches || !artwork.getClientRects().length) return;
+
+  const isProjectsPage = document.body.dataset.page === "projects";
 
   // Prototype controls: appearance is in styles.css; interaction timing and reach live here.
   const settings = {
@@ -1300,14 +1302,17 @@ async function initHeroSheen() {
   }
 
   function playOpeningFlows() {
-    const openingFlows = createOpeningFlowEntries();
+    const allFlows = createOpeningFlowEntries();
+    // Projects gets one quiet trace, then remains still for browsing.
+    const openingFlows = isProjectsPage ? allFlows.slice(1, 2) : allFlows;
+    allFlows.filter((flow) => !openingFlows.includes(flow)).forEach((flow) => flow.path.remove());
     return Promise.all(
       openingFlows.map((openingFlow, index) =>
         playSheen(openingFlow, {
           circuit: true,
-          duration: settings.openingDuration,
-          delay: index * settings.openingStagger,
-          opacity: settings.openingOpacity,
+          duration: isProjectsPage ? 2000 : settings.openingDuration,
+          delay: isProjectsPage ? 0 : index * settings.openingStagger,
+          opacity: isProjectsPage ? 0.35 : settings.openingOpacity,
           segmentLength: settings.openingSegmentLength,
           passClass: "hero-sheen-opening-pass",
           easing: "cubic-bezier(0.37, 0, 0.63, 1)",
@@ -1342,6 +1347,7 @@ async function initHeroSheen() {
   if (reducedMotion.matches) return;
 
   await playOpeningFlows();
+  if (isProjectsPage) return;
 
   pointerEnabled = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
   let cooldownUntil = 0;

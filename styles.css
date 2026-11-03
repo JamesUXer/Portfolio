@@ -487,33 +487,35 @@ button:focus-visible {
   min-height: 21.5rem;
 }
 
-.hero-artwork {
+/* Both heroes share the same island coordinates beneath the header. */
+.island-scene {
   position: absolute;
   z-index: 0;
-  top: -11.625rem;
+  top: calc(-11.625rem - var(--hero-offset, 0rem));
   left: 50%;
-  display: block;
   width: 41.82rem;
   aspect-ratio: 669 / 399;
-  background: var(--line);
-  -webkit-mask: url("assets/images/hero-artwork-transparent-2x.png") center / contain no-repeat;
-  mask: url("assets/images/hero-artwork-transparent-2x.png") center / contain no-repeat;
-  opacity: 0.75;
   pointer-events: none;
   transform: translateX(-50%);
 }
 
+.hero-artwork,
 .hero-sheen-layer {
   position: absolute;
-  z-index: 0;
-  top: -11.625rem;
-  left: 50%;
+  inset: 0;
   display: block;
-  width: 41.82rem;
-  aspect-ratio: 669 / 399;
-  mix-blend-mode: screen;
   pointer-events: none;
-  transform: translateX(-50%);
+}
+
+.hero-artwork {
+  background: var(--line);
+  -webkit-mask: url("assets/images/hero-artwork-transparent-2x.png") center / contain no-repeat;
+  mask: url("assets/images/hero-artwork-transparent-2x.png") center / contain no-repeat;
+  opacity: 0.75;
+}
+
+.hero-sheen-layer {
+  mix-blend-mode: screen;
 }
 
 .hero-sheen-vector {
@@ -1374,59 +1376,26 @@ a.project-image-link:hover img {
 }
 
 .projects-page-hero {
+  --hero-offset: -5.625rem;
   position: relative;
   min-height: 22rem;
-  margin-top: -5.625rem;
+  margin-top: var(--hero-offset);
   padding-top: 4.25rem;
 }
 
-.projects-hero-art {
-  position: absolute;
-  z-index: 0;
-  top: -6rem;
-  left: 50%;
-  display: block;
-  width: 41.82rem;
-  aspect-ratio: 669 / 399;
-  background: var(--line);
-  -webkit-mask: url("assets/images/hero-artwork-transparent.png") center / contain no-repeat;
-  mask: url("assets/images/hero-artwork-transparent.png") center / contain no-repeat;
+.projects-page-hero .hero-artwork {
   opacity: 0.18;
-  pointer-events: none;
-  transform: translateX(-50%);
 }
 
 /* Keep dark-mode island contrast consistent across the portfolio. */
-:root[data-theme="dark"] :is(.home-hero .hero-artwork, .projects-hero-art) {
+:root[data-theme="dark"] .island-scene .hero-artwork {
   background: #eeeede;
-  -webkit-mask-image: url("assets/images/hero-artwork-transparent.png");
-  mask-image: url("assets/images/hero-artwork-transparent.png");
   opacity: var(--island-dark-opacity);
 }
 
 /* Separate navigation lettering from the brighter lines passing behind it. */
 :root[data-theme="dark"]:has(.home-hero, .projects-page-hero) .desktop-nav a {
   text-shadow: 0 0 3px var(--bg), 0 0 6px var(--bg);
-}
-
-/* Give the stronger linework its own space beside the Projects copy. */
-@media (min-width: 761px) {
-  :root[data-theme="dark"] .projects-hero-art {
-    left: auto;
-    right: var(--page-gutter);
-    width: min(41.82rem, 46vw);
-    transform: none;
-  }
-
-  :root[data-theme="dark"] .projects-page-hero p {
-    max-width: 34ch;
-  }
-}
-
-@media (max-width: 760px) {
-  :root[data-theme="dark"] .projects-page-hero {
-    padding-top: calc(54vw - 1rem);
-  }
 }
 
 .projects-page-hero .site-shell {
@@ -4180,8 +4149,7 @@ a.project-image-link:hover img {
     min-height: auto;
   }
 
-  .hero-artwork,
-  .hero-sheen-layer,
+  .island-scene,
   .skill-row {
     display: none;
   }
@@ -4356,11 +4324,6 @@ a.project-image-link:hover img {
     min-height: auto;
     margin-top: 0;
     padding-block: 3rem 2.5rem;
-  }
-
-  .projects-hero-art {
-    top: -3rem;
-    width: 90vw;
   }
 
   .projects-page-hero h1,
