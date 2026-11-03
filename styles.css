@@ -1395,6 +1395,39 @@ a.project-image-link:hover img {
   transform: translateX(-50%);
 }
 
+/* Use the Playground's dark-mode island contrast on both landing pages. */
+:root[data-theme="dark"] :is(.home-hero .hero-artwork, .projects-hero-art) {
+  background: #eeeede;
+  -webkit-mask-image: url("assets/images/hero-artwork-transparent.png");
+  mask-image: url("assets/images/hero-artwork-transparent.png");
+  opacity: 0.92;
+}
+
+/* Separate navigation lettering from the brighter lines passing behind it. */
+:root[data-theme="dark"]:has(.home-hero, .projects-page-hero) .desktop-nav a {
+  text-shadow: 0 0 3px var(--bg), 0 0 6px var(--bg);
+}
+
+/* Give the stronger linework its own space beside the Projects copy. */
+@media (min-width: 761px) {
+  :root[data-theme="dark"] .projects-hero-art {
+    left: auto;
+    right: var(--page-gutter);
+    width: min(41.82rem, 46vw);
+    transform: none;
+  }
+
+  :root[data-theme="dark"] .projects-page-hero p {
+    max-width: 34ch;
+  }
+}
+
+@media (max-width: 760px) {
+  :root[data-theme="dark"] .projects-page-hero {
+    padding-top: calc(54vw - 1rem);
+  }
+}
+
 .projects-page-hero .site-shell {
   position: relative;
   z-index: 1;
