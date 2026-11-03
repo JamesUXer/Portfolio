@@ -1,6 +1,6 @@
 /* Developed island: woodland entry, school collection and reserved machinery. */
 :root { --study-line:#eeeede; --study-ink:var(--text); --wash-strength:.72; }
-:root[data-theme="light"] { --study-line:#343b35; --wash-strength:.62; }
+:root[data-theme="light"] { --study-line:var(--line); --wash-strength:.62; }
 .scene { --island-width:min(82%,1120px,calc((100svh - 220px)*1.67669)); --island-top:calc(50% + 32px); position:relative; isolation:isolate; margin:0; min-height:440px; height:calc(100svh - 96px); overflow:hidden; }
 .overview-scene { position:absolute; inset:0; transform-origin:0 0; transition:transform 1050ms cubic-bezier(.65,0,.2,1),opacity 500ms 180ms; }
 .arrival-title { position:absolute; top:3%; left:6%; color:var(--study-ink); font:400 clamp(28px,3.5vw,48px)/1.1 var(--font-display,'Archivo Black',sans-serif); z-index:3; }
@@ -107,6 +107,9 @@
 /* The developed linework is separate from the protected homepage sources. */
 .island .hero-artwork.island-developed,
 :root[data-theme="light"] .island .hero-artwork.island-developed { filter:none; color:var(--study-line); opacity:.92; }
+/* Match the homepage line colour and opacity in light mode. */
+:root[data-theme="light"] .island .hero-artwork.island-developed,
+:root[data-theme="light"] .scene[data-scene="island"] .school-portal-line { opacity:.75; }
 .island-developed .developed-trace,.island-developed .evidence-machine { fill:none; stroke:currentColor; stroke-width:1.05; stroke-linecap:round; stroke-linejoin:round; }
 .island-developed .evidence-machine .solid { fill:var(--bg); }
 .island-developed .evidence-machine .interpretation-line { stroke-dasharray:4 3; }

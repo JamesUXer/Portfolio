@@ -127,8 +127,9 @@ function setTheme(isDark, persist = true) {
 }
 
 function updateDisplaySettings(persist = true) {
-  const lightness = clampSetting(Number(lightnessControl?.value || 0));
-  const contrast = clampSetting(Number(contrastControl?.value || 0));
+  // Pages without sliders still honour the same saved display preferences.
+  const lightness = clampSetting(Number(lightnessControl?.value ?? initialLightness));
+  const contrast = clampSetting(Number(contrastControl?.value ?? initialContrast));
 
   const palette = displayPalettes[root.dataset.theme === "light" ? "light" : "dark"];
   const contrastAmount = contrast / 100;
