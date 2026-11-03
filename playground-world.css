@@ -107,6 +107,9 @@
 /* The developed linework is separate from the protected homepage sources. */
 .island .hero-artwork.island-developed,
 :root[data-theme="light"] .island .hero-artwork.island-developed { filter:none; color:var(--study-line); opacity:.92; }
+/* Use the shared dark-mode opacity for the island and its school. */
+:root[data-theme="dark"] .island .hero-artwork.island-developed,
+:root[data-theme="dark"] .scene[data-scene="island"] .school-portal-line { opacity:var(--island-dark-opacity); }
 /* Match the homepage line colour and opacity in light mode. */
 :root[data-theme="light"] .island .hero-artwork.island-developed,
 :root[data-theme="light"] .scene[data-scene="island"] .school-portal-line { opacity:.75; }

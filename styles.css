@@ -1,5 +1,6 @@
 :root {
   color-scheme: dark;
+  --island-dark-opacity: 0.65;
   /* Primitive colours */
   --colour-neutral-0: #ffffff;
   --colour-neutral-50: #f7f7f5;
@@ -1395,17 +1396,12 @@ a.project-image-link:hover img {
   transform: translateX(-50%);
 }
 
-/* Use the Playground's dark-mode island contrast on both landing pages. */
+/* Keep dark-mode island contrast consistent across the portfolio. */
 :root[data-theme="dark"] :is(.home-hero .hero-artwork, .projects-hero-art) {
   background: #eeeede;
   -webkit-mask-image: url("assets/images/hero-artwork-transparent.png");
   mask-image: url("assets/images/hero-artwork-transparent.png");
-  opacity: 0.92;
-}
-
-/* Keep the homepage name dominant over its background illustration. */
-:root[data-theme="dark"] .home-hero .hero-artwork {
-  opacity: 0.65;
+  opacity: var(--island-dark-opacity);
 }
 
 /* Separate navigation lettering from the brighter lines passing behind it. */
