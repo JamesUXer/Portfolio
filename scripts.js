@@ -463,7 +463,7 @@ async function initHeroSheen() {
 
   // Prototype controls: appearance is in styles.css; interaction timing and reach live here.
   const settings = {
-    vectorAsset: "assets/images/hero-artwork-traced.svg",
+    vectorAsset: "assets/images/island-hand-drawn-trace.svg",
     sourceWidth: 669,
     sourceHeight: 399,
     openingDuration: 8600,
@@ -561,6 +561,33 @@ async function initHeroSheen() {
 
   if (!paths.length || reducedMotion.matches) return;
 
+  // Curved artwork is expensive to query repeatedly during graph construction.
+  // Sample each original path once, then interpolate from the same geometry.
+  // Yield between small batches so navigation and the page stay responsive.
+  const geometryByPath = new WeakMap();
+  for (let pathIndex = 0; pathIndex < paths.length; pathIndex += 1) {
+    const entry = paths[pathIndex];
+    const divisions = Math.max(1, Math.ceil(entry.length / settings.junctionSampleSpacing));
+    const points = Array.from({ length: divisions + 1 }, (_, index) => {
+      const point = entry.path.getPointAtLength((entry.length * index) / divisions);
+      return { x: point.x, y: point.y };
+    });
+    geometryByPath.set(entry.path, { points, divisions });
+    if (pathIndex % 8 === 7) await new Promise((resolve) => window.setTimeout(resolve, 0));
+    if (reducedMotion.matches) return;
+  }
+
+  function pointOnEntry(entry, length) {
+    const geometry = geometryByPath.get(entry.path);
+    if (!geometry) return entry.path.getPointAtLength(length);
+    const position = Math.max(0, Math.min(geometry.divisions, (length / entry.length) * geometry.divisions));
+    const firstIndex = Math.min(Math.floor(position), geometry.divisions - 1);
+    const fraction = position - firstIndex;
+    const first = geometry.points[firstIndex];
+    const second = geometry.points[firstIndex + 1];
+    return { x: first.x + (second.x - first.x) * fraction, y: first.y + (second.y - first.y) * fraction };
+  }
+
   const splitLengthsByEntry = new Map(paths.map((entry) => [entry, [0, entry.length]]));
   const junctionGrid = new Map();
   const gridSize = settings.junctionSampleSpacing;
@@ -584,8 +611,8 @@ async function initHeroSheen() {
     for (let iteration = 0; iteration < 8; iteration += 1) {
       const firstLength = start + (end - start) / 3;
       const secondLength = end - (end - start) / 3;
-      const firstPoint = entry.path.getPointAtLength(firstLength);
-      const secondPoint = entry.path.getPointAtLength(secondLength);
+      const firstPoint = pointOnEntry(entry, firstLength);
+      const secondPoint = pointOnEntry(entry, secondLength);
       const firstDistance = Math.hypot(firstPoint.x - x, firstPoint.y - y);
       const secondDistance = Math.hypot(secondPoint.x - x, secondPoint.y - y);
       if (firstDistance <= secondDistance) end = secondLength;
@@ -593,7 +620,7 @@ async function initHeroSheen() {
     }
 
     const length = (start + end) / 2;
-    const point = entry.path.getPointAtLength(length);
+    const point = pointOnEntry(entry, length);
     return { length, x: point.x, y: point.y, distance: Math.hypot(point.x - x, point.y - y) };
   }
 
@@ -601,7 +628,7 @@ async function initHeroSheen() {
     const divisions = Math.max(1, Math.ceil(entry.length / settings.junctionSampleSpacing));
     for (let index = 0; index <= divisions; index += 1) {
       const length = (entry.length * index) / divisions;
-      const point = entry.path.getPointAtLength(length);
+      const point = pointOnEntry(entry, length);
       addJunctionSample({ entry, length, x: point.x, y: point.y });
     }
   });
@@ -610,7 +637,7 @@ async function initHeroSheen() {
   // Spokes often meet a ring mid-path, so project nearby endpoints onto that path as graph junctions.
   paths.forEach((owner) => {
     [0, owner.length].forEach((endpointLength) => {
-      const endpoint = owner.path.getPointAtLength(endpointLength);
+      const endpoint = pointOnEntry(owner, endpointLength);
       const column = Math.floor(endpoint.x / gridSize);
       const row = Math.floor(endpoint.y / gridSize);
       const nearestByEntry = new Map();
@@ -668,8 +695,8 @@ async function initHeroSheen() {
     for (let index = 1; index < splitLengths.length; index += 1) {
       const startLength = splitLengths[index - 1];
       const endLength = splitLengths[index];
-      const startPoint = entry.path.getPointAtLength(startLength);
-      const endPoint = entry.path.getPointAtLength(endLength);
+      const startPoint = pointOnEntry(entry, startLength);
+      const endPoint = pointOnEntry(entry, endLength);
       const startNode = findOrCreateNode(startPoint);
       const endNode = findOrCreateNode(endPoint);
       const edge = {
@@ -724,7 +751,7 @@ async function initHeroSheen() {
     const divisions = Math.max(1, Math.ceil(edge.length / settings.sampleSpacing));
     return Array.from({ length: divisions + 1 }, (_, index) => {
       const length = edge.startLength + (edge.length * index) / divisions;
-      const point = edge.entry.path.getPointAtLength(length);
+      const point = pointOnEntry(edge.entry, length);
       return { edge, entry: edge.entry, length, x: point.x, y: point.y };
     });
   });
@@ -799,8 +826,8 @@ async function initHeroSheen() {
     for (let iteration = 0; iteration < 8; iteration += 1) {
       const firstLength = start + (end - start) / 3;
       const secondLength = end - (end - start) / 3;
-      const firstPoint = sample.entry.path.getPointAtLength(firstLength);
-      const secondPoint = sample.entry.path.getPointAtLength(secondLength);
+      const firstPoint = pointOnEntry(sample.entry, firstLength);
+      const secondPoint = pointOnEntry(sample.entry, secondLength);
       const firstDistance = Math.hypot(firstPoint.x - x, firstPoint.y - y);
       const secondDistance = Math.hypot(secondPoint.x - x, secondPoint.y - y);
 
@@ -809,7 +836,7 @@ async function initHeroSheen() {
     }
 
     const length = (start + end) / 2;
-    const point = sample.entry.path.getPointAtLength(length);
+    const point = pointOnEntry(sample.entry, length);
     return {
       edge: sample.edge,
       entry: sample.entry,
@@ -845,7 +872,7 @@ async function initHeroSheen() {
   function edgeIsLocal(edge, origin) {
     const lengths = [edge.startLength, (edge.startLength + edge.endLength) / 2, edge.endLength];
     return lengths.every((length) => {
-      const point = edge.entry.path.getPointAtLength(length);
+      const point = pointOnEntry(edge.entry, length);
       return Math.hypot(point.x - origin.x, point.y - origin.y) <= settings.hoverCircuitRadius;
     });
   }
@@ -911,7 +938,7 @@ async function initHeroSheen() {
       return route;
     }
 
-    const origin = edge.entry.path.getPointAtLength((edge.startLength + edge.endLength) / 2);
+    const origin = pointOnEntry(edge.entry, (edge.startLength + edge.endLength) / 2);
     const targetNode = edge.startNode;
     const maximumAlternateLength = settings.hoverMaximumCircuitLength - edge.length;
     let states = [
@@ -993,7 +1020,7 @@ async function initHeroSheen() {
       const divisions = Math.max(1, Math.ceil(distance / settings.circuitPointSpacing));
       for (let index = 0; index <= divisions; index += 1) {
         const length = start + ((end - start) * index) / divisions;
-        const point = entry.path.getPointAtLength(length);
+        const point = pointOnEntry(entry, length);
         const previousPoint = points.at(-1);
         if (!previousPoint || Math.hypot(point.x - previousPoint.x, point.y - previousPoint.y) > 0.08) {
           points.push({ x: point.x, y: point.y });
@@ -1256,7 +1283,7 @@ async function initHeroSheen() {
       const divisions = Math.max(1, Math.ceil(distance / settings.circuitPointSpacing));
       for (let index = 0; index <= divisions; index += 1) {
         const length = start + ((end - start) * index) / divisions;
-        appendPoint(entry.path.getPointAtLength(length));
+        appendPoint(pointOnEntry(entry, length));
       }
     };
     appendRange(ordered[0], 0, ordered[0].length);
@@ -1323,7 +1350,7 @@ async function initHeroSheen() {
   }
 
   const image = new Image();
-  image.src = "assets/images/hero-artwork-transparent-2x.png";
+  image.src = "assets/images/island-hand-drawn.svg";
   const imageReady = image.decode ? image.decode().catch(() => {}) : Promise.resolve();
   const visibilityReady = new Promise((resolve) => {
     if (!window.IntersectionObserver) {

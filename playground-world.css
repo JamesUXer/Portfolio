@@ -104,15 +104,15 @@
   #spellquest-player { aspect-ratio:3/4; border-radius:11px; }
 }
 
-/* The developed linework is separate from the protected homepage sources. */
+/* Shared approved linework, with the Playground school portal retained. */
 .island .hero-artwork.island-developed,
 :root[data-theme="light"] .island .hero-artwork.island-developed { filter:none; color:var(--study-line); opacity:.92; }
 /* Use the shared dark-mode opacity for the island and its school. */
-:root[data-theme="dark"] .island .hero-artwork.island-developed,
-:root[data-theme="dark"] .scene[data-scene="island"] .school-portal-line { opacity:var(--island-dark-opacity); }
+:root[data-theme="dark"] .island .hero-artwork.island-developed { opacity:var(--island-dark-opacity); }
+:root[data-theme="dark"] .scene[data-scene="island"] .school-portal-line { opacity:calc(var(--island-dark-opacity) * .36); }
 /* Match the homepage line colour and opacity in light mode. */
-:root[data-theme="light"] .island .hero-artwork.island-developed,
-:root[data-theme="light"] .scene[data-scene="island"] .school-portal-line { opacity:.75; }
+:root[data-theme="light"] .island .hero-artwork.island-developed { opacity:.75; }
+:root[data-theme="light"] .scene[data-scene="island"] .school-portal-line { opacity:calc(.75 * .36); }
 .island-developed .developed-trace,.island-developed .evidence-machine { fill:none; stroke:currentColor; stroke-width:1.05; stroke-linecap:round; stroke-linejoin:round; }
 .island-developed .evidence-machine .solid { fill:var(--bg); }
 .island-developed .evidence-machine .interpretation-line { stroke-dasharray:4 3; }
